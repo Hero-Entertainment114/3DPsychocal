@@ -22,8 +22,12 @@ Ngày 25/10/2026 (Asia/Saigon). Môi trường local: Linux x86_64, Python 3.12.
 
 ## Packaging
 
-Script Windows và CI đã được viết. Kết quả workflow thật sẽ được ghi vào đây sau khi chạy; trước thời điểm đó, không coi file script là bằng chứng đã có EXE.
+**Đã build và chạy EXE thật trên Windows CI.** [Run 40203737430](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430), commit `1cfc56fa87bf24233540fdadc85723895769e00e`: cả `test (ubuntu-latest)` và `test (windows-latest)` thành công. Windows đã qua validator, pytest, scripted UI route, source startup, PyInstaller build và smoke test executable 60 frames.
+
+[Tải gói Windows standalone](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430/artifacts/12603176931) (18.881.845 bytes; SHA-256 artifact ZIP `df7fdbafee377b4ca8d88cf31733d16ad558707549e9e8729a7ee7339c6d6c18`). Giải nén toàn bộ rồi chạy `3DPsychocal.exe`; không tách thư mục `_internal`. Artifact lưu tới 23/01/2027 theo metadata GitHub. Cần đăng nhập tài khoản có quyền repo để tải.
+
+Bản Linux đóng gói bằng PyInstaller cũng đã mở headless 60 frames ở môi trường local. Không gọi đó là kiểm thử desktop/âm thanh bằng người. Các commit tài liệu sau commit build không thay code binary.
 
 ## Lỗi đa nền tảng đã phát hiện và sửa
 
-Run CI đầu `40203553465`: Ubuntu qua; Windows 34/35 do registry ảnh dùng dấu phân cách Windows. Renderer đã đổi sang `Path.as_posix()` để ID tài nguyên giống nhau trên cả hai hệ điều hành. CI sẽ chạy lại trên commit sửa; không bỏ qua bài test thất bại.
+Run CI đầu `40203553465`: Ubuntu qua; Windows 34/35 do registry ảnh dùng dấu phân cách Windows. Renderer đã đổi sang `Path.as_posix()` để ID tài nguyên giống nhau trên cả hai hệ điều hành. Run kế tiếp `40203737430` đã qua toàn bộ trên Ubuntu và Windows; không bỏ qua bài test thất bại.

@@ -8,7 +8,7 @@ V2 ưu tiên khi mâu thuẫn. “Có dữ liệu” không đồng nghĩa đã 
 | Repo 3DPsychocal, source modular | Có | core/systems/scenes/data/tools/tests |
 | Game 2D top-down | Có | Five tilemaps, world.py |
 | Side-view, điều khiển nhân vật khác | Chưa | Roadmap |
-| Windows EXE độc lập | Script + CI | Xem QA.md và Actions để biết kết quả build thật |
+| Windows EXE độc lập | Đã build + smoke test Windows CI | QA.md, run 40203737430, artifact Windows |
 | Chơi không Internet/API trả phí | Có | Assets/font/WAV đóng gói, runtime không network |
 | 9–12 giờ chính, 15–20 giờ mở rộng | Chưa | Không có playtest người thật; không dùng số giờ này làm quảng cáo |
 | 100 câu đố được thiết kế | Bản registry ban đầu | 100 prompt/clues/answers/hints/graph; còn cần biên tập độ khác biệt |

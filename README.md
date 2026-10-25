@@ -22,6 +22,10 @@ Một game **2D pixel art**, Python 3.12 + Pygame CE, chạy offline. Tsukimori,
 
 **Chưa đạt:** 100 câu đố có cơ chế hoàn thiện, campaign II–VI, 9–12 giờ / 15–20 giờ có playtest, ending kiếm được trong campaign, bản dịch Anh/Nhật, cinematic chuyển nhân vật, truy đuổi, art và âm thanh cấp phát hành. Phân loại câu đố hiện chưa đúng ngân sách 35/20/20/15/10; số thực nằm trong báo cáo. Phần thiết kế không được cộng vào số tính năng đã triển khai.
 
+## Tải bản Windows đã build
+
+[Tải 3DPsychocal-Windows.zip](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430/artifacts/12603176931) · [Kết quả CI](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430). Giải nén **toàn bộ**, mở `3DPsychocal.exe`. Bản này đã build và smoke-test tự động trên Windows, chưa qua playtest desktop bằng người. GitHub yêu cầu đăng nhập để tải artifact.
+
 ## Chạy ngay từ source
 
 Python **3.12** hoặc **3.13**, Windows/Linux. Không cần editor game.
