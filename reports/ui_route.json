@@ -1,0 +1,140 @@
+{
+  "result": "pass",
+  "kind": "scripted UI route, not human playtest",
+  "duration_seconds": 1.929,
+  "completed": 22,
+  "route": [
+    {
+      "puzzle": "P001",
+      "walk_steps": 34,
+      "mode": "play",
+      "room": "station"
+    },
+    {
+      "puzzle": "P002",
+      "walk_steps": 43,
+      "mode": "play",
+      "room": "hospital"
+    },
+    {
+      "puzzle": "P003",
+      "walk_steps": 26,
+      "mode": "play",
+      "room": "town"
+    },
+    {
+      "puzzle": "P004",
+      "walk_steps": 35,
+      "mode": "play",
+      "room": "home"
+    },
+    {
+      "puzzle": "P005",
+      "walk_steps": 32,
+      "mode": "play",
+      "room": "home"
+    },
+    {
+      "puzzle": "P006",
+      "walk_steps": 13,
+      "mode": "play",
+      "room": "home"
+    },
+    {
+      "puzzle": "P007",
+      "walk_steps": 45,
+      "mode": "play",
+      "room": "station"
+    },
+    {
+      "puzzle": "P008",
+      "walk_steps": 99,
+      "mode": "play",
+      "room": "town"
+    },
+    {
+      "puzzle": "P009",
+      "walk_steps": 37,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P010",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P011",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P012",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P013",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P014",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P015",
+      "walk_steps": 74,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P016",
+      "walk_steps": 6,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P017",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P018",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P019",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P020",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P021",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    },
+    {
+      "puzzle": "P022",
+      "walk_steps": 16,
+      "mode": "play",
+      "room": "school"
+    }
+  ]
+}

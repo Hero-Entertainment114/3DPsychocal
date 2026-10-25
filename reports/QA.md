@@ -1,0 +1,25 @@
+# Báo cáo QA — bản sản xuất 0.1
+
+Ngày 25/10/2026 (Asia/Saigon). Môi trường local: Linux x86_64, Python 3.12.14, Pygame CE 2.5.8, SDL 2.32.10. Render/audio test dùng SDL dummy; không có người chơi ngồi thử hoặc thiết bị âm thanh thực.
+
+## Đã thực hiện
+
+- `pytest`: **35 passed** trong lần chạy ghi tại `junit.xml`. Bao gồm dữ liệu/graph, route progression, checkpoint save roundtrip, cả hai lựa chọn P018, skip sau ba lần sai, chống farm quan hệ, giả thuyết và năm rule ending, save hỏng, settings lỗi, collision và render mọi màn.
+- `tools/playtest_route.py`: **22/22** bằng route scripting. BFS chọn vị trí tiếp cận; nhân vật đi qua collision bằng `World.update`, cổng được mở bằng phím E, đáp án được nhập qua `Game.handle`, memory P014 kích hoạt bằng M. Kết quả đầy đủ trong `ui_route.json`.
+- Tất cả điểm tương tác, NPC và cổng được kiểm tiếp cận; mọi portal spawn không nằm trong solid tile/prop.
+- `validate_content.py`: không có structural error; **có cảnh báo scope chưa đạt** được giữ trong JSON. 100 records, 22 playable, 125 cross edges, 25 profiles, 25 dialogues, 3.914 whitespace units (1.246 live), 77 tệp asset.
+- Headless startup từ source: chạy thành công. Ảnh menu, town, school, dialogue, puzzle và ending preview được render từ game thật. Đã xem ảnh menu/school/dialogue để kiểm readability, layout.
+- Chữ thoại được chia trang tối đa sáu dòng; test kiểm chiều rộng mỗi dòng. Puzzle prompts/clues được đo chiều cao tránh tràn input. Không có ảnh mockup thay cho ảnh chạy game.
+- ZIP packager có loại cache, save, venv, build và credential; font licenses/source briefs có trong archive.
+
+## Chưa được chứng minh
+
+- 9–12 giờ / 15–20 giờ; 20–30 phút của slice; độ khó và cảm xúc từ người chơi thật.
+- Full campaign, tất cả 100 puzzle trong gameplay, năm ending đạt qua campaign.
+- 60 FPS iGPU thực; headless không phải benchmark GPU. Nhạc được tạo có tệp hợp lệ nhưng chưa đánh giá bằng tai nghe/loa.
+- Windows GUI, fullscreen, focus, antivirus và Unicode trên máy người dùng. Workflow build/smoke EXE là kiểm tự động, không thay playtest desktop.
+- Vòng biên tập văn hóa, 25–40 nghìn lời thoại, localization Anh/Nhật, hình thể riêng 25 người.
+
+## Packaging
+
+Script Windows và CI đã được viết. Kết quả workflow thật sẽ được ghi vào đây sau khi chạy; trước thời điểm đó, không coi file script là bằng chứng đã có EXE.

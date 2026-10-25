@@ -1,0 +1,826 @@
+# PROMPT: PHÁT TRIỂN GAME 2D KINH DỊ TÂM LÝ NHẬT BẢN
+
+## 1. VAI TRÒ VÀ NHIỆM VỤ
+
+Hãy đóng vai một đội ngũ phát triển game indie chuyên nghiệp gồm:
+
+- Game Director, chịu trách nhiệm định hướng nghệ thuật và trải nghiệm tổng thể.
+- Narrative Designer, xây dựng cốt truyện tâm lý nhiều tầng nghĩa.
+- Japanese Folklore Researcher, nghiên cứu truyền thuyết đô thị, văn hóa và xã hội Nhật Bản.
+- Game Programmer, triển khai toàn bộ hệ thống gameplay.
+- Pixel Artist, thiết kế nhân vật, môi trường, sprite và hiệu ứng.
+- Sound Designer, tạo âm thanh môi trường, nhạc nền và hiệu ứng kinh dị.
+- Level Designer, xây dựng màn chơi và các câu đố có chiều sâu.
+- QA Tester, kiểm thử, sửa lỗi và hoàn thiện sản phẩm.
+
+**Nhiệm vụ:** Tạo một trò chơi 2D kinh dị tâm lý kết hợp phiêu lưu, giải đố và khám phá, có cốt truyện hoàn chỉnh, bầu không khí đặc trưng Nhật Bản cuối thế kỷ XX, sử dụng những truyền thuyết đô thị nổi tiếng làm nền tảng để kể một câu chuyện mới, đen tối nhưng giàu tính nhân văn.
+
+Không chỉ trình bày ý tưởng hoặc viết bản demo đơn giản. Hãy triển khai một dự án game thực sự, có cấu trúc mã nguồn rõ ràng, tài nguyên, âm thanh, giao diện, các màn chơi có thể hoàn thành và hướng dẫn đóng gói thành file thực thi.
+
+Tên trò chơi:
+
+**忘れられた声 (Wasurerareta Koe)**
+
+Tên quốc tế: **The Forgotten Voices**
+
+Tên tiếng Việt: **Những Tiếng Nói Bị Lãng Quên**
+
+Thể loại: Psychological Horror / Mystery / Puzzle / Narrative Adventure / Supernatural Thriller.
+
+Phong cách: Japanese Retro Pixel Art, 2D top-down kết hợp một số phân cảnh side-view.
+
+Thời lượng mục tiêu: 5–7 giờ cho tuyến truyện chính, khoảng 8–10 giờ để khám phá các bí mật và kết thúc phụ.
+
+Nền tảng: Windows PC, hỗ trợ bàn phím, chuột và có thể mở rộng tay cầm.
+
+Ngôn ngữ: Tiếng Việt hoàn chỉnh, hỗ trợ thêm tiếng Anh và tiếng Nhật.
+
+---
+
+## 2. TRIẾT LÝ CỐT LÕI CỦA TRÒ CHƠI
+
+Đây không phải một game kinh dị chỉ dựa vào jumpscare, những con quái vật hoặc cảnh máu me.
+
+Nỗi sợ phải đến từ những điều bình thường bị bóp méo, từ sự cô đơn, ký ức không đáng tin cậy, những sự thật bị che giấu và từ chính cách con người đối xử với nhau.
+
+Game cần đặt ra những câu hỏi:
+
+- Liệu những câu chuyện ma có phải do người chết tạo ra, hay do những người sống không muốn nhớ đến họ?
+- Khi một tập thể cùng im lặng trước bất công, ai là người thực sự có tội?
+- Một lời nói dối có thể bảo vệ người khác đến mức nào trước khi trở thành tội ác?
+- Điều gì sẽ xảy ra khi một xã hội coi danh dự và vẻ ngoài quan trọng hơn sự thật?
+- Nếu tất cả mọi người đều nhớ sai cùng một câu chuyện, điều gì còn chứng minh được sự thật?
+- Một người bị cả thế giới lãng quên có thực sự biến mất?
+
+Cốt truyện phải khiến người chơi ban đầu sợ hãi những hồn ma, sau đó nghi ngờ những người còn sống và cuối cùng buộc phải đối diện với chính lựa chọn của mình.
+
+**Thông điệp xuyên suốt:**
+
+"Không phải mọi linh hồn đều muốn trả thù. Có những linh hồn chỉ đang chờ một người chịu lắng nghe."
+
+Tuy nhiên, không được biến thông điệp này thành câu trả lời dễ đoán. Một số hiện tượng phải thực sự nguy hiểm, một số nhân vật đáng thương vẫn có thể gây ra những điều tàn nhẫn, và sự thật không nhất thiết khiến mọi chuyện trở nên tốt đẹp.
+
+## 3. BỐI CẢNH LỊCH SỬ VÀ XÃ HỘI
+
+Thời gian chính: Mùa thu năm 1998.
+
+Địa điểm: Nhật Bản, chủ yếu ở thị trấn hư cấu Tsukimori (月守町), kết hợp các địa danh lấy cảm hứng từ những truyền thuyết đô thị có thật.
+
+Tsukimori từng là một thị trấn công nghiệp phát triển, có trường học, bệnh viện, nhà máy, ga tàu và khu dân cư đông đúc.
+
+Sau cuộc khủng hoảng kinh tế thập niên 1990, thị trấn dần suy tàn:
+
+- Nhà máy đóng cửa, hàng loạt công nhân mất việc.
+- Nhiều gia đình mắc nợ, tan vỡ hoặc phải chuyển đi.
+- Học sinh đối mặt với áp lực học tập, kỳ vọng của gia đình và hiện tượng bắt nạt.
+- Một số cơ sở giáo dục che giấu tai tiếng nhằm bảo vệ danh tiếng.
+- Doanh nghiệp và những cá nhân có quyền lực lợi dụng khó khăn kinh tế để che đậy sai phạm.
+- Người yếu thế, trẻ em, người già và những người khác biệt dần trở thành những con người vô hình trong mắt cộng đồng.
+
+Những vấn đề này phải được phản ánh thông qua nhân vật và sự kiện cụ thể, không biến tất cả người Nhật hoặc toàn bộ xã hội Nhật Bản thành một khuôn mẫu tiêu cực.
+
+Tái hiện đúng không khí năm 1998 thông qua:
+
+- Điện thoại bàn, máy nhắn tin, máy fax và điện thoại công cộng.
+- Băng cassette, VHS, máy ghi âm và tivi CRT.
+- Báo giấy, thư tay, hồ sơ học sinh và sổ lưu trữ.
+- Tàu địa phương, cửa hàng tiện lợi, máy bán hàng tự động.
+- Nhà gỗ Nhật Bản, hành lang trường học, đền Thần đạo.
+- Những con phố mưa, ánh đèn vàng và biển hiệu đã bạc màu.
+
+Không đưa công nghệ hiện đại như smartphone hoặc mạng xã hội ngày nay vào bối cảnh chính.
+
+Các sự kiện xã hội và lịch sử phải được nghiên cứu để tránh sai lệch, đồng thời phân biệt rõ yếu tố lịch sử, truyền thuyết dân gian và hư cấu.
+
+## 4. CỐT TRUYỆN CHÍNH
+
+### Mở đầu: Lá thư không có người gửi
+
+Nhân vật chính là **Mizuhara Ren (水原 蓮)**, 24 tuổi, một người từng sống tại Tsukimori nhưng đã rời quê từ nhiều năm trước.
+
+Ren có trí nhớ không hoàn chỉnh về tuổi thơ, thường xuyên gặp ác mộng về một hành lang trường học, tiếng chuông lúc 4 giờ 44 phút và một bé gái mặc váy đỏ đứng phía sau cánh cửa.
+
+Một ngày tháng 10 năm 1998, Ren nhận được một phong thư không ghi địa chỉ người gửi.
+
+Bên trong chỉ có:
+
+- Một bức ảnh lớp học cũ, trong đó có một gương mặt bị cào xóa.
+- Một chìa khóa đồng đã gỉ.
+- Một mẩu báo về vụ mất tích của năm đứa trẻ.
+- Một cuộn băng cassette.
+- Một tờ giấy viết tay:
+
+"Ngày ấy, chúng ta đã có sáu người. Vì sao bây giờ chỉ còn năm cái tên?"
+
+Khi bật cuộn băng, Ren nghe thấy tiếng trẻ con vui đùa, sau đó là giọng nói của chính mình lúc nhỏ:
+
+"Đừng mở cánh cửa thứ ba. Nếu cậu nhớ ra, mọi người sẽ lại biến mất."
+
+Cuộn băng kết thúc bằng tiếng gõ cửa ba lần.
+
+Ren trở về Tsukimori để tìm hiểu sự thật.
+
+Thế nhưng ngay khi bước xuống ga tàu, anh nhận thấy điều kỳ lạ: đồng hồ nhà ga không chạy, bản đồ thị trấn xuất hiện những con đường không tồn tại, còn một phụ nữ lớn tuổi khẳng định mình đã nhìn thấy anh chết từ mười năm trước.
+
+### Bí mật trung tâm
+
+Tất cả những truyền thuyết đô thị mà Ren gặp phải dường như độc lập.
+
+Nhưng đằng sau chúng là những sự kiện có liên quan đến một dự án hư cấu mang tên **Kiroku Project (記録計画)**, từng được triển khai dưới danh nghĩa chương trình phúc lợi và hỗ trợ tâm lý tại thị trấn.
+
+Dự án đã lợi dụng quyền lực, thông tin cá nhân và sự im lặng của cộng đồng để kiểm soát cách những sự kiện tai tiếng được ghi nhận.
+
+Tuy nhiên, dự án không phải lời giải thích đơn giản cho tất cả hiện tượng siêu nhiên.
+
+Một số bóng ma tồn tại trước dự án. Một số lời đồn bị con người chủ động thao túng. Một số hiện tượng sinh ra từ ký ức sai lệch. Và có những bí mật không thể giải thích bằng khoa học.
+
+Ren dần phát hiện rằng bản thân không chỉ là nhân chứng.
+
+Anh có thể từng góp phần khiến một sự thật bị chôn vùi.
+
+**Yêu cầu đặc biệt:** Không tiết lộ mọi bí mật trong đoạn mở đầu. Hãy xây dựng các manh mối, lời khai mâu thuẫn, nhân chứng không đáng tin và những bước ngoặt có nguyên nhân hợp lý.
+
+Ít nhất hai cú twist lớn phải khiến người chơi hiểu lại các sự kiện và hành động mình đã trải qua, thay vì chỉ tiết lộ một nhân vật là phản diện.
+
+---
+
+## 5. CẤU TRÚC CHƯƠNG TRUYỆN VÀ TRUYỀN THUYẾT ĐÔ THỊ
+
+Game gồm phần mở đầu, năm chương chính và chương kết.
+
+Mỗi chương phải là một câu chuyện có cao trào, bí mật và kết thúc riêng, đồng thời bổ sung một phần quan trọng cho tuyến truyện tổng thể.
+
+### CHƯƠNG I: HANAKO-SAN | TIẾNG GÕ SAU CÁNH CỬA
+
+Truyền thuyết: Toire no Hanako-san (トイレの花子さん).
+
+Bối cảnh: Trường tiểu học Tsukimori đã đóng cửa.
+
+< Nội dung >
+
+Ren tìm thấy lời ghi chú liên quan đến một nữ sinh mất tích trong nhà vệ sinh tầng ba.
+
+Theo lời đồn, nếu gõ ba lần vào cánh cửa buồng vệ sinh thứ ba và gọi tên Hanako, sẽ có một giọng nói đáp lại.
+
+Khi khám phá ngôi trường, người chơi phát hiện các lớp học bị khóa, những cuốn nhật ký bị xé, hình vẽ trẻ em và bảng điểm có dấu hiệu chỉnh sửa.
+
+Những bức ảnh trong trường thay đổi khi người chơi quay lưng.
+
+Hanako ban đầu được thể hiện như một linh hồn hung dữ.
+
+Nhưng càng điều tra, người chơi càng nhận thấy em có thể từng là nạn nhân của bắt nạt, sự thờ ơ của người lớn và những lời khai cố tình bị thay đổi.
+
+Không đơn giản hóa câu chuyện thành một tình tiết bắt nạt quen thuộc. Phải có những lớp bí mật về động cơ, ký ức tập thể và sự tham gia của nhân vật chính.
+
+< Gameplay >
+
+- Giải mật mã bằng lịch học cũ và nhật ký học sinh.
+- Khám phá các phòng học thay đổi cấu trúc.
+- Dùng âm thanh để xác định cánh cửa thực sự.
+- Ghi nhớ các chi tiết bất thường giữa hai phiên bản ngôi trường.
+- Đối thoại với Hanako bằng hệ thống lựa chọn không hoàn toàn đáng tin.
+- Một câu đố yêu cầu người chơi quyết định nên tin lời giáo viên hay lời ghi chép của một đứa trẻ.
+
+Câu hỏi đạo đức: "Nếu tất cả đều nói một đứa trẻ đang nói dối, liệu điều đó có biến lời nói dối thành sự thật?"
+
+### CHƯƠNG II: KUCHISAKE-ONNA | NGƯỜI PHỤ NỮ SAU CHIẾC KHẨU TRANG
+
+Truyền thuyết: Kuchisake-onna (口裂け女).
+
+Bối cảnh: Khu phố thương mại xuống cấp, phòng khám cũ và các ngõ nhỏ về đêm.
+
+Một phụ nữ mang khẩu trang trắng xuất hiện, hỏi Ren:
+
+"Watashi, kirei?" (Tôi có đẹp không?)
+
+Mọi câu trả lời thông thường đều dẫn đến kết quả đáng sợ.
+
+Tuy nhiên, cơ chế chính không phải tìm câu trả lời mẹo.
+
+Người chơi phải tìm hiểu vì sao câu hỏi ấy tồn tại và ý nghĩa thật sự của nó đối với người phụ nữ.
+
+Câu chuyện khai thác sự áp đặt ngoại hình, những định kiến dành cho phụ nữ, bạo lực và cách cộng đồng biến nỗi đau của một con người thành câu chuyện giật gân.
+
+Không biến nhân vật thành biểu tượng một chiều hoặc quy mọi bất hạnh vào một nguyên nhân đơn giản.
+
+< Gameplay >
+
+- Theo dõi lời đồn từ những nhân chứng có lời khai khác nhau.
+- Khám phá phòng khám và các hồ sơ có thông tin mâu thuẫn.
+- Giải câu đố gương soi, ánh sáng và hình phản chiếu.
+- Hệ thống đối thoại nơi im lặng cũng là một lựa chọn.
+- Một phân cảnh truy đuổi ngắn, có thể sống sót bằng quan sát và suy luận thay vì phản xạ đơn thuần.
+
+Câu hỏi đạo đức: "Tại sao con người thường nhớ đến vết thương của một người hơn là nhớ đến con người ấy?"
+
+### CHƯƠNG III: TEKE TEKE | NHÀ GA CỦA NHỮNG NGƯỜI KHÔNG TRỞ VỀ
+
+Truyền thuyết: Teke Teke (テケテケ).
+
+Bối cảnh: Ga tàu địa phương, đường ray ngừng hoạt động và khu ký túc xá công nhân.
+
+Một tiếng động kỳ lạ vang lên sau chuyến tàu cuối cùng.
+
+Những nhân chứng kể rằng có một bóng người di chuyển dọc đường ray với tốc độ bất thường.
+
+Điều tra sâu hơn, Ren khám phá cuộc sống của những công nhân mất việc, sự tuyệt vọng trong các gia đình và một sự kiện bị báo chí địa phương tường thuật sai lệch.
+
+Không dùng tai nạn hay cái chết của người lao động như một cảnh tượng giải trí.
+
+< Gameplay >
+
+- Giải câu đố lịch tàu và giờ đến không khớp.
+- Sử dụng máy ghi âm để phát hiện âm thanh lặp lại.
+- Vượt qua ga tàu bị mắc kẹt trong vòng lặp thời gian.
+- Thay đổi hướng đường ray và mở lối đi bằng bảng điều khiển cũ.
+- Phân biệt tiếng tàu với âm thanh của thực thể đang truy đuổi.
+
+Câu hỏi đạo đức: "Một con người còn lại gì khi xã hội chỉ nhìn thấy giá trị lao động của họ?"
+
+### CHƯƠNG IV: INUNAKI | NGÔI LÀNG KHÔNG CÓ TRÊN BẢN ĐỒ
+
+Truyền thuyết: Inunaki Tunnel và ngôi làng bị lãng quên.
+
+Bối cảnh: Đường hầm trên núi và một ngôi làng hư cấu lấy cảm hứng từ truyền thuyết Inunaki.
+
+Đây phải là chương đáng sợ và bí ẩn bậc nhất game.
+
+Ren tìm được một bản đồ cũ dẫn tới con đường núi không còn được ghi nhận.
+
+Ở lối vào xuất hiện biển báo với nội dung khiến người chơi nghi ngờ rằng luật pháp và trật tự quen thuộc không còn tồn tại ở nơi này.
+
+Bên kia đường hầm là một ngôi làng vắng vẻ. Đồng hồ trong mỗi ngôi nhà chỉ cùng một giờ.
+
+Người chơi phát hiện hàng loạt thư từ chưa gửi, giấy khai sinh bị sửa đổi và những câu chuyện về người dân từng bị đẩy ra khỏi cộng đồng.
+
+Từ từ, người chơi hiểu rằng lời đồn về một ngôi làng quái dị có thể được dùng để che đậy những quyết định bất công, sự kỳ thị và việc xóa bỏ tiếng nói của những người yếu thế.
+
+Lưu ý: Ngôi làng, dự án và hành vi che giấu trong game đều là hư cấu. Không được khẳng định các tin đồn siêu nhiên hoặc tội ác tưởng tượng là sự kiện thật tại Inunaki ngoài đời.
+
+< Gameplay >
+
+- Khám phá đường hầm không gian phi Euclid bằng những chuyển cảnh được thiết kế có quy luật.
+- Các ngã rẽ thay đổi tùy theo thông tin trong sổ ghi chép.
+- Đọc nhật ký gia đình, so sánh hộ tịch và bản đồ.
+- Giải câu đố bằng tín hiệu radio.
+- Khám phá một ngôi làng có hai phiên bản tương ứng với hai lời kể lịch sử.
+- Suy luận những chi tiết nào được ghi lại, bị xóa bỏ hoặc cố tình bịa đặt.
+
+Câu hỏi đạo đức: "Nếu xóa một địa điểm khỏi bản đồ, liệu có thể xóa cả những con người từng sống ở đó?"
+
+### CHƯƠNG V: AKAI HEYA | CĂN PHÒNG ĐỎ
+
+Lấy cảm hứng từ mô-típ căn phòng đỏ, kết hợp với một truyền thuyết siêu nhiên nguyên bản của game.
+
+Vì bối cảnh chính là năm 1998, không sử dụng nguyên xi những phiên bản truyền thuyết Internet ra đời muộn hơn. Có thể xây dựng một câu chuyện tiền thân bằng VHS, máy tính đời cũ và hồ sơ lưu trữ, giải thích rằng lời đồn chỉ được lan truyền rộng rãi trong thời đại Internet về sau.
+
+Bối cảnh: Trung tâm lưu trữ hồ sơ, bệnh viện bỏ hoang và cơ sở của Kiroku Project.
+
+Ren tìm đến nơi lưu giữ những dữ liệu cuối cùng về vụ mất tích năm xưa.
+
+Tại đây, anh phát hiện rằng các nhân chứng đã được dẫn dắt để ghi nhớ sự kiện theo những cách khác nhau.
+
+Những cuộc phỏng vấn tưởng như vô hại từng được dùng để kiểm soát lời khai và xóa bỏ các thông tin bất lợi cho những người có quyền lực.
+
+Thế nhưng có một căn phòng không tồn tại trong sơ đồ cơ sở.
+
+Tất cả nhân chứng đều nhớ đến nó.
+
+Không ai nhớ được cánh cửa.
+
+< Gameplay >
+
+- Giải mã dữ liệu trên máy tính retro và băng VHS.
+- Đối chiếu hồ sơ giấy với bản ghi âm.
+- Câu đố về những lời khai thiếu nhất quán.
+- Một màn chơi có hai phiên bản ký ức, người chơi chuyển đổi giữa chúng.
+- Đối diện với các hành động của Ren trong quá khứ.
+
+Câu hỏi đạo đức: "Nếu một người thay đổi ký ức để có thể tiếp tục sống, họ là nạn nhân, kẻ nói dối hay cả hai?"
+
+### CHƯƠNG CUỐI: WASURERARETA KOE | NGƯỜI THỨ SÁU
+
+Chương cuối phải kết nối tất cả những chi tiết quan trọng xuất hiện từ đầu game.
+
+Bức ảnh lớp học, những cánh cửa, tiếng chuông, băng cassette, ga tàu, nhà vệ sinh và ngôi làng đều phải có ý nghĩa trong lời giải cuối cùng.
+
+Người chơi phải khám phá:
+
+- Người thứ sáu thực sự là ai?
+- Vì sao Ren không nhớ được?
+- Những truyền thuyết đô thị có quan hệ thế nào với sự kiện năm xưa?
+- Kiroku Project thực sự che giấu điều gì?
+- Ai đã gửi bức thư?
+- Ai có lợi khi mọi người tiếp tục tin vào những câu chuyện ma?
+- Ren đã làm gì, đã không làm gì và còn có thể sửa chữa điều gì?
+
+Không giải quyết tất cả bằng mô-típ "mọi thứ chỉ là một giấc mơ", "nhân vật chính đã chết từ đầu", hay "tất cả đều là ảo giác".
+
+Có thể sử dụng những yếu tố này như sự đánh lạc hướng nhưng không được dùng để phủ nhận toàn bộ trải nghiệm trước đó.
+
+Sự thật phải được chuẩn bị bằng manh mối từ đầu game, khiến người chơi khi chơi lại có thể nhận ra những dấu hiệu mình từng bỏ qua.
+
+---
+
+## 6. HỆ THỐNG GAMEPLAY CỐT LÕI
+
+### 6.1. Di chuyển và tương tác
+
+- Di chuyển WASD hoặc phím mũi tên.
+- Tương tác E.
+- Chạy hoặc đi chậm bằng Shift.
+- Mở túi đồ với Tab.
+- Mở nhật ký điều tra bằng J.
+- Sử dụng vật phẩm từ túi đồ hoặc khi tương tác.
+- Có thể quan sát và kiểm tra các vật thể trong môi trường.
+- Có trạng thái khóa điều khiển hợp lý khi đối thoại hoặc hoạt cảnh.
+
+Nhân vật cần có hoạt ảnh đi, đứng, tương tác, phản ứng sợ hãi và những trạng thái đặc biệt.
+
+### 6.2. Sổ tay điều tra
+
+Thiết kế một cuốn sổ ghi chép tự động lưu:
+
+- Nhân vật và lời khai.
+- Những địa điểm đã khám phá.
+- Truyền thuyết đô thị.
+- Chứng cứ tìm được.
+- Các sự kiện chưa được giải thích.
+- Những giả thuyết của nhân vật chính.
+
+Người chơi có thể ghép hai hoặc nhiều chứng cứ để tạo kết luận mới.
+
+Những kết luận sai có thể được giữ lại và dẫn đến các cách hiểu khác nhau, nhưng không được khiến game bế tắc vĩnh viễn.
+
+### 6.3. Hệ thống ký ức
+
+Tạo cơ chế "Memory Fragments" độc đáo.
+
+Một số ký ức xuất hiện dưới dạng những phân cảnh pixel mờ nhạt.
+
+Người chơi phải khôi phục ký ức qua âm thanh, đồ vật và các lựa chọn đối thoại.
+
+Ký ức có thể sai lệch vì cảm xúc, thời gian hoặc sự can thiệp từ người khác.
+
+Mỗi mảnh ký ức có thể thay đổi những chi tiết nhỏ trong thế giới hiện tại.
+
+Hệ thống phải có quy tắc rõ ràng, không được tùy tiện sửa đổi thông tin chỉ để tạo twist.
+
+### 6.4. Hệ thống trạng thái tâm lý
+
+Không sử dụng thanh "Sanity" đơn giản theo kiểu càng thấp càng xuất hiện ảo giác.
+
+Thay vào đó, xây dựng ba yếu tố:
+
+**Fear:** Phản ứng sợ hãi tức thời, ảnh hưởng đến âm thanh, độ ổn định hình ảnh và khả năng tập trung.
+
+**Guilt:** Cảm giác tội lỗi từ những lựa chọn, ảnh hưởng đến lời thoại nội tâm và cách Ren hồi tưởng quá khứ.
+
+**Clarity:** Mức độ hiểu biết thực tế, được nâng cao khi người chơi có đủ chứng cứ và kết luận hợp lý.
+
+Chúng không đại diện cho chẩn đoán tâm thần và không được dùng để kỳ thị người có vấn đề sức khỏe tâm lý.
+
+Không để trạng thái tâm lý tạo ra những màn chơi bất khả thi.
+
+### 6.5. Các câu đố
+
+Thiết kế tối thiểu 25 câu đố thực sự khác nhau, được phân bố hợp lý.
+
+Các dạng câu đố có thể gồm:
+
+- Âm thanh và nhịp gõ.
+- Mật mã trên giấy.
+- Sắp xếp trình tự các sự kiện.
+- Đối chiếu lời khai.
+- Giải mã tín hiệu radio.
+- Chuyển đổi ánh sáng và bóng tối.
+- Khôi phục băng ghi âm.
+- Thay đổi vị trí gương.
+- Vòng lặp không gian.
+- Lựa chọn đạo đức.
+- Sử dụng vật phẩm theo ngữ cảnh.
+- Khôi phục ký ức.
+- Tìm điểm khác biệt giữa hai phiên bản của cùng địa điểm.
+
+Mỗi câu đố phải có logic nội tại, manh mối công bằng, lời giải xác định và hậu quả rõ ràng.
+
+Không sử dụng ngẫu nhiên để tạo cảm giác khó nếu không có lý do thiết kế.
+
+Cần có hệ thống gợi ý ba cấp độ và tùy chọn bỏ qua câu đố sau nhiều lần thất bại, dành cho người muốn tập trung vào cốt truyện.
+
+### 6.6. Kinh dị tâm lý
+
+Ưu tiên:
+
+- Không gian quen thuộc nhưng sai lệch.
+- Tiếng bước chân phát ra ở nơi không có ai.
+- Những chi tiết thay đổi rất nhỏ.
+- Cảnh vật xuất hiện khác khi quay lại.
+- Nhân vật phụ có những lời thoại mâu thuẫn.
+- Khoảng im lặng kéo dài có chủ đích.
+- Những sự kiện bất thường đôi khi không được giải thích ngay.
+- Hiệu ứng chuyển cảnh khéo léo giữa hiện tại và quá khứ.
+- Những khoảnh khắc bình yên khiến người chơi tạm quên nỗi sợ.
+
+Jumpscare phải hiếm, hợp lý, không dùng âm thanh quá lớn gây khó chịu.
+
+Cho phép điều chỉnh mức độ hiệu ứng nhấp nháy, rung màn hình và âm thanh đột ngột.
+
+Không lạm dụng các màn rượt đuổi. Mỗi màn truy đuổi phải có mục đích trong cốt truyện và ít nhất một cơ chế độc đáo.
+
+## 7. HỆ THỐNG NHÂN VẬT VÀ ĐỐI THOẠI
+
+Tạo ít nhất 12 nhân vật có tên, lịch sử, động cơ và vai trò riêng.
+
+Một số nhân vật cần có những phẩm chất mâu thuẫn:
+
+- Người tốt từng đưa ra lựa chọn hèn nhát.
+- Người đáng nghi lại là người bảo vệ bí mật vì một lý do nhân đạo.
+- Người gây tổn thương cũng có quá khứ đau đớn, nhưng điều đó không xóa trách nhiệm của họ.
+- Một nhân chứng nhớ chính xác sự kiện nhưng hiểu sai động cơ.
+- Một nhân chứng nói dối nhằm bảo vệ người khác.
+- Một nhân vật tưởng chỉ xuất hiện thoáng qua lại có vai trò then chốt.
+
+Không sử dụng đối thoại dài lê thê để truyền tải tất cả thông tin.
+
+Hãy kể chuyện bằng môi trường, đồ vật, âm nhạc, sự vắng mặt của nhân vật và những chi tiết lặp lại.
+
+Lời thoại phải tự nhiên, tiết chế và có chiều sâu.
+
+Có thể xen những khoảnh khắc hài hước đời thường để tạo tương phản cảm xúc, nhưng không phá hỏng bầu không khí hoặc chế giễu bi kịch.
+
+Mỗi nhân vật chính cần có chân dung pixel, biểu cảm, thoại riêng và thay đổi thái độ theo các lựa chọn của người chơi.
+
+## 8. NHIỀU KẾT THÚC VÀ HẬU QUẢ LỰA CHỌN
+
+Game phải có ít nhất bốn kết thúc hoàn chỉnh:
+
+**Ending A: The Convenient Truth**
+
+Người chơi chấp nhận một lời giải thích dễ chịu nhưng không đầy đủ. Thị trấn trở lại bình thường, song những câu hỏi quan trọng vẫn chưa được trả lời.
+
+**Ending B: The Price of Memory**
+
+Ren khám phá phần lớn sự thật nhưng phải đối mặt với hậu quả từ lựa chọn của mình. Không có chiến thắng tuyệt đối.
+
+**Ending C: The Forgotten Voices**
+
+Kết thúc chính, yêu cầu người chơi thực sự quan sát, lắng nghe và kết nối đầy đủ các chứng cứ.
+
+Sự thật được công nhận nhưng không thể đảo ngược mọi mất mát.
+
+**Ending D: The Sixth Name**
+
+Kết thúc bí mật, chỉ mở khóa khi hoàn thành những điều kiện đặc biệt liên quan đến các chi tiết bị bỏ qua trong nhiều chương.
+
+Không đơn giản xem đây là kết thúc "tốt nhất". Nó phải đặt ra một câu hỏi đạo đức mới khiến người chơi phải suy ngẫm.
+
+Các lựa chọn nhỏ xuyên suốt trò chơi phải thực sự đóng góp vào kết thúc, không chỉ quyết định bằng một lựa chọn cuối cùng.
+
+Sau khi hoàn thành game, mở khóa phần lưu trữ các tài liệu và cho phép xem lại những manh mối đã được đặt từ đầu.
+
+## 9. ĐỒ HỌA VÀ THIẾT KẾ MỸ THUẬT
+
+### Phong cách
+
+- Pixel art 2D nguyên bản, đơn giản nhưng giàu cảm xúc.
+- Góc nhìn top-down 3/4, một số đoạn chuyển sang side-view.
+- Độ phân giải nội bộ đề xuất: 320 × 180 hoặc 480 × 270.
+- Hiển thị mở rộng bằng integer scaling để pixel sắc nét.
+- Hoạt ảnh nhân vật khoảng 4–8 frame cho các hành động cơ bản.
+- Nét vẽ rõ ràng, màu sắc hạn chế, chú trọng bố cục.
+
+Phong cách gợi cảm giác RPG kinh dị Nhật Bản cổ điển, nhưng không sao chép nhân vật, bản đồ, cốt truyện hoặc sprite từ tác phẩm có bản quyền.
+
+### Ánh sáng
+
+- Ánh sáng đèn đường vàng nhạt.
+- Đèn huỳnh quang lạnh trong trường học.
+- Ánh trăng xuyên qua cửa sổ.
+- Đèn pin hình nón.
+- Bóng đổ mềm hoặc bóng giả phù hợp với pixel art.
+- Hiệu ứng mưa, sương mù và bụi.
+- Vùng tối che giấu chi tiết có chủ đích.
+
+Cho phép bật hoặc tắt các hiệu ứng nặng.
+
+### Hiệu ứng đặc biệt
+
+- CRT filter có thể tùy chỉnh.
+- VHS distortion trong các đoạn ký ức.
+- Film grain nhẹ.
+- Chromatic aberration chỉ dùng khi hợp lý.
+- Palette shift để thay đổi cảm xúc.
+- Nhiễu màn hình trong những cảnh siêu nhiên.
+- Camera zoom chậm và chuyển cảnh cinematic.
+
+Hạn chế các hiệu ứng làm mờ pixel hoặc khiến chữ khó đọc.
+
+### Môi trường
+
+Tạo các bản đồ có tính liên kết, gồm:
+
+1. Ga tàu Tsukimori.
+2. Khu phố thương mại cũ.
+3. Nhà nhân vật chính.
+4. Trường tiểu học bỏ hoang.
+5. Phòng khám.
+6. Khu nhà công nhân.
+7. Nhà ga phụ.
+8. Đường hầm trên núi.
+9. Ngôi làng bí ẩn.
+10. Trung tâm lưu trữ.
+11. Bệnh viện cũ.
+12. Không gian ký ức cuối cùng.
+
+Không tạo bản đồ rộng nhưng trống rỗng. Ưu tiên những môi trường nhỏ, giàu tương tác, bí mật và cách kể chuyện bằng hình ảnh.
+
+## 10. ÂM THANH VÀ NHẠC NỀN
+
+Âm nhạc có vai trò quan trọng ngang với đồ họa.
+
+Định hướng:
+
+- Ambient kinh dị tối giản.
+- Piano buồn với ít nốt.
+- Tiếng dây đàn ngân xa.
+- Âm thanh máy cassette.
+- Tiếng mưa, gió, ve và côn trùng.
+- Âm thanh đường ray và tiếng tàu.
+- Tiếng đèn điện rung.
+- Những giai điệu trẻ con bị thiếu nốt hoặc thay đổi nhịp.
+
+Mỗi chương có một leitmotif riêng, nhưng các chủ đề phải có liên hệ âm nhạc để người chơi dần nhận ra chúng là những biến thể của cùng một giai điệu.
+
+Đặc biệt, tạo một bản nhạc chủ đề mang tên "Sixth Name" chỉ hoàn chỉnh khi đến phần kết.
+
+Không cần nhạc nền liên tục. Sự im lặng phải được sử dụng như một công cụ kể chuyện.
+
+Âm lượng tổng, nhạc, hiệu ứng và lời thoại phải điều chỉnh độc lập.
+
+Không sử dụng nhạc hoặc tài nguyên có bản quyền khi chưa được cấp phép.
+
+Nếu có công cụ tạo âm thanh, hãy tạo tài nguyên thực tế. Nếu không có, có thể tổng hợp các âm thanh đơn giản bằng mã và phải ghi rõ tài nguyên nào chưa được hoàn thiện.
+
+## 11. GIAO DIỆN VÀ TRẢI NGHIỆM NGƯỜI DÙNG
+
+Thiết kế menu chính tối giản.
+
+Nền menu: Một căn phòng học tối, cạnh cửa sổ có chiếc bàn trống.
+
+Sau một khoảng thời gian không tương tác, một bóng người có thể thoáng xuất hiện gần cửa.
+
+Các mục:
+
+- New Game
+- Continue
+- Chapters
+- Settings
+- Credits
+- Exit
+
+Hệ thống gồm:
+
+- Lưu và tải game.
+- Tự động lưu tại checkpoint.
+- Nhiều ô lưu thủ công.
+- Nhật ký hội thoại.
+- Tùy chỉnh ngôn ngữ.
+- Fullscreen/windowed.
+- Tùy chỉnh phím.
+- Tùy chỉnh âm lượng.
+- Tùy chọn hỗ trợ khả năng tiếp cận.
+- Điều chỉnh hiệu ứng hình ảnh.
+- Tạm dừng và tiếp tục.
+
+Giao diện trong game phải gọn gàng, không che mất các chi tiết môi trường.
+
+Hỗ trợ Unicode, đặc biệt là tiếng Việt có dấu và chữ Nhật.
+
+## 12. YÊU CẦU KỸ THUẬT
+
+Ưu tiên Python 3.12+ kết hợp Pygame CE hoặc một framework 2D có thể đóng gói độc lập thành ứng dụng Windows.
+
+Có thể dùng các thư viện xử lý ảnh, âm thanh hoặc tính toán khác nếu thật sự cần thiết.
+
+Không sử dụng Unity hoặc Unreal.
+
+Không yêu cầu người dùng mở dự án bằng trình biên tập game để chơi.
+
+Khi đóng gói, người dùng cuối phải có thể mở trực tiếp file .exe mà không cần cài Python hay các thư viện lập trình.
+
+Cho phép sử dụng PyInstaller hoặc công cụ đóng gói phù hợp.
+
+**Yêu cầu triển khai:**
+
+- Chia source code thành các module và class hợp lý.
+- Dùng một Game State Manager quản lý menu, bản đồ, hội thoại, màn chơi và các ending.
+- Hệ thống bản đồ dựa trên tilemap.
+- Collision detection chuẩn, không xuyên tường.
+- Camera di chuyển mượt mà.
+- Hỗ trợ animation, sprite sheet.
+- Hệ thống sự kiện theo trigger.
+- Đối thoại dựa trên dữ liệu JSON hoặc YAML.
+- Điều kiện câu đố và nhiệm vụ được lưu bằng dữ liệu có cấu trúc.
+- Hệ thống save/load lưu đủ trạng thái nhiệm vụ, vật phẩm, lựa chọn và các trigger đã kích hoạt.
+- Quản lý tài nguyên tập trung.
+- Log lỗi và xử lý trường hợp thiếu file hoặc dữ liệu không hợp lệ.
+- Không phụ thuộc Internet để chơi.
+- Không yêu cầu API trả phí.
+- Tối ưu tránh vòng lặp vô hạn, memory leak hoặc tạo texture mỗi frame.
+
+Tối ưu cho cấu hình phổ thông và laptop sử dụng iGPU, với mục tiêu chạy ổn định 60 FPS ở độ phân giải nội bộ phù hợp. Có thể giảm hiệu ứng để chạy trên máy yếu.
+
+## 13. TÀI NGUYÊN GAME
+
+Hãy tạo hoặc cung cấp đầy đủ:
+
+- Sprite nhân vật.
+- Sprite sheet hoạt ảnh.
+- Tilemap môi trường.
+- Tileset Nhật Bản.
+- Sprite đồ vật tương tác.
+- Hiệu ứng hình ảnh.
+- Hình giao diện.
+- Font chữ có giấy phép phù hợp.
+- Âm thanh và nhạc nền.
+- Dữ liệu hội thoại.
+- Dữ liệu câu đố.
+- Bản đồ và collision.
+- File cấu hình.
+- Save mẫu nếu cần.
+- Biểu tượng ứng dụng.
+
+Các placeholder chỉ được dùng trong giai đoạn phát triển và phải được thay thế hoặc công khai ghi rõ trước khi coi game hoàn thiện.
+
+Không sử dụng các đường dẫn giả tới file không tồn tại.
+
+Nếu tạo tài nguyên bằng thuật toán, hãy lưu chúng thành file có thể sử dụng thực tế.
+
+## 14. CẤU TRÚC DỰ ÁN
+
+Tổ chức dự án rõ ràng, ví dụ:
+
+WasureraretaKoe/
+
+- main.py
+- requirements.txt
+- README.md
+- build_windows.bat
+- config/
+- core/
+- systems/
+- entities/
+- scenes/
+- chapters/
+- puzzles/
+- dialogue/
+- data/
+- assets/
+  - sprites/
+  - tilesets/
+  - maps/
+  - backgrounds/
+  - ui/
+  - audio/
+  - music/
+  - fonts/
+- saves/
+- tests/
+- dist/
+
+Có thể điều chỉnh cấu trúc nếu kiến trúc thực tế tốt hơn.
+
+Phải có hướng dẫn rõ cách chạy source, cách test và cách tạo bản Windows độc lập.
+
+Nếu môi trường AI có khả năng thực thi lệnh và đóng gói Windows, hãy thực hiện build, kiểm tra rồi cung cấp sản phẩm.
+
+Nếu môi trường hiện tại không hỗ trợ build Windows, phải nói rõ và tạo đầy đủ script build để người dùng tự thực thi trên Windows. Không được tuyên bố đã tạo hoặc kiểm thử file .exe khi chưa thực hiện.
+
+## 15. QUY TRÌNH PHÁT TRIỂN BẮT BUỘC
+
+Không viết một lượng lớn mã thiếu kiểm thử rồi tuyên bố hoàn thành.
+
+Triển khai theo các giai đoạn:
+
+**Giai đoạn 1: Game Design Document**
+
+Xây dựng tài liệu thiết kế đầy đủ về cốt truyện, nhân vật, quy luật siêu nhiên, bản đồ, câu đố, lựa chọn, diễn biến và ending.
+
+Đặc biệt cần tạo một "Truth Matrix" nội bộ gồm:
+
+- Sự thật khách quan của từng sự kiện.
+- Điều mỗi nhân vật thực sự biết.
+- Điều mỗi nhân vật tin là đúng.
+- Điều mỗi nhân vật nói ra.
+- Manh mối người chơi có thể tìm được.
+- Thời điểm tiết lộ thông tin.
+
+Bảng này giúp tránh các lỗ hổng logic và các cú twist thiếu chuẩn bị.
+
+**Giai đoạn 2: Vertical Slice**
+
+Tạo một phần chơi hoàn chỉnh dài khoảng 20–30 phút bao gồm menu, khám phá, giải đố, đối thoại, một hiện tượng kinh dị, save/load và kết thúc phân đoạn.
+
+Phần này phải đại diện cho chất lượng mục tiêu của game.
+
+**Giai đoạn 3: Gameplay Systems**
+
+Phát triển và kiểm thử các cơ chế cốt lõi thành các module có thể tái sử dụng.
+
+**Giai đoạn 4: Full Story Implementation**
+
+Hoàn thiện các chương, câu đố, nhân vật, bản đồ, phân cảnh và kết thúc.
+
+**Giai đoạn 5: Art & Audio Polish**
+
+Thay thế tài nguyên tạm, hoàn thiện ánh sáng, âm thanh, giao diện và chuyển cảnh.
+
+**Giai đoạn 6: QA và Packaging**
+
+Thực hiện kiểm thử và tạo bản phát hành.
+
+Nếu bị giới hạn thời gian, dung lượng đầu ra hoặc số lần sử dụng công cụ, ưu tiên hoàn thiện và kiểm thử một phần chơi độc lập có chất lượng trước. Sau đó mở rộng bằng cùng kiến trúc, không giả vờ đã hoàn thiện toàn bộ game.
+
+## 16. TIÊU CHUẨN CHẤT LƯỢNG
+
+Trò chơi phải đạt những tiêu chí sau:
+
+**Cốt truyện**
+
+Mọi bước ngoặt lớn đều có manh mối chuẩn bị.
+
+Không có nhân vật phản diện một chiều.
+
+Không lợi dụng đau khổ của nạn nhân chỉ để tạo cảm giác sốc.
+
+Không gán mọi hiện tượng siêu nhiên cho một lời giải thích duy nhất.
+
+**Gameplay**
+
+Mỗi chương có cơ chế hoặc cách kết hợp cơ chế riêng.
+
+Câu đố khó vì cần quan sát và suy luận, không khó vì thiếu thông tin.
+
+Không khóa tiến trình vì người chơi đã dùng nhầm một vật phẩm quan trọng.
+
+Không có nhiệm vụ không thể hoàn thành.
+
+**Kỹ thuật**
+
+Không crash trong quy trình chơi thông thường.
+
+Save/load hoạt động sau khi thoát và mở lại game.
+
+Đối thoại không xuất hiện chữ lỗi hoặc tràn khung.
+
+Bản đồ không bị hở tile hoặc sai collision.
+
+Không có tham chiếu tới tài nguyên bị thiếu.
+
+Cấu hình âm thanh và đồ họa được lưu đúng.
+
+**Trải nghiệm cảm xúc**
+
+Người chơi phải có thời gian tìm hiểu và gắn bó với nhân vật trước các bi kịch.
+
+Giữa những chương đáng sợ phải có các phân cảnh bình yên, nhân văn và đời thường.
+
+Kết thúc không chỉ giải đáp bí ẩn mà còn cho thấy hậu quả lâu dài của những sự kiện từng xảy ra.
+
+Khi hoàn thành game, người chơi có thể hiểu rằng:
+
+"Điều đáng sợ nhất không phải lúc một người chết đi, mà là khi sự tồn tại của họ bị người khác xem như chưa từng xảy ra."
+
+## 17. ĐẦU RA CUỐI CÙNG
+
+Hãy tạo một dự án hoàn chỉnh có thể sử dụng, gồm:
+
+1. Game Design Document.
+2. Kịch bản, hội thoại và hệ thống nhiệm vụ.
+3. Mã nguồn đầy đủ, được tổ chức rõ ràng.
+4. Tài nguyên đồ họa thực sự.
+5. Âm thanh và nhạc nền hoặc quy trình tạo chúng.
+6. Bản đồ, câu đố và dữ liệu trò chơi.
+7. Hệ thống save/load hoạt động.
+8. Hướng dẫn chạy và build.
+9. Các bài kiểm thử và báo cáo kết quả kiểm thử.
+10. File ZIP chứa dự án và bản Windows .exe nếu môi trường cho phép đóng gói.
+
+Tuyệt đối không thay sản phẩm bằng một bản mô tả ý tưởng rồi gọi đó là game hoàn chỉnh.
+
+Không viết mã giả thay cho các tính năng bắt buộc.
+
+Không giả định thư viện, file hoặc tài nguyên đã tồn tại nếu chưa tạo chúng.
+
+Không tự ý loại bỏ các cơ chế quan trọng khi gặp khó khăn kỹ thuật. Nếu cần thu hẹp phạm vi, phải ghi rõ những gì đã triển khai và những gì chưa hoàn thành.
+
+**ƯU TIÊN CAO NHẤT**
+
+Trò chơi không nhất thiết phải đẹp về số lượng pixel.
+
+Nó phải đẹp vì cách ánh sáng rọi qua khung cửa, vì âm thanh của một chuyến tàu muộn, vì một căn phòng không còn ai trở về, và vì những câu chuyện mà không một người nào muốn kể lại.
+
+Hãy xây dựng một trò chơi khiến người chơi sợ bóng tối lúc bắt đầu, nhưng khi màn hình kết thúc hiện lên, điều khiến họ day dứt nhất lại là những con người từng sống trong ánh sáng.
+
+**BẮT ĐẦU TRIỂN KHAI DỰ ÁN.**

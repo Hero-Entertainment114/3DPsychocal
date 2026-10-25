@@ -1,0 +1,898 @@
+# WASURERARETA KOE: THE FORGOTTEN VOICES
+## MASTER PROMPT V2: PSYCHOLOGICAL HORROR, SOCIAL DRAMA & INTERCONNECTED MYSTERY JRPG
+
+Hãy sử dụng toàn bộ bản thiết kế game "Wasurerareta Koe" đã cung cấp trước đó làm nền tảng, đồng thời áp dụng tất cả yêu cầu nâng cấp dưới đây.
+
+Nếu có mâu thuẫn giữa hai phiên bản, **ưu tiên yêu cầu trong V2**.
+
+Đây không còn là một trò chơi giải đố kinh dị ngắn. Hãy phát triển nó thành một tác phẩm JRPG kể chuyện tương tác với quy mô lớn, tập trung vào trải nghiệm sống, mối quan hệ giữa con người, bí mật tập thể, bi kịch xã hội và những truyền thuyết đô thị Nhật Bản.
+
+Các yêu cầu định lượng sau đây là bắt buộc:
+
+- Thời lượng tuyến truyện chính ở tốc độ chơi nhanh nhất, không dùng skip hoặc exploit: **9–12 giờ**.
+- Người chơi khám phá kỹ các nhiệm vụ phụ và bí mật: khoảng **15–20 giờ**.
+- Ít nhất **100 câu đố có logic liên kết**, được thiết kế thủ công.
+- Ít nhất **25 nhân vật có tên**, cá tính, hoàn cảnh và vai trò riêng.
+- Ít nhất **5 kết thúc có ý nghĩa khác nhau**.
+- Kịch bản hội thoại có tổng dung lượng tối thiểu **3.000 từ tiếng Việt**, không tính lời mô tả, hướng dẫn, ghi chú hoặc mã nguồn. Đây chỉ là mức sàn kỹ thuật, không phải giới hạn độ dài. Để bảo đảm thời lượng 9–12 giờ và đủ đất phát triển nhân vật, hãy hướng tới 25.000–40.000 từ hội thoại nếu phạm vi sản xuất cho phép.
+- Mỗi cuộc hội thoại quan trọng đối với cốt truyện phải chứa ít nhất **2 manh mối có liên hệ logic**, nhưng không thông báo cho người chơi rằng đó là manh mối.
+- Toàn bộ hình ảnh trong game phải được tạo bằng **pixel art thực sự**, bao gồm cả menu, vật phẩm, nhân vật, cutscene và giao diện.
+- Có yếu tố máu me, thương tích và jumpscare nhưng sử dụng có kiểm soát, không biến game thành một trải nghiệm chỉ tập trung vào bạo lực.
+- Cốt truyện phải ưu tiên tính nguyên bản, không đơn thuần kể lại các truyền thuyết nổi tiếng.
+
+---
+
+# I. ĐỊNH HƯỚNG MỚI: MỘT CUỘC ĐỜI BỊ CUỐN VÀO ÁC MỘNG
+
+## 1. Nhân vật chính không phải thám tử
+
+Giữ nhân vật chính Mizuhara Ren, 24 tuổi.
+
+Ren chỉ là một nhân viên bình thường tại một công ty vận chuyển ở Tokyo.
+
+Anh không có khả năng chiến đấu đặc biệt, không được huấn luyện điều tra, không hiểu những hiện tượng siêu nhiên và cũng không có kiến thức sâu về truyền thuyết đô thị.
+
+Anh có những vấn đề rất đời thường:
+
+- Một công việc không ổn định.
+- Một khoản nợ gia đình.
+- Những mối quan hệ ngày càng xa cách.
+- Một người bạn thời thơ ấu đã không liên lạc nhiều năm.
+- Những ký ức khó chịu về quê nhà.
+- Một cảm giác tội lỗi mà chính anh cũng không biết xuất phát từ đâu.
+
+Ren phải trở về Tsukimori vì mẹ anh nhập viện và gia đình cần người giải quyết những giấy tờ liên quan đến căn nhà cũ.
+
+Lá thư kỳ lạ trong phần mở đầu vẫn tồn tại, nhưng nó không được trở thành lý do duy nhất khiến Ren trở về.
+
+Ban đầu, anh chỉ định ở lại ba ngày.
+
+Người chơi được trải nghiệm cuộc sống bình thường của Ren trước khi các hiện tượng kinh dị xuất hiện.
+
+Ngày đầu tiên cần có:
+
+- Cuộc trò chuyện với mẹ.
+- Gặp lại một người bạn cũ.
+- Đi mua đồ tại cửa hàng tiện lợi.
+- Trở về ngôi nhà thời thơ ấu.
+- Ăn một bữa cơm.
+- Nghe tin tức từ chiếc tivi cũ.
+- Đi bộ qua thị trấn.
+- Nhận ra một vài người quen đã thay đổi.
+- Phát hiện những sự thật nhỏ khiến anh cảm thấy không thoải mái.
+
+Các hoạt động ban đầu không phải nhiệm vụ phụ vô nghĩa. Chúng phải xây dựng tình cảm với nhân vật và gieo những manh mối sẽ trở nên quan trọng về sau.
+
+Ren không được tự nhiên hành động như thám tử.
+
+Khi gặp chuyện bất thường, phản ứng đầu tiên của anh phải hợp lý: sợ hãi, phủ nhận, tìm cách rời đi, gọi người giúp đỡ hoặc cố gắng giải thích mọi thứ bằng lý trí.
+
+Chỉ khi hoàn cảnh, trách nhiệm và các mối quan hệ buộc anh tiếp tục, Ren mới dần chủ động tìm hiểu.
+
+Mục đích của Ren không phải "giải mã 5 truyền thuyết đô thị".
+
+Mục đích của anh thay đổi qua từng giai đoạn:
+
+1. Hoàn thành việc gia đình và trở lại Tokyo.
+2. Tìm hiểu vì sao người quen gặp nguy hiểm.
+3. Bảo vệ những người anh yêu quý.
+4. Tìm cách thoát khỏi chuỗi sự kiện bất thường.
+5. Đối mặt với điều bản thân từng làm.
+6. Quyết định phải sống thế nào sau khi biết sự thật.
+
+## 2. JRPG nhập vai và trải nghiệm trực tiếp
+
+Thiết kế theo hướng narrative JRPG cổ điển, không sử dụng hệ thống đánh quái và lên cấp truyền thống nếu nó không phục vụ cốt truyện.
+
+Người chơi phải cảm thấy đang sống trong Tsukimori chứ không chỉ điều khiển một nhân vật di chuyển từ câu đố này sang câu đố khác.
+
+Cần có:
+
+- Chu kỳ ngày, chiều, tối, đêm theo tiến trình cốt truyện.
+- NPC có lịch sinh hoạt riêng.
+- Những hoạt động đời thường.
+- Các sự kiện chỉ xuất hiện trong điều kiện nhất định.
+- Những cuộc gặp ngẫu nhiên được thiết kế thủ công.
+- Các mối quan hệ phát triển qua thời gian.
+- Nhân vật có thể chủ động tìm gặp Ren.
+- Những nhân vật có thể vắng mặt hoặc thay đổi hành vi vì lựa chọn trước đó.
+- Cutscene sử dụng sprite, camera và hiệu ứng môi trường.
+- Những khoảnh khắc người chơi mất quyền kiểm soát trong thời gian ngắn, nhưng không lạm dụng.
+
+Thỉnh thoảng cho người chơi điều khiển các nhân vật khác trong những đoạn ngắn để trải nghiệm sự kiện dưới góc nhìn riêng.
+
+Các cảnh này không chỉ kể lại sự kiện đã biết. Chúng phải cung cấp thông tin mới và đôi khi khiến người chơi nghi ngờ nhận thức của chính mình.
+
+---
+
+# II. SOCIAL DRAMA: XÃ HỘI MỚI LÀ MÊ CUNG LỚN NHẤT
+
+Bổ sung social drama như một trụ cột ngang hàng với kinh dị và giải đố.
+
+Các bi kịch xã hội phải được thể hiện bằng những câu chuyện cụ thể, với nhân vật có cuộc sống riêng.
+
+Không dùng những vấn đề xã hội như danh sách chủ đề để giáo huấn.
+
+## Các tuyến social drama bắt buộc
+
+### 1. Bắt nạt học đường và sự đồng lõa thầm lặng
+
+Một nữ sinh từng bị cả lớp xa lánh.
+
+Một người bắt nạt có thể từng bị gia đình bạo hành.
+
+Một giáo viên biết sự thật nhưng lựa chọn bảo vệ danh tiếng trường.
+
+Một học sinh chứng kiến nhưng không dám lên tiếng.
+
+Không được đánh đồng hoàn cảnh khó khăn với sự vô tội.
+
+### 2. Áp lực gia đình và thành tích
+
+Một gia đình yêu thương con nhưng không biết cách thể hiện.
+
+Một học sinh thành tích xuất sắc lại cảm thấy mình chỉ có giá trị khi đạt điểm cao.
+
+Một phụ huynh cố tình phủ nhận tổn thương của con để bảo vệ hình ảnh gia đình.
+
+### 3. Kinh tế, thất nghiệp và sự tan vỡ
+
+Sự suy thoái kinh tế ảnh hưởng đến từng gia đình theo cách khác nhau.
+
+Một công nhân mất việc phải che giấu điều đó với con.
+
+Một chủ doanh nghiệp đứng trước lựa chọn giữa bảo vệ công ty và bảo vệ người lao động.
+
+Một người từng có địa vị nay bị chính cộng đồng quay lưng.
+
+### 4. Tin đồn và bạo lực tập thể
+
+Vào năm 1998, tin đồn có thể lan truyền qua:
+
+- Báo địa phương.
+- Truyền hình.
+- Điện thoại.
+- Thư tay.
+- Lời kể tại trường học.
+- Những cuộc gặp trong khu dân cư.
+
+Tin đồn phải trở thành cơ chế gameplay.
+
+Một lời nói của Ren có thể bị truyền lại theo những phiên bản khác nhau.
+
+Người chơi không thể kiểm soát hoàn toàn cách cộng đồng hiểu và kể lại câu chuyện.
+
+### 5. Định kiến xã hội và sự khác biệt
+
+Xây dựng những câu chuyện về người không phù hợp với kỳ vọng của cộng đồng.
+
+Không xem sự khác biệt của họ như yếu tố kinh dị.
+
+Điều đáng sợ nằm ở cách một tập thể có thể cô lập và xóa bỏ một con người.
+
+### 6. Đạo đức của truyền thông
+
+Một nhà báo có thể công bố sự thật nhưng vô tình phá hủy cuộc đời người vô tội.
+
+Một tờ báo có thể đưa tin chính xác về một sự kiện nhưng cố tình lược bỏ bối cảnh.
+
+Người chơi phải đối diện với sự khác biệt giữa:
+
+"Sự thật cần được biết."
+
+và
+
+"Mọi thông tin đều phải được công khai."
+
+### 7. Sự im lặng giữa những người thân
+
+Nhiều gia đình Tsukimori không hề thiếu tình thương.
+
+Họ thiếu khả năng nói ra những điều quan trọng.
+
+Tạo những cuộc hội thoại nơi câu nói bình thường lại chứa ý nghĩa hoàn toàn khác khi người chơi biết được quá khứ.
+
+Ví dụ, một người mẹ thường hỏi:
+
+"Con đã ăn gì chưa?"
+
+Ở đầu game, đó chỉ là lời quan tâm quen thuộc.
+
+Về cuối game, người chơi có thể phát hiện bà từng dùng chính câu nói này để xác nhận đứa trẻ của mình vẫn còn sống sau một sự kiện.
+
+Không sử dụng ví dụ này như lời giải bắt buộc. Hãy sáng tạo nhiều chi tiết tinh tế có sức nặng tương tự.
+
+---
+
+# III. HỆ THỐNG 25 NHÂN VẬT
+
+Tạo tối thiểu 25 nhân vật thực sự có vai trò trong câu chuyện, không tính các NPC chỉ xuất hiện để trang trí.
+
+Sử dụng danh sách nền tảng sau, được phép điều chỉnh tên, tuổi và quan hệ để phù hợp với cốt truyện.
+
+| STT | Nhân vật | Vai trò ban đầu |
+|---|---|---|
+| 01 | Mizuhara Ren | Nhân viên vận chuyển, nhân vật chính |
+| 02 | Mizuhara Sachiko | Mẹ của Ren |
+| 03 | Mizuhara Haruto | Cha Ren, đã rời gia đình |
+| 04 | Akiyama Yui | Bạn thời thơ ấu của Ren |
+| 05 | Akiyama Sora | Em trai Yui |
+| 06 | Tachibana Natsuki | Y tá tại bệnh viện |
+| 07 | Fujimoto Kaori | Giáo viên tiểu học cũ |
+| 08 | Fujimoto Rei | Con gái Kaori |
+| 09 | Shimizu Haruka | Người từng bị bắt nạt |
+| 10 | Kuroda Masato | Cựu học sinh cùng lớp Ren |
+| 11 | Kuroda Emi | Em gái Masato |
+| 12 | Sakurai Tomoko | Chủ cửa hàng tiện lợi |
+| 13 | Sakurai Yuji | Chồng Tomoko, công nhân thất nghiệp |
+| 14 | Nakamura Hiroshi | Trưởng ga tàu |
+| 15 | Nakamura Ai | Con gái Hiroshi |
+| 16 | Hasegawa Rika | Phóng viên báo địa phương |
+| 17 | Mori Kazuo | Cảnh sát khu vực |
+| 18 | Mori Chihiro | Vợ Kazuo |
+| 19 | Takeda Shinji | Cựu nhân viên dự án Kiroku |
+| 20 | Takeda Akane | Người thân của Shinji |
+| 21 | Ogawa Fumiko | Người phụ nữ cao tuổi sống một mình |
+| 22 | Hayashi Daichi | Công nhân nhà máy cũ |
+| 23 | Hayashi Mei | Con gái Daichi |
+| 24 | Tsukishima Mio | Một người không xuất hiện trong hồ sơ chính thức |
+| 25 | Asakura Naoto | Người quản lý kho lưu trữ |
+
+Mỗi nhân vật cần có hồ sơ riêng gồm:
+
+- Tuổi và nghề nghiệp.
+- Ngoại hình và thiết kế pixel.
+- Tính cách thể hiện ra bên ngoài.
+- Nỗi sợ và mong muốn riêng.
+- Mối quan hệ với các nhân vật khác.
+- Một bí mật cá nhân.
+- Một điều họ hiểu sai.
+- Một hành động từng gây hậu quả cho người khác.
+- Sự thay đổi qua từng chương.
+- Những điều kiện khiến họ tin tưởng hoặc xa lánh Ren.
+- Vai trò trong ít nhất một câu đố.
+- Ít nhất một mối liên hệ có ý nghĩa với bí mật tổng thể.
+
+Không phải mọi nhân vật đều phải là nạn nhân hoặc thủ phạm.
+
+Một số người đơn giản chỉ đang cố sống một cuộc đời tử tế giữa những hoàn cảnh khó khăn.
+
+Xây dựng mạng lưới quan hệ thay vì 25 câu chuyện tách biệt.
+
+Một bí mật của nhân vật A có thể ảnh hưởng đến gia đình B, sự nghiệp C và số phận D.
+
+Ít nhất 10 nhân vật phải có tuyến phát triển đáng kể và 5 nhân vật phải có ảnh hưởng trực tiếp đến các kết thúc.
+
+Không thể làm tất cả mọi người hài lòng chỉ bằng những lựa chọn "tốt bụng".
+
+---
+
+# IV. HỆ THỐNG 100 CÂU ĐỐ LIÊN KẾT
+
+Đây là yêu cầu trọng tâm.
+
+Không tạo 100 câu đố độc lập chỉ để đạt đủ số lượng.
+
+**Hãy tạo một mạng lưới 100 câu đố có quan hệ nhân quả, phụ thuộc dữ kiện và ảnh hưởng qua lại.**
+
+## Phân bổ tối thiểu
+
+| Phân đoạn | Số câu đố |
+|---|---:|
+| Prologue: Trở về Tsukimori | 8 |
+| Chương I: Hanako-san | 14 |
+| Chương II: Kuchisake-onna | 14 |
+| Chương III: Teke Teke | 14 |
+| Chương IV: Inunaki | 16 |
+| Chương V: Akai Heya | 16 |
+| Chương VI: Người thứ sáu | 18 |
+| **Tổng cộng** | **100** |
+
+Phân loại thành:
+
+- 35 câu đố quan sát và tương tác môi trường.
+- 20 câu đố logic, mật mã và cơ chế.
+- 20 câu đố suy luận về lời khai, quan hệ và sự kiện.
+- 15 câu đố kết nối dữ liệu giữa các chương.
+- 10 câu đố liên quan đến ký ức, lựa chọn và thế giới siêu nhiên.
+
+## Puzzle Dependency Graph
+
+Mỗi câu đố phải có ID duy nhất, từ P001 đến P100.
+
+Với mỗi câu đố, cung cấp dữ liệu:
+
+- ID.
+- Tên.
+- Chương.
+- Bối cảnh.
+- Mục tiêu.
+- Cơ chế.
+- Hai hoặc nhiều manh mối.
+- Điều kiện mở khóa.
+- Câu đố phụ thuộc.
+- Đáp án hoặc trạng thái hoàn thành.
+- Phần thưởng thông tin.
+- Tác động đến nhân vật hoặc thế giới.
+- Mức độ khó.
+- Gợi ý ba cấp.
+- Phương pháp kiểm thử.
+- Phương án phòng tránh softlock.
+
+Thiết kế ít nhất 30 mối liên kết xuyên chương.
+
+Ví dụ:
+
+P007: Người chơi phát hiện một bản ghi về chuyến tàu bị hủy.
+
+P021: Một nhân vật kể rằng họ từng gặp Ren trên chuyến tàu ấy.
+
+P043: Bảng lịch tàu cho thấy chuyến tàu thực tế không hoạt động hôm đó.
+
+P078: Băng ghi âm xác nhận người phát biểu đã nhầm ngày, nhưng không nhầm người.
+
+P096: Người chơi phải tìm hiểu sự kiện nào khiến ba nguồn thông tin vừa mâu thuẫn vừa có phần đúng.
+
+Không để quan hệ chỉ là hình thức. Mỗi liên kết phải làm thay đổi cách hiểu, cách giải hoặc kết quả của câu đố khác.
+
+## Quy tắc liên kết
+
+- Một số câu đố đầu game chỉ có lời giải hoàn chỉnh ở cuối game.
+- Một số vật phẩm có thể được sử dụng trong nhiều chương.
+- Một số mật mã ban đầu được giải theo cách hợp lý nhưng chưa đầy đủ.
+- Một câu đố có thể tiết lộ thông tin khiến người chơi muốn quay lại địa điểm cũ.
+- Một số câu đố có nhiều lời giải hợp lệ, dẫn tới hậu quả khác nhau.
+- Những câu đố phụ quan trọng có thể mở khóa các đoạn hội thoại và kết thúc đặc biệt.
+- Không ép người chơi nhớ thủ công hàng trăm chi tiết mà không có công cụ ghi chép phù hợp.
+
+Không khóa tiến trình chính vì người chơi bỏ sót câu đố tùy chọn.
+
+Tạo bản đồ phụ thuộc không có chu kỳ khóa cứng.
+
+Đối với những chu trình mang chủ đích kể chuyện, phải có ít nhất một lối vào hợp lệ.
+
+Tạo công cụ kiểm thử tự động để kiểm tra sự phụ thuộc, khả năng hoàn thành và tính nhất quán của các câu đố.
+
+---
+
+# V. ĐỐI THOẠI: MỌI CUỘC TRÒ CHUYỆN ĐỀU CÓ HAI TẦNG NGHĨA
+
+Kịch bản hội thoại toàn game bắt buộc dài ít nhất 3.000 từ tiếng Việt, nhưng nên mở rộng đủ để mang lại chiều sâu cho 25 nhân vật và thời lượng chơi đã yêu cầu.
+
+Không được kéo dài hội thoại bằng các câu lặp lại hoặc độc thoại không cần thiết.
+
+## Quy tắc hai manh mối
+
+Mỗi cuộc hội thoại quan trọng phải cài tối thiểu hai manh mối liên quan đến:
+
+- Một sự kiện.
+- Một nhân vật khác.
+- Một địa điểm.
+- Một câu đố.
+- Một ký ức.
+- Hoặc sự thật tổng thể.
+
+Người chơi không được thông báo trực tiếp rằng mình vừa nhận manh mối.
+
+Không hiển thị "Clue Discovered" đối với các chi tiết tinh tế này.
+
+Thông tin chỉ nên được ghi nhận kín trong hệ thống dữ liệu, hoặc xuất hiện tự nhiên trong nhật ký sinh hoạt nếu hợp lý.
+
+Ví dụ:
+
+Yui: "Cậu vẫn không thích tiếng chuông trường à?"
+
+Ren: "Tớ có ghét nó bao giờ đâu?"
+
+Yui: "Lạ thật. Hồi nhỏ, cứ đúng bốn giờ bốn mươi bốn là cậu bắt đầu khóc."
+
+Ren: "Bốn giờ bốn mươi bốn?"
+
+Yui: "Ừ. Mà chiếc đồng hồ ở trường ấy... hình như chưa từng chạy đúng giờ."
+
+Cuộc hội thoại này vừa gieo manh mối về phản ứng của Ren, vừa đặt nghi vấn về thời gian, nhưng không nói thẳng đáp án.
+
+**Yêu cầu nâng cao:**
+
+- Các manh mối phải liên kết với hệ thống câu đố thật.
+- Có thể nhận ra giá trị của chúng chỉ sau nhiều giờ chơi.
+- Không để tất cả nhân vật nói chuyện bằng những câu bí hiểm thiếu tự nhiên.
+- Các cuộc trò chuyện bình thường phải thực sự tồn tại.
+- Có những chi tiết chỉ nhằm phát triển quan hệ và đời sống, không bắt buộc là manh mối.
+- Hội thoại thay đổi theo thời điểm, trạng thái quan hệ và sự kiện.
+- Nhân vật có thể né tránh, nhớ nhầm hoặc thay đổi ý kiến.
+- Không dùng lời thoại giả tạo chỉ để trình bày thông tin.
+
+Tạo hệ thống kiểm tra số từ hội thoại, số cuộc hội thoại quan trọng, số manh mối và các liên kết tới câu đố.
+
+Không chấp nhận các đoạn hội thoại khác nhau chỉ thay tên nhân vật nhưng có nội dung giống nhau.
+
+---
+
+# VI. CẤU TRÚC CỐT TRUYỆN SÂU HƠN
+
+Truyền thuyết đô thị chỉ là lớp ngoài của câu chuyện.
+
+Game phải có ít nhất bốn tầng bí ẩn.
+
+**Tầng 1: Những lời đồn**
+
+Người chơi nghe những câu chuyện quen thuộc về Hanako-san, Kuchisake-onna, Teke Teke, Inunaki và Akai Heya.
+
+**Tầng 2: Những bi kịch riêng lẻ**
+
+Từng truyền thuyết gắn với một hoàn cảnh con người hoặc sự kiện lịch sử của Tsukimori.
+
+**Tầng 3: Sự thật xã hội**
+
+Những câu chuyện tưởng như không liên quan phản ánh cùng một cấu trúc quyền lực, lợi ích, định kiến và sự im lặng.
+
+**Tầng 4: Bí mật của Ren**
+
+Người chơi dần nhận ra những lựa chọn của Ren trong quá khứ có liên quan đến sự tồn tại của một người đã bị lãng quên.
+
+Tuy nhiên, không biến Ren thành thủ phạm đứng sau tất cả sự kiện.
+
+Ren phải là một con người có khả năng mắc sai lầm, chịu trách nhiệm và trưởng thành, không phải một phản diện được ngụy trang bằng chứng mất trí nhớ.
+
+## Yêu cầu về plot twist
+
+Có ít nhất 5 bước ngoặt đáng kể.
+
+Ít nhất 2 bước ngoặt phải thay đổi cách người chơi hiểu toàn bộ câu chuyện.
+
+Một bước ngoặt phải liên quan đến sự khác biệt giữa ký ức cá nhân và ký ức tập thể.
+
+Một bước ngoặt phải xuất phát từ hành động thiện chí gây hậu quả nghiêm trọng.
+
+Một bước ngoặt phải khiến người chơi xem xét lại một nhân vật từng bị nghi ngờ.
+
+Mỗi bước ngoặt phải được chuẩn bị bằng tối thiểu 5 chi tiết báo trước, phân bố qua những thời điểm khác nhau.
+
+Không lạm dụng câu chuyện "tất cả là ảo giác".
+
+Duy trì ít nhất một hiện tượng siêu nhiên thực sự tồn tại trong thế giới trò chơi mà không thể giải thích hoàn toàn bằng hành vi của con người.
+
+## Kể chuyện môi trường
+
+Mỗi địa điểm quan trọng phải phản ánh một phần đời sống.
+
+Một căn bếp có hai bộ đũa nhưng chỉ một người sống.
+
+Một nhà ga vẫn giữ bản thông báo về chuyến tàu đã bị hủy nhiều năm trước.
+
+Một bức ảnh gia đình có dấu vết được treo lại nhiều lần.
+
+Một chiếc bàn học được lau sạch dù ngôi trường đã đóng cửa.
+
+Các chi tiết phải có nguyên nhân trong thế giới game, không được chỉ xuất hiện vì chúng trông bí ẩn.
+
+Một số chi tiết có thể không bao giờ được giải thích hoàn toàn, nhưng những bí mật cốt lõi phải có lời giải nhất quán.
+
+---
+
+# VII. KINH DỊ, JUMPSCARE VÀ MÁU ME
+
+Bổ sung yếu tố kinh dị trực diện ở mức độ vừa phải.
+
+Bao gồm:
+
+- Những lần xuất hiện bất ngờ của thực thể.
+- Các cảnh truy đuổi ngắn nhưng căng thẳng.
+- Hình ảnh vết máu và dấu hiệu bạo lực.
+- Thi thể hoặc thương tích được thể hiện bằng pixel art có tiết chế.
+- Những biến đổi đáng sợ của môi trường.
+- Phân cảnh giấc mơ có hình ảnh méo mó.
+- Những khoảnh khắc nhân vật bị đe dọa thật sự.
+
+Phân bổ kinh dị theo nhịp điệu.
+
+Không phải chương nào cũng có mức độ bạo lực như nhau.
+
+Những chương social drama có thể gần như không có jumpscare, trong khi Inunaki hoặc Akai Heya có thể đáng sợ hơn rõ rệt.
+
+Jumpscare phải có ý nghĩa, được chuẩn bị bằng âm thanh hoặc hình ảnh trước đó, và không bị lặp lại quá nhiều.
+
+Cho phép bật tùy chọn giảm jumpscare, giảm hiệu ứng nhấp nháy, giảm máu me và giới hạn âm lượng đột ngột.
+
+Không sử dụng tổn thương tâm lý hoặc cái chết của nhân vật chỉ như phương tiện gây sốc.
+
+Không biến các vấn đề tâm lý thành nguồn gốc mặc định của hành vi bạo lực.
+
+---
+
+# VIII. ĐỒ HỌA PIXEL ART 100%
+
+Toàn bộ nội dung đồ họa phải mang hình thức pixel art thực sự, không chỉ áp bộ lọc pixel hóa lên ảnh thông thường.
+
+Bao gồm:
+
+- Nhân vật.
+- Chân dung.
+- Animation.
+- Background.
+- Tileset.
+- Props.
+- GUI.
+- Menu.
+- Cutscene.
+- Hiệu ứng.
+- Màn hình kết thúc.
+- Logo.
+- Icon và cursor.
+
+Ưu tiên sprite thủ công hoặc sinh bằng thuật toán ở độ phân giải pixel thấp, sau đó nâng kích thước bằng nearest-neighbor.
+
+Tất cả tài nguyên cần tuân theo một art bible thống nhất, với palette, kích thước tile, độ dày nét và tỉ lệ nhân vật rõ ràng.
+
+Đề xuất:
+
+- Tile size: 16×16 hoặc 32×32.
+- Nhân vật thế giới: khoảng 24×40 hoặc 32×48 pixel.
+- Chân dung nhân vật: 96×96 hoặc 128×128 pixel.
+- Độ phân giải nội bộ: 480×270.
+- Phong cách màu: Muted Japanese Retro, Shadow Blue, Faded Green, Warm Amber, Blood Red.
+
+Đặc biệt chú trọng nét biểu cảm trên khuôn mặt.
+
+Nhân vật không cần nhiều pixel nhưng phải thể hiện được sự ngập ngừng, buồn bã, sợ hãi, tức giận và mệt mỏi.
+
+Các phân cảnh cảm xúc quan trọng có thể sử dụng những khung hình pixel được minh họa riêng thay vì chỉ dùng sprite cơ bản.
+
+Không được bỏ qua việc tạo tài nguyên rồi thay toàn bộ bằng các hình chữ nhật đơn sắc.
+
+---
+
+# IX. MENU CHÍNH: NHẬT BẢN, TRUYỀN THUYẾT ĐÔ THỊ VÀ KÝ ỨC
+
+Thiết kế GUI menu có chất lượng nghệ thuật cao, nhưng vẫn hoàn toàn bằng pixel art.
+
+## Ý tưởng menu chính
+
+Khung cảnh một hành lang trường học Nhật Bản vào ban đêm.
+
+Ngoài cửa sổ có mưa rơi chậm.
+
+Ánh đèn huỳnh quang chớp nhẹ.
+
+Cuối hành lang là một cánh cửa nhà vệ sinh đóng kín.
+
+Bên trái có tấm bảng thông báo cũ, vài tờ giấy đã phai màu và một chiếc đồng hồ dừng ở 4:44.
+
+Logo tiếng Nhật hiện phía trên:
+
+「忘れられた声」
+
+Bên dưới là:
+
+THE FORGOTTEN VOICES
+
+Các lựa chọn menu được thiết kế như những dòng chữ in trên mảnh giấy cũ:
+
+- New Game
+- Continue
+- Chapter Select
+- Settings
+- Extras
+- Credits
+- Exit
+
+## Hoạt ảnh menu
+
+- Những giọt mưa pixel chảy trên cửa kính.
+- Ánh đèn phản chiếu nhẹ trên sàn.
+- Hạt bụi bay qua ánh sáng.
+- Chớp đèn không đều.
+- Bóng người có thể thoáng xuất hiện cuối hành lang.
+- Một vài chữ trên bảng thông báo thay đổi rất hiếm.
+- Âm thanh chuông trường xa xăm.
+- Tiếng bước chân đôi lúc vang lên sau khi người chơi đứng yên quá lâu.
+
+Các hiệu ứng không được quá dày đặc hoặc lặp theo chu kỳ dễ đoán.
+
+## Menu phản ứng với tiến trình
+
+Menu cần thay đổi theo diễn biến cốt truyện.
+
+Ví dụ:
+
+- Trước khi bắt đầu: Hành lang trống.
+- Sau chương I: Một bóng người nhỏ xuất hiện phía sau cửa kính.
+- Sau chương III: Đồng hồ bắt đầu chạy ngược.
+- Sau chương IV: Một bảng tên trên tường biến mất.
+- Sau chương V: Một vài dòng menu xuất hiện dấu hiệu bị xóa.
+- Sau kết thúc chính: Ánh sáng bình minh chiếu vào hành lang.
+
+Không được làm các thay đổi ảnh hưởng đến khả năng đọc hoặc thao tác menu.
+
+Các lựa chọn phải hoạt động chính xác.
+
+Mọi hiệu ứng cần có tùy chọn giảm hoặc tắt.
+
+## Giao diện trong game
+
+Thiết kế UI mang cảm giác những đồ vật thực sự tồn tại trong bối cảnh:
+
+- Inventory như túi đồ cá nhân.
+- Journal như cuốn sổ cũ.
+- Save menu như các trang nhật ký.
+- Evidence board như bộ sưu tập tài liệu.
+- Dialogue UI giống hộp thoại JRPG cổ điển, có chân dung pixel.
+- Relationship menu thể hiện các mối quan hệ mà Ren nhận biết được.
+
+Không dùng giao diện hiện đại bóng bẩy không phù hợp với năm 1998.
+
+---
+
+# X. HỆ THỐNG QUAN HỆ XÃ HỘI
+
+Thêm Social Relationship System.
+
+Quan hệ không chỉ được biểu diễn bằng chỉ số tình cảm.
+
+Mỗi nhân vật quan trọng có các trạng thái riêng:
+
+- Trust: tin tưởng.
+- Familiarity: mức độ thân quen.
+- Resentment: oán giận.
+- Dependence: phụ thuộc.
+- Knowledge: những gì nhân vật biết về Ren.
+- Willingness: mức sẵn sàng giúp đỡ.
+
+Không phải tất cả chỉ số đều hiển thị cho người chơi.
+
+Nhân vật phải có phản ứng hợp lý với các sự kiện.
+
+Một nhân vật tin tưởng Ren không có nghĩa là họ sẽ đồng ý với mọi lựa chọn của anh.
+
+Một người ghét Ren vẫn có thể cứu anh nếu điều đó phù hợp với nguyên tắc sống của họ.
+
+Tạo những nhiệm vụ quan hệ, cuộc trò chuyện tùy chọn và những hoạt động đời thường có tác động tới các tuyến truyện.
+
+Không biến trò chơi thành dating simulator.
+
+Các mối quan hệ gia đình, bạn bè, đồng nghiệp và cộng đồng quan trọng không kém tình cảm lãng mạn.
+
+---
+
+# XI. NĂM KẾT THÚC TRỞ LÊN
+
+Thiết kế ít nhất 5 kết thúc riêng biệt.
+
+### Ending A: The Convenient Truth
+Sự thật dễ chấp nhận.
+
+Ren chọn một lời giải thích giúp nhiều người tiếp tục sống bình thường nhưng để lại những câu hỏi chưa được giải quyết.
+
+### Ending B: The Price of Memory
+Cái giá của ký ức.
+
+Ren biết phần lớn sự thật, song sự thật ấy làm thay đổi vĩnh viễn các mối quan hệ và cuộc sống của anh.
+
+### Ending C: The Forgotten Voices
+Những tiếng nói bị lãng quên.
+
+Một kết thúc đậm tính nhân văn, trong đó các sự thật quan trọng được công nhận nhưng không biến mọi mất mát thành điều có thể sửa chữa.
+
+### Ending D: The Sixth Name
+Cái tên thứ sáu.
+
+Một kết thúc bí mật, hé lộ tầng ý nghĩa sâu hơn về ký ức, trách nhiệm và sự tồn tại của một con người.
+
+### Ending E: The Town That Remembers
+Thị trấn còn nhớ.
+
+Kết thúc tập trung vào sự thay đổi của cộng đồng thay vì chỉ số phận Ren.
+
+Người chơi phải xây dựng đủ những mối quan hệ, đưa ra các lựa chọn có trách nhiệm và giúp nhiều nhân vật tìm được khả năng lên tiếng.
+
+Tuy nhiên, không được biến nó thành một kết thúc hạnh phúc tuyệt đối.
+
+Những sai lầm trong quá khứ vẫn để lại hậu quả.
+
+## Yêu cầu bổ sung
+
+- Mỗi kết thúc phải có một chuỗi phân cảnh riêng.
+- Có đoạn kết cho ít nhất 10 nhân vật quan trọng.
+- Không chỉ thay vài dòng chữ cuối game.
+- Các ending phải xuất phát từ lựa chọn tích lũy xuyên suốt game.
+- Tạo bảng điều kiện kết thúc có thể kiểm thử tự động.
+- Không yêu cầu người chơi thu thập đủ mọi vật phẩm tùy chọn chỉ để mở kết thúc chính.
+- Có thể bổ sung Bad Ending hoặc Secret Ending, miễn là chất lượng không bị giảm.
+
+---
+
+# XII. THỜI LƯỢNG 9–12 GIỜ
+
+Thời lượng phải đến từ nội dung và tương tác thực tế.
+
+Không kéo dài game bằng:
+
+- Di chuyển chậm bắt buộc.
+- Hành lang trống quá dài.
+- Loading screen lâu.
+- Câu đố lặp đi lặp lại.
+- Bắt người chơi quay lại vô nghĩa.
+- Hội thoại dài nhưng không có nội dung.
+- Grind tài nguyên.
+- Các màn rượt đuổi phải chơi lại quá nhiều lần.
+
+Phân bổ thời lượng mục tiêu:
+
+| Phần | Thời lượng nhanh |
+|---|---:|
+| Prologue | 40 phút |
+| Chương I | 90 phút |
+| Chương II | 85 phút |
+| Chương III | 90 phút |
+| Chương IV | 110 phút |
+| Chương V | 110 phút |
+| Chương VI | 120 phút |
+| Epilogue | 25 phút |
+| **Tổng** | **11 giờ 10 phút** |
+
+Đây là ngân sách thiết kế, không phải thời lượng đã được xác minh.
+
+Phải dùng playtest thực tế để đo thời gian, xác định điểm nghẽn và điều chỉnh nội dung.
+
+Tốc độ nhanh nhất được hiểu là người chơi thành thạo, giải các câu đố bắt buộc đúng và xem các cutscene/hội thoại theo chế độ bình thường, không dùng skip, exploit hoặc thay đổi dữ liệu lưu.
+
+Đối với người chơi khám phá toàn bộ bí mật, mục tiêu là 15–20 giờ.
+
+---
+
+# XIII. THIẾT KẾ NHIỆM VỤ
+
+Bổ sung hệ thống nhiệm vụ gồm:
+
+- Main Story Quests.
+- Character Story Quests.
+- Everyday Life Events.
+- Urban Legend Encounters.
+- Memory Events.
+- Hidden Quests.
+- Social Consequence Events.
+
+Không để mọi nhiệm vụ hiện rõ trên HUD.
+
+Một số nhiệm vụ chỉ được phát hiện khi người chơi chú ý tới các nhân vật và môi trường.
+
+Những nhiệm vụ phụ quan trọng phải tác động tới câu chuyện chính.
+
+Ví dụ:
+
+Ren có thể giúp một cụ bà sửa chiếc radio cũ.
+
+Ban đầu, đây là một nhiệm vụ đời thường.
+
+Nhiều chương sau, Ren nghe được chính chiếc radio ấy phát lại một thông báo đã bị xóa khỏi hồ sơ thị trấn.
+
+Tuy nhiên, không biến mọi hành động tốt thành phần thưởng vật chất hoặc lợi ích trực tiếp.
+
+Có những việc Ren làm đơn giản vì đó là điều đúng đắn.
+
+---
+
+# XIV. CHIỀU SÂU CẢM XÚC
+
+Không biến tất cả nhân vật thành những con người chỉ biết đau khổ.
+
+Phải có những khoảng thời gian đẹp và giản dị:
+
+- Một bữa ăn cùng người bạn cũ.
+- Một cuộc trò chuyện bên máy bán hàng tự động.
+- Một chiều mưa ngồi đợi tàu.
+- Một lần giúp hàng xóm dọn nhà.
+- Một con mèo thường xuất hiện trước cửa tiệm.
+- Một cuộc cãi nhau ngớ ngẩn giữa hai người bạn.
+- Một bài hát phát trên radio.
+- Một kỷ niệm thời thơ ấu khiến Ren bật cười.
+
+Những chi tiết bình thường cần quay trở lại ở các thời điểm khác nhau, đôi khi với ý nghĩa hoàn toàn mới.
+
+Cốt truyện không được chỉ có một chiều buồn bã.
+
+Phải có sự ấm áp, hài hước, ngượng ngùng, hy vọng, thất vọng, hoài nghi và những cảm xúc mâu thuẫn.
+
+Người chơi phải gắn bó với cuộc sống ở Tsukimori trước khi cảm nhận đầy đủ những điều nó đã đánh mất.
+
+Khi một nhân vật rời khỏi câu chuyện, người chơi không chỉ nhớ đến vai trò của họ trong bí ẩn mà còn nhớ đến cách họ nói chuyện, thói quen và những khoảnh khắc đời thường.
+
+---
+
+# XV. YÊU CẦU TRIỂN KHAI THỰC TẾ
+
+Giữ nguyên toàn bộ yêu cầu kỹ thuật từ prompt V1 và bổ sung:
+
+1. Hệ thống quản lý 100 câu đố bằng dữ liệu có cấu trúc.
+2. Trình kiểm tra Puzzle Dependency Graph.
+3. Công cụ kiểm tra ít nhất 25 hồ sơ nhân vật.
+4. Công cụ đếm số từ hội thoại.
+5. Công cụ phát hiện cuộc hội thoại quan trọng thiếu manh mối.
+6. Hệ thống NPC Schedule.
+7. Relationship State Manager.
+8. Story Flag Manager.
+9. Hệ thống nhiều ending dựa trên trạng thái thực.
+10. Cutscene Manager.
+11. Pixel Asset Generator và sprite atlas.
+12. Công cụ kiểm tra tài nguyên bị thiếu.
+13. Hệ thống kiểm tra tính hợp lệ của save file.
+14. Hệ thống kiểm thử tuyến truyện từ đầu đến cuối.
+15. Log chi tiết cho những sự kiện gây lỗi.
+
+Lưu dữ liệu nhân vật, hội thoại, câu đố và nhiệm vụ dưới dạng JSON hoặc định dạng có cấu trúc phù hợp.
+
+Không hardcode toàn bộ nội dung truyện trong main.py.
+
+Mã nguồn phải có thể mở rộng mà không cần viết lại kiến trúc.
+
+Bổ sung kiểm tra tính nhất quán của manh mối:
+
+Mỗi manh mối bí mật phải liên kết tới một sự kiện, câu đố hoặc kết luận có thật.
+
+Không tạo hàng trăm câu thoại mơ hồ rồi gọi chúng là manh mối.
+
+Mỗi cuộc hội thoại quan trọng phải có ít nhất hai liên kết hợp lệ trong dữ liệu nội bộ.
+
+Trong giao diện người chơi, các liên kết ấy vẫn phải được trình bày tự nhiên, không lộ đáp án.
+
+## Đầu ra bắt buộc
+
+Cung cấp:
+
+- Game Design Document hoàn chỉnh.
+- Story Bible và Truth Matrix.
+- Danh sách 25 nhân vật cùng hồ sơ.
+- Puzzle Registry có đủ 100 ID.
+- Puzzle Dependency Graph.
+- Dialogue Registry.
+- Báo cáo số từ hội thoại.
+- Dữ liệu nhiệm vụ.
+- Mã nguồn thực thi.
+- Pixel assets đầy đủ.
+- Bản đồ và sprite sheet.
+- Âm thanh và nhạc.
+- Ít nhất 5 kết thúc được triển khai.
+- Hướng dẫn chạy.
+- Công cụ build Windows.
+- Báo cáo kiểm thử thực tế.
+- File ZIP dự án.
+- File EXE nếu môi trường thực sự hỗ trợ tạo và kiểm thử.
+
+Không được tuyên bố game đã hoàn thành khi các yêu cầu định lượng và kiểm thử chưa đạt.
+
+Nếu môi trường không thể tạo một game dài 9–12 giờ trong một lần thực hiện, hãy chia quá trình sản xuất thành các giai đoạn có thể tiếp tục, nhưng phải tạo sản phẩm chạy được ở mỗi giai đoạn.
+
+Tuyệt đối không thay những phần chưa triển khai bằng tuyên bố hoàn thành giả.
+
+---
+
+# XVI. TINH THẦN CUỐI CÙNG
+
+Đây không chỉ là một trò chơi về những lời đồn ma quái tại Nhật Bản.
+
+Đó là câu chuyện về những người không được lắng nghe.
+
+Những gia đình không biết cách trò chuyện.
+
+Những đứa trẻ lớn lên giữa kỳ vọng của người lớn.
+
+Những công nhân trở nên vô hình sau khi mất việc.
+
+Những người từng gây tổn thương nhưng không đủ can đảm thừa nhận.
+
+Những con người cố gắng tìm một cách sống tiếp sau những sai lầm không thể xóa bỏ.
+
+Và một thanh niên bình thường, chỉ định trở về quê trong ba ngày, cuối cùng phải đối mặt với những điều mà cả thị trấn đã trốn tránh suốt nhiều năm.
+
+Đừng để người chơi chỉ hỏi:
+
+"Con ma tiếp theo là gì?"
+
+Hãy khiến họ tự hỏi:
+
+"Ngày mai, liệu mình có còn đủ can đảm nhìn vào mắt những người ở thị trấn này?"
+
+Trò chơi phải vừa đáng sợ, vừa buồn, vừa có những khoảnh khắc đẹp đến mức người chơi muốn thời gian ngừng lại.
+
+**BẮT ĐẦU THIẾT KẾ VÀ TRIỂN KHAI GAME THEO TOÀN BỘ YÊU CẦU V1 + V2.**

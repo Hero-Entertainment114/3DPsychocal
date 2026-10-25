@@ -1,0 +1,387 @@
+[
+  {
+    "path": "assets/audio/chime.wav",
+    "bytes": 66194,
+    "sha256": "b77ed0d95d8c6cb00834e73d5697348462501ed3dc32c926cd0832a02933ba8c"
+  },
+  {
+    "path": "assets/audio/hum.wav",
+    "bytes": 352844,
+    "sha256": "00898ed8e81245f0d8082f99b3cb760b538643f37fb9e18920abc6786079f547"
+  },
+  {
+    "path": "assets/audio/knock.wav",
+    "bytes": 18566,
+    "sha256": "dc196d1dfc9124d30e95ff25eb20fdb3e05e95c1e5b064853a33047950b571b6"
+  },
+  {
+    "path": "assets/audio/rain.wav",
+    "bytes": 352844,
+    "sha256": "a48cc368e0e7acce971a2f9181745370c1d96a734fc59a21056424d84fb8500c"
+  },
+  {
+    "path": "assets/audio/step.wav",
+    "bytes": 5336,
+    "sha256": "b7c497716a97f27629e9eebb441f9580531af564c06ce9bf94c02b82282912a5"
+  },
+  {
+    "path": "assets/backgrounds/corridor.png",
+    "bytes": 7699,
+    "sha256": "8f5850844c91815ac1d15ed655076bbbcc03620e0805afb2bdc8f414c8f6be92"
+  },
+  {
+    "path": "assets/fonts/NOTO-CJK-LICENSE.txt",
+    "bytes": 14712,
+    "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+  },
+  {
+    "path": "assets/fonts/NOTO-LICENSE.txt",
+    "bytes": 5208,
+    "sha256": "075f91382875da1c4b491f1facf2586f55448705133264d98ce15cab6211b125"
+  },
+  {
+    "path": "assets/fonts/NotoSans-Regular.ttf",
+    "bytes": 512672,
+    "sha256": "89c3c497f618fdaa0b2d1e98fef93582f28c71debd2c4a8cdf41f190ced2909d"
+  },
+  {
+    "path": "assets/maps/home.png",
+    "bytes": 4844,
+    "sha256": "ebb4f6215ca21428be47bb9065799fd5629369b61724ca9fa0758c1852cae78e"
+  },
+  {
+    "path": "assets/maps/hospital.png",
+    "bytes": 4248,
+    "sha256": "83fc73e6c2867ce71875f681d2403ab9fb321d6d8eb859fca96e6738e4617ec6"
+  },
+  {
+    "path": "assets/maps/school.png",
+    "bytes": 7287,
+    "sha256": "5709c251130a6ef920aaa9556f338b77ff5eb5d955ee348a3d585da7cfdae67b"
+  },
+  {
+    "path": "assets/maps/station.png",
+    "bytes": 4853,
+    "sha256": "5ba04becdce57135c39e484690dc73e65227f2b7efa50a304f6c6aa41dfb2200"
+  },
+  {
+    "path": "assets/maps/town.png",
+    "bytes": 7440,
+    "sha256": "2f660b5595396d7c15a0f88c0f9a44f16007ff05ea880447e01a5fbb0dd09855"
+  },
+  {
+    "path": "assets/music/chapter_0.wav",
+    "bytes": 529244,
+    "sha256": "856f3edb05625689564493d084ea3effa5b5bda87c560bf2c5ac5d067f1364c9"
+  },
+  {
+    "path": "assets/music/chapter_1.wav",
+    "bytes": 529244,
+    "sha256": "856f3edb05625689564493d084ea3effa5b5bda87c560bf2c5ac5d067f1364c9"
+  },
+  {
+    "path": "assets/music/chapter_2.wav",
+    "bytes": 529244,
+    "sha256": "856f3edb05625689564493d084ea3effa5b5bda87c560bf2c5ac5d067f1364c9"
+  },
+  {
+    "path": "assets/music/chapter_3.wav",
+    "bytes": 529244,
+    "sha256": "856f3edb05625689564493d084ea3effa5b5bda87c560bf2c5ac5d067f1364c9"
+  },
+  {
+    "path": "assets/music/chapter_4.wav",
+    "bytes": 529244,
+    "sha256": "a15740677e36b6c307b6145045a27fa433ca08c762241093393f389c7260d263"
+  },
+  {
+    "path": "assets/music/chapter_5.wav",
+    "bytes": 529244,
+    "sha256": "856f3edb05625689564493d084ea3effa5b5bda87c560bf2c5ac5d067f1364c9"
+  },
+  {
+    "path": "assets/music/sixth_name.wav",
+    "bytes": 529244,
+    "sha256": "f8bfed7c1c3bc3975b1655383979564ee68748fabf93cb254fd188e23fc2d859"
+  },
+  {
+    "path": "assets/sprites/ai.png",
+    "bytes": 3708,
+    "sha256": "4bf9af14457256cfe7f56f029efd6bdd56abdff0beae0b54b2e50f0241a086d6"
+  },
+  {
+    "path": "assets/sprites/ai_portraits.png",
+    "bytes": 1039,
+    "sha256": "a7d92dc34957627ef4a0e45d6a7fb992b60fe5fabd87a9f4d2c20610765e0c42"
+  },
+  {
+    "path": "assets/sprites/akane.png",
+    "bytes": 3662,
+    "sha256": "e3c96216c9c3e97dabb7fd24d74935b224cbc19540ea11ff83cb6d0c086815fa"
+  },
+  {
+    "path": "assets/sprites/akane_portraits.png",
+    "bytes": 1039,
+    "sha256": "11262fe62e731ab54e1dbf604e18db3ed028d207dc6342be1cded69c3fb5de54"
+  },
+  {
+    "path": "assets/sprites/atlas.json",
+    "bytes": 440,
+    "sha256": "2dffce6fef1aa0c00658320df19daeb13b6b93c22471c1de0ef5e96b9ce96555"
+  },
+  {
+    "path": "assets/sprites/chihiro.png",
+    "bytes": 3687,
+    "sha256": "d58b648a0e93976232764817c7d70e5067f3cf704c2c45885e8ca87e3d5cf118"
+  },
+  {
+    "path": "assets/sprites/chihiro_portraits.png",
+    "bytes": 1035,
+    "sha256": "54e17e337c69203eb84933ee12f4eba52248a19948f092b8262988d976f6bc1d"
+  },
+  {
+    "path": "assets/sprites/daichi.png",
+    "bytes": 3675,
+    "sha256": "8501425dd1d981f6397529ee3c1b354ffc3021f19484dfaf3414ba1a361f23fe"
+  },
+  {
+    "path": "assets/sprites/daichi_portraits.png",
+    "bytes": 1037,
+    "sha256": "48ed62a4e7c2764a21e922b4f96e8feef05c9672c5e68d0b4f8fc060d509f00e"
+  },
+  {
+    "path": "assets/sprites/emi.png",
+    "bytes": 3686,
+    "sha256": "33dc6436c71d9fa9ab9ee26c2d323f5582138f92e1afe2e9c81494cad9b7cefd"
+  },
+  {
+    "path": "assets/sprites/emi_portraits.png",
+    "bytes": 1036,
+    "sha256": "1974244e1a10fd76a12eb0040aa77f64dd9bac795fde4f11ab4a68d43e6c2d24"
+  },
+  {
+    "path": "assets/sprites/fumiko.png",
+    "bytes": 3684,
+    "sha256": "3ae533f7188bf90212339ed2c1d56d1c1bdbd1c9c0e3ab0aff3623f24ceac3d8"
+  },
+  {
+    "path": "assets/sprites/fumiko_portraits.png",
+    "bytes": 1037,
+    "sha256": "6c6d497fc60532f479b40a9c84ec5e7161c46448175243fafa6a5300edab2029"
+  },
+  {
+    "path": "assets/sprites/haruka.png",
+    "bytes": 3682,
+    "sha256": "570aaf56a98573286c8a0632048bea4b56686e46ca4a4c950df6ea2e8283c2e7"
+  },
+  {
+    "path": "assets/sprites/haruka_portraits.png",
+    "bytes": 1038,
+    "sha256": "2e22d28c1e83a8c7d98b7e4301b360e392f2c82e7897380e39ed2ec95d745f54"
+  },
+  {
+    "path": "assets/sprites/haruto.png",
+    "bytes": 3680,
+    "sha256": "80d2a4ff8689a0a4586d0b9014d36ab1bceb42ebd394ad243ccb083bb2103376"
+  },
+  {
+    "path": "assets/sprites/haruto_portraits.png",
+    "bytes": 1037,
+    "sha256": "e7f3c82b652895c31e8f98323bdddd9d3658c2069520865c28cd2d2c7e5d54cd"
+  },
+  {
+    "path": "assets/sprites/hiroshi.png",
+    "bytes": 3689,
+    "sha256": "14b03f3014c1af38750732a113161c3c391c696758c1c60558bc66845e69424b"
+  },
+  {
+    "path": "assets/sprites/hiroshi_portraits.png",
+    "bytes": 1035,
+    "sha256": "0d22f76ef0fa9222771ba3d77e6e1313c0054a9fb07dc5a5e350a4cbbeafcf95"
+  },
+  {
+    "path": "assets/sprites/kaori.png",
+    "bytes": 3682,
+    "sha256": "01453b5e72421c82e07c793c599eced64815b4575e66f2f85a714deba67416ca"
+  },
+  {
+    "path": "assets/sprites/kaori_portraits.png",
+    "bytes": 1038,
+    "sha256": "8844b5780276ced15827f3b40f78fe6e5dfb3b935419e505faacc5f10c1e8c09"
+  },
+  {
+    "path": "assets/sprites/kazuo.png",
+    "bytes": 3698,
+    "sha256": "ad6afd40b0db4b69f1c4d9ada56b372e985d164bdd61620e522311d90d766792"
+  },
+  {
+    "path": "assets/sprites/kazuo_portraits.png",
+    "bytes": 1034,
+    "sha256": "900b359346ae1a213a5ff99320a4abc3d923f7ff446ea2150ea60dcd3e5d4146"
+  },
+  {
+    "path": "assets/sprites/masato.png",
+    "bytes": 3678,
+    "sha256": "59243b202827085d23d747c5eb552e61886d11a22f884c24ec7e1700b82bfac3"
+  },
+  {
+    "path": "assets/sprites/masato_portraits.png",
+    "bytes": 1037,
+    "sha256": "2e53a8158081b5b0a162c7c9152a3cf5b1e934bb54931e8f187a8190b8bb9fd8"
+  },
+  {
+    "path": "assets/sprites/mei.png",
+    "bytes": 3685,
+    "sha256": "a65a9f0a09d29169abb015fffbaf8968f22d8b6724fc55fde7075de09ef821a9"
+  },
+  {
+    "path": "assets/sprites/mei_portraits.png",
+    "bytes": 1035,
+    "sha256": "445f23a8ef77aa09f37bede61570aa520db66c5ef2743b93e6d1ddd5eb170150"
+  },
+  {
+    "path": "assets/sprites/mio.png",
+    "bytes": 3701,
+    "sha256": "baececd8048f9fd4ca2c84d5d546534128d49446956066a6f71f32392d6af7e8"
+  },
+  {
+    "path": "assets/sprites/mio_portraits.png",
+    "bytes": 1036,
+    "sha256": "33059aba84ef5f4657e5ac71c1b0619923d94cce5b5e9f25fee203c93c3911f5"
+  },
+  {
+    "path": "assets/sprites/naoto.png",
+    "bytes": 3672,
+    "sha256": "eb16f0bdcb40fe44cadbec4716de150328390ed94818da3156c73574f6693744"
+  },
+  {
+    "path": "assets/sprites/naoto_portraits.png",
+    "bytes": 1037,
+    "sha256": "567d387882777d2c0f9d06d44a4a880997f80d48c0fdfdfa589703dc27cc6753"
+  },
+  {
+    "path": "assets/sprites/natsuki.png",
+    "bytes": 3719,
+    "sha256": "8fe9b26805ad3b30c203aaa0741e79e7b0f55439dea4d4574f65ca5fece009c5"
+  },
+  {
+    "path": "assets/sprites/natsuki_portraits.png",
+    "bytes": 1038,
+    "sha256": "8b4a6a4966dd518cca350f7382c7f3c3e542fb41f3ba9ee42bf38399cc535bba"
+  },
+  {
+    "path": "assets/sprites/props.png",
+    "bytes": 1254,
+    "sha256": "9c454c19549708af1103a1e502128d060e7c53b417f697cf678d343be4d71a6b"
+  },
+  {
+    "path": "assets/sprites/rei.png",
+    "bytes": 3669,
+    "sha256": "80959b21c173975045c84aaad03d43c0a6fc240ec295f7388cfa449078a4c5f2"
+  },
+  {
+    "path": "assets/sprites/rei_portraits.png",
+    "bytes": 1036,
+    "sha256": "2110ee15c3b221cf5cf0320d7d384ea27646bad97343750411141688f196ca97"
+  },
+  {
+    "path": "assets/sprites/ren.png",
+    "bytes": 4299,
+    "sha256": "7e2822da5f1d5ded24b213eb5fb104cd15ef679aa1340c0ddaaad1a85a91b9a6"
+  },
+  {
+    "path": "assets/sprites/ren_portraits.png",
+    "bytes": 1037,
+    "sha256": "a1f437bea7f42cd64b19fda44907105c7812dd8f670b9fe214be19c11ef23220"
+  },
+  {
+    "path": "assets/sprites/rika.png",
+    "bytes": 3669,
+    "sha256": "aaea6ee6c3d9c223f90eaf2270a6984f25e6430cfb154d38fdff371664bc6755"
+  },
+  {
+    "path": "assets/sprites/rika_portraits.png",
+    "bytes": 1036,
+    "sha256": "4b529fbab4042dd0f21758eb2ba06d0355ca6137557d44590f235eae222e70d4"
+  },
+  {
+    "path": "assets/sprites/sachiko.png",
+    "bytes": 3647,
+    "sha256": "45994f70ca3fe5642fc07397832da97aabf82a985f2de9500618b5045c06f409"
+  },
+  {
+    "path": "assets/sprites/sachiko_portraits.png",
+    "bytes": 1032,
+    "sha256": "e4f7e014b08ba240b5c128e74f214960d1321a01f93a8ab294e2d02de25c8d49"
+  },
+  {
+    "path": "assets/sprites/shinji.png",
+    "bytes": 3679,
+    "sha256": "1dccc768b3a9c90ff3e49430b5f70fbf57014163d804d0eeee9130594db3e411"
+  },
+  {
+    "path": "assets/sprites/shinji_portraits.png",
+    "bytes": 1037,
+    "sha256": "29330b52b2281141ca3017a87f9321c4b3e2bc67b6e26402da51c9a5467d1661"
+  },
+  {
+    "path": "assets/sprites/sora.png",
+    "bytes": 3691,
+    "sha256": "80c5adcdafaa165dab0b30218c7f871f40d68e967215dcbd65808f16205a2267"
+  },
+  {
+    "path": "assets/sprites/sora_portraits.png",
+    "bytes": 1036,
+    "sha256": "bf7508535fc564a084f2ec50a93bea3aba4851914d4726585f66ea7396f29a8d"
+  },
+  {
+    "path": "assets/sprites/tomoko.png",
+    "bytes": 3700,
+    "sha256": "fe2926df96fc2580e0ca044b6021b2aaa4dfa060589eaa9a89c0c399e470f456"
+  },
+  {
+    "path": "assets/sprites/tomoko_portraits.png",
+    "bytes": 1034,
+    "sha256": "5f930ec5483dd11a6178548b3da0600bb9123faf39f93a96d11e16e42fa339d0"
+  },
+  {
+    "path": "assets/sprites/yui.png",
+    "bytes": 3704,
+    "sha256": "9bf4a394fc45d0d7ce618f351df380f4c794898b71b874a531d6ec599c9ad2e0"
+  },
+  {
+    "path": "assets/sprites/yui_portraits.png",
+    "bytes": 1039,
+    "sha256": "02bbfa53d4cabf22a57c07623bb6e6498de16a6d437040197a604b514fda5b43"
+  },
+  {
+    "path": "assets/sprites/yuji.png",
+    "bytes": 3682,
+    "sha256": "6715e0faff2f5e89379045bfd44efde61002cf3a12d4cc5ee8530157c572229b"
+  },
+  {
+    "path": "assets/sprites/yuji_portraits.png",
+    "bytes": 1035,
+    "sha256": "53212310aa6c27a1e7b19bed148c0498dc6cf05abae199b9bd0d200a8c850934"
+  },
+  {
+    "path": "assets/tilesets/tsukimori.png",
+    "bytes": 1158,
+    "sha256": "d45bbe9f419209d588b37beec6e47f6284ec176bb3dfca0971f85171a6684019"
+  },
+  {
+    "path": "assets/ui/icon.ico",
+    "bytes": 224,
+    "sha256": "7979cd7c7ff14b8b1ccaa04574e2325fecad6b8e63b1a2b0c1c340dbc830c9c4"
+  },
+  {
+    "path": "assets/ui/icon.png",
+    "bytes": 202,
+    "sha256": "fc7972fd7c1f4b10571d7f8ddd2c323de7739713b742fed4cbb632eac94cd426"
+  },
+  {
+    "path": "assets/ui/logo.png",
+    "bytes": 830,
+    "sha256": "d94f1652692154c33be84dedf13a33dd86103913260d87627c40939771478c96"
+  }
+]

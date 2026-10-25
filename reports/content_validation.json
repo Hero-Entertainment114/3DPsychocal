@@ -1,0 +1,31 @@
+{
+  "errors": [],
+  "warnings": [
+    "9–12 hour runtime is NOT verified.",
+    "78 puzzles are design-only; do not count them as playable.",
+    "17 dialogues are written but not placed in playable scenes.",
+    "Five endings are previews, not earned campaign endings.",
+    "English/Japanese localization, later maps and production sound are pending."
+  ],
+  "counts": {
+    "puzzles_designed": 100,
+    "puzzles_playable": 22,
+    "characters": 25,
+    "characters_on_stage": 8,
+    "dialogues_written": 25,
+    "dialogues_playable": 8,
+    "dialogue_whitespace_units": 3914,
+    "playable_dialogue_whitespace_units": 1246,
+    "cross_chapter_edges_designed": 125,
+    "maps_playable": 5,
+    "ending_previews": 5,
+    "assets": 77
+  },
+  "categories": {
+    "observation": 16,
+    "logic": 25,
+    "inference": 17,
+    "memory_choice": 18,
+    "cross_chapter": 24
+  }
+}

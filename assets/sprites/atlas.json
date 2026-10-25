@@ -1,0 +1,30 @@
+{
+  "characters": {
+    "frame_width": 32,
+    "frame_height": 48,
+    "columns": 6,
+    "rows": 4,
+    "directions": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "fps": 8
+  },
+  "portraits": {
+    "frame_width": 96,
+    "frame_height": 96,
+    "columns": 3,
+    "expressions": [
+      "neutral",
+      "uneasy",
+      "sad"
+    ]
+  },
+  "props": {
+    "frame_width": 32,
+    "frame_height": 48,
+    "columns": 8
+  }
+}

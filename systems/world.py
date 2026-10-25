@@ -1,0 +1,75 @@
+import math
+import pygame
+
+NPCS = {
+    'station': [('hiroshi', 140, 208)],
+    'town': [('tomoko', 224, 190), ('yui', 420, 190)],
+    'hospital': [('sachiko', 350, 220), ('natsuki', 270, 190)],
+    'home': [('ren', 128, 198)],
+    'school': [('kaori', 200, 280), ('mio', 480, 280)],
+}
+
+class World:
+    def __init__(self, content, state):
+        self.content, self.state = content, state
+        self.camera = pygame.Vector2(0, 0)
+        self.direction = 0
+        self.walk_time = 0.0
+        self.moving = False
+    @property
+    def room(self): return self.content.maps[self.state.room]
+    def actors(self):
+        result = []
+        for cid,x,y in NPCS[self.state.room]:
+            if cid=='mio' and 'P018' not in self.state.solved: continue
+            if cid=='yui' and self.state.phase=='night': x,y=520,200
+            if cid=='ren' and self.state.room=='home': continue
+            result.append(dict(kind='npc',id=cid,x=x,y=y,label=self.content.characters[cid]['name']))
+        return result
+    def objects(self):
+        s=self.state
+        rows=[]
+        for p in self.content.playable:
+            if p['room'] == s.room:
+                x,y=p['position'];rows.append(dict(kind='puzzle',id=p['id'],x=x,y=y,label=p['title']))
+        for i,p in enumerate(self.room['portals']):
+            rows.append(dict(kind='portal',id=str(i),x=p['x'],y=p['y'],label=p['label']))
+        return rows+self.actors()
+    def nearest(self):
+        rows=self.objects()
+        if not rows:return None
+        row=min(rows,key=lambda o:math.hypot(o['x']-self.state.x,o['y']-self.state.y))
+        return row if math.hypot(row['x']-self.state.x,row['y']-self.state.y) <= 39 else None
+    def blocked(self,x,y):
+        r=pygame.Rect(round(x)-5,round(y)-5,10,7)
+        m=self.room
+        for ty in range(r.top//16,r.bottom//16+1):
+            for tx in range(r.left//16,r.right//16+1):
+                if not 0<=tx<m['width'] or not 0<=ty<m['height'] or m['tiles'][ty][tx] in (1,3):return True
+        for p in self.content.playable:
+            if p['room']==self.state.room:
+                px,py=p['position']
+                if r.colliderect(pygame.Rect(px-12,py-12,24,12)):return True
+        return False
+    def update(self,dt,keys):
+        dx=int(keys[pygame.K_d] or keys[pygame.K_RIGHT])-int(keys[pygame.K_a] or keys[pygame.K_LEFT])
+        dy=int(keys[pygame.K_s] or keys[pygame.K_DOWN])-int(keys[pygame.K_w] or keys[pygame.K_UP])
+        self.moving=bool(dx or dy)
+        if self.moving:
+            self.direction=(2 if dx>0 else 1) if dx else (0 if dy>0 else 3)
+            v=pygame.Vector2(dx,dy).normalize()*(108 if keys[pygame.K_LSHIFT] or keys[pygame.K_RSHIFT] else 72)*dt
+            # Substeps protect collision under slow frames and sprinting.
+            steps=max(1,math.ceil(v.length()/3))
+            for _ in range(steps):
+                if not self.blocked(self.state.x+v.x/steps,self.state.y):self.state.x+=v.x/steps
+                if not self.blocked(self.state.x,self.state.y+v.y/steps):self.state.y+=v.y/steps
+            self.walk_time+=dt
+        self.follow(dt)
+    def follow(self,dt):
+        target=pygame.Vector2(max(0,min(self.room['width']*16-480,self.state.x-240)),max(0,min(self.room['height']*16-270,self.state.y-145)))
+        self.camera += (target-self.camera)*min(1,dt*8)
+    def travel(self,index):
+        p=self.room['portals'][index]
+        if p.get('requires') and p['requires'] not in self.state.solved:return False
+        self.state.room=p['to'];self.state.x,self.state.y=p['spawn'];self.camera.update(0,0);self.follow(1)
+        return True

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Q001",
+    "title": "Ba ngày ở quê",
+    "kind": "main",
+    "steps": [
+      "P001",
+      "P002",
+      "P003",
+      "P004"
+    ],
+    "result": "Ăn cơm và thăm mẹ."
+  },
+  {
+    "id": "Q002",
+    "title": "Chiếc thư chưa giải thích",
+    "kind": "memory",
+    "steps": [
+      "P005",
+      "P006",
+      "P007",
+      "P008"
+    ],
+    "result": "Yui dẫn Ren tới trường."
+  },
+  {
+    "id": "Q003",
+    "title": "Đừng mở cánh cửa thứ ba",
+    "kind": "urban_legend",
+    "steps": [
+      "P009",
+      "P010",
+      "P011",
+      "P012",
+      "P013",
+      "P014",
+      "P015",
+      "P016",
+      "P017",
+      "P018",
+      "P019",
+      "P020",
+      "P021",
+      "P022"
+    ],
+    "result": "Lưu hai lời chứng, trả lại quyền nói."
+  },
+  {
+    "id": "Q004",
+    "title": "Ngồi lại thêm một chút",
+    "kind": "everyday",
+    "character": "sachiko",
+    "result": "Lắng nghe mẹ thay vì hỏi hồ sơ."
+  },
+  {
+    "id": "Q005",
+    "title": "Đừng kể thay tôi",
+    "kind": "relationship",
+    "character": "yui",
+    "result": "Tôn trọng lời bạn, giảm lan truyền tin đồn."
+  }
+]
