@@ -1,0 +1,84 @@
+{
+  "schema": "game-room.layout.v1",
+  "roomId": "courtyard",
+  "units": "meters",
+  "surfaces": [
+    {
+      "id": "floor",
+      "dimensions": [
+        18,
+        16,
+        0.2
+      ]
+    },
+    {
+      "id": "north",
+      "dimensions": [
+        18,
+        0.3,
+        3.6
+      ]
+    },
+    {
+      "id": "south",
+      "dimensions": [
+        18,
+        0.3,
+        3.6
+      ]
+    },
+    {
+      "id": "west",
+      "dimensions": [
+        0.3,
+        16,
+        3.6
+      ]
+    },
+    {
+      "id": "east",
+      "dimensions": [
+        0.3,
+        16,
+        3.6
+      ]
+    },
+    {
+      "id": "veranda-ceiling",
+      "dimensions": [
+        18,
+        4,
+        0.18
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "tin-1",
+      "assetId": "biscuit-tin",
+      "position": [
+        2,
+        6,
+        0.93
+      ]
+    }
+  ],
+  "productionCamera": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "location": [
+      0,
+      -7,
+      1.7
+    ],
+    "target": [
+      0,
+      8,
+      1.5
+    ],
+    "verticalFovDegrees": 60
+  },
+  "geometryManifest": "geometry-metadata.json"
+}

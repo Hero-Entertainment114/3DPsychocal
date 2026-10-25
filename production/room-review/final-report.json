@@ -1,0 +1,60 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "courtyard",
+  "gates": {
+    "function": true,
+    "form": false,
+    "runtime": false
+  },
+  "formChecks": {
+    "floorPlanParity": false,
+    "primaryArrival": false,
+    "symmetry": false,
+    "shell": false,
+    "manifold": false,
+    "booleans": false,
+    "collisions": false,
+    "support": false,
+    "attachmentOrientation": false,
+    "ceilingAttachmentOrientation": false,
+    "seatingOrientation": false,
+    "focalDistribution": false,
+    "heroClearance": false,
+    "colonnades": false,
+    "screenClearance": false,
+    "scale": false,
+    "camera": false,
+    "ceilingCoverage": false,
+    "environmentCoverage": false,
+    "provenance": false
+  },
+  "reviewRenders": {
+    "corners": [],
+    "ceiling": [],
+    "environment": {}
+  },
+  "runtimeChecks": {
+    "vlow": false,
+    "textureTiers": false,
+    "lightmap": false,
+    "lightingManifest": false,
+    "performance": false,
+    "browserCapture": "",
+    "errors": []
+  },
+  "postmortem": {
+    "observations": [
+      "Five distinct dimensional Function drafts and 20 Blender renders exist.",
+      "No generated mesh has been purchased or exported.",
+      "Current game runtime uses earlier procedural development scenes."
+    ],
+    "corrections": [],
+    "remainingRisks": [
+      "Final Form geometry/art review pending",
+      "Runtime export and performance pending",
+      "4\u20136 hour duration and Windows binary unverified"
+    ]
+  },
+  "proposedLessons": [],
+  "route": "Human-approved local Blender route. Meshy-specific validation remains inapplicable/failed, not falsely passed."
+}

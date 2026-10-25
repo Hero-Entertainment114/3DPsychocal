@@ -1,0 +1,33 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "courtyard",
+  "function": {
+    "status": "approved",
+    "approvedBy": "user",
+    "approvedAt": "2026-10-25",
+    "evidence": [
+      "plans/courtyard-floor.png",
+      "plans/courtyard-ceiling.png",
+      "images/tin-reference.png",
+      "masks/contact.png"
+    ],
+    "strangestElement": "Current runtime doors are solid transition markers; the proposal provides real Boolean apertures and destinations.",
+    "notes": "User explicitly approved five layouts and tin reference, local Blender route only. No paid API authorization."
+  },
+  "form": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": ""
+  },
+  "runtime": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": ""
+  }
+}

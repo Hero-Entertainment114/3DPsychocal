@@ -1,0 +1,237 @@
+[
+  [
+    {
+      "id": "0-0",
+      "title": {
+        "vi": "Chiếc ghế gãy",
+        "en": "The broken chair"
+      },
+      "question": {
+        "vi": "Ngày xưa cháu ngồi đây suốt.",
+        "en": "I used to sit here all the time."
+      },
+      "answer": {
+        "vi": "Ừ. Con toàn kê chân lên thanh ngang. Bà mắng thì con bảo chân chưa tới đất. Giờ tới đất rồi, đừng làm như mình chưa từng cần ai đỡ nhé.",
+        "en": "You always put your feet on the crossbar. When I scolded you, you said they could not reach the ground. They do now. Remember what needing someone felt like."
+      }
+    },
+    {
+      "id": "0-1",
+      "title": {
+        "vi": "Những khoản tiền",
+        "en": "The remittances"
+      },
+      "question": {
+        "vi": "Bà có nghĩ mẹ cháu đã sửa được chuyện cũ?",
+        "en": "Do you think Mother put things right?"
+      },
+      "answer": {
+        "vi": "Bà chỉ mang tiền ra bưu điện. Có tháng Lan nhận, có tháng gửi lại. Mẹ con vẫn ghi cả hai vào sổ. Bà không biết người nhận cần gì mà người gửi đã gọi đó là bù đắp.",
+        "en": "I only took the money to the post office. Some months Lan accepted it, others she returned it. Your mother recorded both. I did not know what the recipient needed, though the sender called it restitution."
+      }
+    },
+    {
+      "id": "0-2",
+      "title": {
+        "vi": "Bà đã im lặng",
+        "en": "Your silence"
+      },
+      "question": {
+        "vi": "Bà có thể kể chuyện này sớm hơn.",
+        "en": "You could have told me sooner."
+      },
+      "answer": {
+        "vi": "Có thể. Bà sợ con về rồi chẳng còn muốn gọi nơi này là nhà. Hóa ra bà đang giữ một chữ nhà cho mình. Nếu con ghi lời bà, ghi cả câu đó.",
+        "en": "I could. I feared you would stop calling this place home. Perhaps I was keeping that word for myself. If you quote me, include that."
+      }
+    }
+  ],
+  [
+    {
+      "id": "1-0",
+      "title": {
+        "vi": "Chậu cây vỡ",
+        "en": "The broken plant pot"
+      },
+      "question": {
+        "vi": "Cô còn nhớ ai làm vỡ chậu?",
+        "en": "Do you remember who broke the pot?"
+      },
+      "answer": {
+        "vi": "Hai đứa cùng khiêng. An nhận lỗi trước vì Lan sắp có bài kiểm tra. Cô nhớ vì hôm đó cô khen con biết bảo vệ bạn. Sau này cô lại không làm được điều mình đã khen.",
+        "en": "You carried it together. You took the blame because Lan had an exam. I praised you for protecting your friend. Later I failed to do the very thing I had praised."
+      }
+    },
+    {
+      "id": "1-1",
+      "title": {
+        "vi": "Chữ ký",
+        "en": "The signature"
+      },
+      "question": {
+        "vi": "Sao cô không từ chối ký?",
+        "en": "Why did you not refuse to sign?"
+      },
+      "answer": {
+        "vi": "Thầy Vinh nói chỉ đổi cách ghi, trẻ con vẫn được đi học nơi khác. Cô biết một câu như vậy không trả lời chuyện gia đình các em sẽ sống ở đâu. Nhưng cô đã dùng nó để khỏi hỏi tiếp.",
+        "en": "Vinh said it was only a change of wording, that the children could study elsewhere. I knew that did not answer where they would live. I used it to stop asking."
+      }
+    },
+    {
+      "id": "1-2",
+      "title": {
+        "vi": "Lời khai hôm nay",
+        "en": "A statement today"
+      },
+      "question": {
+        "vi": "Cô muốn sửa dòng nào trước?",
+        "en": "Which line would you correct first?"
+      },
+      "answer": {
+        "vi": "Dòng nói Lan tự ý bỏ học. Không phải vì đó là lỗi duy nhất, mà vì cô là người có trách nhiệm với dòng ấy. Cô sẽ ký tên thật, không ký thay ai nữa.",
+        "en": "The line saying Lan left voluntarily. Not because it was the only wrong, but because I was responsible for that line. I will sign my own name, not on anyone else’s behalf."
+      }
+    }
+  ],
+  [
+    {
+      "id": "2-0",
+      "title": {
+        "vi": "Sau chuyến đò",
+        "en": "After the crossing"
+      },
+      "question": {
+        "vi": "Sao chú không kể chuyện cứu người?",
+        "en": "Why did you not tell people about the rescue?"
+      },
+      "answer": {
+        "vi": "Chú có kể. Hai lần. Lần thứ ba người ta bảo chú muốn được khen. Chú thôi. Im lặng cũng có nhiều kiểu: có người chọn nó, có người nói rồi mà không ai chịu nghe.",
+        "en": "I did. Twice. The third time they said I wanted praise. I stopped. There are different silences: some choose it; some speak and nobody listens."
+      }
+    },
+    {
+      "id": "2-1",
+      "title": {
+        "vi": "Chiếc thuyền",
+        "en": "The boat"
+      },
+      "question": {
+        "vi": "Chú có sợ lúc quay lại không?",
+        "en": "Were you afraid when you went back?"
+      },
+      "answer": {
+        "vi": "Có. Thuyền nhỏ, trời tối. Mai cầm đèn, Lan giữ áo mẹ. Không ai ở đó nghĩ mình đang làm điều anh hùng. Chúng tôi chỉ muốn tới bờ bên kia.",
+        "en": "Yes. Small boat, dark sky. Mai held the lamp; Lan held her mother’s coat. Nobody thought we were doing something heroic. We wanted the other bank."
+      }
+    },
+    {
+      "id": "2-2",
+      "title": {
+        "vi": "Một lời xin lỗi",
+        "en": "An apology"
+      },
+      "question": {
+        "vi": "Cháu từng trách chú. Cháu xin lỗi.",
+        "en": "I blamed you. I am sorry."
+      },
+      "answer": {
+        "vi": "Chú nghe rồi. Con đừng bắt Lan phải nói giống chú. Mỗi người mất một thứ khác nhau, đâu thể nhận cùng một lời xin lỗi.",
+        "en": "I hear you. Do not expect Lan to answer the same way. People lost different things; one apology cannot fit them all."
+      }
+    }
+  ],
+  [
+    {
+      "id": "3-0",
+      "title": {
+        "vi": "Lợi ích chung",
+        "en": "The common good"
+      },
+      "question": {
+        "vi": "Ai được tính vào chữ chung?",
+        "en": "Who counted as the common good?"
+      },
+      "answer": {
+        "vi": "Những hộ có giấy tờ, có người đứng ra nói. Tôi coi phần còn lại là vướng mắc phải giải quyết. Khi gọi một gia đình là vướng mắc, tôi không còn phải nhìn từng người trong đó.",
+        "en": "Households with papers, with someone who could speak for them. I called the rest an obstacle to resolve. Once a family became an obstacle, I did not have to look at the people in it."
+      }
+    },
+    {
+      "id": "3-1",
+      "title": {
+        "vi": "Bức tường",
+        "en": "The wall"
+      },
+      "question": {
+        "vi": "Ông có cho rằng bức tường đáng giá hơn nhà của họ?",
+        "en": "Was the wall worth more than their home?"
+      },
+      "answer": {
+        "vi": "Khi ấy tôi nói bức tường bảo vệ cả trường. Bây giờ nhìn con số, tôi vẫn biết tường cần xây. Nhưng cần xây không trao cho tôi quyền lấy phần tiền đã duyệt của người khác.",
+        "en": "I said it protected the school. Looking at the figure now, I still know it was needed. Need did not give me the right to take money already allocated to someone else."
+      }
+    },
+    {
+      "id": "3-2",
+      "title": {
+        "vi": "Đứng tên",
+        "en": "Putting your name to it"
+      },
+      "question": {
+        "vi": "Ông sẽ xác nhận điều gì bằng văn bản?",
+        "en": "What will you confirm in writing?"
+      },
+      "answer": {
+        "vi": "Rằng tôi phê duyệt chuyển khoản đó. Tôi không thể ký thay lời kể của Mai. Và tôi không thể viết rằng tôi đã được tha thứ chỉ vì hôm nay chịu ký.",
+        "en": "That I approved the transfer. I cannot sign on behalf of Mai’s account. Nor can I write that I am forgiven simply because I agree to sign today."
+      }
+    }
+  ],
+  [
+    {
+      "id": "4-0",
+      "title": {
+        "vi": "Cuộc đời sau đó",
+        "en": "Life afterwards"
+      },
+      "question": {
+        "vi": "Tớ đã không biết cậu sống thế nào.",
+        "en": "I did not know how you lived afterwards."
+      },
+      "answer": {
+        "vi": "Có lúc rất chật vật. Cũng có hôm vui. Tớ học may, quen người thương mình, sinh Nhi. Nếu chỉ kể ngày rời xóm, người đọc sẽ tưởng cuộc đời tớ dừng ở đó. Nó không dừng.",
+        "en": "Some times were difficult. Others were happy. I learned to sew, met someone who loved me, had Nhi. If you only tell the day we left, readers will think my life stopped there. It did not."
+      }
+    },
+    {
+      "id": "4-1",
+      "title": {
+        "vi": "Tiền của mẹ An",
+        "en": "Money from your mother"
+      },
+      "question": {
+        "vi": "Cậu có muốn tớ đưa chuyện tiền gửi vào bài không?",
+        "en": "Do you want the remittances included?"
+      },
+      "answer": {
+        "vi": "Tớ muốn người đọc biết tiền không mua được một câu tha thứ. Nhưng đừng đưa từng tháng thiếu tiền của nhà tớ lên mặt báo. Cậu có thể nói về hành động của người gửi mà không phơi hết đời người nhận.",
+        "en": "I want readers to know money cannot purchase forgiveness. But do not print every month my family struggled. You can describe the sender’s action without exposing the recipient’s whole life."
+      }
+    },
+    {
+      "id": "4-2",
+      "title": {
+        "vi": "Bản thảo cuối",
+        "en": "The final draft"
+      },
+      "question": {
+        "vi": "Tớ sẽ gửi cậu xem trước. Cậu có quyền bỏ lời nào là của cậu.",
+        "en": "I will send you the draft first. You may remove words that are yours."
+      },
+      "answer": {
+        "vi": "Vậy thì gửi. Tớ sẽ đọc, kể cả chỗ khó đọc. Cậu đừng viết kết thúc hộ tớ. Một cuộc xem xét có thể bắt đầu; đời sống còn phải tiếp tục sau dấu chấm cuối.",
+        "en": "Then send it. I will read it, including the difficult parts. Do not write my ending for me. A review may begin; life has to continue after the final full stop."
+      }
+    }
+  ]
+]

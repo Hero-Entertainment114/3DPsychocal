@@ -1,0 +1,115 @@
+{
+  "checks": "file decode, nonempty WAV, SHA-256, chapter/puzzle count",
+  "assets": [
+    {
+      "path": "assets/audio/chapter0.wav",
+      "bytes": 705644,
+      "sha256": "1ae8fd1f0ded984ce6db0aef49d09152b2dd4d4133da2cab2c6be06d878b1714"
+    },
+    {
+      "path": "assets/audio/chapter1.wav",
+      "bytes": 776204,
+      "sha256": "54e7c5d8982d23d18afa6b3742ec68b19757dd8cdf00bdf662520a9593956a17"
+    },
+    {
+      "path": "assets/audio/chapter2.wav",
+      "bytes": 846764,
+      "sha256": "181a960bf8a7fe6a606ca57fd167f9788d41e138acf5023477ba1dfab3b389ec"
+    },
+    {
+      "path": "assets/audio/chapter3.wav",
+      "bytes": 811482,
+      "sha256": "50e0c45ce525ee3b707529c940828341017e4849949512ea8b83ba4873759283"
+    },
+    {
+      "path": "assets/audio/chapter4.wav",
+      "bytes": 917324,
+      "sha256": "a95e59d2a5862ad932f0f8fb36acd0cb532011bead7e83900bc9df6568b89096"
+    },
+    {
+      "path": "assets/audio/discovery.wav",
+      "bytes": 52964,
+      "sha256": "dc44d35e0fc2cfa7c89c9e6ef0a0c97f597924061fe0ffa7bb54e49e95e49ea8"
+    },
+    {
+      "path": "assets/audio/ending_alone.wav",
+      "bytes": 952604,
+      "sha256": "4231997fd75839ee86fedfa588bdd641c92b8be9c05d4bc62c834ba987118df7"
+    },
+    {
+      "path": "assets/audio/ending_silence.wav",
+      "bytes": 1058444,
+      "sha256": "d95019d0c01947ac3c647cb84fe65686bacb21498b9b6deae47ec3791aaa0ffc"
+    },
+    {
+      "path": "assets/audio/ending_together.wav",
+      "bytes": 987882,
+      "sha256": "99a563c8c9c2eaee6f968d3c6c3660fc782d815dcb4be5d009f36bac6e21378e"
+    },
+    {
+      "path": "assets/audio/memory.wav",
+      "bytes": 705644,
+      "sha256": "4ad1dbcb3f761081eff3c64201bf52c5d8afbe781cdc73a651c4b05c87836856"
+    },
+    {
+      "path": "assets/audio/menu.wav",
+      "bytes": 882044,
+      "sha256": "f7794014263ed3c11ac99f2a93dd2520c8a0e20ec3e3aee35be59c814c40e831"
+    },
+    {
+      "path": "assets/audio/paper.wav",
+      "bytes": 13274,
+      "sha256": "1fc31b33229c5c028ffcfc27483451d575f92a94f20dafa17dc8a6d2d4bc0111"
+    },
+    {
+      "path": "assets/audio/rain.wav",
+      "bytes": 352844,
+      "sha256": "3eedd09fdc5418b2e7f6660901328a37b1d6b66e207c141dc17464a0797a6025"
+    },
+    {
+      "path": "assets/audio/step.wav",
+      "bytes": 7100,
+      "sha256": "38239c7f790a98fe50c1e3f55421a77151643742d4aa733c3de86be2221e38d2"
+    },
+    {
+      "path": "assets/fonts/DejaVuSans.ttf",
+      "bytes": 759720,
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+    },
+    {
+      "path": "assets/fonts/LICENSE-DejaVu.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "assets/textures/concrete.png",
+      "bytes": 70069,
+      "sha256": "32262b258b0d551c61a8e27c35c9844b7e8ae158052fc92b8e38d671e5e71673"
+    },
+    {
+      "path": "assets/textures/paper.png",
+      "bytes": 66490,
+      "sha256": "d28eda1ce86e9957fe4c94aa839baf0e00c390f7f68e8aeb6a10a18b0bc9b4cf"
+    },
+    {
+      "path": "assets/textures/plaster.png",
+      "bytes": 70074,
+      "sha256": "2b68405e0dfddb0c960772a8cd29025cfdb0c1bc36a51ed5d39ea17df4f01dde"
+    },
+    {
+      "path": "assets/textures/roof.png",
+      "bytes": 61776,
+      "sha256": "d55ef5b7120d31d9d67d9504ce6c62d708861d00e689d9eb6fcffbcb66367c85"
+    },
+    {
+      "path": "assets/textures/tile.png",
+      "bytes": 67044,
+      "sha256": "6755e62c052c6cec58228f99360acff047622713e02472ffd266ba76cf9def2a"
+    },
+    {
+      "path": "assets/textures/wood.png",
+      "bytes": 70431,
+      "sha256": "36ac036eb121f4f9a1b752b6f966d8fcc69062a5f76d4c655f2e7a78c34a624d"
+    }
+  ]
+}

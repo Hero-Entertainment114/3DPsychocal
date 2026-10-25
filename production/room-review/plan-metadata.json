@@ -1,0 +1,37 @@
+{
+  "schema": "game-room.plan-metadata.v1",
+  "roomId": "courtyard",
+  "style": "monochrome-engineering",
+  "projectionSource": "actual-meshes",
+  "layers": [
+    "lower-room",
+    "reflected-ceiling"
+  ],
+  "semanticLabelsOutsideImage": true,
+  "aiInspirationIncluded": false,
+  "aiInspirationReason": "",
+  "coverage": [
+    "room-outline",
+    "cutouts",
+    "openings",
+    "exterior-apron",
+    "main-sign",
+    "ingress-props",
+    "floor-markers",
+    "barriers",
+    "columns",
+    "circulation",
+    "placed-features"
+  ],
+  "geometrySource": "courtyard-FUNCTION-DRAFT.blend",
+  "completeObjectManifest": "geometry-metadata.json",
+  "projection": "orthographic actual design meshes; separate floor/ceiling renders",
+  "coverageNotes": {
+    "main-sign": "Area title in runtime HUD; no physical sign proposed",
+    "ingress-props": "Intentionally absent to preserve clear arrival",
+    "floor-markers": "Intentionally absent; runtime map supplies navigation",
+    "columns": "No freestanding colonnade proposed; veranda bears on perimeter walls",
+    "circulation": "Central north-south aisle plus side access shown in actual-mesh projection",
+    "barriers": "Continuous walls with scheduled Boolean openings"
+  }
+}

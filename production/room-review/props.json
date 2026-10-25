@@ -1,0 +1,46 @@
+{
+  "schema": "game-room.prop-manifest.v1",
+  "roomId": "courtyard",
+  "generation": {
+    "provider": "meshy",
+    "apiModel": "meshy-5",
+    "pricingSource": "https://docs.meshy.ai/en/api/pricing",
+    "pricingVerifiedAt": "",
+    "creditsPerTexturedTask": null,
+    "hardCreditCeiling": 0,
+    "maxChargedAttemptsPerAsset": 2
+  },
+  "assets": [
+    {
+      "id": "biscuit-tin",
+      "class": "hero",
+      "function": "Holds the key and evidence; returns at the ending.",
+      "description": "Worn teal enameled biscuit tin with separate removable lid.",
+      "dimensionsMeters": [
+        0.24,
+        0.24,
+        0.12
+      ],
+      "attachmentFace": "floor",
+      "semanticFront": "positive-z",
+      "targetPolycount": 1800,
+      "intendedInstances": 1,
+      "rejectionCriteria": [
+        "Fused lid/body prevents opening",
+        "Missing flat base",
+        "Floating or cropped geometry",
+        "Unreadable scale or implausible metal thickness"
+      ],
+      "image": {
+        "source": "images/tin-reference.png",
+        "generator": "image_gen",
+        "prompt": "One isolated worn late-1990s teal enameled biscuit tin, cream stripe, removable closed lid, flat base, 24 cm diameter, 12 cm height, complete three-quarter silhouette, even studio light, no text or scene.",
+        "approved": true,
+        "approvedBy": "user"
+      },
+      "attempts": []
+    }
+  ],
+  "notes": "No account or paid budget supplied. Pricing unverified; no Meshy or Lux3D task submitted. Local Blender proposal is separate from this unapproved service workflow.",
+  "routeDecision": "User approved local Blender construction; no Lux3D/Meshy account or budget."
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "courtyard",
+  "family": "gameplay-room",
+  "purpose": "Investigate a family memory in a Vietnamese courtyard, with unobstructed evidence circulation.",
+  "runtimeSurface": "Panda3D first-person desktop, development runtime; proposed Blender revision not yet integrated.",
+  "boundsMeters": [
+    18,
+    16,
+    3.8
+  ],
+  "hero": {
+    "id": "biscuit-tin",
+    "role": "Archive key and recurring family evidence container",
+    "reservedBoundsMeters": [
+      1.8,
+      1.2,
+      1.4
+    ]
+  },
+  "symmetry": {
+    "mode": "none",
+    "order": 1,
+    "appliesTo": [],
+    "exceptions": []
+  },
+  "circulation": {
+    "description": "Three-metre south arrival; central north-south circulation; side evidence stations; 1.6 m north exit to school path.",
+    "minimumClearanceMeters": 1.2
+  },
+  "productionCamera": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "location": [
+      0,
+      -7,
+      1.7
+    ],
+    "target": [
+      0,
+      8,
+      1.5
+    ],
+    "verticalFovDegrees": 60
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 100000,
+    "maxVLowBytes": 20000000,
+    "maxHighTextureBytes": 64000000
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "plans/courtyard-floor.png",
+    "reflectedCeilingPlan": "plans/courtyard-ceiling.png",
+    "planMetadata": "plan-metadata.json",
+    "wallElevations": [
+      "plans/courtyard-south-elevation.png"
+    ],
+    "visualTarget": "renders/courtyard-arrival.png",
+    "openingContactSheet": "masks/contact.png"
+  }
+}
