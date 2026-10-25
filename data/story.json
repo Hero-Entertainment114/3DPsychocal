@@ -1,0 +1,1162 @@
+{
+  "chapters": [
+    {
+      "title": {
+        "vi": "1 · Mùi nắng cũ",
+        "en": "1 · The smell of old sunlight"
+      },
+      "place": {
+        "vi": "Sân nhà tập thể",
+        "en": "Communal courtyard"
+      },
+      "intro": {
+        "vi": "Năm 2008. An, 29 tuổi, về xóm Bến sau đám tang mẹ. Trong hộp bánh quy, mẹ để lại một chìa khóa và lời nhắn: “Đừng ký trước khi con đọc.” Bà Tư vẫn bán trà. Bà bảo chiếc ghế cũ chỉ gãy khi khách định ghi nợ.",
+        "en": "2008. An, 29, returns to the wharf after her mother’s funeral. A biscuit tin holds a key and a note: “Read before you sign.” Mrs Tư still sells tea. She says the old chair only breaks when customers ask for credit."
+      },
+      "notes": [
+        {
+          "id": "calendar",
+          "title": {
+            "vi": "Tờ lịch gấp",
+            "en": "Folded calendar"
+          },
+          "body": {
+            "vi": "Ngày 17 tháng 8 năm 1998 được khoanh tròn. Sau lưng: “Sinh nhật An. Mở hộp bằng ngày rồi tháng, mỗi số hai chữ số.”",
+            "en": "17 August 1998 is circled. On the back: “An’s birthday. Open the tin with day then month, two digits each.”"
+          }
+        },
+        {
+          "id": "photo",
+          "title": {
+            "vi": "Tấm ảnh rách",
+            "en": "Torn photograph"
+          },
+          "body": {
+            "vi": "Ảnh sinh nhật có Lan đứng cạnh An. Phía sau ghi 17/8/1998. An nhớ Lan đã rời xóm từ tháng bảy. Mép ảnh bị cắt nhưng còn một bàn tay mẹ nắm vai Lan.",
+            "en": "Lan stands beside An at her birthday. The back reads 17 August 1998. An remembers Lan leaving in July. The edge is cut, but her mother’s hand still rests on Lan’s shoulder."
+          }
+        },
+        {
+          "id": "letter",
+          "title": {
+            "vi": "Thư của mẹ",
+            "en": "Mother’s letter"
+          },
+          "body": {
+            "vi": "“Họ sẽ bảo ký giấy bán nhà chỉ là thủ tục. Con tìm sổ lớp trước. Tủ hồ sơ chỉ nhận phiếu có dấu trường; bà Tư giữ phiếu đó trong hộp.”",
+            "en": "“They will say selling the house is a formality. Find the class register first. The archive cabinet needs a school-stamped slip; Mrs Tư keeps it in the tin.”"
+          }
+        }
+      ],
+      "puzzles": [
+        {
+          "id": "tin",
+          "title": {
+            "vi": "Hộp bánh quy",
+            "en": "Biscuit tin"
+          },
+          "prompt": {
+            "vi": "Nhập bốn chữ số trên khóa hộp.",
+            "en": "Enter the four-digit tin code."
+          },
+          "options": [],
+          "answer": "1708",
+          "requires": [
+            "calendar"
+          ],
+          "hints": [
+            {
+              "vi": "Ngày đứng trước tháng.",
+              "en": "Day precedes month."
+            },
+            {
+              "vi": "Ngày 17, tháng 08.",
+              "en": "Day 17, month 08."
+            }
+          ],
+          "reveal": {
+            "vi": "Hộp chứa phiếu mượn hồ sơ và một mảnh ảnh. Mẹ đã giữ chúng suốt mười năm.",
+            "en": "Inside are an archive slip and a photograph fragment. Mother kept them for ten years."
+          },
+          "kind": "code"
+        },
+        {
+          "id": "memory",
+          "title": {
+            "vi": "Ký ức lệch một tháng",
+            "en": "A memory out of step"
+          },
+          "prompt": {
+            "vi": "Vật chứng nào bác bỏ việc Lan rời xóm tháng bảy?",
+            "en": "What disproves Lan leaving in July?"
+          },
+          "options": [
+            {
+              "vi": "Ảnh sinh nhật tháng tám",
+              "en": "August birthday photograph"
+            },
+            {
+              "vi": "Chiếc ghế của bà Tư",
+              "en": "Mrs Tư’s chair"
+            },
+            {
+              "vi": "Chìa khóa nhà",
+              "en": "House key"
+            }
+          ],
+          "answer": 0,
+          "requires": [
+            "photo"
+          ],
+          "hints": [
+            {
+              "vi": "Đối chiếu ngày của ảnh.",
+              "en": "Compare the date on the photograph."
+            },
+            {
+              "vi": "Lan còn ở đây ngày 17 tháng tám.",
+              "en": "Lan was here on 17 August."
+            }
+          ],
+          "reveal": {
+            "vi": "Ký ức đầu tiên của An đã sai. Ai đã kể lại nó nhiều đến mức thành thật?",
+            "en": "An’s first memory is wrong. Who repeated it until it felt true?"
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "route",
+          "title": {
+            "vi": "Đường tới hồ sơ",
+            "en": "The archive route"
+          },
+          "prompt": {
+            "vi": "Chọn giấy tờ cần mang đến trường.",
+            "en": "Choose the document needed at school."
+          },
+          "options": [
+            {
+              "vi": "Giấy bán nhà",
+              "en": "Sale agreement"
+            },
+            {
+              "vi": "Phiếu mượn có dấu trường",
+              "en": "School-stamped archive slip"
+            },
+            {
+              "vi": "Tờ lịch",
+              "en": "Calendar"
+            }
+          ],
+          "answer": 1,
+          "requires": [
+            "letter"
+          ],
+          "hints": [
+            {
+              "vi": "Mẹ nói tủ hồ sơ cần gì?",
+              "en": "What did Mother say the cabinet requires?"
+            },
+            {
+              "vi": "Phiếu trong hộp có dấu trường.",
+              "en": "The slip in the tin bears the school stamp."
+            }
+          ],
+          "reveal": {
+            "vi": "Bà Tư đưa An phiếu mượn. “Cô Hạnh còn giữ chìa khóa trường. Đừng hỏi cô ấy ngay chuyện Lan.”",
+            "en": "Mrs Tư hands over the slip. “Teacher Hạnh has the school key. Don’t start by asking about Lan.”"
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "reconstruct",
+          "title": {
+            "vi": "Khôi phục tấm ảnh",
+            "en": "Reconstruct the photograph"
+          },
+          "prompt": {
+            "vi": "Xếp các sự kiện từ sớm đến muộn theo ngày trên lịch và ảnh.",
+            "en": "Arrange events from earliest to latest using the calendar and photograph."
+          },
+          "options": [
+            {
+              "vi": "An trở về sau đám tang năm 2008",
+              "en": "An returns after the funeral in 2008"
+            },
+            {
+              "vi": "Lời kể: Lan rời đi tháng bảy",
+              "en": "Claim: Lan left in July"
+            },
+            {
+              "vi": "An sinh nhật ngày 17 tháng tám",
+              "en": "An’s birthday on 17 August"
+            }
+          ],
+          "answer": "120",
+          "requires": [
+            "calendar",
+            "photo",
+            "letter"
+          ],
+          "hints": [
+            {
+              "vi": "Bắt đầu từ nguyên nhân hoặc mốc sớm nhất.",
+              "en": "Begin with the cause or earliest event."
+            },
+            {
+              "vi": "Trình tự đúng: thẻ thứ hai, thẻ thứ ba, thẻ thứ nhất.",
+              "en": "Correct order: second card, third card, first card."
+            }
+          ],
+          "reveal": {
+            "vi": "Lời kể cũ không thể đứng cùng tấm ảnh. An ghi ngày thật trước khi mang hồ sơ đến trường.",
+            "en": "The inherited account cannot stand beside the photograph. An records the dates before taking the papers to school."
+          },
+          "kind": "sequence"
+        }
+      ],
+      "npc": {
+        "name": "Nguyễn Thị Tư",
+        "role": {
+          "vi": "Người bán trà • 63 tuổi",
+          "en": "Tea seller • 63"
+        },
+        "line": {
+          "vi": "“Mẹ con gửi tiền cho Lan mỗi tháng. Bà ấy bảo là trả nợ. Nợ gì thì không nói. Con hỏi người ta trước khi đưa chuyện riêng lên báo nhé.”",
+          "en": "“Your mother sent Lan money every month. She called it a debt. Never said what for. Ask people before putting their private lives in the paper.”"
+        }
+      }
+    },
+    {
+      "title": {
+        "vi": "2 · Dòng tên bị xóa",
+        "en": "2 · An erased name"
+      },
+      "place": {
+        "vi": "Trường tiểu học cũ",
+        "en": "Old primary school"
+      },
+      "intro": {
+        "vi": "Cô Hạnh mở cửa lớp. Những chiếc bàn thấp khiến An thấy mình lớn quá nhanh. Cô bảo Lan học dở. Nhưng nét bút sửa trong sổ không cùng màu.",
+        "en": "Hạnh unlocks the classroom. The tiny desks make An feel she grew too quickly. Hạnh says Lan struggled at school. But the corrections in the register use a different ink."
+      },
+      "notes": [
+        {
+          "id": "register",
+          "title": {
+            "vi": "Sổ điểm",
+            "en": "Class register"
+          },
+          "body": {
+            "vi": "Lan: Toán 9, Văn 8. Dòng “tự ý nghỉ học 12/8” viết bằng mực tím, đè lên mực xanh. Cuối trang, Hạnh ký ngày 20/8.",
+            "en": "Lan: Maths 9, Literature 8. “Voluntarily left on 12 August” is written in purple over blue ink. Hạnh signed on 20 August."
+          }
+        },
+        {
+          "id": "attendance",
+          "title": {
+            "vi": "Phiếu trực nhật",
+            "en": "Cleaning rota"
+          },
+          "body": {
+            "vi": "Lan và An trực nhật ngày 18/8. Có chữ ký của cả hai. Cô Hạnh xác nhận hai em đã làm vỡ một chậu cây hôm đó.",
+            "en": "Lan and An cleaned the classroom on 18 August. Both signed. Hạnh confirms they broke a plant pot that day."
+          }
+        },
+        {
+          "id": "carbon",
+          "title": {
+            "vi": "Giấy than",
+            "en": "Carbon copy"
+          },
+          "body": {
+            "vi": "Sổ gốc → giấy than → bản sao. Nét hằn ở bản sao: “Chuyển chỗ ở vì thu hồi đất”. Bản gốc hiện ghi “tự ý nghỉ”.",
+            "en": "Original → carbon paper → copy. The copy’s indentation reads “Relocated due to land acquisition.” The original now says “left voluntarily.”"
+          }
+        }
+      ],
+      "puzzles": [
+        {
+          "id": "absence",
+          "title": {
+            "vi": "Ngày vắng mặt",
+            "en": "The missing day"
+          },
+          "prompt": {
+            "vi": "Chứng cứ nào trực tiếp bác ngày nghỉ học 12/8?",
+            "en": "Which evidence directly contradicts leaving school on 12 August?"
+          },
+          "options": [
+            {
+              "vi": "Phiếu trực nhật 18/8",
+              "en": "18 August cleaning rota"
+            },
+            {
+              "vi": "Điểm Toán 9",
+              "en": "Maths grade 9"
+            },
+            {
+              "vi": "Màu bàn học",
+              "en": "Desk colour"
+            }
+          ],
+          "answer": 0,
+          "requires": [
+            "register",
+            "attendance"
+          ],
+          "hints": [
+            {
+              "vi": "Tìm hoạt động sau ngày 12.",
+              "en": "Find an activity after the 12th."
+            },
+            {
+              "vi": "Cả hai ký phiếu ngày 18.",
+              "en": "Both signed on the 18th."
+            }
+          ],
+          "reveal": {
+            "vi": "Hạnh thừa nhận sửa sổ theo yêu cầu của hiệu trưởng Vinh. “Tôi nghĩ chỉ là một dòng giấy.”",
+            "en": "Hạnh admits changing the register at headmaster Vinh’s request. “I thought it was only a line on paper.”"
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "copy",
+          "title": {
+            "vi": "Xếp lớp giấy",
+            "en": "Layer the papers"
+          },
+          "prompt": {
+            "vi": "Nhập thứ tự từ trên xuống: 1 bản sao, 2 giấy than, 3 bản gốc.",
+            "en": "Enter top-to-bottom order: 1 copy, 2 carbon, 3 original."
+          },
+          "options": [],
+          "answer": "321",
+          "requires": [
+            "carbon"
+          ],
+          "hints": [
+            {
+              "vi": "Bút chạm bản gốc trước.",
+              "en": "The pen touches the original first."
+            },
+            {
+              "vi": "Bản gốc, giấy than, bản sao.",
+              "en": "Original, carbon, copy."
+            }
+          ],
+          "reveal": {
+            "vi": "Nét hằn giữ lại lý do chuyển trường thật. Một lời nói dối có thể sửa mực, không sửa được vết ép.",
+            "en": "The indentation preserves the real reason for transfer. A lie can change ink, but not pressure."
+          },
+          "kind": "code"
+        },
+        {
+          "id": "school",
+          "title": {
+            "vi": "Hai mảnh bằng chứng",
+            "en": "Two pieces of evidence"
+          },
+          "prompt": {
+            "vi": "Liên kết nào đủ để kết luận sổ đã che giấu việc di dời?",
+            "en": "Which link supports a concealed relocation?"
+          },
+          "options": [
+            {
+              "vi": "Điểm cao + chậu cây",
+              "en": "High grades + plant pot"
+            },
+            {
+              "vi": "Bản sao thu hồi đất + dòng tự ý nghỉ",
+              "en": "Acquisition copy + voluntary departure entry"
+            },
+            {
+              "vi": "Ảnh sinh nhật + màu mực",
+              "en": "Birthday photograph + ink colour"
+            }
+          ],
+          "answer": 1,
+          "requires": [
+            "carbon",
+            "register"
+          ],
+          "hints": [
+            {
+              "vi": "Cần đối chiếu cùng một nội dung.",
+              "en": "Compare the same statement."
+            },
+            {
+              "vi": "Lý do nghỉ học thay đổi giữa hai bản.",
+              "en": "The reason changes between copies."
+            }
+          ],
+          "reveal": {
+            "vi": "Trong hồ sơ có địa chỉ bến đò. Lan không bỏ đi vì học kém. Gia đình cô bị đưa khỏi xóm.",
+            "en": "The file contains a ferry address. Lan did not leave because of poor grades. Her family was removed from the neighbourhood."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "school_chain",
+          "title": {
+            "vi": "Quy trình sửa sổ",
+            "en": "How the register changed"
+          },
+          "prompt": {
+            "vi": "Xếp các dấu vết theo trình tự tạo bản ghi, sửa và ký.",
+            "en": "Order the traces by recording, alteration and signature."
+          },
+          "options": [
+            {
+              "vi": "Hạnh ký xác nhận ngày 20 tháng tám",
+              "en": "Hạnh signs on 20 August"
+            },
+            {
+              "vi": "Giấy than ghi lý do thu hồi đất",
+              "en": "Carbon paper records land acquisition"
+            },
+            {
+              "vi": "Dòng tự ý nghỉ đè lên bản gốc",
+              "en": "Voluntary departure overwrites the original"
+            }
+          ],
+          "answer": "120",
+          "requires": [
+            "carbon",
+            "register",
+            "attendance"
+          ],
+          "hints": [
+            {
+              "vi": "Bắt đầu từ nguyên nhân hoặc mốc sớm nhất.",
+              "en": "Begin with the cause or earliest event."
+            },
+            {
+              "vi": "Trình tự đúng: thẻ thứ hai, thẻ thứ ba, thẻ thứ nhất.",
+              "en": "Correct order: second card, third card, first card."
+            }
+          ],
+          "reveal": {
+            "vi": "Việc sửa xảy ra giữa hai thời điểm có thể đối chiếu, không phải lỗi trí nhớ của Lan.",
+            "en": "The alteration falls between checkable events; it is not Lan misremembering."
+          },
+          "kind": "sequence"
+        }
+      ],
+      "npc": {
+        "name": "Trần Thu Hạnh",
+        "role": {
+          "vi": "Giáo viên • 54 tuổi",
+          "en": "Teacher • 54"
+        },
+        "line": {
+          "vi": "“Tôi sợ mất lớp. Nhưng sợ không làm chữ ký của tôi biến mất. Nếu con cần, tôi sẽ đứng tên lời khai. Đừng đưa tên học trò khác vào.”",
+          "en": "“I feared losing my class. Fear does not erase my signature. I will put my name to a statement. Leave the other pupils’ names out.”"
+        }
+      }
+    },
+    {
+      "title": {
+        "vi": "3 · Chuyến đò không đi",
+        "en": "3 · The ferry that never left"
+      },
+      "place": {
+        "vi": "Bến sông mùa mưa",
+        "en": "Rainy riverside wharf"
+      },
+      "intro": {
+        "vi": "Chú Lộc đã thôi lái đò. Một chiếc radio vẫn phát tiếng rè trong mái chờ. An từng được kể rằng người lái đò đã bỏ mặc gia đình Lan.",
+        "en": "Lộc no longer runs the ferry. A radio crackles beneath the shelter. An was always told the ferryman abandoned Lan’s family."
+      },
+      "notes": [
+        {
+          "id": "radio",
+          "title": {
+            "vi": "Bản chép băng radio",
+            "en": "Radio transcript"
+          },
+          "body": {
+            "vi": "Băng ngày 19/8/1998: “Mưa lớn. Bến đóng từ 16 giờ. Tần số dự phòng: chín mươi mốt phẩy hai MHz.” Bản chép luôn có sẵn để không cần nghe âm thanh.",
+            "en": "19 August 1998: “Heavy rain. Wharf closed from 16:00. Backup frequency: ninety-one point two MHz.” A transcript is always available; hearing is not required."
+          }
+        },
+        {
+          "id": "ferry",
+          "title": {
+            "vi": "Nhật ký chuyến đò",
+            "en": "Ferry log"
+          },
+          "body": {
+            "vi": "15:20: chuyến cuối. 16:00: đóng bến. 17:10: Lộc dùng thuyền riêng đưa bà Mai và Lan sang trạm y tế; không thu tiền.",
+            "en": "15:20: last public ferry. 16:00: wharf closed. 17:10: Lộc took Mai and Lan to the clinic in his own boat; no fare collected."
+          }
+        },
+        {
+          "id": "receipt",
+          "title": {
+            "vi": "Biên nhận trạm y tế",
+            "en": "Clinic receipt"
+          },
+          "body": {
+            "vi": "17:35 ngày 19/8: Mai và Lan tới trạm. Người đưa: Phạm Văn Lộc. Dòng ghi chú: “Hồ sơ bồi thường còn để trong nhà kho.”",
+            "en": "17:35, 19 August: Mai and Lan arrived. Brought by Phạm Văn Lộc. Note: “Compensation file still in the warehouse.”"
+          }
+        }
+      ],
+      "puzzles": [
+        {
+          "id": "tune",
+          "title": {
+            "vi": "Tần số dự phòng",
+            "en": "Backup frequency"
+          },
+          "prompt": {
+            "vi": "Nhập tần số MHz từ băng chép.",
+            "en": "Enter the MHz frequency from the transcript."
+          },
+          "options": [],
+          "answer": "91.2",
+          "requires": [
+            "radio"
+          ],
+          "hints": [
+            {
+              "vi": "Nghe hoặc đọc dòng cuối bản chép.",
+              "en": "Read the final line of the transcript."
+            },
+            {
+              "vi": "Chín mươi mốt phẩy hai.",
+              "en": "Ninety-one point two."
+            }
+          ],
+          "reveal": {
+            "vi": "Radio phát lại lệnh đóng bến. Không có lệnh cấm cứu người; Lộc đã tự chọn quay lại.",
+            "en": "The radio repeats the closure order. Nothing forbade rescue; Lộc chose to return."
+          },
+          "kind": "code"
+        },
+        {
+          "id": "time",
+          "title": {
+            "vi": "Khoảng thời gian",
+            "en": "The interval"
+          },
+          "prompt": {
+            "vi": "Từ lúc bến đóng tới chuyến cứu người là bao nhiêu phút?",
+            "en": "How many minutes passed between closure and the rescue departure?"
+          },
+          "options": [],
+          "answer": "70",
+          "requires": [
+            "ferry"
+          ],
+          "hints": [
+            {
+              "vi": "Từ 16:00 tới 17:10.",
+              "en": "From 16:00 to 17:10."
+            },
+            {
+              "vi": "Một giờ và mười phút.",
+              "en": "One hour and ten minutes."
+            }
+          ],
+          "reveal": {
+            "vi": "Lộc quay lại sau khi bến đóng. Câu chuyện về một người bỏ mặc hàng xóm đã che mất người thực sự ra lệnh di dời.",
+            "en": "Lộc returned after closure. The tale of an uncaring neighbour obscured whoever ordered the eviction."
+          },
+          "kind": "code"
+        },
+        {
+          "id": "witness",
+          "title": {
+            "vi": "Người bị đổ lỗi",
+            "en": "The blamed witness"
+          },
+          "prompt": {
+            "vi": "Cặp chứng cứ nào xác nhận chuyến cứu người đã tới nơi?",
+            "en": "Which pair confirms the rescue arrived?"
+          },
+          "options": [
+            {
+              "vi": "Lệnh đóng bến + trời mưa",
+              "en": "Closure order + rainfall"
+            },
+            {
+              "vi": "Nhật ký 17:10 + biên nhận 17:35",
+              "en": "17:10 log + 17:35 receipt"
+            },
+            {
+              "vi": "Tần số radio + ảnh",
+              "en": "Radio frequency + photograph"
+            }
+          ],
+          "answer": 1,
+          "requires": [
+            "ferry",
+            "receipt"
+          ],
+          "hints": [
+            {
+              "vi": "Cần một ghi nhận ở mỗi đầu hành trình.",
+              "en": "You need a record at each end of the journey."
+            },
+            {
+              "vi": "Nhật ký xuất phát, biên nhận đến nơi.",
+              "en": "Departure log and arrival receipt."
+            }
+          ],
+          "reveal": {
+            "vi": "Lộc trao chìa kho lưu trữ. Người An từng trách là người duy nhất quay thuyền lại.",
+            "en": "Lộc gives An the archive key. The man she blamed was the only one who turned his boat around."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "rescue_order",
+          "title": {
+            "vi": "Dựng lại chuyến đò",
+            "en": "Rebuild the rescue"
+          },
+          "prompt": {
+            "vi": "Xếp ba ghi nhận theo thứ tự trong ngày.",
+            "en": "Arrange the three records within the day."
+          },
+          "options": [
+            {
+              "vi": "Trạm tiếp nhận lúc 17:35",
+              "en": "Clinic arrival at 17:35"
+            },
+            {
+              "vi": "Bến đóng lúc 16:00",
+              "en": "Wharf closes at 16:00"
+            },
+            {
+              "vi": "Lộc rời bến lúc 17:10",
+              "en": "Lộc departs at 17:10"
+            }
+          ],
+          "answer": "120",
+          "requires": [
+            "radio",
+            "ferry",
+            "receipt"
+          ],
+          "hints": [
+            {
+              "vi": "Bắt đầu từ nguyên nhân hoặc mốc sớm nhất.",
+              "en": "Begin with the cause or earliest event."
+            },
+            {
+              "vi": "Trình tự đúng: thẻ thứ hai, thẻ thứ ba, thẻ thứ nhất.",
+              "en": "Correct order: second card, third card, first card."
+            }
+          ],
+          "reveal": {
+            "vi": "Khoảng trống sau giờ đóng bến chứa một quyết định quay lại, không phải bằng chứng bỏ mặc.",
+            "en": "The gap after closure contains a decision to return, not evidence of abandonment."
+          },
+          "kind": "sequence"
+        }
+      ],
+      "npc": {
+        "name": "Phạm Văn Lộc",
+        "role": {
+          "vi": "Người lái đò • 61 tuổi",
+          "en": "Ferryman • 61"
+        },
+        "line": {
+          "vi": "“Chú không cần lên báo để thành người tốt. Con hỏi Lan xem cô ấy cần gì. Cứu được một chuyến đò đâu có trả lại được căn nhà.”",
+          "en": "“I don’t need a newspaper to make me good. Ask Lan what she needs. One rescue could not give her home back.”"
+        }
+      }
+    },
+    {
+      "title": {
+        "vi": "4 · Những người đã ký",
+        "en": "4 · Those who signed"
+      },
+      "place": {
+        "vi": "Phòng lưu trữ",
+        "en": "Records office"
+      },
+      "intro": {
+        "vi": "Ông Vinh nói khu nhà mới đã giúp nhiều người. Ông không nhắc những người không đủ giấy tờ để được chia chỗ. Trong tủ, An nhận ra nét chữ mẹ.",
+        "en": "Vinh says the new housing helped many families. He does not mention those without paperwork who received no place. In a cabinet, An recognises her mother’s handwriting."
+      },
+      "notes": [
+        {
+          "id": "ledger",
+          "title": {
+            "vi": "Sổ bồi thường",
+            "en": "Compensation ledger"
+          },
+          "body": {
+            "vi": "Gia đình Mai: duyệt 12 triệu đồng. Phiếu chi thực nhận: 0. Mục chuyển khoản nội bộ: 12 triệu sang quỹ xây tường. Chữ ký phê duyệt: Vinh.",
+            "en": "Mai’s family: 12 million đồng approved. Actual payment: 0. Internal transfer: 12 million to the wall construction fund. Approved by Vinh."
+          }
+        },
+        {
+          "id": "petition",
+          "title": {
+            "vi": "Đơn tập thể",
+            "en": "Collective petition"
+          },
+          "body": {
+            "vi": "Đơn nói nhà Mai trống từ tháng bảy. Người xác nhận: Vinh, Hạnh, mẹ An. Phụ lục có tranh trẻ em vẽ “ngôi nhà bỏ hoang”, ký tên An.",
+            "en": "The petition says Mai’s house was empty from July. Witnesses: Vinh, Hạnh, An’s mother. Attached is a child’s drawing titled “the abandoned house,” signed An."
+          }
+        },
+        {
+          "id": "draft",
+          "title": {
+            "vi": "Bản nháp của mẹ",
+            "en": "Mother’s draft"
+          },
+          "body": {
+            "vi": "“Tôi ký để giữ suất nhà cho con. Tôi đã bảo An vẽ căn nhà không có ai. Tiền gửi cho Lan không mua được sự tha thứ. Đừng dùng bức thư này để bắt con bé tha thứ cho tôi.”",
+            "en": "“I signed to keep my daughter’s housing allocation. I told An to draw the house empty. Money sent to Lan cannot buy forgiveness. Do not use this letter to demand it from her.”"
+          }
+        }
+      ],
+      "puzzles": [
+        {
+          "id": "money",
+          "title": {
+            "vi": "Khoản tiền mất",
+            "en": "The missing payment"
+          },
+          "prompt": {
+            "vi": "Bao nhiêu triệu đồng được duyệt nhưng không đến tay gia đình Mai?",
+            "en": "How many approved million đồng never reached Mai’s family?"
+          },
+          "options": [],
+          "answer": "12",
+          "requires": [
+            "ledger"
+          ],
+          "hints": [
+            {
+              "vi": "Lấy số duyệt trừ thực nhận.",
+              "en": "Subtract payment from approval."
+            },
+            {
+              "vi": "12 trừ 0.",
+              "en": "12 minus 0."
+            }
+          ],
+          "reveal": {
+            "vi": "Đây là tiền bị chuyển mục đích, không phải một gia đình tự ý bỏ khoản nhận.",
+            "en": "The money was diverted. The family did not voluntarily abandon its entitlement."
+          },
+          "kind": "code"
+        },
+        {
+          "id": "claim",
+          "title": {
+            "vi": "Kiểm tra lời khai",
+            "en": "Check the claim"
+          },
+          "prompt": {
+            "vi": "Bằng chứng từ chương đầu phản bác nhà trống tháng bảy là gì?",
+            "en": "Which early evidence challenges the July vacancy claim?"
+          },
+          "options": [
+            {
+              "vi": "Ảnh có Lan tại sinh nhật tháng tám",
+              "en": "Lan at the August birthday"
+            },
+            {
+              "vi": "Hộp bánh quy cũ",
+              "en": "Old biscuit tin"
+            },
+            {
+              "vi": "Ghế gãy",
+              "en": "Broken chair"
+            }
+          ],
+          "answer": 0,
+          "requires": [
+            "petition",
+            "photo"
+          ],
+          "hints": [
+            {
+              "vi": "Lan vẫn ở xóm sau tháng bảy.",
+              "en": "Lan was still there after July."
+            },
+            {
+              "vi": "Ảnh ngày 17/8 mâu thuẫn với đơn.",
+              "en": "The 17 August photograph contradicts the petition."
+            }
+          ],
+          "reveal": {
+            "vi": "Chữ ký của mẹ không chỉ là nhân chứng. Bà đã hưởng lợi từ một lời khai sai.",
+            "en": "Mother was more than a witness. She benefited from a false statement."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "drawing",
+          "title": {
+            "vi": "Bức vẽ của An",
+            "en": "An’s drawing"
+          },
+          "prompt": {
+            "vi": "Kết luận nào phù hợp với bức thư và bức vẽ?",
+            "en": "Which conclusion fits the letter and drawing?"
+          },
+          "options": [
+            {
+              "vi": "An khi nhỏ chủ mưu",
+              "en": "An masterminded it as a child"
+            },
+            {
+              "vi": "Mẹ hướng dẫn bức vẽ để hỗ trợ đơn sai",
+              "en": "Mother directed the drawing to support the false petition"
+            },
+            {
+              "vi": "Bức vẽ chứng minh nhà trống",
+              "en": "The drawing proves the house was empty"
+            }
+          ],
+          "answer": 1,
+          "requires": [
+            "draft",
+            "petition"
+          ],
+          "hints": [
+            {
+              "vi": "Phân biệt người lớn quyết định và trẻ em làm theo.",
+              "en": "Distinguish adult decisions from a child following instructions."
+            },
+            {
+              "vi": "Mẹ viết chính mình đã bảo An vẽ.",
+              "en": "Mother says she told An what to draw."
+            }
+          ],
+          "reveal": {
+            "vi": "An không chịu trách nhiệm như người lớn khi ấy. Nhưng hôm nay, cô phải quyết định sẽ dùng những giấy tờ này thế nào.",
+            "en": "An was not responsible as an adult then. Today she is responsible for what she does with these records."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "responsibility",
+          "title": {
+            "vi": "Tách người làm và người hưởng",
+            "en": "Separate action and benefit"
+          },
+          "prompt": {
+            "vi": "Xếp chuỗi dẫn tới bức vẽ bị dùng làm chứng cứ, theo thư của mẹ.",
+            "en": "Order how the drawing became evidence, according to Mother’s letter."
+          },
+          "options": [
+            {
+              "vi": "Người lớn đính bức vẽ vào đơn",
+              "en": "Adults attach the drawing to the petition"
+            },
+            {
+              "vi": "Mẹ muốn giữ suất nhà cho An",
+              "en": "Mother wants to keep An’s housing allocation"
+            },
+            {
+              "vi": "Mẹ bảo An vẽ ngôi nhà trống",
+              "en": "Mother tells An to draw an empty house"
+            }
+          ],
+          "answer": "120",
+          "requires": [
+            "draft",
+            "petition",
+            "ledger"
+          ],
+          "hints": [
+            {
+              "vi": "Bắt đầu từ nguyên nhân hoặc mốc sớm nhất.",
+              "en": "Begin with the cause or earliest event."
+            },
+            {
+              "vi": "Trình tự đúng: thẻ thứ hai, thẻ thứ ba, thẻ thứ nhất.",
+              "en": "Correct order: second card, third card, first card."
+            }
+          ],
+          "reveal": {
+            "vi": "An thêm chú thích tuổi của mình vào hồ sơ. Nhận trách nhiệm hôm nay không cần nhận một tội lỗi của người lớn khi mới chín tuổi.",
+            "en": "An annotates her age in the file. Responsibility today does not mean taking on an adult’s culpability at nine."
+          },
+          "kind": "sequence"
+        }
+      ],
+      "npc": {
+        "name": "Đỗ Quang Vinh",
+        "role": {
+          "vi": "Cựu hiệu trưởng • 67 tuổi",
+          "en": "Former headmaster • 67"
+        },
+        "line": {
+          "vi": "“Tôi gọi đó là lợi ích chung vì tôi được quyền định nghĩa chữ chung. Tôi sẽ ký xác nhận khoản tiền. Nhưng tôi vẫn sợ tên mình trên báo.”",
+          "en": "“I called it the common good because I got to define common. I will acknowledge the diverted money. I am still afraid to see my name in print.”"
+        }
+      }
+    },
+    {
+      "title": {
+        "vi": "5 · Một chỗ để gọi tên",
+        "en": "5 · A place to be named"
+      },
+      "place": {
+        "vi": "Nhà kho bên bến",
+        "en": "Wharf warehouse"
+      },
+      "intro": {
+        "vi": "Lan đến cùng con gái, Nhi. Cô không muốn trở thành nhân vật trong câu chuyện chuộc lỗi của An. Nhà kho sắp bị phá. Trên bàn là ba tập giấy và một phong bì chưa ghi địa chỉ.",
+        "en": "Lan arrives with her daughter Nhi. She does not want to be a character in An’s redemption story. The warehouse faces demolition. Three folders and an unaddressed envelope lie on the table."
+      },
+      "notes": [
+        {
+          "id": "lan",
+          "title": {
+            "vi": "Lời đề nghị của Lan",
+            "en": "Lan’s request"
+          },
+          "body": {
+            "vi": "“Công khai khoản tiền và trách nhiệm. Che địa chỉ hiện tại, bệnh án của mẹ và tên con tôi. Cho tôi đọc bản cuối. Tôi muốn quyền quyết định, không cần được cứu lần nữa.”",
+            "en": "“Publish the money trail and responsibility. Remove my address, my mother’s medical details, and my child’s name. Let me read the final draft. I want agency, not another rescue.”"
+          }
+        },
+        {
+          "id": "editor",
+          "title": {
+            "vi": "Thư biên tập viên Sơn",
+            "en": "Editor Sơn’s letter"
+          },
+          "body": {
+            "vi": "“Bản công khai cần hồ sơ tiền, chứng cứ di dời và lời xác nhận. Bệnh án không chứng minh khoản tiền bị chuyển. Nhân chứng phải đồng ý việc trích lời.”",
+            "en": "“Publication needs the financial records, relocation evidence, and a statement. Medical details do not prove diversion. Witnesses must consent to quotation.”"
+          }
+        },
+        {
+          "id": "nhi",
+          "title": {
+            "vi": "Trang vở của Nhi",
+            "en": "Nhi’s notebook"
+          },
+          "body": {
+            "vi": "“Con muốn vẽ nhà có người bên trong.” Lan nói sẽ giữ một bản hồ sơ ở nơi cô chọn. Nhi hỏi: “Con được viết tên ai lên cửa?”",
+            "en": "“I want to draw a house with people inside.” Lan will keep a copy somewhere she chooses. Nhi asks, “Whose name can I write on the door?”"
+          }
+        }
+      ],
+      "puzzles": [
+        {
+          "id": "redact",
+          "title": {
+            "vi": "Những dòng cần che",
+            "en": "Lines to redact"
+          },
+          "prompt": {
+            "vi": "Giữ gì trong bản công khai theo yêu cầu của Lan?",
+            "en": "What belongs in the public version under Lan’s conditions?"
+          },
+          "options": [
+            {
+              "vi": "Địa chỉ và bệnh án",
+              "en": "Address and medical details"
+            },
+            {
+              "vi": "Khoản tiền, chữ ký và chứng cứ di dời",
+              "en": "Money trail, signatures and relocation evidence"
+            },
+            {
+              "vi": "Tên của Nhi",
+              "en": "Nhi’s name"
+            }
+          ],
+          "answer": 1,
+          "requires": [
+            "lan",
+            "editor"
+          ],
+          "hints": [
+            {
+              "vi": "Chỉ giữ thông tin chứng minh trách nhiệm.",
+              "en": "Keep evidence of responsibility."
+            },
+            {
+              "vi": "Lan yêu cầu che thông tin riêng của gia đình.",
+              "en": "Lan asks to remove private family details."
+            }
+          ],
+          "reveal": {
+            "vi": "An tạo bản che thông tin riêng. Chứng cứ vẫn còn nguyên giá trị.",
+            "en": "An prepares a redacted copy. The evidence remains intact."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "chain",
+          "title": {
+            "vi": "Chuỗi bằng chứng",
+            "en": "Evidence chain"
+          },
+          "prompt": {
+            "vi": "Chọn chuỗi đủ cho kết luận di dời bị che giấu và tiền bị chuyển.",
+            "en": "Choose the chain supporting concealed relocation and diverted funds."
+          },
+          "options": [
+            {
+              "vi": "Ảnh → bản sao trường → sổ bồi thường",
+              "en": "Photograph → school copy → ledger"
+            },
+            {
+              "vi": "Bệnh án → tiếng mưa → chiếc ghế",
+              "en": "Medical record → rain → chair"
+            },
+            {
+              "vi": "Bức vẽ → lời đồn → radio",
+              "en": "Drawing → rumour → radio"
+            }
+          ],
+          "answer": 0,
+          "requires": [
+            "editor",
+            "ledger",
+            "carbon"
+          ],
+          "hints": [
+            {
+              "vi": "Cần chứng minh còn ở đó, phải đi, và mất tiền.",
+              "en": "Establish presence, forced relocation, and missing funds."
+            },
+            {
+              "vi": "Ảnh, bản sao, sổ tiền.",
+              "en": "Photograph, copy, ledger."
+            }
+          ],
+          "reveal": {
+            "vi": "Một chuỗi kiểm chứng được thay thế câu chuyện cả xóm từng lặp lại.",
+            "en": "A verifiable chain replaces the story the neighbourhood kept repeating."
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "custody",
+          "title": {
+            "vi": "Bản gốc thuộc về ai",
+            "en": "Who keeps the originals"
+          },
+          "prompt": {
+            "vi": "Cách lưu trữ nào tôn trọng lời Lan và bảo toàn chứng cứ?",
+            "en": "Which approach respects Lan and preserves the evidence?"
+          },
+          "options": [
+            {
+              "vi": "Hủy toàn bộ sau khi đọc",
+              "en": "Destroy everything after reading"
+            },
+            {
+              "vi": "Chỉ An giữ, không cho Lan xem",
+              "en": "Only An keeps it; Lan cannot see it"
+            },
+            {
+              "vi": "Lan chọn nơi giữ bản gốc; tạo bản sao kiểm chứng",
+              "en": "Lan chooses custody; make verifiable copies"
+            }
+          ],
+          "answer": 2,
+          "requires": [
+            "lan",
+            "nhi"
+          ],
+          "hints": [
+            {
+              "vi": "Người bị ảnh hưởng cần có quyền quyết định.",
+              "en": "Those affected need agency."
+            },
+            {
+              "vi": "Bản gốc an toàn và bản sao để đối chiếu.",
+              "en": "Safe originals and copies for verification."
+            }
+          ],
+          "reveal": {
+            "vi": "Lan đặt hồ sơ vào hộp. “Bây giờ mình nói chuyện sẽ gửi nó đi đâu.”",
+            "en": "Lan puts the records into the tin. “Now we can talk about where to send them.”"
+          },
+          "kind": "choice"
+        },
+        {
+          "id": "publication_order",
+          "title": {
+            "vi": "Quy trình công bố",
+            "en": "Publication process"
+          },
+          "prompt": {
+            "vi": "Xếp quy trình phù hợp với điều Lan và Sơn yêu cầu.",
+            "en": "Order the process that respects Lan’s and Sơn’s requirements."
+          },
+          "options": [
+            {
+              "vi": "Gửi bản đã được duyệt tới biên tập viên",
+              "en": "Submit the approved account to the editor"
+            },
+            {
+              "vi": "Đối chiếu bản sao với chứng cứ gốc",
+              "en": "Check copies against original evidence"
+            },
+            {
+              "vi": "Che thông tin riêng, gửi Lan duyệt lời trích",
+              "en": "Redact private details; let Lan approve quotations"
+            }
+          ],
+          "answer": "120",
+          "requires": [
+            "lan",
+            "editor",
+            "nhi"
+          ],
+          "hints": [
+            {
+              "vi": "Bắt đầu từ nguyên nhân hoặc mốc sớm nhất.",
+              "en": "Begin with the cause or earliest event."
+            },
+            {
+              "vi": "Trình tự đúng: thẻ thứ hai, thẻ thứ ba, thẻ thứ nhất.",
+              "en": "Correct order: second card, third card, first card."
+            }
+          ],
+          "reveal": {
+            "vi": "Bản thảo đã sẵn sàng. Việc có chờ người trong cuộc đồng ý hay không vẫn là quyết định của An.",
+            "en": "The draft is ready. Whether to wait for the subject’s approval remains An’s choice."
+          },
+          "kind": "sequence"
+        }
+      ],
+      "npc": {
+        "name": "Lê Hoài Lan",
+        "role": {
+          "vi": "Thợ may • 29 tuổi",
+          "en": "Seamstress • 29"
+        },
+        "line": {
+          "vi": "“Tớ có một cuộc đời sau chuyện đó. Nếu cậu muốn kể, để tớ đọc bản cuối và quyết định lời nào là của tớ.”",
+          "en": "“I had a life after that. If you tell this story, let me read the final version and decide which words are mine.”"
+        }
+      }
+    }
+  ],
+  "endings": {
+    "silence": {
+      "vi": "CHIẾC HỘP KHÉP LẠI\nAn giữ giấy tờ trong hộp. Nhà kho bị phá vào mùa mưa sau. Lan giữ bản sao riêng, nhưng không có hồ sơ công khai để yêu cầu xem lại khoản tiền. Tình bạn không mất hẳn; giữa họ còn một chuyện chưa thể nói.",
+      "en": "THE CLOSED TIN\nAn keeps the papers in the tin. The warehouse is demolished the following rainy season. Lan retains her copy, but there is no public record to support reviewing the payment. Their friendship survives, with something still unsaid."
+    },
+    "alone": {
+      "vi": "TIẾNG VANG KHÔNG CHỦ\nAn gửi hồ sơ trước khi Lan duyệt lời trích. Khoản tiền bị chuyển được đưa ra ánh sáng. Lan đòi tòa soạn rút lời kể của mình. Một cuộc xem xét bắt đầu, nhưng An không biết liệu cánh cửa nhà Lan có còn mở cho cô.",
+      "en": "AN UNCLAIMED ECHO\nAn sends the records before Lan approves her quotations. The diversion becomes public. Lan asks the paper to withdraw her account. A review begins, but An does not know whether Lan’s door is still open to her."
+    },
+    "together": {
+      "vi": "BẾN CÓ TÊN\nLan duyệt bản thảo và cùng An gửi hồ sơ. Hạnh đứng tên lời khai. Việc xem xét bắt đầu, chưa ai hứa sẽ trả lại tiền. Bà Tư đặt một chiếc ghế mới bên bến. Nhi viết tên bà ngoại lên bản vẽ căn nhà có người ở.",
+      "en": "A NAMED WHARF\nLan approves the draft and submits it with An. Hạnh signs her statement. A review begins; nobody promises repayment. Mrs Tư places a new chair by the wharf. Nhi writes her grandmother’s name on a drawing of a house with people inside."
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "room": "courtyard",
+    "source": "courtyard/courtyard-FORM.blend",
+    "source_sha256": "d5ca6dddc47f024dff75ccd2621f5bf33a377551bb847c35a3cd1dac64136762",
+    "baseTriangles": 2408,
+    "renders": 8,
+    "formApproval": "pending",
+    "runtimeExport": false
+  },
+  {
+    "room": "school",
+    "source": "school/school-FORM.blend",
+    "source_sha256": "93f9717b12c2d7c2b7a09cacf4bdf572096c0656e4316702d17eb3469fe5a5f0",
+    "baseTriangles": 3500,
+    "renders": 8,
+    "formApproval": "pending",
+    "runtimeExport": false
+  },
+  {
+    "room": "wharf",
+    "source": "wharf/wharf-FORM.blend",
+    "source_sha256": "ab99006336d400914de25a7147efb4aef215aacbc291a4ed1db03988f23e53bc",
+    "baseTriangles": 2300,
+    "renders": 8,
+    "formApproval": "pending",
+    "runtimeExport": false
+  },
+  {
+    "room": "archive",
+    "source": "archive/archive-FORM.blend",
+    "source_sha256": "21febe4c4db062cd646179155c7e7716b96892457e5632e812181da7c279339f",
+    "baseTriangles": 3704,
+    "renders": 8,
+    "formApproval": "pending",
+    "runtimeExport": false
+  },
+  {
+    "room": "warehouse",
+    "source": "warehouse/warehouse-FORM.blend",
+    "source_sha256": "57fc8107d4bb28f339fd63c644a20e86e9f7900d10a5b4a9013fbdf23880091c",
+    "baseTriangles": 2396,
+    "renders": 8,
+    "formApproval": "pending",
+    "runtimeExport": false
+  }
+]

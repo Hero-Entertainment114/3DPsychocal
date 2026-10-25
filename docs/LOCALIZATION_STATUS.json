@@ -1,0 +1,12 @@
+{
+  "languages": [
+    "vi",
+    "en",
+    "ja",
+    "zh"
+  ],
+  "ja_zh_status": "offline machine-translation draft; native-speaker review pending",
+  "engine": "CTranslate2 4.8.3 / official Argos models en-ja 1.1 and en-zh 1.9",
+  "strings_per_new_language": 373,
+  "runtime_requires_models": false
+}

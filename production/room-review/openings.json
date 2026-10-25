@@ -1,0 +1,66 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "courtyard",
+  "primaryArrival": {
+    "openingId": "arrival",
+    "exception": ""
+  },
+  "openings": [
+    {
+      "id": "arrival",
+      "kind": "door",
+      "widthMeters": 3,
+      "heightMeters": 2.6,
+      "sillMeters": 0,
+      "thresholdMeters": 0,
+      "depthMeters": 0.3,
+      "wall": "south",
+      "destination": "Courtyard approach apron",
+      "mask": "masks/arrival.png",
+      "cutter": "masks/arrival-cutter.json",
+      "approved": true
+    },
+    {
+      "id": "exit",
+      "kind": "door",
+      "widthMeters": 1.6,
+      "heightMeters": 2.6,
+      "sillMeters": 0,
+      "thresholdMeters": 0,
+      "depthMeters": 0.3,
+      "wall": "north",
+      "destination": "School approach landing",
+      "mask": "masks/exit.png",
+      "cutter": "masks/exit-cutter.json",
+      "approved": true
+    },
+    {
+      "id": "window-west",
+      "kind": "window",
+      "widthMeters": 2.4,
+      "heightMeters": 1.4,
+      "sillMeters": 1.3,
+      "thresholdMeters": 0,
+      "depthMeters": 0.3,
+      "wall": "west",
+      "destination": "Exterior daylight",
+      "mask": "masks/window-west.png",
+      "cutter": "masks/window-west-cutter.json",
+      "approved": true
+    },
+    {
+      "id": "window-east",
+      "kind": "window",
+      "widthMeters": 2.4,
+      "heightMeters": 1.4,
+      "sillMeters": 1.3,
+      "thresholdMeters": 0,
+      "depthMeters": 0.3,
+      "wall": "east",
+      "destination": "Exterior daylight",
+      "mask": "masks/window-east.png",
+      "cutter": "masks/window-east-cutter.json",
+      "approved": true
+    }
+  ]
+}

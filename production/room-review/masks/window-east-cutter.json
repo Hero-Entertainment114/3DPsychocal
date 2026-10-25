@@ -1,0 +1,39 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "window-east",
+  "kind": "window",
+  "widthMeters": 2.4,
+  "heightMeters": 1.4,
+  "sillMeters": 1.3,
+  "depthMeters": null,
+  "source": "window-east.png",
+  "sourceSha256": "cc2c3cd610629cdcf085437517e64c63d518c8e94861613cf76b25ffc6ad4fb1",
+  "imageSize": [
+    256,
+    256
+  ],
+  "whitePixelRatio": 0.5625,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.1254902,
+          0.8745098
+        ],
+        [
+          0.1254902,
+          0.1254902
+        ],
+        [
+          0.8745098,
+          0.1254902
+        ],
+        [
+          0.8745098,
+          0.8745098
+        ]
+      ]
+    }
+  ]
+}

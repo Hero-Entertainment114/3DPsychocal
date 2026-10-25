@@ -1,0 +1,107 @@
+[
+  {
+    "room": "courtyard",
+    "evaluatedTriangles": 7912,
+    "underTriangleBudget": true,
+    "nonManifoldMeshes": [],
+    "apertureRayTests": {
+      "arrival": true,
+      "exit": true,
+      "windowWest": true,
+      "windowEast": true
+    },
+    "ceilingWallGapMeters": -0.01,
+    "tinTableContactMeters": -0.0025,
+    "remainingChecks": [
+      "BVH clearance for every prop",
+      "seating orientation and production-camera tangencies",
+      "full artistic review",
+      "human Form approval",
+      "runtime export/performance"
+    ]
+  },
+  {
+    "room": "school",
+    "evaluatedTriangles": 11596,
+    "underTriangleBudget": true,
+    "nonManifoldMeshes": [],
+    "apertureRayTests": {
+      "arrival": true,
+      "exit": true,
+      "windowWest": true,
+      "windowEast": true
+    },
+    "ceilingWallGapMeters": -0.01,
+    "tinTableContactMeters": -0.0025,
+    "remainingChecks": [
+      "BVH clearance for every prop",
+      "seating orientation and production-camera tangencies",
+      "full artistic review",
+      "human Form approval",
+      "runtime export/performance"
+    ]
+  },
+  {
+    "room": "wharf",
+    "evaluatedTriangles": 7228,
+    "underTriangleBudget": true,
+    "nonManifoldMeshes": [],
+    "apertureRayTests": {
+      "arrival": true,
+      "exit": true,
+      "windowWest": true,
+      "windowEast": true
+    },
+    "ceilingWallGapMeters": -0.01,
+    "tinTableContactMeters": -0.0025,
+    "remainingChecks": [
+      "BVH clearance for every prop",
+      "seating orientation and production-camera tangencies",
+      "full artistic review",
+      "human Form approval",
+      "runtime export/performance"
+    ]
+  },
+  {
+    "room": "archive",
+    "evaluatedTriangles": 8632,
+    "underTriangleBudget": true,
+    "nonManifoldMeshes": [],
+    "apertureRayTests": {
+      "arrival": true,
+      "exit": true,
+      "windowWest": true,
+      "windowEast": true
+    },
+    "ceilingWallGapMeters": -0.01,
+    "tinTableContactMeters": -0.0025,
+    "remainingChecks": [
+      "BVH clearance for every prop",
+      "seating orientation and production-camera tangencies",
+      "full artistic review",
+      "human Form approval",
+      "runtime export/performance"
+    ]
+  },
+  {
+    "room": "warehouse",
+    "evaluatedTriangles": 7868,
+    "underTriangleBudget": true,
+    "nonManifoldMeshes": [],
+    "apertureRayTests": {
+      "arrival": true,
+      "exit": true,
+      "windowWest": true,
+      "windowEast": true
+    },
+    "ceilingWallGapMeters": -0.01,
+    "tinTableContactMeters": -0.0025,
+    "remainingChecks": [
+      "BVH clearance for every prop",
+      "seating orientation and production-camera tangencies",
+      "full artistic review",
+      "human Form approval",
+      "runtime export/performance"
+    ]
+  }
+]

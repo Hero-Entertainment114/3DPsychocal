@@ -1,0 +1,39 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "arrival",
+  "kind": "door",
+  "widthMeters": 3.0,
+  "heightMeters": 2.6,
+  "sillMeters": null,
+  "depthMeters": null,
+  "source": "arrival.png",
+  "sourceSha256": "7f5325e7452e51d13046cde914a2bcbfeacf24f51a4f1d0c09297a2362226109",
+  "imageSize": [
+    256,
+    256
+  ],
+  "whitePixelRatio": 0.65625,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.1254902,
+          0.8745098
+        ],
+        [
+          0.1254902,
+          0.0
+        ],
+        [
+          0.8745098,
+          0.0
+        ],
+        [
+          0.8745098,
+          0.8745098
+        ]
+      ]
+    }
+  ]
+}
