@@ -209,6 +209,6 @@ for ch in range(7):
 manifest=[]
 import hashlib
 for f in sorted(A.rglob('*')):
-    if f.is_file() and f.name!='manifest.json':manifest.append(dict(path=str(f.relative_to(ROOT)),bytes=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+    if f.is_file() and f.name!='manifest.json':manifest.append(dict(path=f.relative_to(ROOT).as_posix(),bytes=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
 (A/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Generated',len(manifest),'assets with deterministic seed 444')

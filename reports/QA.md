@@ -23,3 +23,7 @@ Ngày 25/10/2026 (Asia/Saigon). Môi trường local: Linux x86_64, Python 3.12.
 ## Packaging
 
 Script Windows và CI đã được viết. Kết quả workflow thật sẽ được ghi vào đây sau khi chạy; trước thời điểm đó, không coi file script là bằng chứng đã có EXE.
+
+## Lỗi đa nền tảng đã phát hiện và sửa
+
+Run CI đầu `40203553465`: Ubuntu qua; Windows 34/35 do registry ảnh dùng dấu phân cách Windows. Renderer đã đổi sang `Path.as_posix()` để ID tài nguyên giống nhau trên cả hai hệ điều hành. CI sẽ chạy lại trên commit sửa; không bỏ qua bài test thất bại.

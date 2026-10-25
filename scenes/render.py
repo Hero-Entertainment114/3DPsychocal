@@ -10,7 +10,7 @@ class Renderer:
         self.cache={}
         self.assets={}
         for p in (ROOT/'assets').rglob('*.png'):
-            self.assets[str(p.relative_to(ROOT/'assets'))]=pygame.image.load(str(p)).convert_alpha()
+            self.assets[p.relative_to(ROOT/'assets').as_posix()]=pygame.image.load(str(p)).convert_alpha()
         self.vignette=pygame.Surface((480,270),pygame.SRCALPHA)
         for i in range(18):pygame.draw.rect(self.vignette,(6,12,19,max(0,12-i//2)),(i,i,480-2*i,270-2*i),1)
         self.content=content
