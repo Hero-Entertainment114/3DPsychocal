@@ -37,3 +37,6 @@ for lang,folder in [('ja','en_ja'),('zh','translate-en_zh-1_9')]:
  (ROOT/'data/translations.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf8')
 print('Translated',len(texts),'unique source strings per language')
 (ROOT/'docs/LOCALIZATION_STATUS.json').write_text(json.dumps({'languages':['vi','en','ja','zh'],'ja_zh_status':'offline machine-translation draft; native-speaker review pending','engine':'CTranslate2 4.8.3 / official Argos models en-ja 1.1 and en-zh 1.9','strings_per_new_language':len(texts),'runtime_requires_models':False},indent=2))
+# Apply curated UI corrections after regenerating the automatic draft.
+import runpy
+runpy.run_path(str(ROOT/'tools/curate_localization.py'),run_name='__main__')

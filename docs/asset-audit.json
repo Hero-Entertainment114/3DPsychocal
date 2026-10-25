@@ -82,6 +82,16 @@
       "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
     },
     {
+      "path": "assets/fonts/LICENSE-NotoCJK.txt",
+      "bytes": 14712,
+      "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+    },
+    {
+      "path": "assets/fonts/NotoSansCJK-Regular.ttc",
+      "bytes": 19484784,
+      "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+    },
+    {
       "path": "assets/textures/concrete.png",
       "bytes": 70069,
       "sha256": "32262b258b0d551c61a8e27c35c9844b7e8ae158052fc92b8e38d671e5e71673"

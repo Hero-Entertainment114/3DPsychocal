@@ -1,0 +1,101 @@
+"""Human-authored UI overrides for the automatic draft catalogs."""
+from pathlib import Path
+import sys,json
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from source.locale import UI
+rows='''title|名もなき船着き場|无名渡口
+subtitle|語られなかったことをめぐる物語|一个关于未曾说出口之事的故事
+new|ニューゲーム|新游戏
+continue|続ける|继续
+load|ロード|读取存档
+settings|設定|设置
+credits|制作情報・操作方法|制作信息与操作
+quit|終了|退出
+back|戻る|返回
+close|閉じる|关闭
+journal|日記・証拠|日志与证据
+board|推理ボード|推理板
+inventory|集めた証拠|已收集的证据
+hint|ヒント|提示
+submit|確認|检查
+wrong|証拠と一致しません。資料を確認して、もう一度試せます。|与证据不符。请核对资料后重试。
+missing|必要な証拠を読み、前の問題を解いてください。|请阅读所需证据，并先解开前一道谜题。
+solved|解決済み|已解开
+save|セーブ|保存游戏
+saved|進行状況を保存しました。|进度已保存。
+error|保存データを読み書きできません。アクセス権を確認してください。|无法读写存档，请检查访问权限。
+consent|引用の許可を求め、最終原稿を確認してもらう|征得引用许可，并请对方审核最终稿
+rush|公開の許可を求めず、個人的な記録に留める|仅作私人记录，暂不请求公开许可
+consented|証人は引用内容の最終確認を条件に同意しました。|证人同意引用，但要求审核最终引文。
+next|次の章へ|进入下一章
+blocked|この章の推理をすべて終えてから進んでください。|请完成本章全部推理后再离开。
+ending|残すものを選ぶ|选择留下什么
+silence|記録を公開しない|不公开档案
+alone|引用の承認を待たずに送る|不等引文审核，立即寄出
+ together|ランと一緒に承認済みの原稿を送る|与兰一起提交已审核的稿件
+needconsent|ハイン先生とランの同意が必要です。日記から再び話せます。|需要海恩老师与兰的同意，可从日志再次与她们交谈。
+interact|[E] 調べる・話す|[E] 互动
+desk|調査机|调查桌
+exit|次の区域への道|通往下一区域
+map|周辺地図|区域地图
+language|言語：日本語|语言：简体中文
+quality|画質|画质
+fov|視野角|视野角度
+volume|音量|音量
+sensitivity|マウス感度|鼠标灵敏度
+bob|歩行時の揺れ|行走晃动
+on|オン|开启
+off|オフ|关闭
+revisit|証人と再び話す|再次拜访证人
+review|調査に戻る|返回调查
+newwarning|ニューゲームは自動保存を上書きします。手動セーブは残ります。|新游戏将覆盖自动存档，手动存档会保留。
+start|開始|开始
+chapter|章|章节
+required|必要な証拠|所需证据
+allnotes|まだ証拠がありません。周囲の机にある資料を探してください。|尚无证据，请寻找周围桌上的资料。
+fullscreen|全画面|全屏
+resolution|解像度|分辨率
+textsize|文字サイズ|字号
+fps|FPS上限|帧率上限
+brightness|明るさ|亮度
+reset|並べ直す|重新排序
+inspect|証拠を詳しく見る|仔细查看证据
+flip|裏返す|翻面
+links|証拠を並べてつなぐ|排列并连接证据
+linkhelp|点の付いたバーをドラッグして移動。カードを二枚選ぶと関連を確認します。|拖动点状栏移动卡片；依次选择两张卡片，检查它们的关联。
+unproven|この関連を裏付ける証拠が不足しています。別の組み合わせを試してください。|该关联缺乏证据支持，请尝试其他组合。
+alllinks|確認済みの関連|已确认的关联
+chapters|章を選ぶ|选择章节
+replaynotice|解放済みの章を再プレイします。本編のセーブは変更されません。|重玩已解锁章节，不改变主线存档。
+endreplay|本編に戻る|返回主线
+sound|音声・環境音字幕|声音与环境音字幕
+music_volume|音楽|音乐
+ambience_volume|環境音|环境音
+sfx_volume|効果音|音效
+subtitles|環境音の字幕|环境音字幕
+bindings|キー設定|按键设置
+forward|前進|前进
+backward|後退|后退
+left|左|向左
+right|右|向右
+bindinghelp|未使用の英字を一文字入力してください。J、B、M、I、Cは予約済みです。|输入一个未使用的英文字母。J、B、M、I、C为保留键。
+bindinginvalid|このキーは使用済み、または予約済みです。|此按键已被使用或保留。
+replaysave|再プレイ中です。本編のセーブは保持されます。|正在重玩，主线存档保持不变。
+raincaption|［船着き場の屋根をたたく雨］|［雨点敲打渡口屋顶］
+musiccaption|［遠くから聞こえるピアノ］|［远处传来的钢琴声］
+cabinet|鍵のかかった資料の引き出し|上锁的档案抽屉
+cabinetstory|引き出しには母の下書きがあります。ビスケット缶の鍵が合いそうです。|抽屉里放着母亲的草稿，饼干盒中的钥匙似乎与锁匹配。
+usekey|ビスケット缶から見つけた鍵を使う|使用饼干盒中找到的钥匙
+nokey|第1章のビスケット缶を開けてください。|请先打开第一章中的饼干盒。
+action_interact|調べる・話す|互动
+topics|昔のことをもっと聞く|进一步询问往事
+sidestories|外伝の資料|外传档案
+side_locked|外伝は第2章と第4章で解放されます。|外传在进入第二章和第四章后解锁。'''
+cat=json.loads((ROOT/'data/translations.json').read_text())
+for line in rows.splitlines():
+ key,ja,zh=line.split('|');key=key.strip()
+ cat['ja'][UI[key][1]]=ja;cat['zh'][UI[key][1]]=zh
+cat['ja']['Biscuit tin']='ビスケット缶';cat['zh']['Biscuit tin']='饼干铁盒'
+cat['ja']['Enter the four-digit tin code.']='缶の鍵の4桁の暗証番号を入力してください。';cat['zh']['Enter the four-digit tin code.']='输入铁盒锁的四位数字密码。'
+(ROOT/'data/translations.json').write_text(json.dumps(cat,ensure_ascii=False,indent=2),encoding='utf8')
+print('Curated interface and biscuit-tin terminology; narrative draft still needs editorial review.')

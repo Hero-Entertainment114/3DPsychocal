@@ -61,3 +61,5 @@ Final 0.3 geometry rerun: all five rooms have closed evaluated mesh topology, 20
 - Noto Sans CJK is bundled with its license. Japanese and Chinese chapter screenshots were inspected.
 - Two side dossiers add six puzzles. They are optional document investigations, not additional 3D levels. The main campaign remains five short chapters. The requested 4–6 hours has not been achieved or measured.
 - No new Windows or UHD 620 acceptance is claimed. Existing Blender Form sources remain unintegrated.
+
+UI review caught literal translations of “tin” and incorrect Japanese action labels. `tools/curate_localization.py` supplies authored Japanese/Chinese interface overrides and corrected biscuit-tin prompts; regeneration reapplies them. Narrative translations remain draft quality.
