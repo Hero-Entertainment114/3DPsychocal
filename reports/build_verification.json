@@ -1,19 +1,18 @@
 {
-  "version": "0.2",
-  "code_commit": "71b285fccb1062885c86306983983edae88a8662",
-  "workflow_run": 40257150324,
-  "url": "https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324",
+  "version": "0.3.1-in-progress-school-connections",
+  "code_commit": "70a8a2c363c6e5c58dfba56df5d0728bbb7f6290",
+  "workflow_run": 40319219417,
+  "url": "https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417",
   "ubuntu": "success",
   "windows": "success",
   "windows_executable_build": "success",
   "windows_executable_smoke_frames": 60,
+  "tests": 62,
+  "human_playtest": false,
   "windows_artifact": {
-    "id": 12622788024,
-    "bytes": 19206435,
-    "sha256": "572078d399283daf4f7d888319b1604ced28eccb4853b47a8cdd2c073846e049",
-    "url": "https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324/artifacts/12622788024",
-    "expires_at": "2027-01-24T02:02:47Z"
-  },
-  "tests": 55,
-  "human_playtest": false
+    "id": 12647803477,
+    "bytes": 19361679,
+    "sha256": "3fd1d068087bc6fef2087d8ceaf89f2d6fa5361287ff6f74a3a3445f24138cff",
+    "url": "https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417/artifacts/12647803477"
+  }
 }

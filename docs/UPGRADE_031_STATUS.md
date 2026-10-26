@@ -23,3 +23,7 @@ Chuyển cửa/cầu thang dùng fade 0,36 giây, khóa nhập liệu và dừng
 62 tests local qua; route thực qua input đi đủ 24 maps, 22 puzzles, 44 ghi chép, 59 hội thoại; đã nhặt và dùng đèn pin trong tuyến kiểm. Save/load cuối tuyến và cửa hai chiều đều qua. Đã xem screenshot cầu thang/thư viện để kiểm bố cục ánh sáng; chưa có human playtest/benchmark. Asset manifest hiện 96 tệp.
 
 Vẫn còn: NPC Schedule/A*/đi qua cửa, NPC nền, giao thông; đồ họa chi tiết mới và render 960×540; thay câu hỏi bằng tương tác môi trường; item-use/combine; horror director/Hanako; viết lại thoại/menu; fog động và chuyển phương tiện. Không coi đây là bản 0.3.1 hoàn chỉnh.
+
+## Gói đã kiểm chứng cho đợt trường ba tầng
+
+Windows và Ubuntu CI đã thành công tại https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417. Gói Windows: https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417/artifacts/12647803477. Commit code 70a8a2c; 62 tests, route toàn bộ 24 maps, build và EXE smoke 60 frames. README đã trỏ tới gói mới; các đoạn 0.2 phía trên là lịch sử. Không có playtest người thật.

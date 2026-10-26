@@ -1,3 +1,5 @@
+> Windows mới nhất: [tải gói](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417/artifacts/12647803477) · [CI Ubuntu/Windows thành công](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40319219417), code `70a8a2c`. 62 tests và EXE smoke 60 frames đã qua.
+
 > Cập nhật đợt tiếp tục 0.3.1: **62 tests local qua**, route đủ **24 maps/22 puzzles/44 notes/59 conversations**, có nhặt đèn pin. Các kiểm mới gồm đường qua hai cầu thang, không nhảy tầng, portal hai chiều, biển/đồ vật quan sát, chuyển cảnh và fog theo loại bản đồ. Chi tiết ở [trạng thái nâng cấp](../docs/UPGRADE_031_STATUS.md). Phần 0.2 dưới đây là lịch sử, không đại diện toàn bộ thay đổi mới.
 
 # QA — bản sản xuất 0.2
