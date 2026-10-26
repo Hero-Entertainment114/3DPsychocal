@@ -25,7 +25,7 @@ class Lighting:
         if key!=self.key:
             self.key=key
             # Exterior daylight is admitted by the entrance; sealed rooms have no ambient daylight.
-            ambient=9 if room['theme'] in ('storage','toilets','broadcast') else 23
+            ambient=9 if room['theme'] in ('store','toilets','broadcast') else 23
             self.surface.fill((ambient,ambient,ambient+3))
             facing=((0,1),(-1,0),(1,0),(0,-1))[world.direction]
             for py in range(68):

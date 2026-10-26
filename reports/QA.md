@@ -1,3 +1,5 @@
+> Cập nhật đợt tiếp tục 0.3.1: **62 tests local qua**, route đủ **24 maps/22 puzzles/44 notes/59 conversations**, có nhặt đèn pin. Các kiểm mới gồm đường qua hai cầu thang, không nhảy tầng, portal hai chiều, biển/đồ vật quan sát, chuyển cảnh và fog theo loại bản đồ. Chi tiết ở [trạng thái nâng cấp](../docs/UPGRADE_031_STATUS.md). Phần 0.2 dưới đây là lịch sử, không đại diện toàn bộ thay đổi mới.
+
 # QA — bản sản xuất 0.2
 
 Ngày 26/10/2026 UTC. Local: Linux x86_64, Python 3.12.14, Pygame CE 2.5.8, SDL 2.32.10. Render/audio kiểm bằng SDL dummy; chưa có playtest người thật hoặc kiểm tai nghe/loa.

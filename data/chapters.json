@@ -36,7 +36,15 @@
       "school_broadcast",
       "school_corridor",
       "school_store",
-      "school_toilets"
+      "school_toilets",
+      "school_hall1",
+      "school_stairs1",
+      "school_hall2",
+      "school_stairs2",
+      "school_library",
+      "school_medical",
+      "school_guard",
+      "school_toilets2"
     ]
   },
   {

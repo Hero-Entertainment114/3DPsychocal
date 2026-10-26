@@ -11,3 +11,15 @@ Còn phải triển khai trước nghiệm thu: thay toàn bộ câu hỏi/nhậ
 Alpix đã mở canvas chung 256×256; không có công cụ xuất PNG/atlas được cung cấp. Không ghi đè canvas chung để giả làm tài nguyên repo. AutoSprite đã kiểm tra lại Ren: characterImage=null, spritesheets=[]; chưa có asset tải được. Không gọi sprite đang dùng là sản phẩm hai dịch vụ này.
 
 Bản Windows liên kết trong README là 0.2 đã kiểm chứng, không phải bản nâng cấp này. Source ZIP của nhánh chứa các sửa đổi mới; CI tiếp theo sẽ kiểm build của commit mới riêng.
+
+## Đợt tiếp tục: cấu trúc trường và khám phá
+
+Đã thêm 8 maps: hành lang tầng một/hai, cầu thang một–hai và hai–ba, thư viện, phòng y tế, phòng trực, nhà vệ sinh tầng hai. Tổng 24 maps (8 mở đầu, 16 Hanako). Cửa lên tầng tiếp theo ở đầu trên của map cầu thang; người chơi đi qua bậc thang để tiếp cận. Graph ở `world_graph.mmd`; từng portal giữ exit/entrance ID, điều kiện, điểm vào, hướng và loại chuyển. Từ sân tới nhà vệ sinh tầng ba phải qua cả hai cầu thang. Các phòng phụ có đồ vật quan sát được và không cộng chúng thành câu đố mới.
+
+16 biển Nhật raster bằng Noto Sans CJK, có bản dịch chủ động bằng E và bảng `data/japanese_glossary.json`. Chữ dùng các tên phòng thông dụng; chưa có người biên tập tiếng Nhật kiểm độc lập. Phông chữ hệ thống chỉ cần khi tái tạo tài nguyên, máy chơi dùng PNG đã đóng gói. Giấy phép Noto CJK đã có trong assets/fonts.
+
+Chuyển cửa/cầu thang dùng fade 0,36 giây, khóa nhập liệu và dừng mô phỏng trong chuyển cảnh. Không có tên địa điểm/loading label. Đây là chuyển gần, chưa có phim lên tàu/xe buýt cho địa điểm xa. Boundary fog chỉ phủ dải mép ngoài trời, giữ vùng tiếp cận cửa rõ; không phủ hành lang. Fog hiện tĩnh theo tọa độ thế giới, chưa có nhiễu chuyển động.
+
+62 tests local qua; route thực qua input đi đủ 24 maps, 22 puzzles, 44 ghi chép, 59 hội thoại; đã nhặt và dùng đèn pin trong tuyến kiểm. Save/load cuối tuyến và cửa hai chiều đều qua. Đã xem screenshot cầu thang/thư viện để kiểm bố cục ánh sáng; chưa có human playtest/benchmark. Asset manifest hiện 96 tệp.
+
+Vẫn còn: NPC Schedule/A*/đi qua cửa, NPC nền, giao thông; đồ họa chi tiết mới và render 960×540; thay câu hỏi bằng tương tác môi trường; item-use/combine; horror director/Hanako; viết lại thoại/menu; fog động và chuyển phương tiện. Không coi đây là bản 0.3.1 hoàn chỉnh.

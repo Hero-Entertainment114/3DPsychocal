@@ -2,6 +2,7 @@ import math
 import pygame
 from core.paths import ROOT
 from systems.lighting import Lighting
+from systems.fog import BoundaryFog
 
 C={'ink':(17,27,36),'deep':(24,39,51),'blue':(41,63,75),'fog':(91,117,120),'sage':(114,135,119),'paper':(217,208,180),'amber':(214,173,104),'red':(141,68,71),'muted':(145,161,151)}
 class Renderer:
@@ -16,6 +17,7 @@ class Renderer:
         for i in range(18):pygame.draw.rect(self.vignette,(6,12,19,max(0,12-i//2)),(i,i,480-2*i,270-2*i),1)
         self.content=content
         self.lighting=Lighting()
+        self.boundary_fog=BoundaryFog()
     def text(self,text,x,y,color='paper',size=11):
         key=(str(text),size,color)
         if key not in self.cache:
@@ -93,6 +95,7 @@ class Renderer:
                 x=(i*71+int(t*5))%480;y=(i*43+int(t*90))%270
                 pygame.draw.line(self.screen,(88,113,123),(x,y),(x-2,y+7))
         self.lighting.draw(self.screen,world)
+        self.boundary_fog.draw(self.screen,world)
         self.screen.blit(self.vignette,(0,0))
         pygame.draw.rect(self.screen,C['ink'],(0,0,480,27))
         phases={'afternoon':'CHIỀU','evening':'TỐI','night':'ĐÊM','dawn':'RẠNG SÁNG'}

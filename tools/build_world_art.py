@@ -7,7 +7,7 @@ COL={'ink':'#111b24','blue':'#293f4b','fog':'#657c7e','sage':'#728777','paper':'
 F=ImageFont.truetype(str(A/'fonts/NotoSans-Regular.ttf'),9)
 def make_maps():
     maps=json.loads((ROOT/'data/maps.json').read_text(encoding='utf8'))
-    floor_colors={'platform':(54,65,72),'hall':(66,76,76),'street':(42,55,62),'shop':(82,78,64),'lobby':(74,91,87),'ward':(79,91,85),'entry':(79,65,55),'kitchen':(84,76,60),'yard':(48,63,59),'vestibule':(62,68,66),'classroom':(65,65,53),'office':(63,67,62),'broadcast':(44,61,66),'corridor':(45,63,68),'store':(52,55,52),'toilets':(61,77,73)}
+    floor_colors={'platform':(54,65,72),'hall':(66,76,76),'street':(42,55,62),'shop':(82,78,64),'lobby':(74,91,87),'ward':(79,91,85),'entry':(79,65,55),'kitchen':(84,76,60),'yard':(48,63,59),'vestibule':(62,68,66),'classroom':(65,65,53),'office':(63,67,62),'broadcast':(44,61,66),'corridor':(45,63,68),'store':(52,55,52),'toilets':(61,77,73),'stairs':(56,65,65),'library':(67,63,53),'medical':(77,89,82),'guard':(62,65,57)}
     for index,m in enumerate(maps):
         rng=random.Random(444+index);theme=m['theme'];base=floor_colors[theme];w,h=m['width']*16,m['height']*16
         im=Image.new('RGB',(w,h));d=ImageDraw.Draw(im);d.fontmode='1'
@@ -97,7 +97,7 @@ def make_maps():
                 for xx in (x+12,x+32):d.ellipse((xx-8,103,xx+8,119),outline=COL['fog'],width=2);d.point((xx,111),fill=COL['paper'])
         elif theme=='corridor':
             d.ellipse((282,7,316,42),fill=COL['paper'],outline=COL['ink'],width=3);line((299,25,309,31),'ink',2);line((299,25,287,27),'ink',2)
-            label(344,21,'TẦNG BA','paper')
+            label(344,21,'TẦNG '+str(m.get('floor',3)),'paper')
         elif theme=='store':
             label(169,20,'PHÒNG Y TẾ','paper');line((165,39,279,39),'#ac9270');d.point((160,39),fill=COL['amber'])
             rect((414,77,449,105),'#bcb99b');line((421,91,442,91),'red',3);line((431,81,431,101),'red',3)
@@ -105,7 +105,27 @@ def make_maps():
             for n,x in enumerate((96,208,320),1):
                 label(x+21,85,str(n),'paper');rect((x+47,124,x+50,129),'amber')
             rect((33,71,71,88),'paper');d.ellipse((39,74,65,84),fill='#69817b');line((52,66,52,77),'fog',2)
-            label(183,23,'ĐỪNG GỌI THAY MỘT CÁI TÊN','paper')
+            label(183,23,'ĐỪNG GỌI THAY MỘT CÁI TÊN' if m['id']=='school_toilets' else 'XIN KHÓA VÒI NƯỚC','paper')
+        if theme=='stairs':
+            for sy in range(112,241,12):
+                rect((170,sy,330,sy+9),'#838579');line((170,sy,330,sy),'#bcc0ab')
+            line((164,104,164,248),'#aea88c',3);line((337,104,337,248),'#aea88c',3)
+            label(350,142,'↑' if m['floor']==1 else '↑↑','paper')
+        if theme=='library':
+            for xx in range(116,170,7):rect((xx,99,xx+4,139),rng.choice(['#8d6860','#9c986a','#6d8c7c']))
+            rect((330,133,355,147),'paper');line((343,133,343,147),'ink')
+        if theme=='medical':
+            rect((112,97,175,148),'#afbbad');rect((117,102,138,115),'paper')
+            line((336,110,351,110),'red',3);line((343,103,343,117),'red',3)
+        if theme=='guard':
+            rect((117,99,170,121),'#5e796b');rect((126,103,158,115),'ink')
+            d.ellipse((350,109,362,121),fill='#a79774');line((356,112,356,118),'ink')
+        if 'sign' in m:
+            # Rasterize CJK once; the runtime does not depend on a system font.
+            jf=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',14)
+            text=m['sign']['jp'];bounds=d.textbbox((0,0),text,font=jf);tw=bounds[2]-bounds[0]
+            sx,sy=m['sign']['position'];rect((sx-tw//2-7,sy-24,sx+tw//2+7,sy-3),'paper')
+            d.text((sx-tw//2,sy-25),text,font=jf,fill=COL['ink'])
         for door in m['portals']:
             x,y=door['x'],door['y'];rect((x-14,y-5,x+14,y+8),'#b2a17a');d.polygon([(x-5,y),(x+5,y),(x,y+5)],fill=COL['ink'])
         im.save(A/'maps'/f'{m["id"]}.png')
@@ -113,4 +133,4 @@ def make_maps():
 def manifest():
     entries=[dict(path=p.relative_to(ROOT).as_posix(),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sorted(A.rglob('*')) if p.is_file() and p.name!='manifest.json']
     (A/'manifest.json').write_text(json.dumps(entries,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
-if __name__=='__main__':make_maps();manifest();print('Rendered 16 authored map layouts')
+if __name__=='__main__':make_maps();manifest();print('Rendered authored map layouts')

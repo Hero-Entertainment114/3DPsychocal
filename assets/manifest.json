@@ -66,43 +66,83 @@
   },
   {
     "path": "assets/maps/school.png",
-    "bytes": 24016,
-    "sha256": "c57c1bc97cd1654381b79e1b25c6e7898f1407d7a401a3d2d360a5ce735664f7"
+    "bytes": 24179,
+    "sha256": "9c459f9f1d01798e174805424c1e592fb35a37a7b091db37dea405b83c79f7fe"
   },
   {
     "path": "assets/maps/school_broadcast.png",
-    "bytes": 13832,
-    "sha256": "c98d48ec70a310604ff131da363246bffd434b69dc6f69f0fa790c9719f3cd49"
+    "bytes": 14021,
+    "sha256": "2a0f47439ad578b16edda0a832094423937218d770f752b65176fc9b14378f6a"
   },
   {
     "path": "assets/maps/school_class.png",
-    "bytes": 18832,
-    "sha256": "306a2d94a8b8f6953534da141ef286da7b8ea530b9156689a3350fc2dd43af83"
+    "bytes": 19026,
+    "sha256": "f8c82dcb2fe9bc0b2c862435e123242d887b9a06e8f68c75e9f3f791dee8e2ee"
   },
   {
     "path": "assets/maps/school_corridor.png",
-    "bytes": 17614,
-    "sha256": "9cf4e68b6762b23bfd22fa7e839b9fb9b0d30002ea393ceb1e5a2011867dfd2d"
+    "bytes": 17722,
+    "sha256": "34b8cee3d6bb9b1fde737dda59b88acba955f1f8d3f1be735f6335aef43b5959"
+  },
+  {
+    "path": "assets/maps/school_guard.png",
+    "bytes": 17799,
+    "sha256": "48c6e23e1beda829a682f8bd1fdec1d954ef96b2f87cfcd7553cf67cf02205f9"
+  },
+  {
+    "path": "assets/maps/school_hall1.png",
+    "bytes": 18204,
+    "sha256": "9154b8beebc928c2619905d9a5918ea369ab14a5a8132b1019d8a71b053ccdf0"
+  },
+  {
+    "path": "assets/maps/school_hall2.png",
+    "bytes": 18343,
+    "sha256": "54da06ffa96c8956439c6a5ea5c9feda651d14b7899335949795216000232fdd"
+  },
+  {
+    "path": "assets/maps/school_library.png",
+    "bytes": 18076,
+    "sha256": "56e82d506abf129bef7cad99b3dc946e493555c146f1c07ba72669f2871ec746"
+  },
+  {
+    "path": "assets/maps/school_medical.png",
+    "bytes": 17743,
+    "sha256": "303b890e6c7298d47b7c02f3ca75e3afcc9fe8e20c0abdb26df81065e825dd4a"
+  },
+  {
+    "path": "assets/maps/school_stairs1.png",
+    "bytes": 17813,
+    "sha256": "0f27be47181f0879454463715b7618eaaf4afa1a99e494fc84a25e8286746679"
+  },
+  {
+    "path": "assets/maps/school_stairs2.png",
+    "bytes": 18064,
+    "sha256": "4d814189d18c2af7d0b2e8ac1b1e5a9f5b4fa2d45d8371c0c9b58baf99c90bfa"
   },
   {
     "path": "assets/maps/school_store.png",
-    "bytes": 17941,
-    "sha256": "9c419fd5067de1497d04d581d22d34e37328400bde11203e0c4d9ee5ea15b5b6"
+    "bytes": 18200,
+    "sha256": "70b4d49c6ba1be20ed5664795c797f02c0c79a190e0e2afdea405830bed6b6c4"
   },
   {
     "path": "assets/maps/school_teachers.png",
-    "bytes": 16093,
-    "sha256": "9d12f39f993dc61afe81322e6294c5919ca6bf0f755bb419ceb22076fb02ac89"
+    "bytes": 16311,
+    "sha256": "d0ac98e63fb5ab98258fe3e7fc02ebdfacc7aaca7e8658a65969151fae85d1d2"
   },
   {
     "path": "assets/maps/school_toilets.png",
-    "bytes": 15234,
-    "sha256": "cbbe556baedba3494823bf71ab005976538ab619f97ba3bc00c201bf7ef7c2a4"
+    "bytes": 15351,
+    "sha256": "607c91cd78bd436630a86a71e2a9f0ef2d9ba52ab25a0f0693bf5b30b6c75a26"
+  },
+  {
+    "path": "assets/maps/school_toilets2.png",
+    "bytes": 18711,
+    "sha256": "e3bcaed9bcac850a11fb6e4c11fff60b84f2ea59d1e8fa2a0c1d692b6ff8091f"
   },
   {
     "path": "assets/maps/school_vestibule.png",
-    "bytes": 16395,
-    "sha256": "cc367cbdbcf0023820577d7082fae18a0c66e6158d32df14a64afa3e0df8737e"
+    "bytes": 16379,
+    "sha256": "59630e29933521d02efc3906d028d0ca23e0a010b75513cf0c0623bd61490e1e"
   },
   {
     "path": "assets/maps/shop.png",

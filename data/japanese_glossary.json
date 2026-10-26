@@ -1,0 +1,82 @@
+[
+  {
+    "japanese": "月守小学校",
+    "vietnamese": "SÂN TRƯỜNG TSUKIMORI",
+    "map": "school"
+  },
+  {
+    "japanese": "昇降口",
+    "vietnamese": "SẢNH TỦ GIÀY",
+    "map": "school_vestibule"
+  },
+  {
+    "japanese": "六年二組",
+    "vietnamese": "LỚP 6–2",
+    "map": "school_class"
+  },
+  {
+    "japanese": "職員室",
+    "vietnamese": "PHÒNG GIÁO VIÊN",
+    "map": "school_teachers"
+  },
+  {
+    "japanese": "放送室",
+    "vietnamese": "PHÒNG PHÁT THANH",
+    "map": "school_broadcast"
+  },
+  {
+    "japanese": "三階",
+    "vietnamese": "HÀNH LANG TẦNG BA",
+    "map": "school_corridor"
+  },
+  {
+    "japanese": "倉庫",
+    "vietnamese": "KHO SAU PHÒNG Y TẾ",
+    "map": "school_store"
+  },
+  {
+    "japanese": "お手洗い",
+    "vietnamese": "BA CÁNH CỬA",
+    "map": "school_toilets"
+  },
+  {
+    "japanese": "一階",
+    "vietnamese": "Hành lang tầng một",
+    "map": "school_hall1"
+  },
+  {
+    "japanese": "二階へ",
+    "vietnamese": "Lên tầng hai",
+    "map": "school_stairs1"
+  },
+  {
+    "japanese": "二階",
+    "vietnamese": "Hành lang tầng hai",
+    "map": "school_hall2"
+  },
+  {
+    "japanese": "三階へ",
+    "vietnamese": "Lên tầng ba",
+    "map": "school_stairs2"
+  },
+  {
+    "japanese": "図書室",
+    "vietnamese": "Thư viện",
+    "map": "school_library"
+  },
+  {
+    "japanese": "保健室",
+    "vietnamese": "Phòng y tế",
+    "map": "school_medical"
+  },
+  {
+    "japanese": "管理室",
+    "vietnamese": "Phòng quản lý",
+    "map": "school_guard"
+  },
+  {
+    "japanese": "お手洗い",
+    "vietnamese": "Nhà vệ sinh",
+    "map": "school_toilets2"
+  }
+]

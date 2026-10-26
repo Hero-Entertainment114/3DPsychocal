@@ -53,7 +53,7 @@ def run():
             path=map_route(destination)
             assert path is not None,('locked room',destination,g.state.solved)
             for room,index,dest in path:
-                obj=next(o for o in g.world.objects() if o['kind']=='portal' and o['id']==str(index));walk(obj);key('e')
+                obj=next(o for o in g.world.objects() if o['kind']=='portal' and o['id']==str(index));walk(obj);key('e');g.update(g.transition.duration)
                 assert g.state.room==dest and g.mode=='play';visited.add(dest)
         def finish_dialogue():
             did=g.dialogue['id']
@@ -90,16 +90,21 @@ def run():
             key('return');assert p['id'] in g.state.solved,(p['id'],g.toast)
             if g.mode=='dialogue':finish_dialogue()
             if g.mode=='message':key('escape')
+            if p['id']=='P003':
+                torch=next(o for o in g.world.objects() if o['kind']=='pickup');walk(torch);key('e')
+                assert 'Đèn pin đã lắp pin' in g.state.inventory and g.state.flags['flashlight_on']
             if p['id']=='P014' and g.state.memory:key('m')
             route.append({'puzzle':p['id'],'room':g.state.room,'approach_steps':steps,'heard_so_far':len(g.state.heard)})
         drain()
-        assert len(visited)==16,visited
+        for room in g.content.maps:travel(room)
+        assert len(visited)==len(g.content.maps),visited
         assert len(g.state.heard)==sum(d['status']=='playable' for d in g.content.dialogues.values())
         assert g.state.flags['slice_complete']
         g.save();assert g.store.load().snapshot()==g.state.snapshot()
-        for room in ('station','shop','hospital','school','school_class','school_toilets'):
+        for room in ('station','shop','hospital','school','school_class','school_toilets','school_stairs1','school_library','school_hall2'):
             travel(room);g.toast_time=0;g.draw();pygame.image.save(g.surface,str(ROOT/'reports'/f'{room}.png'))
-        g.open_dialogue('D_walk_home');g.dialogue_index=0;g.toast_time=0;g.draw();pygame.image.save(g.surface,str(ROOT/'reports/dialogue.png'))
+        # Completed conversations are available in history, not reopened as new speech.
+        g.mode='journal';g.journal_tab=2;g.page=0;g.draw();pygame.image.save(g.surface,str(ROOT/'reports/dialogue.png'))
         g.mode='menu';g.selection=0;g.draw();pygame.image.save(g.surface,str(ROOT/'reports/menu.png'))
         report={'result':'pass','kind':'scripted full input route, not human playtest','duration_seconds':round(time.perf_counter()-start,3),'completed_puzzles':len(route),'visited_maps':sorted(visited),'observations':sum(g.state.flags.get('observed_'+o,False) for o in g.content.observations),'conversations_heard':len(g.state.heard),'spoken_units_reachable':sum(len(l['text'].split()) for did in g.state.heard for l in g.content.dialogues[did]['lines']),'route':route}
         (ROOT/'reports/ui_route.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print(json.dumps({k:v for k,v in report.items() if k!='route'}));pygame.quit()

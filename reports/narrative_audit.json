@@ -13,7 +13,7 @@
   },
   "per_chapter_maps": {
     "0": 8,
-    "1": 8
+    "1": 16
   },
   "dialogue_budget": 50000,
   "release_gates": {

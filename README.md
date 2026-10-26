@@ -1,6 +1,6 @@
 # 3DPsychocal · 忘れられた声
 
-> Đang nâng cấp theo hai prompt 0.3/0.3.1. [Trạng thái triển khai mới](docs/UPGRADE_031_STATUS.md): kết nối cửa đối ứng, thoại một lần, bỏ nhãn vị trí, đèn pin và occlusion. Chưa đạt nghiệm thu 0.3.1; các số liệu và gói Windows 0.2 bên dưới là mốc nền.
+> Đang nâng cấp theo hai prompt 0.3/0.3.1. [Trạng thái triển khai mới](docs/UPGRADE_031_STATUS.md): 24 maps, trường ba tầng với hai cầu thang, biển Nhật đọc được, chuyển cửa có fade, sương mép ngoài trời, thoại một lần và đèn pin có occlusion. 62 tests local đã qua. Chưa đạt nghiệm thu 0.3.1; các số liệu và gói Windows 0.2 bên dưới là mốc nền.
 
 **Wasurerareta Koe / The Forgotten Voices / Những Tiếng Nói Bị Lãng Quên**
 

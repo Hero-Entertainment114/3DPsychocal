@@ -35,6 +35,9 @@ class World:
             rows.append(dict(kind='portal',id=str(i),x=p['x'],y=p['y'],label=p['label']))
         if s.room=='shop' and 'P003' in s.solved and 'Đèn pin đã lắp pin' not in s.inventory:
             rows.append(dict(kind='pickup',id='torch',x=280,y=240,label='Đèn pin trên quầy'))
+        for kind in ('sign','inspection'):
+            if kind in self.room:
+                x,y=self.room[kind]['position'];rows.append(dict(kind=kind,id=kind,x=x,y=y,label='Đọc biển' if kind=='sign' else 'Quan sát'))
         return rows+self.actors()
     def nearest(self):
         rows=self.objects()

@@ -9,6 +9,7 @@ from systems.storage import Storage, SaveError
 from systems.world import World
 from systems.audio import Audio
 from systems.mechanics import Mechanism
+from systems.transitions import Transition
 from systems.dialogue import choose, eligible, complete
 from scenes.render import Renderer, C
 
@@ -24,6 +25,7 @@ class Game:
         pygame.display.set_icon(pygame.image.load(str(ROOT/'assets/ui/icon.png')))
         self.surface=pygame.Surface((480,270))
         self.render=Renderer(self.surface,self.content)
+        self.transition=Transition(self.surface.get_size())
         self.audio=Audio(self.settings)
         self.running=True;self.mode='menu';self.selection=0;self.time=0.;self.scare=0.
         self.toast='';self.toast_time=0.;self.page=0;self.input='';self.pid=None;self.dialogue=None
@@ -73,11 +75,17 @@ class Game:
         o=self.world.nearest()
         if not o:self.notify('Đến gần đồ vật hoặc một người rồi nhấn E.');return
         if o['kind']=='portal':
+            self.render.world(self.world,self.progress,self.time,self.settings,self.scare)
+            self.transition.previous.blit(self.surface,(0,0))
             if self.world.travel(int(o['id'])):
-                self.save();self.audio.ambience(self.world.room['ambient'])
+                self.transition.remaining=self.transition.duration
+                self.save();self.audio.ambience(self.world.room['ambient']);self.audio.play('step')
             else:
                 gate=self.world.room['portals'][int(o['id'])].get('requires')
                 self.notify('Chưa mở lối: '+self.content.puzzles[gate]['title'] if gate else 'Lối này chưa mở.')
+        elif o['kind']=='sign':
+            sign=self.world.room['sign'];self.show_message('Ren đọc biển',sign['vi'])
+        elif o['kind']=='inspection':self.show_message('Ren quan sát',self.world.room['inspection']['text'])
         elif o['kind']=='pickup':
             self.state.inventory.append('Đèn pin đã lắp pin');self.state.flags['flashlight_on']=True;self.save()
             self.notify('Ren cất đèn pin. L để bật hoặc tắt.')
@@ -113,7 +121,7 @@ class Game:
                 self.scare=3.5;self.state.fear=min(70,self.state.fear+20)
                 self.notify('Có tiếng chân dừng sau lưng. [cộc cộc — nghỉ — cộc]')
             if pid=='P022':
-                self.show_message('Cánh cửa đã được mở','Ren rút chốt, giữ cả hai lời khai và trao bản sao cho Yui. Bên kia không còn tiếng yêu cầu mở cửa. Nhưng trên khăn, tên ấy vẫn chưa thuộc về bất kỳ hồ sơ nào.\n\nHẾT GIAI ĐOẠN CHƠI 0.2\nMở đầu và Hanako đã khép lại. Hai chương đầu có 16 bản đồ. Sáu chương còn lại chưa được triển khai. Bạn có thể trở lại phố, đọc sổ hoặc xem phân cảnh kết thúc thử trong Tư liệu.','play')
+                self.show_message('Cánh cửa đã được mở','Ren rút chốt, giữ cả hai lời khai và trao bản sao cho Yui. Bên kia không còn tiếng yêu cầu mở cửa. Nhưng trên khăn, tên ấy vẫn chưa thuộc về bất kỳ hồ sơ nào.\n\nHẾT GIAI ĐOẠN CHƠI 0.2\nMở đầu và Hanako đã khép lại. Hai chương đầu hiện có 24 bản đồ. Sáu chương còn lại chưa được triển khai. Bạn có thể trở lại phố, đọc sổ hoặc xem phân cảnh kết thúc thử trong Tư liệu.','play')
         else:
             attempts=self.state.attempts.get(pid,0)
             self.notify('Cần đủ ghi chép và thao tác đúng. H xem gợi ý.'+(' F để bỏ qua câu đố này.' if attempts>=3 else ''))
@@ -150,6 +158,7 @@ class Game:
         if event.type==pygame.VIDEORESIZE:
             if not self.settings['fullscreen']:self.display=pygame.display.set_mode((max(480,event.w),max(270,event.h)),pygame.RESIZABLE)
             return
+        if self.transition.active and event.type in (pygame.KEYDOWN,pygame.MOUSEBUTTONDOWN):return
         if event.type==pygame.MOUSEBUTTONDOWN:
             if event.button in (4,5) and self.mode in ('journal','inventory','message'):self.page=max(0,self.page+(-1 if event.button==4 else 1));return
             if event.button!=1:return
@@ -269,6 +278,8 @@ class Game:
         self.mode='play';self.save()
         self.notify('Ren ghi rõ điều đã nghe.' if choice=='listen' else 'Ấn tượng này có thể đổi cách người khác kể lại chuyện.')
     def update(self,dt):
+        if self.transition.active:
+            self.transition.update(dt);return
         self.time+=dt;self.toast_time=max(0,self.toast_time-dt)
         if self.mode!='puzzle':self.knock_queue=[]
         while self.knock_queue and self.knock_queue[0]<=self.time:
@@ -352,6 +363,7 @@ class Game:
             for i,e in enumerate(self.content.endings.values()):r.text(f'{i+1}  {e["title"]}',36,77+i*23,'paper',11)
             r.paragraph('Đây là bản xem thử độc lập, không phải kết thúc đã kiếm được trong tuyến chơi. Quy tắc kết thúc được kiểm thử bằng trạng thái giả lập.',36,202,400,10,'amber',14)
         elif self.mode=='ending':self.draw_ending()
+        self.transition.draw(self.surface)
         if self.toast_time>0:
             lines=r.wrap(self.toast,422,10)[:2];h=len(lines)*14+8
             pygame.draw.rect(self.surface,C['deep'],(22,250-h,436,h));pygame.draw.rect(self.surface,C['fog'],(22,250-h,436,h),1)
