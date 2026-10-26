@@ -2,33 +2,39 @@
 
 **Wasurerareta Koe / The Forgotten Voices / Những Tiếng Nói Bị Lãng Quên**
 
-Một game **2D pixel art**, Python 3.12 + Pygame CE, chạy offline. Tsukimori, tháng 10 năm 1998. Ren về quê thăm mẹ nhập viện và giải quyết giấy tờ căn nhà. Anh chỉ xin nghỉ ba ngày.
+Game kinh dị tâm lý **2D pixel art**, Python 3.12 + Pygame CE, chạy offline. Tsukimori, tháng 10 năm 1998. Ren về quê thăm mẹ nhập viện và giải quyết giấy tờ căn nhà. Anh chỉ xin nghỉ ba ngày.
 
 ![Hành lang Tsukimori](reports/menu.png)
 
-## Trạng thái thật của bản giao
+## Bản sản xuất 0.2 — mở rộng Mở đầu và Hanako
 
-**Bản sản xuất 0.1, không phải game đầy đủ 9–12 giờ.** Theo điều khoản chia giai đoạn của V1 §15 và V2 §XV, bản này bàn giao một tuyến chơi khép lại ở cuối Hanako và nền tảng để tiếp tục sản xuất. Không có cam kết thời lượng chơi chưa đo.
+Đợt này hoàn thiện nội dung của **hai chương đầu**, theo yêu cầu chia mỗi đợt 2–3 chương. Mỗi chương có **8 bản đồ**, hội thoại mở dần theo sự kiện và vật chứng nằm trong thế giới. **Chưa phải toàn bộ game 8 chương.** Yêu cầu mới ngày 26/10/2026 thay mục tiêu thời lượng bằng 45.000–50.000 từ lời thoại cho toàn dự án; ngân sách biên soạn là 50.000 đơn vị cách trắng, không dùng thời gian chờ để kéo dài game.
 
-| Hạng mục | Có trong repo | Chơi được trong bản này |
+| Hạng mục | Đã viết / thiết kế | Chơi được trong 0.2 |
 |---|---:|---:|
-| Câu đố có dữ liệu riêng | 100, P001–P100 | 22: mở đầu + Hanako |
-| Hồ sơ nhân vật | 25 | 8 có lời thoại trong tuyến chơi |
-| Cuộc thoại | 25 | 8 |
-| Lời thoại tiếng Việt, đếm theo khoảng trắng | 3.914 | 1.246 |
-| Bản đồ có collision | 5 | 5 |
-| Kết thúc | 5 quy tắc + 5 chuỗi xem thử | Chưa thể đạt từ campaign |
-| Đồ họa / âm thanh | PNG, atlas, WAV, font, trình sinh | Có |
+| Chương, gồm mở đầu và kết | 8 trong kế hoạch | 2 |
+| Bản đồ riêng có collision và lối nối | 16 | 8 Mở đầu + 8 Hanako |
+| Hội thoại | 76 | 59 |
+| Lời thoại theo khoảng trắng | 16.586 | **13.777**, không trùng dòng |
+| Theo chương | — | Mở đầu 6.176; Hanako 7.601 |
+| Nhân vật có hồ sơ / vai trò | 25 | 11 người có cảnh thoại |
+| Câu đố liên kết | 100 | 22 (P001–P022) |
+| Manh mối quan sát tại phòng | 44 | 44; mỗi câu đố cần hai ghi chép |
+| Kết thúc | 5 quy tắc + phân cảnh xem thử | Chưa đạt qua campaign |
 
-**Chưa đạt:** 100 câu đố có cơ chế hoàn thiện, campaign II–VI, 9–12 giờ / 15–20 giờ có playtest, ending kiếm được trong campaign, bản dịch Anh/Nhật, cinematic chuyển nhân vật, truy đuổi, art và âm thanh cấp phát hành. Phân loại câu đố hiện chưa đúng ngân sách 35/20/20/15/10; số thực nằm trong báo cáo. Phần thiết kế không được cộng vào số tính năng đã triển khai.
+Số lời thoại chỉ đếm nội dung nhân vật nói, **không tính tên người nói, UI, tiểu sử, mô tả, manh mối đồ vật hay lượt nghe lại**. Tiếng Việt được đếm theo khoảng trắng, không phải tách từ ngôn ngữ học. Mọi cuộc thoại có ít nhất hai manh mối được gắn vào câu nói cụ thể và liên kết tới hai puzzle ID khác nhau. Kiểm tra cấu trúc tự động không thay việc biên tập chất lượng suy luận.
 
-## Tải bản Windows đã build
+**Phần còn lại:** sáu chương, ít nhất 48 bản đồ, 78 câu đố triển khai, phần lời thoại còn thiếu tới 45.000–50.000, năm ending đạt bằng hành động thật. Chưa có chase, side-view/đổi nhân vật, dịch Anh/Nhật, âm thanh và tạo hình 25 người đạt cấp phát hành. Quota loại puzzle 35/20/20/15/10 vẫn cần điều chỉnh. Xem [yêu cầu](docs/REQUIREMENTS.md) và [lộ trình](docs/ROADMAP.md).
 
-[Tải 3DPsychocal-Windows.zip](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430/artifacts/12603176931) · [Kết quả CI](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40203737430). Giải nén **toàn bộ**, mở `3DPsychocal.exe`. Bản này đã build và smoke-test tự động trên Windows, chưa qua playtest desktop bằng người. GitHub yêu cầu đăng nhập để tải artifact.
+## Tải và chạy
 
-## Chạy ngay từ source
+[Tải toàn bộ mã nguồn ZIP](https://github.com/Hero-Entertainment114/3DPsychocal/archive/refs/heads/codex/forgotten-voices-stage1.zip) · [Nhánh bàn giao](https://github.com/Hero-Entertainment114/3DPsychocal/tree/codex/forgotten-voices-stage1).
 
-Python **3.12** hoặc **3.13**, Windows/Linux. Không cần editor game.
+<!-- WINDOWS_BUILD -->
+Gói Windows 0.2 đang chờ lượt CI của commit này; kết quả và artifact sẽ được ghi tại [QA](reports/QA.md). Gói 0.1 trước đây không đại diện cho nội dung 0.2.
+<!-- /WINDOWS_BUILD -->
+
+Chạy từ source với Python **3.12 hoặc 3.13**:
 
 ```sh
 python -m venv .venv
@@ -38,65 +44,57 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-Sau khi cài thư viện, game không cần mạng, tài khoản hay API. Assets đã có sẵn, không phải chạy trình sinh để chơi. Trên Windows có thể dùng `run_windows.bat` để tạo môi trường và mở game lần đầu.
+Windows có thể dùng `run_windows.bat`. Sau khi cài thư viện, game không cần mạng, tài khoản hay API. PNG, WAV, font, atlas và giấy phép nằm sẵn trong repo; không cần sinh lại tài nguyên để chơi.
 
 ## Điều khiển
 
 | Phím | Tác dụng |
 |---|---|
-| WASD / mũi tên | Di chuyển |
-| Shift | Chạy |
-| E / nhấp trái khi đứng gần | Xem vật, nói chuyện, đi qua lối ra |
-| Enter | Tiếp hội thoại, gửi đáp án |
-| 1 / 2 | Chọn phản hồi khi hội thoại kết thúc |
-| J | Sổ: ← → đổi mục, ↑ ↓ đổi trang |
+| WASD / mũi tên, Shift | Đi, chạy |
+| E / nhấp trái khi đứng gần | Nói chuyện, xem vật, đi qua lối ra |
+| Enter; 1 / 2 ở cuối thoại | Tiếp trang; chọn phản hồi |
+| J; ← →; ↑ ↓ | Sổ tay; đổi mục; đổi trang |
 | Space / C trong mục Chứng cứ | Chọn hai tài liệu / ghép giả thuyết |
-| Tab | Túi đồ; vật phẩm dùng theo ngữ cảnh |
-| M | Hiện tại / hồi tưởng, sau khi nghe cassette |
-| H trong câu đố | Ba cấp gợi ý |
-| F sau ba lần sai | Bỏ qua có ghi nhận, không khóa truyện |
-| F5 / F9 | Lưu / tải, chọn trang 1–3 |
+| Tab trong thế giới | Túi đồ |
+| M | Hiện tại / hồi tưởng sau khi nghe cassette; dấu vết P014 ở kho trường |
+| H / Tab trong câu đố | Tăng gợi ý / ẩn bảng gợi ý |
+| F sau ba lần thử sai | Bỏ qua có ghi nhận, không khóa truyện |
+| F5 / F9 | Lưu / tải trang 1–3 |
 | Esc | Khép bảng / tạm dừng |
 
-Các phím E, J, Tab, M có thể đổi trong Thiết lập. Menu hỗ trợ chuột; giải đố và sổ ưu tiên bàn phím. Không có chiến đấu. Sau câu đố cuối, quay lại phố hoặc xem tư liệu sản xuất từ menu. `Chọn chương` chỉ mở Hanako nếu autosave đã hoàn thành phần mở đầu.
+Mỗi cơ chế hiển thị phím riêng: giỏ hàng, cực pin, chuỗi số, dây loa, nhịp gõ có khoảng nghỉ, ba vòng khóa, đếm ảnh, chọn cửa, kéo chốt. Những câu suy luận còn lại dùng nhập/chọn đáp án. Cần xem hai ghi chép trước khi giải; biết mã trước không thay việc khám phá. H chỉ vị trí ghi chép còn thiếu. Thoại có thể nghe lại nhưng không cộng quan hệ nhiều lần.
 
-**Lưu game:** Windows `%LOCALAPPDATA%\3DPsychocal`; Linux `~/.local/share/3DPsychocal`. Có autosave và ba trang thủ công, ghi tệp nguyên tử. Save lỗi được báo và giữ nguyên. Có thể chọn thư mục khác qua `--user-dir PATH` hoặc `FORGOTTEN_VOICES_USER_DIR`. Log ở cùng thư mục.
+Phím E/J/Tab/M có thể đổi trong Thiết lập. `Chọn chương` chỉ mở Hanako khi autosave hoàn thành mở đầu. Sau P022 có thể tiếp tục trò chuyện và quay lại các phòng, hoặc xem ending thử trong Tư liệu.
 
-**Hỗ trợ tiếp cận:** phụ đề cho nhịp gõ, giảm xuất hiện bất ngờ, tắt mưa chuyển động, CRT tùy chọn, toàn màn hình, âm lượng độc lập. Bản hiện tại không có chớp đèn mạnh, máu hoặc lồng tiếng; các mục giảm chớp/máu/voice là cấu hình dự phòng, không được tính là nội dung đã có.
+Save ở `%LOCALAPPDATA%\3DPsychocal` (Windows), `~/.local/share/3DPsychocal` (Linux), hoặc `--user-dir PATH`. Autosave + ba trang thủ công, ghi nguyên tử. Save schema 1 của 0.1 được kiểm tra rồi chuyển sang schema 2, giữ bản `.v1.bak`, đặt Ren tại lối vào an toàn. Save hỏng được báo và giữ nguyên.
 
-## Kiểm thử và build
+Tiếp cận: phụ đề nhịp gõ, giảm xuất hiện bất ngờ, giảm mưa chuyển động, CRT tùy chọn, âm lượng và toàn màn hình. Chưa có lồng tiếng, gore hay chớp mạnh; các tùy chọn tương ứng là dự phòng.
+
+## Kiểm thử và công cụ biên soạn
 
 ```sh
 python -m pip install -r requirements-dev.txt
+python tools/compile_dialogues.py
 python tools/validate_content.py
+python tools/narrative_audit.py
 python -m pytest -q
 python tools/playtest_route.py
 python main.py --headless --frames 120 --user-dir work/smoke
 ```
 
-Windows: chạy `build_windows.bat`. Đầu ra là `dist/3DPsychocal/3DPsychocal.exe` cùng thư mục `_internal`. Phải giữ **toàn bộ thư mục**, không chép riêng EXE. Không cần Python trên máy chơi.
+`narrative_audit.py --release` **cố ý trả lỗi** cho đến khi đủ 8 chương, mỗi chương 8 maps, 45.000 lời thoại chơi được không trùng dòng, 25 tiểu sử, 100 câu đố chơi được, 5 ending campaign và hai manh mối mỗi thoại. CI của đợt sản xuất chạy audit cấu trúc, không che những điều kiện phát hành còn thiếu.
 
-CI [build.yml](.github/workflows/build.yml) chạy trên Ubuntu và Windows, kiểm tra source, đóng gói rồi smoke-test chương trình Windows. Xem trạng thái thật trong [reports/QA.md](reports/QA.md); sự tồn tại của script build không chứng minh EXE đã được kiểm thử. Không dùng PyInstaller Linux để giả tạo EXE Windows.
+`build_windows.bat` tạo `dist/3DPsychocal/3DPsychocal.exe` cùng `_internal`; giữ toàn bộ thư mục. CI chạy test trên Ubuntu/Windows, PyInstaller Windows và smoke-test EXE thật. [QA](reports/QA.md) phân biệt kiểm tự động với playtest người thật. `tools/package_source.py` đóng ZIP loại cache, save, venv và build.
 
-ZIP source có thể tải bằng **Code → Download ZIP** trên nhánh chứa bản giao. Bản phát hành/build artifact chỉ có nếu workflow thành công. `python tools/package_source.py` tạo ZIP riêng và loại save, cache, venv, build.
+## Nội dung và tài nguyên
 
-## Nội dung repo
+- `core/`, `systems/`, `scenes/`: game loop, UI, collision, tiến trình, quan hệ, âm thanh, lưu game.
+- `data/story/*.vi.txt`: kịch bản mới có thể biên tập; `compile_dialogues.py` biên dịch vào `dialogues.json`.
+- `data/`: 8 chapter records, 100 puzzle designs, 25 hồ sơ, 76 hội thoại, 16 maps, 44 ghi chép, quests, truth matrix, 5 ending previews.
+- `assets/`: 88 tệp sprite/portrait/props/map/menu/audio/font/licenses/atlas; manifest SHA-256.
+- `docs/`: [GDD](docs/GDD.md), [Story Bible](docs/STORY_BIBLE.md), prompt gốc, CSV và graph câu đố, lộ trình.
+- `reports/`: kiểm đếm, kiểm thử, ảnh từ runtime và bằng chứng build.
 
-- `core/`: game loop, asset paths, state, JSON registry, điều phối giao diện.
-- `systems/`: tiến trình, quan hệ, chứng cứ, ending rules, save validation, world/collision, audio.
-- `scenes/`: renderer pixel, chữ bitmap không làm mịn, integer scaling 480×270.
-- `data/`: 100 puzzle records, 25 profiles, 25 dialogues, 5 maps, quests, 5 ending previews.
-- `assets/`: sprite sheets bốn hướng, portraits ba biểu cảm, props, tiles, background, icon, font và PCM WAV.
-- `tools/`: asset generator, validator, kiểm thử tuyến UI, báo cáo graph, đóng gói.
-- `docs/`: GDD, Story Bible, Truth Matrix, art bible, roadmap, yêu cầu nguồn.
-- `reports/`: kết quả thật, ảnh render, số lượng; không phải ước lượng hoàn thành.
+Code, nội dung gốc, PNG vẽ bằng công cụ Python và WAV tổng hợp dùng [Apache-2.0](LICENSE). Font Noto dùng SIL OFL. `tools/build_world_art.py` tái tạo 16 bản đồ; `tools/generate_assets.py` tái tạo toàn bộ bộ tài nguyên gốc.
 
-Bắt đầu từ [GDD](docs/GDD.md), [Story Bible](docs/STORY_BIBLE.md), [ma trận sự thật](data/truth_matrix.json), [tiến độ yêu cầu](docs/REQUIREMENTS.md) và [lộ trình tiếp tục](docs/ROADMAP.md).
-
-## Nguồn gốc tài nguyên
-
-Mã và nội dung gốc theo [Apache-2.0](LICENSE). PNG pixel và WAV tổng hợp được tạo riêng bằng `tools/generate_assets.py`, dùng cùng giấy phép. Font Noto theo SIL OFL, bản quyền đầy đủ tại `assets/fonts/`. Không dùng asset lấy từ game thương mại.
-
-Alpix đã mở canvas; không có file xuất từ canvas được dùng. AutoSprite đã tạo bản ghi nhân vật Ren nhưng chưa trả về ảnh; **không có sprite AutoSprite trong runtime**. Chi tiết trung thực ở [ASSET_PROVENANCE](docs/ASSET_PROVENANCE.md). Game không cần hai dịch vụ này để chạy.
-
-Tsukimori và Kiroku là hư cấu. Các truyền thuyết là chất liệu kể chuyện, không phải bằng chứng về sự kiện có thật ở Nhật Bản.
+Alpix đã mở canvas nhưng không cung cấp file xuất; AutoSprite tạo bản ghi Ren nhưng chưa trả ảnh. **Runtime chưa dùng tài nguyên từ hai plugin này**; [nguồn gốc tài nguyên](docs/ASSET_PROVENANCE.md) ghi rõ kết quả thực. Tsukimori/Kiroku là hư cấu; truyền thuyết là chất liệu kể chuyện.

@@ -106,41 +106,9 @@ for row,base in enumerate([(48,64,70),(45,58,64),(74,85,80),(76,71,59),(49,65,65
         else:
             td.rectangle((ox+1,oy+1,ox+14,oy+11),fill='#806e56');td.rectangle((ox+1,oy+1,ox+14,oy+2),fill='#a28b66')
 save(tiles,'tilesets/tsukimori.png')
-# Saved world backgrounds generated from real map and collision data.
-maps=json.loads((ROOT/'data/maps.json').read_text());puzzles=json.loads((ROOT/'data/puzzles.json').read_text())
-for idx,m in enumerate(maps):
-    im=Image.new('RGB',(m['width']*16,m['height']*16));d=ImageDraw.Draw(im)
-    for y,row in enumerate(m['tiles']):
-        for x,t in enumerate(row):im.paste(tiles.crop((t*16,idx*16,t*16+16,idx*16+16)),(x*16,y*16))
-    for x in range(48,im.width-50,96):
-        rect(d,(x,16,x+43,47),'ink');rect(d,(x+3,19,x+40,43),'blue');d.line((x+21,19,x+21,43),fill=PAL['fog']);d.line((x+3,31,x+40,31),fill=PAL['fog'])
-        rect(d,(x,47,x+44,50),'#8d8b70')
-        # Light streak, limited bands of the palette.
-        d.polygon([(x,64),(x+42,64),(x+65,88),(x+8,88)],fill='#3c5153')
-    if m['id']=='station':
-        rect(d,(24,292,im.width-25,305),'ink')
-        for y in (294,302):d.line((24,y,im.width-25,y),fill=PAL['fog'])
-        for x in range(24,im.width-25,12):rect(d,(x,292,x+3,305),'#625c4f')
-    if m['id']=='town':
-        for x in (60,190,360,500):
-            rect(d,(x,72,x+60,82),'#785d50');d.line((x,83,x+60,83),fill=PAL['amber'])
-            im.alpha_composite if False else None
-            prop=props.crop((160,0,192,48));im.paste(prop,(x+52,154),prop)
-        for _ in range(80):
-            x=rng.randrange(20,im.width-20);y=rng.randrange(270,im.height-20);d.line((x,y,x+4,y),fill='#415a61')
-    if m['id']=='hospital':
-        for x in (330,390):rect(d,(x,150,x+35,205),'#a6afa1');rect(d,(x+3,153,x+32,169),'paper');rect(d,(x+3,174,x+32,201),'#7d938d')
-    if m['id']=='home':
-        rect(d,(335,204,440,256),'#8e846a')
-        for y in range(207,254,3):d.line((338,y,437,y),fill='#7d7964')
-        rect(d,(357,213,413,238),'#6f5545');d.ellipse((367,218,377,226),fill=PAL['paper']);d.ellipse((393,218,403,226),fill=PAL['paper'])
-    for p in puzzles:
-        if p['status']=='playable' and p['room']==m['id']:
-            x,y=p['position'];kind=1 if p['id'] in ('P006','P013') else 4 if p['id']=='P005' else 3 if p['id'] in ('P009','P016') else 7 if p['id'] in ('P020','P021') else 0
-            prop=props.crop((kind*32,0,kind*32+32,48));im.paste(prop,(x-16,y-36),prop)
-    for door in m['portals']:
-        x,y=door['x'],door['y'];rect(d,(x-13,y-4,x+13,y+7),'#9d906b');d.polygon([(x-4,y+1),(x+4,y+1),(x,y+5)],fill=PAL['paper'])
-    save(im,f'maps/{m["id"]}.png')
+# The expanded world has its own authored renderer.
+from build_world_art import make_maps
+make_maps()
 # Main menu: a quiet, perspectival school corridor, composed at 480 x 270.
 im=Image.new('RGB',(480,270),PAL['ink']);d=ImageDraw.Draw(im)
 d.polygon([(0,0),(480,0),(339,98),(283,98)],fill='#172731')

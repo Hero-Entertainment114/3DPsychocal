@@ -46,28 +46,83 @@
   },
   {
     "path": "assets/maps/home.png",
-    "bytes": 4844,
-    "sha256": "ebb4f6215ca21428be47bb9065799fd5629369b61724ca9fa0758c1852cae78e"
+    "bytes": 15428,
+    "sha256": "507041ccba046f7b5d32795ab6d593e24fc031b4f3f8b008972078f0b2f434db"
+  },
+  {
+    "path": "assets/maps/home_entry.png",
+    "bytes": 12792,
+    "sha256": "d8a94d2f7769294995bce251da0d0d3562644b22e581ceeee74feae1dc6a45d7"
   },
   {
     "path": "assets/maps/hospital.png",
-    "bytes": 4248,
-    "sha256": "83fc73e6c2867ce71875f681d2403ab9fb321d6d8eb859fca96e6738e4617ec6"
+    "bytes": 14381,
+    "sha256": "154bbf23dc8d0e7b5d960a77f5a40a824ca6e18fc7c4089f53f47eecb8b7000c"
+  },
+  {
+    "path": "assets/maps/hospital_lobby.png",
+    "bytes": 15328,
+    "sha256": "ed389b6ad405f02b1c633a1ab7c56d8f4dd4f33b35b797764ceebd18d739785d"
   },
   {
     "path": "assets/maps/school.png",
-    "bytes": 7287,
-    "sha256": "5709c251130a6ef920aaa9556f338b77ff5eb5d955ee348a3d585da7cfdae67b"
+    "bytes": 24016,
+    "sha256": "c57c1bc97cd1654381b79e1b25c6e7898f1407d7a401a3d2d360a5ce735664f7"
+  },
+  {
+    "path": "assets/maps/school_broadcast.png",
+    "bytes": 13832,
+    "sha256": "c98d48ec70a310604ff131da363246bffd434b69dc6f69f0fa790c9719f3cd49"
+  },
+  {
+    "path": "assets/maps/school_class.png",
+    "bytes": 18832,
+    "sha256": "306a2d94a8b8f6953534da141ef286da7b8ea530b9156689a3350fc2dd43af83"
+  },
+  {
+    "path": "assets/maps/school_corridor.png",
+    "bytes": 17614,
+    "sha256": "9cf4e68b6762b23bfd22fa7e839b9fb9b0d30002ea393ceb1e5a2011867dfd2d"
+  },
+  {
+    "path": "assets/maps/school_store.png",
+    "bytes": 17941,
+    "sha256": "9c419fd5067de1497d04d581d22d34e37328400bde11203e0c4d9ee5ea15b5b6"
+  },
+  {
+    "path": "assets/maps/school_teachers.png",
+    "bytes": 16093,
+    "sha256": "9d12f39f993dc61afe81322e6294c5919ca6bf0f755bb419ceb22076fb02ac89"
+  },
+  {
+    "path": "assets/maps/school_toilets.png",
+    "bytes": 15234,
+    "sha256": "cbbe556baedba3494823bf71ab005976538ab619f97ba3bc00c201bf7ef7c2a4"
+  },
+  {
+    "path": "assets/maps/school_vestibule.png",
+    "bytes": 16395,
+    "sha256": "cc367cbdbcf0023820577d7082fae18a0c66e6158d32df14a64afa3e0df8737e"
+  },
+  {
+    "path": "assets/maps/shop.png",
+    "bytes": 15387,
+    "sha256": "9f95d505f751bfe8a054621912c90ef55287380f1e9ff936e03e139d84f3ccdd"
   },
   {
     "path": "assets/maps/station.png",
-    "bytes": 4853,
-    "sha256": "5ba04becdce57135c39e484690dc73e65227f2b7efa50a304f6c6aa41dfb2200"
+    "bytes": 20637,
+    "sha256": "564c77df000261974dc559d93a014984d130229f15421b005dde6a25d83bec80"
+  },
+  {
+    "path": "assets/maps/station_hall.png",
+    "bytes": 13469,
+    "sha256": "2a11be3f7a9713877004ebc89fba8066ec371d13e7cf51283c62e5f5ec13e3ba"
   },
   {
     "path": "assets/maps/town.png",
-    "bytes": 7440,
-    "sha256": "2f660b5595396d7c15a0f88c0f9a44f16007ff05ea880447e01a5fbb0dd09855"
+    "bytes": 24451,
+    "sha256": "14359be55df451d16c647bb49138f816ce72df4582d8ac8a2df721c3397caf66"
   },
   {
     "path": "assets/music/chapter_0.wav",

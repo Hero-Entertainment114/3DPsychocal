@@ -1,25 +1,25 @@
 ﻿id,title,chapter,category,status,room,dependencies,answer
-P001,Tờ vé bị ướt,0,observation,playable,station,,2
+P001,Tờ vé bị ướt,0,observation,playable,station_hall,,2
 P002,Đơn thuốc của mẹ,0,observation,playable,hospital,P001,2
-P003,Giỏ hàng ba ngày,0,logic,playable,town,P002,400
+P003,Giỏ hàng ba ngày,0,logic,playable,shop,P002,400
 P004,Hai bộ đũa,0,observation,playable,home,P003,2
-P005,Tin lúc sáu giờ,0,observation,playable,home,P004,2
+P005,Tin lúc sáu giờ,0,observation,playable,home_entry,P004,2
 P006,Cuộn băng im tiếng,0,logic,playable,home,"P003,P004",-
 P007,Chuyến tàu bị hủy,0,inference,playable,station,"P001,P005",2
 P008,Chìa khóa đồng,0,observation,playable,town,"P006,P007",2
-P009,Lịch học bị xé,1,logic,playable,school,P008,234
-P010,Ngăn bàn còn sạch,1,observation,playable,school,P009,3
-P011,Hai nét chữ,1,inference,playable,school,P010,2
-P012,Dây loa cũ,1,logic,playable,school,P009,213
-P013,Nhịp gõ bên kia,1,logic,playable,school,"P006,P012",21
-P014,Hành lang thứ hai,1,memory_choice,playable,school,"P011,P013",2
-P015,Nhân chứng chuyến cuối,1,cross_chapter,playable,school,"P007,P014",2
-P016,Tủ hồ sơ 4:44,1,logic,playable,school,P015,444
-P017,Ảnh thiếu một người,1,inference,playable,school,"P010,P016",1
-P018,Lời khai của đứa trẻ,1,memory_choice,playable,school,"P011,P017",1/2
-P019,Tên trên chiếc khăn,1,inference,playable,school,P018,mio
-P020,Cánh cửa có tiếng thở,1,memory_choice,playable,school,"P013,P019",3
-P021,Không khóa nữa,1,memory_choice,playable,school,"P014,P020",2
+P009,Lịch học bị xé,1,logic,playable,school_vestibule,P008,234
+P010,Ngăn bàn còn sạch,1,observation,playable,school_class,P009,3
+P011,Hai nét chữ,1,inference,playable,school_teachers,P010,2
+P012,Dây loa cũ,1,logic,playable,school_broadcast,P009,213
+P013,Nhịp gõ bên kia,1,logic,playable,school_corridor,"P006,P012",21
+P014,Hành lang thứ hai,1,memory_choice,playable,school_store,"P011,P013",2
+P015,Nhân chứng chuyến cuối,1,cross_chapter,playable,school_teachers,"P007,P014",2
+P016,Tủ hồ sơ 4:44,1,logic,playable,school_store,P015,444
+P017,Ảnh thiếu một người,1,inference,playable,school_class,"P010,P016",1
+P018,Lời khai của đứa trẻ,1,memory_choice,playable,school_teachers,"P011,P017",1/2
+P019,Tên trên chiếc khăn,1,inference,playable,school_store,P018,mio
+P020,Cánh cửa có tiếng thở,1,memory_choice,playable,school_toilets,"P013,P019",3
+P021,Không khóa nữa,1,memory_choice,playable,school_toilets,"P014,P020",2
 P022,Gửi lại lời chứng,1,inference,playable,school,"P018,P021",1
 P023,Tờ báo ở phòng khám,2,inference,designed,clinic,P011,Tên người phụ nữ
 P024,Hai tấm gương,2,logic,designed,clinic,P023,Tây-Bắc

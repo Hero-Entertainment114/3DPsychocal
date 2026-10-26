@@ -5,6 +5,10 @@ from systems.progression import Progression,select_ending,ending_fixture
 from systems.storage import Storage,SaveError,validate
 from tools.validate_content import validate as validate_content
 
+def prepare_observations(state,puzzle):
+    for oid in puzzle['observations']:state.flags['observed_'+oid]=True
+    if puzzle['id']=='P014':state.flags['school_memory_seen']=True
+
 def test_content_graph_and_references(content):
     assert validate_content(content)['errors']==[]
 
@@ -13,6 +17,7 @@ def test_playable_route_each_checkpoint_reloads(content,tmp_path):
     for p in content.playable:
         prog=Progression(content,state)
         assert prog.available(p['id']),p['id']
+        prepare_observations(state,p)
         assert prog.solve(p['id'],p['answers'][-1])
         before=state.snapshot();store.save(state);state=store.load();assert state.snapshot()==before
     assert len(state.solved)==22 and state.flags['slice_complete']
@@ -31,7 +36,9 @@ def test_wrong_answers_skip_and_idempotence(content):
 def test_both_moral_answers_progress_without_softlock(content):
     for answer in ('1','2'):
         s=State();p=Progression(content,s)
-        for item in content.playable:assert p.solve(item['id'],answer if item['id']=='P018' else item['answers'][-1])
+        for item in content.playable:
+            prepare_observations(s,item)
+            assert p.solve(item['id'],answer if item['id']=='P018' else item['answers'][-1])
         assert s.flags['heard_child']==(answer=='2')
         assert s.guilt==(1 if answer=='1' else 0)
 
@@ -55,7 +62,7 @@ def test_ending_rules_are_distinct(content,ending):
     e=content.endings[ending];assert len(e['scenes'])==3;assert len(e['epilogues'])==10
 
 def test_save_roundtrip_full_state(content,tmp_path):
-    s=State();p=Progression(content,s);p.solve('P001','2');p.relationship('yui','repeat')
+    s=State();p=Progression(content,s);prepare_observations(s,content.puzzles['P001']);assert p.solve('P001','2');p.relationship('yui','repeat')
     s.memory=True;s.play_seconds=123.4;s.hints['P001']=2
     store=Storage(tmp_path,content)
     for slot in ('auto','1','2','3'):

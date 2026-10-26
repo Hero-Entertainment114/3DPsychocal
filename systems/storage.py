@@ -8,7 +8,7 @@ from core.state import State, DEFAULT_SETTINGS
 class SaveError(ValueError): pass
 
 def validate(data, content):
-    if not isinstance(data, dict) or data.get('schema') != 1:
+    if not isinstance(data, dict) or data.get('schema') != 2:
         raise SaveError('Phiên bản save không được hỗ trợ.')
     fields = State().__dict__
     if set(data) != set(fields): raise SaveError('Save thiếu trường hoặc có trường lạ.')
@@ -55,6 +55,22 @@ def validate(data, content):
         if any(type(v) is not int or not -100 <= v <= 100 for v in rel.values()): raise SaveError('Chỉ số quan hệ lỗi.')
     return State(**data)
 
+def migrate(data, content):
+    if not isinstance(data,dict) or data.get('schema')!=1:return data
+    result=deepcopy(data)
+    # Validate the old payload's shape before relocating a legacy position.
+    if set(result)!=set(State().__dict__):raise SaveError('Save cũ thiếu trường.')
+    if any(type(result[k]) not in (float,int) or not math.isfinite(result[k]) for k in ('x','y')):raise SaveError('Tọa độ save cũ lỗi.')
+    if result['room'] not in content.maps:raise SaveError('Bản đồ cũ không hợp lệ.')
+    if not isinstance(result['flags'],dict) or not isinstance(result['solved'],list):raise SaveError('Tiến trình save cũ lỗi.')
+    result['schema']=2
+    result['x'],result['y']=content.maps[result['room']]['entry']
+    for pid in result['solved']:
+        if pid not in content.puzzles:raise SaveError('Câu đố cũ không hợp lệ.')
+        for oid in content.puzzles[pid].get('observations',[]):result['flags']['observed_'+oid]=True
+    result['flags']['migrated_v1']=True
+    return result
+
 class Storage:
     def __init__(self, directory, content):
         self.directory, self.content = directory, content
@@ -75,7 +91,13 @@ class Storage:
         try:
             target = self.path(slot)
             if target.stat().st_size > 2_000_000: raise SaveError('Save quá lớn.')
-            return validate(json.loads(target.read_text(encoding='utf-8')), self.content)
+            raw=target.read_text(encoding='utf-8')
+            data=json.loads(raw)
+            result=validate(migrate(data,self.content),self.content)
+            if data.get('schema')==1:
+                backup=target.with_suffix('.v1.bak')
+                if not backup.exists():backup.write_text(raw,encoding='utf-8')
+            return result
         except (OSError, ValueError, TypeError) as e:
             logging.exception('Save load failed')
             raise SaveError('Không thể đọc save; tệp gốc được giữ nguyên. ' + str(e)) from e

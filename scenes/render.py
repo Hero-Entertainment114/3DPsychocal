@@ -61,7 +61,7 @@ class Renderer:
             if i==selected:
                 pygame.draw.rect(self.screen,C['blue'],(31,y-1,195,15));self.text('›',35,y,'amber',11)
             self.text(label,49,y,'amber' if i==selected else 'paper',10)
-        self.text('BẢN SẢN XUẤT 0.1 • MỞ ĐẦU + HANAKO',268,250,'paper',9)
+        self.text('BẢN SẢN XUẤT 0.2 • MỞ ĐẦU + HANAKO',268,250,'paper',9)
         if progress>=9:self.sprite('mio',312,158,alpha=100)
         if progress>=22:
             overlay=pygame.Surface((237,270),pygame.SRCALPHA);overlay.fill((185,153,90,28));self.screen.blit(overlay,(243,0))
@@ -74,8 +74,13 @@ class Renderer:
         self.screen.fill(C['ink']);self.screen.blit(self.assets[f'maps/{state.room}.png'],(-int(cam.x),-int(cam.y)))
         if state.memory:
             overlay=pygame.Surface((480,270),pygame.SRCALPHA);overlay.fill((92,53,56,38));self.screen.blit(overlay,(0,0))
-            self.text('NHÀ KHO',max(8,380-cam.x),max(40,62-cam.y),'amber',10)
-        elif state.room=='school':self.text('PHÒNG Y TẾ',max(8,380-cam.x),max(40,62-cam.y),'muted',10)
+            if world.room.get('memory_label'):self.text(world.room['memory_label']['past'],170-cam.x,20-cam.y,'amber',10)
+        # Draw only currently available interactions: future clues are not dumped into a room.
+        props=self.assets['sprites/props.png']
+        for obj in world.objects():
+            if obj['kind'] in ('puzzle','observation'):
+                kind=0 if obj['kind']=='observation' else (1 if obj['id'] in ('P006','P013') else 3 if obj['id'] in ('P009','P016') else 0)
+                self.screen.blit(props,(int(obj['x']-cam.x)-16,int(obj['y']-cam.y)-44),pygame.Rect(kind*32,0,32,48))
         people=[(p['y'],p['id'],p['x'],p['y'],0,0) for p in world.actors()]
         frame=int(world.walk_time*8)%6 if world.moving else 0
         people.append((state.y,'ren',state.x,state.y,frame,world.direction))
@@ -89,7 +94,7 @@ class Renderer:
                 else:continue
                 self.text(mark,x-2,y-51,color,12)
             elif o['kind']=='portal':self.text(o['label'],x-15,y+10,'muted',9)
-        if state.room in ('station','town') and not settings['reduced_motion']:
+        if world.room['theme'] in ('platform','street','yard') and not settings['reduced_motion']:
             for i in range(36):
                 x=(i*71+int(t*5))%480;y=(i*43+int(t*90))%270
                 pygame.draw.line(self.screen,(88,113,123),(x,y),(x-2,y+7))
@@ -113,7 +118,21 @@ class Renderer:
         self.screen.blit(portrait,(30,78),pygame.Rect(0,0,96,96))
         for i,line in enumerate(pages[index][1]):self.text(line,140,82+i*16,'paper',11)
         if choice:
-            self.text('1  Ngồi lại, nghe cho hết.',140,191,'amber',10)
-            self.text('2  Kể lại ngay điều vừa nghe.',140,209,'muted',10)
+            self.paragraph('1  '+d['choices'][0]['text'],140,187,305,10,'amber',13,maxlines=2)
+            self.paragraph('2  '+d['choices'][1]['text'],140,216,305,10,'muted',13,maxlines=2)
         else:self.text('Enter / E / nhấp để tiếp tục',140,221,'muted',9)
         self.text('Esc để khép cuộc trò chuyện',30,233,'muted',9)
+
+    def mechanism(self,model):
+        pygame.draw.rect(self.screen,C['deep'],(30,122,420,64))
+        pygame.draw.rect(self.screen,C['fog'],(30,122,420,64),1)
+        if model.kind=='wires':
+            for i,color in enumerate(('sage','paper','red')):
+                y=133+i*13;pygame.draw.circle(self.screen,C[color],(52,y),4)
+                for j in range(3):pygame.draw.rect(self.screen,C['fog'],(290+j*48,y-3,8,7),1)
+                if i<len(model.selected):pygame.draw.line(self.screen,C[color],(58,y),(294+(model.selected[i]-1)*48,y),2)
+        elif model.kind=='doors':
+            for i in range(3):
+                x=80+i*125;pygame.draw.rect(self.screen,C['sage'] if model.phase==i+1 else C['blue'],(x,127,62,51));pygame.draw.rect(self.screen,C['ink'],(x+8,133,46,18));self.text(str(i+1),x+28,154,'paper',11)
+        else:self.paragraph(model.display(),44,133,394,12,'amber',17,maxlines=2)
+        self.paragraph(model.instructions,32,166,414,9,'muted',12,maxlines=2)

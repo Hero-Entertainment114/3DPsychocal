@@ -48,6 +48,38 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 0,
+    "position": [
+      192,
+      224
+    ],
+    "clue_links": [
+      {
+        "target": "P001",
+        "line": 2,
+        "quote": "Vé của cậu là cửa số hai. Cửa một bây giờ dành cho hàng. Ngày trước người ta cứ chen nhầm, thành ra tôi thuộc cả tiếng xin lỗi của từng người.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P007",
+        "line": 4,
+        "quote": "Nó đã ngừng từ năm tám tám. Có những thứ treo lâu quá, người ta tưởng vẫn còn hiệu lực. Tôi định tháo, nhưng con Ai bảo giữ lại để biết mình đã đổi chỗ nào.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -103,12 +135,46 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P001"
+    ],
+    "chapter": 0,
+    "position": [
+      112,
+      224
+    ],
+    "clue_links": [
+      {
+        "target": "P002",
+        "line": 7,
+        "quote": "Con nhớ. Có những chuyện con vẫn nhớ mà.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P004",
+        "line": 4,
+        "quote": "Trong ngăn bàn. Nhưng con ăn trước đã. Bát của con còn úp trên kệ; mẹ không dọn đi. Nồi cơm chỉ cần hâm lại một lần.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
     "id": "D_natsuki",
     "character": "natsuki",
-    "room": "hospital",
+    "room": "hospital_lobby",
     "important": true,
     "links": [
       "P002",
@@ -154,12 +220,46 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P001"
+    ],
+    "chapter": 0,
+    "position": [
+      384,
+      224
+    ],
+    "clue_links": [
+      {
+        "target": "P002",
+        "line": 0,
+        "quote": "Tôi đã ghi giờ uống thuốc lên tờ xanh. Tờ trắng là đơn cũ; xin đừng trộn cả hai vì thấy chữ giống nhau.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P028",
+        "line": 4,
+        "quote": "Ở đây cũng nhiều người quen như thế. Tôi từng sao một hồ sơ chỉ vì có dấu xác nhận, rồi mới biết người bệnh chưa hề được hỏi.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
     "id": "D_tomoko",
     "character": "tomoko",
-    "room": "town",
+    "room": "shop",
     "important": true,
     "links": [
       "P003",
@@ -213,6 +313,40 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P002"
+    ],
+    "chapter": 0,
+    "position": [
+      384,
+      240
+    ],
+    "clue_links": [
+      {
+        "target": "P003",
+        "line": 0,
+        "quote": "Cơm một trăm hai mươi, trà tám mươi, pin hai trăm. Tôi nói giá trước để cậu khỏi nhìn túi tiền như nhìn con vật sắp cắn.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P005",
+        "line": 4,
+        "quote": "Cổng đóng thứ Tư, không phải thứ Sáu. Radio đã cải chính. Yuji nghe xong cứ gấp báo vào đúng trang ấy, như thể gấp được thì lỗi cũng mất.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -264,6 +398,40 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P003"
+    ],
+    "chapter": 0,
+    "position": [
+      384,
+      208
+    ],
+    "clue_links": [
+      {
+        "target": "P007",
+        "line": 5,
+        "quote": "Tờ vé trong ảnh ghi chuyến bốn giờ mười. Bác Hiroshi bảo chuyến ấy đã hủy.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P008",
+        "line": 4,
+        "quote": "Tớ biết cái khóa mở cổng phía Đông. Trên bản đồ vẫn còn ký hiệu. Nhưng nếu cậu muốn hỏi chuyện phong thư, đừng đứng giữa cửa tiệm thế này.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -311,12 +479,46 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P004"
+    ],
+    "chapter": 0,
+    "position": [
+      72,
+      256
+    ],
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 1,
+        "quote": "Cơm còn đủ hai người. Mình nên ăn phần của mình, không phải ngồi đợi một người đang nằm viện trở về dọn bàn.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P006",
+        "line": 2,
+        "quote": "Máy cassette hết pin. Dấu âm cạnh lò xo, đúng như mọi cái máy bình thường. Tốt. Mình cần một thứ bình thường tối nay.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
     "id": "D_kaori",
     "character": "kaori",
-    "room": "school",
+    "room": "school_teachers",
     "important": true,
     "links": [
       "P011",
@@ -362,12 +564,46 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P015"
+    ],
+    "chapter": 1,
+    "position": [
+      400,
+      208
+    ],
+    "clue_links": [
+      {
+        "target": "P011",
+        "line": 4,
+        "quote": "Tôi biết. Nét mực đỏ là của tôi. Tôi từng nói mình chỉ sửa cho dễ hiểu, nhưng không có đứa trẻ nào nhờ tôi hiểu hộ như vậy.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P015",
+        "line": 5,
+        "quote": "Cô còn nói đã gặp chúng em trên chuyến bốn giờ mười.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
     "id": "D_mio",
     "character": "mio",
-    "room": "school",
+    "room": "school_toilets",
     "important": true,
     "links": [
       "P019",
@@ -412,6 +648,40 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [
+      "P020"
+    ],
+    "chapter": 1,
+    "position": [
+      112,
+      240
+    ],
+    "clue_links": [
+      {
+        "target": "P019",
+        "line": 3,
+        "quote": "Chiếc khăn có chữ M, I, rồi một chỗ rách. Nhãn áo có chữ O. Anh không muốn đoán hộ em.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P020",
+        "line": 6,
+        "quote": "Cửa thứ nhất có loa. Cửa thứ hai không có ai. Ở đây tiếng thở không đều như máy. Nhưng trước khi mở, anh nhìn xem tay mình có đang giữ chốt không.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -464,6 +734,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P062",
+        "line": 4,
+        "quote": "Bà ấy không giấu địa chỉ. Bố mới là người đổi nó. Trong hồ sơ chuyển hộ, mẹ con phải ký thay vì bố đã đi.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P077",
+        "line": 2,
+        "quote": "Bố đi khỏi nhà mà không giải thích. Bố tưởng để hai mẹ con không biết sẽ tránh được người của dự án. Tiền gửi mỗi tháng làm bố thấy mình vẫn đang làm tròn một phần nào đó.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -504,6 +802,10 @@
       {
         "speaker": "Sora",
         "text": "Giấy báo thi. Em chưa cho chị xem. Nếu anh gặp chị, nói áo mưa đã tới nơi thôi. Chuyện còn lại để em tự nói, được không? Em muốn thử nói một câu bằng giọng mình."
+      },
+      {
+        "speaker": "Sora",
+        "text": "Trong giấy hướng dẫn hỏi, em thấy cùng một câu mà cả lớp đều dùng. Có thể họ nhớ lời được hỏi hơn điều tự nhìn thấy."
       }
     ],
     "choices": [
@@ -514,6 +816,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P025",
+        "line": 3,
+        "quote": "Vì em tin à?",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P075",
+        "line": 7,
+        "quote": "Trong giấy hướng dẫn hỏi, em thấy cùng một câu mà cả lớp đều dùng. Có thể họ nhớ lời được hỏi hơn điều tự nhìn thấy.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -555,6 +885,10 @@
       {
         "speaker": "Rei",
         "text": "Có. Nhưng em còn sợ chuyện mình đã bảo Haruka đừng làm lớn. Em chỉ muốn buổi họp phụ huynh yên ổn. Bây giờ em xin nghỉ một kỳ, mọi người lại bảo em làm lớn chuyện. Hóa ra câu ấy rất dễ nói khi người phải chịu đựng không phải mình."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Nếu hai lời kể cùng xác nhận hành động nhưng khác động cơ, em muốn giữ phần đã xác nhận và để phần chưa biết là câu hỏi."
       }
     ],
     "choices": [
@@ -565,6 +899,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P069",
+        "line": 4,
+        "quote": "Mẹ gạch một chữ rồi chép lại cả câu. Sau đó ba người khác kể y nguyên câu đã chép. Em từng nghĩ họ cùng nhớ đúng. Bây giờ em nghĩ có thể họ cùng được dạy cách kể.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P095",
+        "line": 7,
+        "quote": "Nếu hai lời kể cùng xác nhận hành động nhưng khác động cơ, em muốn giữ phần đã xác nhận và để phần chưa biết là câu hỏi.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -617,6 +979,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P019",
+        "line": 2,
+        "quote": "Tôi thêu chữ đầu, em ấy thêu chữ cuối. Nét O méo vì em ấy cứ kéo chỉ quá chặt. Đó là một buổi chiều bình thường, trước khi mọi người chỉ nhớ những buổi chiều đáng sợ.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P096",
+        "line": 4,
+        "quote": "Anh ghi được. Nhưng không viết rằng tôi đã tha thứ cho ai. Tôi đang kể về cái khăn, không đưa giấy chứng nhận cho người lớn bớt áy náy.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -668,6 +1058,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 2,
+        "quote": "Tôi đang cố nói chuyện khác vì chuyện xe dễ hơn. Tôi đã lấy trang nhật ký của Haruka. Không phải nhặt được, không phải giữ hộ. Tôi lấy.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P088",
+        "line": 6,
+        "quote": "Tôi nhớ đủ để biết không thể dùng phần cậu quên làm chỗ giấu phần tôi làm. Tôi sẽ trả trang giấy. Còn Haruka có muốn gặp tôi hay không thì không phải phần thưởng mà tôi được nhận vì đã trả nó.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -708,6 +1126,10 @@
       {
         "speaker": "Emi",
         "text": "Có câu bị gạch mà vẫn đọc được. Mọi người cứ chép phần trên, bỏ phần dưới. Em sợ một ngày chuyện của em cũng bị kể như thế: chỉ giữ đoạn khiến gia đình trông ổn. Nên em muốn tập hỏi trước khi kể chuyện của ai đó."
+      },
+      {
+        "speaker": "Emi",
+        "text": "Em không biết tại sao anh ấy đã lấy trang giấy. Em chỉ biết trang nằm trong đồ của anh ấy; biết một việc không làm em biết hết động cơ."
       }
     ],
     "choices": [
@@ -718,6 +1140,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 5,
+        "quote": "Trong trang ấy có gì khiến em chú ý?",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P095",
+        "line": 7,
+        "quote": "Em không biết tại sao anh ấy đã lấy trang giấy. Em chỉ biết trang nằm trong đồ của anh ấy; biết một việc không làm em biết hết động cơ.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -759,6 +1209,10 @@
       {
         "speaker": "Yuji",
         "text": "Vậy ăn cơm với người nhà lúc còn ngồi cùng nhau được. Tiền thiếu có thể tính. Mười hai giờ trưa nào cũng giả vờ đang ở đâu đó thì khó tính hơn nhiều."
+      },
+      {
+        "speaker": "Yuji",
+        "text": "Chú đi trung tâm việc làm. Điểm đến in trên vé xe vẫn còn, dù chú từng bảo mình đang trên đường tới xưởng."
       }
     ],
     "choices": [
@@ -769,6 +1223,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 3,
+    "clue_links": [
+      {
+        "target": "P039",
+        "line": 4,
+        "quote": "Trung tâm việc làm. Có hôm không có thông báo mới, chú ngồi xem tàu tới trưa. Vé xe trong túi ghi chỗ ấy, không ghi nhà máy. Đôi khi một tờ vé thành thật hơn người mang nó.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P043",
+        "line": 7,
+        "quote": "Chú đi trung tâm việc làm. Điểm đến in trên vé xe vẫn còn, dù chú từng bảo mình đang trên đường tới xưởng.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -821,6 +1303,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 3,
+    "clue_links": [
+      {
+        "target": "P040",
+        "line": 2,
+        "quote": "Ray cũ. Còn nét liền tới sân hàng. Bố bảo em phải chú thích vì người lớn nhìn nét đứt lại nghĩ giấy hết mực.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P057",
+        "line": 4,
+        "quote": "Cống qua giếng. Chú Daichi chui xuống đó một lần, găng bị mắc vào đinh. Em nghe tiếng tàu trong giếng dù tàu không đi dưới đất. Chú ấy bảo âm thanh đi nhờ đường rỗng.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -872,6 +1382,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 2,
+    "clue_links": [
+      {
+        "target": "P034",
+        "line": 2,
+        "quote": "Chẩn đoán của Akane. Nó đúng, nhưng không cần để chứng minh chữ ký bị giả. Tôi từng nghĩ cứ thật thì đăng được. Rồi một người phải trả lời hàng chục cuộc gọi về cơ thể mình thay vì về điều họ muốn tố cáo.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P089",
+        "line": 6,
+        "quote": "Tôi sẽ thêm tên Daichi và việc anh ấy đã làm. Bài cũ nói đúng giờ báo nhận tin, nhưng để người đọc tưởng đó là giờ tai nạn. Một câu không sai vẫn có thể dẫn người khác đến một kết luận sai.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -912,6 +1450,10 @@
       {
         "speaker": "Kazuo",
         "text": "Chúng ta thêm một bản giải trình có ngày hôm nay. Không giả vờ tờ giấy cũ chưa từng tồn tại. Nếu lại xóa một trang để mọi thứ trông đúng, tôi chỉ đang làm lại điều đã làm."
+      },
+      {
+        "speaker": "Kazuo",
+        "text": "Ba lời khai còn cùng một từ rất hiếm, và từ ấy có trong bản hướng dẫn tôi đọc trước khi họ trả lời. Tôi đã không ghi nguồn của nó."
       }
     ],
     "choices": [
@@ -922,6 +1464,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P044",
+        "line": 2,
+        "quote": "Người phỏng vấn đọc mẫu trước. Tôi nghe, nghĩ như thế sẽ giúp người đang hoảng nhớ rõ hơn. Sau này tôi thấy họ không nhớ thêm; họ chỉ kể giống nhau hơn.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P075",
+        "line": 7,
+        "quote": "Ba lời khai còn cùng một từ rất hiếm, và từ ấy có trong bản hướng dẫn tôi đọc trước khi họ trả lời. Tôi đã không ghi nguồn của nó.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -974,6 +1544,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 4,
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 4,
+        "quote": "Ba phần. Tôi nhớ vì nhà chỉ còn hai hộp, phải mượn thêm một cái của Fumiko. Hồ sơ ghi có một người, nhưng tôi không nấu cơm theo hồ sơ.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P056",
+        "line": 6,
+        "quote": "Tôi đã tưởng im lặng giúp chồng sống được. Sau đó im lặng thành thói quen, đến mức hỏi thêm canh cũng thấy như sắp gây chuyện. Hôm nay tôi sẽ kể ba hộp cơm. Tôi không biết hết bí mật, nhưng biết chính tay mình đã đặt bao nhiêu đôi đũa xuống bàn.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -1024,6 +1622,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P069",
+        "line": 0,
+        "quote": "Tôi đã viết câu hỏi ấy. Đừng gọi nó là quy trình của dự án rồi bỏ tên tôi ra ngoài.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P075",
+        "line": 4,
+        "quote": "Tôi nhận ra một lần. Rồi giải thích cho mình rằng ký ức vốn không rõ. Một câu giải thích đúng nói chung có thể bị dùng để che một việc sai rất cụ thể.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -1076,6 +1702,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 2,
+    "clue_links": [
+      {
+        "target": "P026",
+        "line": 4,
+        "quote": "Akane. Bệnh án ở đó có hai người bị gộp cùng tên; ngày sinh khác nhau. Đừng nhìn một chi tiết rồi tưởng đã biết hết.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P032",
+        "line": 6,
+        "quote": "Tôi sẽ nói chuyện chữ ký. Ảnh vết thương không đi kèm. Tôi muốn câu đầu tiên của bài báo là điều tôi nói, không phải điều người ta nhìn thấy khi nhìn tôi.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -1126,6 +1780,34 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 4,
+    "clue_links": [
+      {
+        "target": "P053",
+        "line": 2,
+        "quote": "Là tần số, mặt máy tính đến một phần mười. Ngày sửa tôi ghi dưới đáy vì biết người ta sẽ kê tách trà lên mặt trên.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P060",
+        "line": 4,
+        "quote": "Tai trái thôi. Người ghi đè dùng máy hỏng một kênh. Tai phải còn thông báo cũ. Tôi giữ vì trong đó có địa chỉ mà bây giờ người đưa thư bảo không tồn tại.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
       }
     ]
   },
@@ -1178,6 +1860,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 3,
+    "clue_links": [
+      {
+        "target": "P046",
+        "line": 0,
+        "quote": "Găng bên trái vá chỉ vàng. Mei chọn màu, bảo làm việc trong tối thì tay bố cũng nên có chút nắng.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P057",
+        "line": 2,
+        "quote": "Có. Tôi tìm người mắc kẹt sau lúc còi máy dừng. Trong hầm vẫn nghe tàu dù không có ray ở dưới. Đường rỗng mang tiếng đi xa hơn người.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -1229,6 +1939,34 @@
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
       }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 3,
+    "clue_links": [
+      {
+        "target": "P039",
+        "line": 2,
+        "quote": "Em đã bỏ tiền ăn vào hộp găng của bố. Bố tìm thấy rồi làm cơm nắm to hơn, như thể phải trả cả lãi. Em không muốn bố nghĩ em đang đói vì bố.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P046",
+        "line": 5,
+        "quote": "Em còn bản vẽ đường hầm không?",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
     ]
   },
   {
@@ -1279,6 +2017,4760 @@
       {
         "text": "Kể lại ngay điều vừa nghe.",
         "value": "repeat"
+      }
+    ],
+    "order": 0,
+    "after_dialogues": [],
+    "requires": [],
+    "chapter": 5,
+    "clue_links": [
+      {
+        "target": "P073",
+        "line": 2,
+        "quote": "Tôi biết. Lúc đầu là để tránh lệnh tiêu hủy. Sau đó tôi bắt đầu nghĩ chỉ mình biết cách giữ. Một việc cần thiết đã trở thành cái cớ để tôi quyết định thay người khác.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      },
+      {
+        "target": "P078",
+        "line": 4,
+        "quote": "Tôi sao bài báo. Yui lấy giấy gói và tìm chìa. Không ai trong chúng tôi đặt cassette vào đó. Tôi không bảo anh tin; tôi bảo anh ghi riêng phần chúng tôi nhận đã làm.",
+        "relationship": "Lời kể được đối chiếu với sự kiện trong câu đố."
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "resentment": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_arrival",
+    "character": "hiroshi",
+    "room": "station",
+    "position": [
+      192,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [],
+    "after_dialogues": [
+      "D_hiroshi"
+    ],
+    "order": 1,
+    "important": true,
+    "links": [
+      "P001",
+      "P007"
+    ],
+    "clue_links": [
+      {
+        "target": "P001",
+        "line": 8,
+        "quote": "Qua sảnh, xem lại mép vé. Cửa hai vẫn dành cho khách; cửa một nhận hàng, không cần chen vào đó cùng chiếc túi nhỏ này.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P001"
+      },
+      {
+        "target": "P007",
+        "line": 9,
+        "quote": "Còn tấm bảng 16:10 ở sân? Nếu tuyến đã ngừng từ năm tám tám thì nhìn nó thôi không thể biết hôm ấy có chuyến tàu hay không.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P007"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Hiroshi",
+        "text": "Cậu cứ đứng dưới mái này. Chỗ ngoài kia nhìn khô nhưng nước từ tấm biển sẽ đổ xuống khi có tàu đi qua. Tôi đã học chuyện đó bằng một cái mũ mới."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu không chắc mẹ đã biết chuyến cháu đi. Điện thoại trong bệnh viện có người nghe, rồi bảo cháu đợi. Sau đó đường dây ngắt."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Sachiko không thích làm phiền người đang làm việc. Nhưng hôm qua bà ấy hỏi tôi chuyến từ Tokyo có đổi sân không. Hỏi xong còn bảo chỉ hỏi hộ người khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Công ty cháu đang giảm ca. Cháu xin ba ngày mà trưởng nhóm nhìn lịch rất lâu. Cháu cứ nghĩ nếu giải quyết giấy nhà nhanh thì mọi chuyện sẽ gọn."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Gọn là từ người giữ sổ rất thích. Người đợi ở sân ga thì ít dùng hơn. Có khi họ chỉ muốn người kia ngồi xuống, để mình biết người đó thực sự đã tới."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bác vẫn nhớ tất cả người xuống ga sao?"
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Không. Có người tôi quên tên, có người tôi nhớ một chiếc ô mà quên mặt. Tôi giữ thông báo cũ để khi nhớ sai còn có thứ sửa mình. Già rồi, đáng sợ nhất là người khác ngại sửa mình."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy cháu nên làm gì trước?"
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Qua sảnh, xem lại mép vé. Cửa hai vẫn dành cho khách; cửa một nhận hàng, không cần chen vào đó cùng chiếc túi nhỏ này."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Còn tấm bảng 16:10 ở sân? Nếu tuyến đã ngừng từ năm tám tám thì nhìn nó thôi không thể biết hôm ấy có chuyến tàu hay không."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_phone",
+    "character": "hiroshi",
+    "room": "station_hall",
+    "position": [
+      352,
+      208
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P001"
+    ],
+    "after_dialogues": [
+      "D_arrival"
+    ],
+    "order": 2,
+    "important": true,
+    "links": [
+      "P002",
+      "P006"
+    ],
+    "clue_links": [
+      {
+        "target": "P002",
+        "line": 8,
+        "quote": "Y tá đã dặn đừng mua thuốc thêm. Cháu sẽ hỏi về trà, không tự chọn thứ có vẻ đắt và gọi đó là chăm sóc.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P002"
+      },
+      {
+        "target": "P006",
+        "line": 9,
+        "quote": "Nếu tiện thì lấy pin ở tiệm Sakurai. Máy ghi âm cũ dùng hai viên giống nhau; đừng lấy hai loại khác rồi trách chiếc máy đã già.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P006"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cháu đã gọi được vào bệnh viện. Người nghe bảo mẹ đang ngủ. Cháu không biết nên thấy nhẹ người hay lo hơn."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Cứ đến đó. Ngủ được trong một chỗ lạ cũng là một việc tốt. Đừng đánh thức bà ấy chỉ để hỏi vì sao bà không nói mình mệt từ trước."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bác nói giống như biết cháu sẽ hỏi gì."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Tôi từng hỏi vợ như vậy. Bà ấy bảo nếu đã biết nên nghỉ lúc nào thì còn cần người nhà để làm gì. Tôi đã nhớ câu trả lời ấy lâu hơn điều bác sĩ dặn hôm đó."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái điện thoại này vẫn nhận đồng mười yên. Hồi nhỏ cháu thường giữ một đồng trong giày, sợ làm rơi túi."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Tôi nhớ những đứa gọi về để nghe cha mẹ nói rồi không dám trả lời. Cứ im đến lúc hết tiền. Có những cuộc gọi không phải để báo một tin gì cả."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu làm việc với những địa chỉ cả ngày. Lúc nghe giọng mẹ qua dây điện thoại, cháu lại không biết mình nên nói câu đầu thế nào."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Thử hỏi bà ấy có muốn con mang gì tới. Một câu nhỏ, để người bên kia có quyền trả lời bằng điều họ thực sự cần."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Y tá đã dặn đừng mua thuốc thêm. Cháu sẽ hỏi về trà, không tự chọn thứ có vẻ đắt và gọi đó là chăm sóc."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Nếu tiện thì lấy pin ở tiệm Sakurai. Máy ghi âm cũ dùng hai viên giống nhau; đừng lấy hai loại khác rồi trách chiếc máy đã già."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_waiting",
+    "character": "natsuki",
+    "room": "hospital_lobby",
+    "position": [
+      384,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P001"
+    ],
+    "after_dialogues": [],
+    "order": 3,
+    "important": true,
+    "links": [
+      "P028",
+      "P002"
+    ],
+    "clue_links": [
+      {
+        "target": "P028",
+        "line": 8,
+        "quote": "Ở đây chữ ký còn cần đúng người. Hồ sơ cùng tên chưa chắc cùng ngày sinh; tôi phải kiểm điều đó trước khi nói anh có thể xem phần nào.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P028"
+      },
+      {
+        "target": "P002",
+        "line": 9,
+        "quote": "Tôi hiểu. Trước mắt, đơn mới không yêu cầu thêm thuốc; mẹ muốn một thức uống không caffeine. Tôi sẽ mang câu hỏi ấy vào phòng thay cho cả xấp giấy này.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P002"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Natsuki",
+        "text": "Anh là Ren? Tôi nhận ra chiếc túi. Mẹ anh nói con bà đi đâu cũng mang cái túi như thể có thể chuyển cả căn nhà bằng vai."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong này gần như toàn giấy. Cháu chưa biết bệnh viện cần giấy nào nên mang cả những thứ có lẽ không cần."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Tốt, nhưng anh đặt nó xuống ghế bên cạnh trước đã. Quầy tiếp nhận không phải nơi anh phải trả lời hết mọi chuyện trong một phút."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi có phải ký vào chỗ người thân không? Mẹ bảo bà đã ký rồi nhưng lúc nào bà cũng nói mình làm được."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Tôi sẽ chỉ đúng tờ cần ký. Tờ xanh là đơn hiện tại; tờ trắng đã được thay. Chúng ta giữ bản cũ để đối chiếu, không dùng cả hai vì sợ bỏ sót một thứ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có người từng dùng nhầm sao?"
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Có người đọc rất kỹ từng tờ, nhưng không biết hai tờ thuộc hai thời điểm khác nhau. Cẩn thận không chỉ là đọc nhiều. Đôi khi là hỏi ai viết, khi nào và để làm gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi thường chỉ kiểm địa chỉ và chữ ký ở cuối phiếu. Nếu hai thứ khớp thì xe đi."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Ở đây chữ ký còn cần đúng người. Hồ sơ cùng tên chưa chắc cùng ngày sinh; tôi phải kiểm điều đó trước khi nói anh có thể xem phần nào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi hiểu. Trước mắt, đơn mới không yêu cầu thêm thuốc; mẹ muốn một thức uống không caffeine. Tôi sẽ mang câu hỏi ấy vào phòng thay cho cả xấp giấy này."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_chair",
+    "character": "sachiko",
+    "room": "hospital",
+    "position": [
+      112,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P001"
+    ],
+    "after_dialogues": [
+      "D_sachiko"
+    ],
+    "order": 4,
+    "important": true,
+    "links": [
+      "P004",
+      "P062"
+    ],
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 8,
+        "quote": "Bát con úp trên kệ, nồi cơm còn phần ăn tối. Mẹ vẫn để hai bộ đũa vì khi nấu mẹ chưa chắc tối ấy ai sẽ ghé.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P004"
+      },
+      {
+        "target": "P062",
+        "line": 9,
+        "quote": "Còn giấy nhà mẹ nói? Nếu có chữ ký thay cho bố, con sẽ hỏi mẹ trước khi tự coi nó là chữ ký của người có tên trên mẫu.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P062"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Sachiko",
+        "text": "Chiếc ghế gần cửa không bị hỏng đâu. Nó thấp hơn chiếc còn lại một chút, mẹ thấy ngồi thế dễ buộc giày hơn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ chưa cần buộc giày để về ngay. Con không đến để kéo mẹ ra trước khi bác sĩ cho phép."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Mẹ biết. Mẹ chỉ không thích phải gọi người khác giúp một việc mình đã làm mấy chục năm. Có những ngày cái dây giày dài hơn bình thường."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con có thể ngồi ở đây đến giờ ăn. Công ty không biết chính xác chuyến tàu nào con đi, nên ít nhất chiều nay họ chưa gọi được con quay lại."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Đừng nói dối họ chỉ để mẹ thấy mình quan trọng. Con làm thế rồi mẹ sẽ phải giả vờ không nhận ra. Chúng ta đã giỏi trò ấy đủ lâu rồi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy con nói thật. Con lo mất ca, nhưng nếu không về thì lúc đứng ở kho con cũng chẳng làm được việc gì."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Thế thì ngồi xuống. Mẹ không có câu trả lời giúp con giữ được cả tiền lẫn mọi người. Mẹ chỉ có chỗ để con ngồi một lúc."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Ở nhà còn gì ăn không? Con có thể mua thêm trên đường."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Bát con úp trên kệ, nồi cơm còn phần ăn tối. Mẹ vẫn để hai bộ đũa vì khi nấu mẹ chưa chắc tối ấy ai sẽ ghé."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Còn giấy nhà mẹ nói? Nếu có chữ ký thay cho bố, con sẽ hỏi mẹ trước khi tự coi nó là chữ ký của người có tên trên mẫu."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_permissions",
+    "character": "natsuki",
+    "room": "hospital_lobby",
+    "position": [
+      384,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P002"
+    ],
+    "after_dialogues": [
+      "D_waiting"
+    ],
+    "order": 5,
+    "important": true,
+    "links": [
+      "P028",
+      "P080"
+    ],
+    "clue_links": [
+      {
+        "target": "P028",
+        "line": 7,
+        "quote": "Nếu sau này anh phải so hai hồ sơ cùng tên, hãy xem ngày sinh và người lập. Việc gộp nhầm không được sửa bằng cách công khai cả hai đời người.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P028"
+      },
+      {
+        "target": "P080",
+        "line": 8,
+        "quote": "Và nếu chỉ cần chứng minh một chữ ký đã bị sửa, tôi có thể trích phần liên quan, che bệnh án đi. Sự thật không buộc phải mang tất cả thông tin riêng ra ngoài.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P080"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Tôi đã nói chuyện với mẹ. Bà không muốn tôi xem một phần giấy nằm ở ngăn đầu giường. Tôi thấy mình hơi giận, rồi lại ngại vì đã giận."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Cảm giác ấy có thể có. Nhưng nó không biến giấy của bà thành giấy của anh. Anh có thể hỏi mình cần biết điều gì để giúp, thay vì xin xem tất cả."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu bà giấu một chuyện nghiêm trọng thì sao?"
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Chúng tôi có trách nhiệm giải thích những điều cần cho việc chăm sóc và những trường hợp phải xử lý khẩn. Còn chuyện riêng không tự mất đi chỉ vì người ta đang nằm trên một chiếc giường bệnh."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi đã từng nghĩ thân nhau thì không nên có phần nào phải xin phép."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Tôi có một người chị. Chị ấy biết tôi ghét thuốc đắng, biết tôi khóc khi xem phim ngớ ngẩn, nhưng vẫn hỏi trước khi mở thư của tôi. Tôi thấy điều đó gần gũi hơn việc chị đoán hộ mình sẽ đồng ý."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy lần này tôi giữ phần mẹ đã đưa, còn phần khác để bà tự nói khi muốn."
+      },
+      {
+        "speaker": "Natsuki",
+        "text": "Nếu sau này anh phải so hai hồ sơ cùng tên, hãy xem ngày sinh và người lập. Việc gộp nhầm không được sửa bằng cách công khai cả hai đời người."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Và nếu chỉ cần chứng minh một chữ ký đã bị sửa, tôi có thể trích phần liên quan, che bệnh án đi. Sự thật không buộc phải mang tất cả thông tin riêng ra ngoài."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_counter",
+    "character": "tomoko",
+    "room": "shop",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P002"
+    ],
+    "after_dialogues": [
+      "D_tomoko"
+    ],
+    "order": 6,
+    "important": true,
+    "links": [
+      "P003",
+      "P043"
+    ],
+    "clue_links": [
+      {
+        "target": "P003",
+        "line": 8,
+        "quote": "Cơm một trăm hai mươi, trà tám mươi, pin hai trăm; ba món là bốn trăm. Giá trên nhãn đã có thuế, không cộng thêm lần nữa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P003"
+      },
+      {
+        "target": "P043",
+        "line": 9,
+        "quote": "Cô nói chú ấy vẫn ra ngoài mỗi sáng nhưng không gọi đó là đi xưởng. Nếu muốn biết, cháu phải hỏi chú ấy, không lấy giờ rời nhà làm bằng chứng còn công việc.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P043"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Tomoko",
+        "text": "Cậu đứng chỗ ấy làm con mèo tưởng mình sắp được mua cá. Nó phân biệt người đang nhìn kệ và người đang tính tiền rất giỏi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu đang tính xem một trăm yên còn lại có đủ gọi điện về công ty không. Nếu mua cơm, trà, pin rồi thì chắc không nên mua thêm gì."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Đúng. Tiệm này không có nghĩa vụ làm mọi khách hết sạch tiền. Có thứ để mai mua cũng được, kể cả thứ đang được tôi xếp rất đẹp ngoài cửa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hồi nhỏ cháu tưởng cô chỉ cần đứng sau quầy, biết hết giá và không bao giờ phải lo mình thiếu tiền."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Hồi nhỏ tôi cũng nghĩ thế về người bán hàng. Sau đó tôi trở thành người bán hàng và biết cái ngăn kéo có thể kêu rất to dù bên trong chẳng có bao nhiêu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chú Yuji có giúp cô kiểm hàng không?"
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Chú ấy sửa cái kệ lệch, đổi bóng đèn và đôi khi đếm một thùng hàng hai lần. Tôi cần chú ấy ngồi ăn trưa hơn là nghĩ ra một việc mới để chứng minh mình hữu ích."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu sẽ không hỏi chú ấy chuyện ca làm trước mặt khách."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Cơm một trăm hai mươi, trà tám mươi, pin hai trăm; ba món là bốn trăm. Giá trên nhãn đã có thuế, không cộng thêm lần nữa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô nói chú ấy vẫn ra ngoài mỗi sáng nhưng không gọi đó là đi xưởng. Nếu muốn biết, cháu phải hỏi chú ấy, không lấy giờ rời nhà làm bằng chứng còn công việc."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_delivery",
+    "character": "tomoko",
+    "room": "shop",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P003"
+    ],
+    "after_dialogues": [
+      "D_counter"
+    ],
+    "order": 7,
+    "important": true,
+    "links": [
+      "P005",
+      "P025"
+    ],
+    "clue_links": [
+      {
+        "target": "P005",
+        "line": 7,
+        "quote": "Radio đã đọc lời cải chính: thứ Tư. Tôi giữ cả tờ báo in thứ Sáu để người mua biết vì sao hôm trước mình nhớ khác.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P005"
+      },
+      {
+        "target": "P025",
+        "line": 8,
+        "quote": "Nếu cháu kể lại mà bỏ phần cải chính, người nghe sẽ chỉ biết cô đã nói sai. Lời đồn có thể đúng từng chữ nhưng sai cả câu chuyện vì bị mất đoạn phía sau.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P025"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cô có cần cháu bê thùng giấy này vào kho không? Cháu làm chuyện ấy cả ngày nên biết cách bê mà không làm đổ."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Nếu cậu thực sự muốn giúp thì đặt cạnh cửa, đừng vào kho. Trong đó có một cái ván sàn đang cong. Hôm nay chưa sửa được."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu tưởng làm giúp thì càng làm hết càng tốt."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Tôi đang tập nói rõ mình cần đến đâu. Ngày trước người ta sửa hộ giá hàng, rồi tiện tay xếp lại cả những thứ tôi chỉ mình mới biết đặt ở đâu. Sáng hôm sau tôi bán nhầm đường thành muối."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ cũng vừa bảo con đừng quyết định thay. Cháu về chưa lâu mà đã bị nhắc cùng một chuyện hai lần."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Thế là thị trấn còn nhất trí được chuyện gì đó. Nhưng đừng vì hai người nói giống mà nghĩ chúng tôi đã họp để dặn cậu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tờ báo ngoài cửa có ghi ngày trường đóng. Cháu nên tin báo hay tin radio?"
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Radio đã đọc lời cải chính: thứ Tư. Tôi giữ cả tờ báo in thứ Sáu để người mua biết vì sao hôm trước mình nhớ khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu cháu kể lại mà bỏ phần cải chính, người nghe sẽ chỉ biết cô đã nói sai. Lời đồn có thể đúng từng chữ nhưng sai cả câu chuyện vì bị mất đoạn phía sau."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_umbrella",
+    "character": "yui",
+    "room": "town",
+    "position": [
+      384,
+      208
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P003"
+    ],
+    "after_dialogues": [],
+    "order": 8,
+    "important": true,
+    "links": [
+      "P008",
+      "P017"
+    ],
+    "clue_links": [
+      {
+        "target": "P008",
+        "line": 7,
+        "quote": "Trong ảnh lớp có một mép kính phản chiếu mà tớ chưa nhìn kỹ. Đếm những người đứng trước máy có thể chưa phải đếm hết người có mặt.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P008"
+      },
+      {
+        "target": "P017",
+        "line": 8,
+        "quote": "Nếu cần tới trường, cổng Đông vẫn dùng chìa đồng có hai vết khía. Nhưng tớ không muốn chìa khóa thành lý do khiến cậu bỏ qua bữa tối đầu tiên ở nhà.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P017"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Cậu lại đứng ở mép mái hiên. Hồi nhỏ cậu nghĩ chỗ ấy là ranh giới giữa đang đi và đang đợi, nên nếu ai hỏi thì cậu vẫn có thể nói mình không trễ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ không nhớ đã nghĩ ra một cách biện hộ cầu kỳ như thế. Có lẽ cậu nhớ thêm cho câu chuyện vui hơn."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Có thể. Tớ đang cố tập nói có thể trước những chuyện chỉ một mình mình nhớ. Nó làm câu nói kém chắc chắn, nhưng người nghe còn chỗ đặt ký ức của họ vào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ định đến nhà rồi gọi cho cậu. Mẹ nằm viện, tớ chưa biết có cần đem giấy gì tới nữa không."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Cậu không phải đến từng nhà để chứng minh đã về. Ăn tối trước đi. Chiều nay tớ còn một lượt thư, sau đó sẽ đi ngang đường nhà cậu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu vẫn làm ở bưu điện? Tớ thấy nét gấp trên bao thư giống cách cậu gấp bài tập."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Nhiều người gấp kiểu ấy. Cậu có thể hỏi tớ, nhưng đừng coi một nếp giấy là chữ ký. Tớ sẽ không bắt cậu phải đoán điều mình có thể nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong ảnh lớp có một mép kính phản chiếu mà tớ chưa nhìn kỹ. Đếm những người đứng trước máy có thể chưa phải đếm hết người có mặt."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Nếu cần tới trường, cổng Đông vẫn dùng chìa đồng có hai vết khía. Nhưng tớ không muốn chìa khóa thành lý do khiến cậu bỏ qua bữa tối đầu tiên ở nhà."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_shoes",
+    "character": "ren",
+    "room": "home_entry",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P002"
+    ],
+    "after_dialogues": [],
+    "order": 9,
+    "important": true,
+    "links": [
+      "P004",
+      "P077"
+    ],
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 5,
+        "quote": "Bát sứt vẫn úp trên kệ bếp; tối nay mình sẽ dùng nó chứ không chỉ nhìn hai bộ đũa rồi đoán mẹ đang chờ ai.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P004"
+      },
+      {
+        "target": "P077",
+        "line": 6,
+        "quote": "Phong bì chuyển tiền được xếp theo ngày, nhưng khoảng trống giữa chúng không kể được lý do bố rời nhà. Muốn biết chuyện ấy phải đọc lời người còn sống, không bắt đồ vật nói thay.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P077"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Đôi dép của mẹ vẫn quay mũi vào trong. Hồi nhỏ mình cứ đá nó sang một bên để chạy lên nhà, rồi tối mẹ lại đặt thẳng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Không có ai đứng đây hỏi sao về muộn. Mình đã tưởng điều ấy sẽ làm căn nhà dễ thở hơn. Nhưng im lặng không giống khoảng riêng mà hồi nhỏ mình đòi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái túi giấy nằm trên ghế đã mềm vì bị cầm nhiều lần. Nếu mẹ định đưa mình xem, bà ấy có thể đã đem ra cửa rồi lại mang vào. Mình không biết, và chưa cần biến nó thành một câu chuyện chắc chắn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình có thể cất giày, treo áo và hâm cơm. Những việc ấy không trả lời được lá thư, nhưng ít nhất khi mẹ về bà không phải cúi nhặt chiếc áo ướt của con."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bố từng đóng cái móc này thấp xuống vì mình với không tới. Sau khi bố đi, không ai nâng nó lên lại. Một đồ vật còn hữu ích không chứng minh người làm ra nó đã ở lại đủ lâu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bát sứt vẫn úp trên kệ bếp; tối nay mình sẽ dùng nó chứ không chỉ nhìn hai bộ đũa rồi đoán mẹ đang chờ ai."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Phong bì chuyển tiền được xếp theo ngày, nhưng khoảng trống giữa chúng không kể được lý do bố rời nhà. Muốn biết chuyện ấy phải đọc lời người còn sống, không bắt đồ vật nói thay."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_meal",
+    "character": "ren",
+    "room": "home",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P004"
+    ],
+    "after_dialogues": [
+      "D_ren"
+    ],
+    "order": 10,
+    "important": true,
+    "links": [
+      "P004",
+      "P087"
+    ],
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 5,
+        "quote": "Cái bát của mình và phần cơm mẹ để lại đủ cho một bữa thật. Không cần cất chúng như thể người trong nhà đã biến thành người chỉ được nhắc đến.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P004"
+      },
+      {
+        "target": "P087",
+        "line": 6,
+        "quote": "Trong những băng gia đình, mẹ thường gọi một câu rất quen rồi đợi mình đáp. Sau này nếu nghe lại, phải phân biệt câu nói với việc bà đang chờ câu trả lời nào.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P087"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cơm hâm lại hơi khô. Mẹ sẽ bảo thêm một chút nước, còn mình hồi nhỏ luôn đổ quá tay rồi nói đó là cháo."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình nhớ tiếng mẹ cười chuyện ấy. Nó không phải một manh mối. Có những điều nên được nhớ vì đã làm một buổi tối dễ chịu, không cần chứng minh thêm việc gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hôm nay mình mới ngồi xuống đã nghĩ tới giấy nhà, như thể nếu làm xong thì có thể trở về ca làm mà không mắc nợ ai một cuộc trò chuyện."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ không hỏi mình kiếm được bao nhiêu. Bà hỏi áo có khô không. Mình nghe thành một lời trách vì đã chuẩn bị sẵn để phòng thủ trước điều bà chưa nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Ngày mai có lẽ mình sẽ mang theo một cái khăn khô. Không phải một món quà khiến bà phải khen con đã biết quan tâm, chỉ là cái khăn để lau tóc sau lúc tắm."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái bát của mình và phần cơm mẹ để lại đủ cho một bữa thật. Không cần cất chúng như thể người trong nhà đã biến thành người chỉ được nhắc đến."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong những băng gia đình, mẹ thường gọi một câu rất quen rồi đợi mình đáp. Sau này nếu nghe lại, phải phân biệt câu nói với việc bà đang chờ câu trả lời nào."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_television",
+    "character": "ren",
+    "room": "home_entry",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P004"
+    ],
+    "after_dialogues": [
+      "D_shoes"
+    ],
+    "order": 11,
+    "important": true,
+    "links": [
+      "P005",
+      "P044"
+    ],
+    "clue_links": [
+      {
+        "target": "P005",
+        "line": 5,
+        "quote": "TV vừa nhắc cổng trường đóng thứ Tư, không phải thứ Sáu trên báo. Mình sẽ ghi cả việc đã có lời cải chính, để sau này nhớ sai còn biết vì sao.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P005"
+      },
+      {
+        "target": "P044",
+        "line": 6,
+        "quote": "Bản tin ở ga nói giờ nhận điện báo. Nếu một ngày cần so với tai nạn thật, không được tự coi giờ nhận tin là giờ mọi việc xảy ra.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P044"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cái nút âm lượng của TV vẫn phải xoay hơi quá rồi xoay lại. Không phải mọi thứ cũ đều hoạt động theo hướng mình tưởng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Người đọc bản tin nói xin cải chính rồi cúi xuống tờ giấy. Họ chỉ mất vài giây, nhưng người đã tắt máy trước đó sẽ mang một ngày khác trong đầu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Ở kho hàng cũng có những tờ báo thay ca viết đè giờ mới. Ai nhìn tờ trước sẽ bị nói đi muộn, dù lúc nhận giấy họ chưa thể biết người quản lý đổi ý."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình đã từng trách một người cùng ca vì chuyện ấy. Sau đó thấy tờ họ giữ, mình vẫn không xin lỗi ngay. Tìm ra nguyên nhân dễ hơn quay lại nói mình đã sai."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Điện thoại công ty có lẽ vẫn còn người nghe. Mình có thể gọi, nói rõ ngày về thay vì để cả nhóm tự đoán mình định nghỉ bao lâu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "TV vừa nhắc cổng trường đóng thứ Tư, không phải thứ Sáu trên báo. Mình sẽ ghi cả việc đã có lời cải chính, để sau này nhớ sai còn biết vì sao."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bản tin ở ga nói giờ nhận điện báo. Nếu một ngày cần so với tai nạn thật, không được tự coi giờ nhận tin là giờ mọi việc xảy ra."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_batteries",
+    "character": "tomoko",
+    "room": "shop",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P005"
+    ],
+    "after_dialogues": [
+      "D_delivery"
+    ],
+    "order": 12,
+    "important": true,
+    "links": [
+      "P006",
+      "P012"
+    ],
+    "clue_links": [
+      {
+        "target": "P006",
+        "line": 7,
+        "quote": "Lò xo chạm đáy phẳng có dấu âm, vậy đầu tròn không phải phía nào cũng đặt được. Cháu sẽ nhìn ký hiệu trước khi lắp.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P006"
+      },
+      {
+        "target": "P012",
+        "line": 8,
+        "quote": "Và màu vỏ dây không tự cho biết nó nối vào đâu. Thiết bị cũ còn sơ đồ thì giữ sơ đồ; đừng dùng sự quen tay thay cho việc đọc nhãn cổng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P012"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Tomoko",
+        "text": "Cậu quay lại nhanh thế. Đừng nói hai viên pin đã hết sau một buổi tối, kẻo tôi phải gọi nhà phân phối trong lúc họ đang ăn cơm."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chưa ạ. Cháu muốn hỏi cách mở nắp máy. Cháu sợ kéo mạnh sẽ làm gãy cái chốt nhựa."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Đẩy theo mũi tên rồi mới nâng. Người thiết kế có ghi hướng, chỉ là chữ chìm cùng màu nhựa. Họ chắc chưa thử đọc nó dưới bóng đèn nhà cậu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu vẫn muốn bật máy ngay, dù chưa biết sẽ nghe gì. Cảm giác đó làm cháu khó chịu. Cháu chỉ định về vì mẹ."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Cậu có thể để nó đến ngày mai. Một cái máy không được quyền quyết định giờ ngủ của cậu chỉ vì nó khiến cậu tò mò."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu sẽ mở nắp trước, còn nghe hay không thì tự chọn. Cô vẫn sửa radio cho khách sao?"
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Tôi thay pin và chỉ đường tới Fumiko. Phải biết mình làm được đến đâu; nếu không một người bán trà cũng sẽ bắt đầu nói như thợ điện."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Lò xo chạm đáy phẳng có dấu âm, vậy đầu tròn không phải phía nào cũng đặt được. Cháu sẽ nhìn ký hiệu trước khi lắp."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Và màu vỏ dây không tự cho biết nó nối vào đâu. Thiết bị cũ còn sơ đồ thì giữ sơ đồ; đừng dùng sự quen tay thay cho việc đọc nhãn cổng."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_call_home",
+    "character": "sachiko",
+    "room": "hospital",
+    "position": [
+      112,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P004"
+    ],
+    "after_dialogues": [
+      "D_chair"
+    ],
+    "order": 13,
+    "important": true,
+    "links": [
+      "P006",
+      "P072"
+    ],
+    "clue_links": [
+      {
+        "target": "P006",
+        "line": 8,
+        "quote": "Máy dùng hai viên pin; lò xo ở phía âm. Nếu nó chạy chậm, đừng vội kết luận giọng người trong băng đã thay đổi.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P006"
+      },
+      {
+        "target": "P072",
+        "line": 9,
+        "quote": "Băng sinh nhật là một bản độc lập để so cách con phát âm. Một cuộn băng có vẻ giống con chưa đủ chứng minh toàn bộ câu chuyện trong nó đều đúng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P072"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Sachiko",
+        "text": "Con đã ăn chưa? Đừng nói ăn rồi nếu ý con là đã mua một thứ có thể ăn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con hâm cơm, dùng bát sứt. Nó vẫn không làm cơm ngon hơn như mẹ từng hứa."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Mẹ chỉ nói cơm không bị rơi qua chỗ sứt. Con thường nhớ lời mẹ hào phóng hơn lúc mẹ thực sự nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con tìm thấy máy cassette. Trong thư có một cuộn băng. Con nghĩ nó có giọng mình, nhưng mới nghe một đoạn chưa rõ."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Nếu muốn so giọng, mẹ còn băng sinh nhật trong hộp có dây buộc. Nhưng con không cần bật cả hai trong cùng một đêm."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ không hỏi lá thư viết gì sao?"
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Có. Mẹ muốn hỏi nhiều chuyện. Mẹ cũng vừa bảo con đừng mở ngăn giấy của mẹ, nên mẹ đang tập chờ một câu trả lời không đến theo giờ mình muốn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con sẽ kể khi nghe xong. Hoặc khi biết mình chưa muốn nghe hết. Con không muốn bịa rằng máy hỏng để khỏi phải nói thật."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Máy dùng hai viên pin; lò xo ở phía âm. Nếu nó chạy chậm, đừng vội kết luận giọng người trong băng đã thay đổi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Băng sinh nhật là một bản độc lập để so cách con phát âm. Một cuộn băng có vẻ giống con chưa đủ chứng minh toàn bộ câu chuyện trong nó đều đúng."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_after_tape",
+    "character": "ren",
+    "room": "home",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P006"
+    ],
+    "after_dialogues": [
+      "D_meal"
+    ],
+    "order": 14,
+    "important": true,
+    "links": [
+      "P013",
+      "P021"
+    ],
+    "clue_links": [
+      {
+        "target": "P013",
+        "line": 5,
+        "quote": "Có hai tiếng liền, một khoảng nghỉ, rồi một tiếng. Nếu nghe lại ở trường, mình sẽ tìm cả khoảng nghỉ, không chỉ đếm tổng số tiếng gõ.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P013"
+      },
+      {
+        "target": "P021",
+        "line": 6,
+        "quote": "Trong băng có tiếng kim loại gần tay cầm. Trước khi hỏi ai khóa cửa, mình cần xem chốt nằm ở phía nào và ai có thể chạm vào nó.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P021"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Mình đã nghe hết. Tiếng gõ cuối băng không phải ba nhịp đều như lúc người ta kể chuyện trong lớp."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bàn tay mình đang giữ nút dừng, dù băng đã hết. Có lẽ cơ thể chỉ phản ứng với một âm thanh quen. Điều đó không có nghĩa mình đã hiểu âm thanh ấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình có thể gọi Yui. Không cần mở đầu bằng câu cậu có tin ma không. Có thể nói mình vừa nghe một thứ khiến mình sợ và không muốn ngồi với nó một mình."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Lúc nhỏ mình từng cười một bạn vì bạn không dám đi cuối hành lang. Mình không nhớ đã xin lỗi chưa. Nhớ được cảm giác xấu hổ không cho mình quyền tự viết thêm một lời xin lỗi vào quá khứ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Băng không nói ai còn ở bên kia. Câu đừng mở cửa có thể là lời đe dọa, cũng có thể là một người đang cố bảo vệ điều mình hiểu sai. Mình sẽ không chọn cách hiểu khiến bản thân dễ chịu nhất chỉ vì nó có thể đúng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có hai tiếng liền, một khoảng nghỉ, rồi một tiếng. Nếu nghe lại ở trường, mình sẽ tìm cả khoảng nghỉ, không chỉ đếm tổng số tiếng gõ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong băng có tiếng kim loại gần tay cầm. Trước khi hỏi ai khóa cửa, mình cần xem chốt nằm ở phía nào và ai có thể chạm vào nó."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_return_platform",
+    "character": "hiroshi",
+    "room": "station",
+    "position": [
+      192,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P006"
+    ],
+    "after_dialogues": [
+      "D_arrival"
+    ],
+    "order": 15,
+    "important": true,
+    "links": [
+      "P007",
+      "P037"
+    ],
+    "clue_links": [
+      {
+        "target": "P007",
+        "line": 6,
+        "quote": "Vậy thông báo ngừng chuyến phải được đọc cùng ngày áp dụng. Một vé in sẵn không chứng minh tàu chạy vào ngày người kể nói.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P007"
+      },
+      {
+        "target": "P037",
+        "line": 7,
+        "quote": "Và khi đổi lịch mùa, phải kiểm ngày chuyển. Hai bảng giờ khác nhau không nhất thiết có một bảng nói dối; chúng có thể cùng đúng ở hai thời điểm.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P037"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cháu nghe lại băng rồi. Có tiếng tàu ở phía sau, nhưng nếu chuyến 16:10 đã hủy thì cháu chưa biết âm thanh ấy tới từ đâu."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Đừng bắt một tiếng tàu mang cả bảng giờ. Chuyến hàng cũng có bánh xe, loa nhà ga cũng có thể phát lại một đoạn cũ. Cháu đang hỏi một câu đúng, nhưng có nhiều việc phải kiểm tra trước khi trả lời."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bác có thấy phiền khi cháu trở lại vì chuyện cũ không?"
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Phiền thì có, nhất là khi tôi sắp khóa phòng. Nhưng phiền không có nghĩa là không nên làm. Cậu đợi tôi buộc nốt cái bạt này, rồi chúng ta xem bảng cùng nhau."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu từng nghĩ người lớn nhớ mọi thứ rõ hơn vì họ đã sống lâu hơn."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Tôi có nhiều thứ để nhầm với nhau hơn. Những ngày cùng mưa, cùng giờ trực, cùng một đứa trẻ chạy qua cửa. Nếu không có sổ, tôi có thể nối chúng thành một ngày rất thuyết phục."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy thông báo ngừng chuyến phải được đọc cùng ngày áp dụng. Một vé in sẵn không chứng minh tàu chạy vào ngày người kể nói."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Và khi đổi lịch mùa, phải kiểm ngày chuyển. Hai bảng giờ khác nhau không nhất thiết có một bảng nói dối; chúng có thể cùng đúng ở hai thời điểm."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_route_east",
+    "character": "yui",
+    "room": "town",
+    "position": [
+      384,
+      208
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P007"
+    ],
+    "after_dialogues": [
+      "D_umbrella"
+    ],
+    "order": 16,
+    "important": true,
+    "links": [
+      "P008",
+      "P015"
+    ],
+    "clue_links": [
+      {
+        "target": "P008",
+        "line": 7,
+        "quote": "Chìa đồng có hai vết khía, bản đồ chỉ cổng phía Đông. Tớ sẽ dùng đúng chỗ đó, không thử nó vào mọi ổ rồi coi cái mở được là số phận.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P008"
+      },
+      {
+        "target": "P015",
+        "line": 8,
+        "quote": "Nếu cô Kaori nhắc chuyến 16:10, đem theo bản thông báo ngừng chuyến. Cậu có thể nhớ đúng người nhưng ghép họ vào một giờ mình chỉ thấy trên giấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P015"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Tớ đã hết lượt thư. Nếu cậu vẫn muốn đi thì chúng ta có thể tới cổng trường trước, chưa cần vào bên trong."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ không biết muốn đi hay chỉ muốn thôi nghĩ đến chuyện có nên đi. Hai cảm giác ấy gần nhau quá."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Vậy đừng quyết định cả đêm trong một câu. Đến cổng, nhìn khóa, rồi cậu có thể quay về. Tớ sẽ không kể rằng cậu hèn vì đã làm thế."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu đã giữ chìa này ở đâu? Trên bao thư có một nếp gấp mà tớ nhận ra."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ có phần trong chuyện lá thư. Tớ sẽ nói rõ phần mình biết khi chúng ta có giấy để đối chiếu. Tớ không muốn thêm một lời giải thích bằng trí nhớ rồi bắt cậu tin chỉ vì chúng ta từng thân."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ đang giận. Nhưng tớ cũng thấy nhẹ vì ít nhất có người thật để hỏi."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Cậu có thể giận trong lúc đi cạnh tớ. Chúng ta không cần hòa giải xong mới được đứng dưới cùng một chiếc ô."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chìa đồng có hai vết khía, bản đồ chỉ cổng phía Đông. Tớ sẽ dùng đúng chỗ đó, không thử nó vào mọi ổ rồi coi cái mở được là số phận."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Nếu cô Kaori nhắc chuyến 16:10, đem theo bản thông báo ngừng chuyến. Cậu có thể nhớ đúng người nhưng ghép họ vào một giờ mình chỉ thấy trên giấy."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_tea_return",
+    "character": "sachiko",
+    "room": "hospital",
+    "position": [
+      112,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P007"
+    ],
+    "after_dialogues": [
+      "D_call_home"
+    ],
+    "order": 17,
+    "important": true,
+    "links": [
+      "P019",
+      "P087"
+    ],
+    "clue_links": [
+      {
+        "target": "P019",
+        "line": 8,
+        "quote": "Chiếc khăn trong ảnh có đường thêu khác màu ở chữ cuối. Người thêu tiếp thường kéo chỉ mạnh hơn, nhưng chỉ một nét chỉ chưa cho mẹ biết tên người đó.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P019"
+      },
+      {
+        "target": "P087",
+        "line": 9,
+        "quote": "Vậy câu hỏi quen của mẹ và đường chỉ trên khăn đều cần người biết bối cảnh. Con sẽ giữ chúng, không biến chúng thành một lời giải chỉ vì chúng làm con xúc động.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P087"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Sachiko",
+        "text": "Trà hôm nay nhạt hơn. Con pha ít hạt hay lấy nhiều nước?"
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con đổ nhiều nước. Con muốn có thêm một cốc để ngồi cùng mẹ, rồi mới nhớ có thể pha hai lần."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Mẹ thích lý do đó hơn một cốc pha đúng. Nhưng lần sau con vẫn nên pha hai lần, để lý do tốt không làm trà dở mãi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tối nay con có thể ghé trường. Yui biết người giữ khóa. Con muốn xem vài giấy tờ trong ảnh."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Con nói cho mẹ biết khi về tới nhà. Không cần kể hết ngay. Một cuộc gọi chỉ để nói mình đã về cũng là một cuộc gọi có ích."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hồi nhỏ mẹ thường hỏi con một câu rất quen khi con im lặng. Con đã nghĩ mẹ không nghe được nên cứ hỏi lại."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Có lúc mẹ thực sự không nghe. Có lúc mẹ cần nghe con đáp, để biết người đang đứng trước mặt vẫn chịu nói với mình. Mẹ không nhớ lúc nào thuộc loại nào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con sẽ không ép mẹ chọn một cách giải thích cho mọi lần hỏi ấy."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Chiếc khăn trong ảnh có đường thêu khác màu ở chữ cuối. Người thêu tiếp thường kéo chỉ mạnh hơn, nhưng chỉ một nét chỉ chưa cho mẹ biết tên người đó."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy câu hỏi quen của mẹ và đường chỉ trên khăn đều cần người biết bối cảnh. Con sẽ giữ chúng, không biến chúng thành một lời giải chỉ vì chúng làm con xúc động."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_before_gate",
+    "character": "yui",
+    "room": "town",
+    "position": [
+      384,
+      208
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P008"
+    ],
+    "after_dialogues": [
+      "D_route_east"
+    ],
+    "order": 18,
+    "important": true,
+    "links": [
+      "P009",
+      "P013"
+    ],
+    "clue_links": [
+      {
+        "target": "P009",
+        "line": 7,
+        "quote": "Lịch trong sảnh vẫn đánh ngày Hai là hai, Ba là ba, Tư là bốn. Nếu có ký hiệu môn học, tớ sẽ đọc thứ tự từ giấy, không đoán theo số phòng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P009"
+      },
+      {
+        "target": "P013",
+        "line": 8,
+        "quote": "Và nếu nghe tiếng gõ, đừng làm theo lời đồn ba tiếng ngay. Băng có một khoảng nghỉ. Tiếng đáp biết nghỉ khác tiếng vang chỉ lặp lại điều vừa phát.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P013"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Cậu buộc lại dây giày đi. Sân trường mọc rêu ở mép bậc, không cần có ma mới ngã được."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ tưởng sau lá thư ấy cậu sẽ nói gì huyền bí hơn."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ đang cố bớt huyền bí. Tớ có thể giữ ô, chỉ đường và thừa nhận việc mình đã làm. Những việc ấy khó hơn đứng dưới mưa nói một câu khiến cậu mất ngủ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ chưa biết sẽ hỏi cô Kaori thế nào. Nếu vào đó chỉ để nói cô đã làm gì chúng em thì có lẽ cô sẽ không nghe nữa."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Hỏi một tờ giấy trước. Ai viết nó, tại sao có hai màu mực. Đừng bắt một cuộc gặp đầu tiên chịu toàn bộ mười năm mình không nói chuyện."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu có vào cùng không?"
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ đợi ở sân rồi mang bản sao đến khi cậu cần. Có người đã hẹn tớ ở ngoài. Tớ không muốn tất cả kéo vào đứng quanh một chiếc bàn và đợi cậu nhớ ra điều đúng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Lịch trong sảnh vẫn đánh ngày Hai là hai, Ba là ba, Tư là bốn. Nếu có ký hiệu môn học, tớ sẽ đọc thứ tự từ giấy, không đoán theo số phòng."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Và nếu nghe tiếng gõ, đừng làm theo lời đồn ba tiếng ngay. Băng có một khoảng nghỉ. Tiếng đáp biết nghỉ khác tiếng vang chỉ lặp lại điều vừa phát."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_late_shop",
+    "character": "tomoko",
+    "room": "shop",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P008"
+    ],
+    "after_dialogues": [
+      "D_batteries"
+    ],
+    "order": 19,
+    "important": true,
+    "links": [
+      "P034",
+      "P050"
+    ],
+    "clue_links": [
+      {
+        "target": "P034",
+        "line": 7,
+        "quote": "Nếu có ảnh riêng và lời chứng, cháu sẽ xin phép từng phần, không hiểu một chữ đồng ý là quyền dùng tất cả.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P034"
+      },
+      {
+        "target": "P050",
+        "line": 8,
+        "quote": "Còn nếu gặp chuyện ở ga, nhớ hỏi về người đã giúp. Một bản tin chỉ giữ tai nạn mà bỏ việc cứu người có thể đúng từng số giờ và vẫn thiếu một con người.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P050"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Tomoko",
+        "text": "Tôi sắp kéo cửa. Cậu cần mua gì thì nói trước, đừng đợi tôi tắt đèn rồi mới nhớ ở nhà hết nước rửa bát."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu không mua gì. Cháu chỉ muốn báo mẹ đã uống trà. Cô không cần giữ thêm phần cho bà tối nay."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Cảm ơn cậu đã quay lại vì một chuyện không phải hóa đơn. Có những ngày nghe khách nói món mình bán đã tới đúng người là đủ để bớt thấy quầy hàng chỉ là chỗ đổi tiền."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu cháu tìm được giấy trong trường, có lẽ cháu sẽ phải nhờ người khác đọc. Cháu sợ nói không rõ rồi làm một người bị nhắc tên theo cách họ không muốn."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Bắt đầu bằng việc hỏi người đó muốn chuyện gì được biết. Ai cũng thích nói mình đứng về sự thật, nhưng ít người hỏi người đang đứng cạnh sự thật có muốn lên mặt báo không."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có người làm điều tốt mà vẫn bị kể chỉ bằng một việc họ từng làm sai."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Cũng có người dùng một việc tốt để chặn mọi câu hỏi về việc sai. Cậu phải kể đủ hành động và bối cảnh, đừng đổi một nhãn xấu lấy một nhãn đẹp rồi thôi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu có ảnh riêng và lời chứng, cháu sẽ xin phép từng phần, không hiểu một chữ đồng ý là quyền dùng tất cả."
+      },
+      {
+        "speaker": "Tomoko",
+        "text": "Còn nếu gặp chuyện ở ga, nhớ hỏi về người đã giúp. Một bản tin chỉ giữ tai nạn mà bỏ việc cứu người có thể đúng từng số giờ và vẫn thiếu một con người."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_dry_towel",
+    "character": "sachiko",
+    "room": "hospital",
+    "position": [
+      112,
+      224
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P005"
+    ],
+    "after_dialogues": [
+      "D_call_home"
+    ],
+    "order": 20,
+    "important": true,
+    "links": [
+      "P004",
+      "P028"
+    ],
+    "clue_links": [
+      {
+        "target": "P004",
+        "line": 8,
+        "quote": "Tối nay cứ dùng phần cơm trong nồi và bát trên kệ. Đừng cất mọi thứ đi để căn nhà trông gọn như chưa ai cần ăn nữa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P004"
+      },
+      {
+        "target": "P028",
+        "line": 9,
+        "quote": "Còn hai tờ đơn thuốc, con sẽ giữ bản cũ để đối chiếu nhưng chỉ theo bản hiện tại. Giống nhau ở tên không làm chúng thành cùng một lần kê.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P028"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Sachiko",
+        "text": "Cái khăn này mẹ chưa từng thấy. Con mua mới à? Mẹ bảo đừng mua gì đắt chỉ để tới bệnh viện trông có quà."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nó ở ngăn tủ nhà mình. Con mang tới vì thấy khăn ở đây lâu khô. Nếu mẹ không cần thì con đem về, không cần khen con đã biết nghĩ."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Mẹ cần. Và mẹ có thể nói cảm ơn mà không biến nó thành một bài kiểm tra con đã lớn đến đâu. Hai mẹ con mình đúng là giỏi làm những chuyện nhỏ thành một cuộc thi kín."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con cứ muốn mang tới đúng thứ để khỏi phải hỏi. Như vậy nếu mẹ không vui thì ít nhất con có thể bảo mình đã làm đủ việc."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Mẹ cũng thế. Nấu đủ cơm, giặt đủ áo, rồi nghĩ con không còn lý do gì phải buồn. Có những hôm mẹ hỏi con đã ăn chưa vì không biết bắt đầu câu khác thế nào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ có thể hỏi con hôm nay thấy thế nào. Con có thể trả lời không biết, thay vì kiếm một chuyện vui cho mẹ nghe."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Vậy hôm nay con thấy thế nào?"
+      },
+      {
+        "speaker": "Ren",
+        "text": "Con thấy vừa muốn ở lại vừa muốn về thật nhanh. Con không nghĩ một trong hai cảm giác làm điều còn lại thành nói dối."
+      },
+      {
+        "speaker": "Sachiko",
+        "text": "Tối nay cứ dùng phần cơm trong nồi và bát trên kệ. Đừng cất mọi thứ đi để căn nhà trông gọn như chưa ai cần ăn nữa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Còn hai tờ đơn thuốc, con sẽ giữ bản cũ để đối chiếu nhưng chỉ theo bản hiện tại. Giống nhau ở tên không làm chúng thành cùng một lần kê."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_hall_bench",
+    "character": "hiroshi",
+    "room": "station_hall",
+    "position": [
+      352,
+      208
+    ],
+    "chapter": 0,
+    "status": "playable",
+    "requires": [
+      "P007"
+    ],
+    "after_dialogues": [
+      "D_phone"
+    ],
+    "order": 21,
+    "important": true,
+    "links": [
+      "P037",
+      "P047"
+    ],
+    "clue_links": [
+      {
+        "target": "P037",
+        "line": 7,
+        "quote": "Khi so lịch mùa đông, cháu sẽ tìm ngày bắt đầu áp dụng. Hai giờ khác nhau có thể đúng ở hai ngày, không nhất thiết phải xóa một bảng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P037"
+      },
+      {
+        "target": "P047",
+        "line": 8,
+        "quote": "Và nếu hỏi ai đã trực hôm đó, xem cả sổ đổi ca. Tên trên lịch dự kiến không chắc là người đã đứng ở sân ga khi tàu tới.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P047"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Hiroshi",
+        "text": "Cậu ngồi chỗ ghế giữa đi. Hai đầu lạnh hơn vì gió từ cửa lùa vào. Tôi vẫn thấy người mới tới chọn đầu ghế để dễ rời đi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu cũng chọn vì thế. Cháu luôn nghĩ ngồi xuống hẳn sẽ làm người khác tưởng mình có nhiều thời gian."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Người ta có thể hỏi cậu ở được bao lâu. Cậu không cần dùng tư thế ngồi để báo trước một chuyện chưa ai hỏi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bác có muốn nghỉ việc không? Lúc cháu đi, bác đã làm ở đây lâu rồi. Bây giờ mọi thứ ít chuyến hơn mà bác vẫn trực."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Có ngày muốn, có ngày không. Tôi thích nhìn người trở về, nhưng không thích lúc mình giữ một cái ghế chỉ vì sợ không còn ai cần mình. Con Ai nói bản đồ nó vẽ phải có chỗ để ngồi nghỉ. Bản của tôi chỉ có chỗ để đi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cháu thường vẽ đường giao hàng như vậy. Không tính người cầm hàng có lúc phải dừng lại."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Vậy tối nay cậu đã có một điều mới đem về Tokyo, dù những chuyện trong băng chưa được giải thích. Một điều nhỏ cũng có thể đáng mang theo."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Khi so lịch mùa đông, cháu sẽ tìm ngày bắt đầu áp dụng. Hai giờ khác nhau có thể đúng ở hai ngày, không nhất thiết phải xóa một bảng."
+      },
+      {
+        "speaker": "Hiroshi",
+        "text": "Và nếu hỏi ai đã trực hôm đó, xem cả sổ đổi ca. Tên trên lịch dự kiến không chắc là người đã đứng ở sân ga khi tàu tới."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_yard",
+    "character": "yui",
+    "room": "school",
+    "position": [
+      320,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P008"
+    ],
+    "after_dialogues": [
+      "D_before_gate"
+    ],
+    "order": 1,
+    "important": true,
+    "links": [
+      "P010",
+      "P017"
+    ],
+    "clue_links": [
+      {
+        "target": "P010",
+        "line": 7,
+        "quote": "Cái bàn dưới cửa sổ vẫn được lau. Một người phải còn tới đây thì mới có vệt khăn mới giữa lớp bụi cũ.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P010"
+      },
+      {
+        "target": "P017",
+        "line": 8,
+        "quote": "Khi xem ảnh, nhớ có người đứng sau máy. Nếu kính phản chiếu họ, số bóng trên kính có thể khác số người trong hàng mà không phải ảnh bị ma sửa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P017"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Bên này là sân từng dùng để tập thể dục. Cái vạch trắng gần bồn cây không phải đường đi; đêm mưa nhìn nó sáng hơn bậc thật nên dễ bước hụt."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ nhớ sân rộng hơn. Có lẽ mọi thứ đều nhỏ lại khi mình quay về sau nhiều năm."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Có cả chuyện người ta đã xây thêm nhà kho, chứ không chỉ vì chúng ta lớn lên. Ký ức có thể khác hiện tại vì hiện tại cũng đã thay đổi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu có nghĩ mình đang tìm một ngày chưa từng tồn tại, ghép từ những buổi học khác nhau không?"
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ nghĩ chúng ta chưa biết. Nếu bắt đầu bằng kết luận ấy thì mỗi thứ tìm thấy đều sẽ bị ép vào nó, giống lúc người khác bắt đầu bằng kết luận có ma."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy tớ nhìn từng thứ. Cậu có cần tớ mang lại gì không?"
+      },
+      {
+        "speaker": "Yui",
+        "text": "Nếu gặp giấy có tên người khác, đừng cầm hết ra sân trước khi hỏi. Tớ mang theo bìa cứng để giấy không bị ướt, không phải để biến mọi ngăn bàn thành đồ của chúng ta."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái bàn dưới cửa sổ vẫn được lau. Một người phải còn tới đây thì mới có vệt khăn mới giữa lớp bụi cũ."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Khi xem ảnh, nhớ có người đứng sau máy. Nếu kính phản chiếu họ, số bóng trên kính có thể khác số người trong hàng mà không phải ảnh bị ma sửa."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_shoe_cubby",
+    "character": "ren",
+    "room": "school_vestibule",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P008"
+    ],
+    "after_dialogues": [],
+    "order": 2,
+    "important": true,
+    "links": [
+      "P009",
+      "P014"
+    ],
+    "clue_links": [
+      {
+        "target": "P009",
+        "line": 5,
+        "quote": "Mảnh lịch ghi Nhạc, Vẽ, Toán theo thứ tự; hàng ngày dùng hai, ba, bốn. Mã trên giấy phải đi theo thứ tự môn, không theo vị trí tủ giày.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P009"
+      },
+      {
+        "target": "P014",
+        "line": 6,
+        "quote": "Biển phòng y tế có lỗ đinh lệch với bảng đang treo. Nếu hồi tưởng cho một chữ khác, mình vẫn cần kiểm tra dấu vật lý để phân biệt phòng đổi tên và trí nhớ đổi chuyện.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P014"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Tủ giày vẫn có những mẩu giấy viết tay ở cạnh nhãn in. Có người đã đổi lớp rồi dán tên mới lên, không bóc hết tên cũ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình không nhớ tủ của mình ở hàng nào. Hồi nhỏ chuyện ấy không cần nhớ có ý thức; chân tự đưa mình đến đúng chỗ. Bây giờ chân chỉ đưa tới một khoảng gỗ giống những khoảng khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái nhãn bị bong không chứng minh ai bị xóa tên. Nó có thể chỉ bị ẩm. Muốn gọi một vết mòn là bằng chứng, mình phải biết thứ từng được dán ở đó."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mùi dép cao su làm mình nhớ một buổi trực nhật. Mình đã trốn lau cầu thang bằng cách tình nguyện đi đổ rác, rồi quay về rất chậm. Đó không phải điều đáng tự hào, nhưng nó cũng thuộc về mình, như phần ký ức đáng sợ hơn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Không có lý do phải biến cả tuổi thơ thành một căn phòng tối chỉ vì tối nay mình đang sợ. Có những buổi trưa ở đây mình thật sự đã vui."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mảnh lịch ghi Nhạc, Vẽ, Toán theo thứ tự; hàng ngày dùng hai, ba, bốn. Mã trên giấy phải đi theo thứ tự môn, không theo vị trí tủ giày."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Biển phòng y tế có lỗ đinh lệch với bảng đang treo. Nếu hồi tưởng cho một chữ khác, mình vẫn cần kiểm tra dấu vật lý để phân biệt phòng đổi tên và trí nhớ đổi chuyện."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_empty_class",
+    "character": "ren",
+    "room": "school_class",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P009"
+    ],
+    "after_dialogues": [
+      "D_shoe_cubby"
+    ],
+    "order": 3,
+    "important": true,
+    "links": [
+      "P010",
+      "P017"
+    ],
+    "clue_links": [
+      {
+        "target": "P010",
+        "line": 5,
+        "quote": "Vệt lau dừng ở mép cửa sổ; bụi trên các bàn khác không bị xáo. Đây là một việc được làm có chọn lựa, không phải cả lớp vừa được dọn.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P010"
+      },
+      {
+        "target": "P017",
+        "line": 6,
+        "quote": "Trong ảnh có năm dòng tên nhưng kính phản chiếu thêm người cầm máy. Mình phải đếm bóng và đếm tên riêng, không coi hai phép đếm là cùng một câu hỏi.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P017"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Bàn của học sinh nhỏ hơn bàn ở công ty nhiều. Vậy mà ngày trước mình có thể dành cả buổi chiều để giành một nửa mặt bàn này."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có một đường bút chì chia đôi ở góc kia. Người vẽ chắc đã tin một đường mỏng có thể khiến người ngồi cạnh ngừng chạm vào đồ mình."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình muốn hỏi bạn đã ngồi cạnh mình tên gì. Nhưng hỏi ai bây giờ cũng làm câu chuyện ấy trở thành thứ cần tìm cho ra. Có lẽ trước mắt chỉ cần thừa nhận mình đã quên một người từng ngồi rất gần."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chiếc bàn dưới cửa sổ sạch hơn hẳn. Không có nghĩa người lau muốn mình chạm vào nó. Người ta vẫn chăm một đồ vật mà không định mời khách đến xem."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình sẽ đứng sang bên để nhìn ánh cửa kính. Không phải mọi góc bị khuất đều cần bị kéo ra giữa phòng ngay lập tức."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vệt lau dừng ở mép cửa sổ; bụi trên các bàn khác không bị xáo. Đây là một việc được làm có chọn lựa, không phải cả lớp vừa được dọn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong ảnh có năm dòng tên nhưng kính phản chiếu thêm người cầm máy. Mình phải đếm bóng và đếm tên riêng, không coi hai phép đếm là cùng một câu hỏi."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_teacher_threshold",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P010"
+    ],
+    "after_dialogues": [],
+    "order": 4,
+    "important": true,
+    "links": [
+      "P011",
+      "P015"
+    ],
+    "clue_links": [
+      {
+        "target": "P011",
+        "line": 7,
+        "quote": "Dòng bút chì và dòng mực đỏ không cùng nét. Em sẽ hỏi ai sửa câu, thay vì gọi tất cả chữ trên tờ này là lời của đứa trẻ.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P011"
+      },
+      {
+        "target": "P015",
+        "line": 8,
+        "quote": "Tôi từng nói đã thấy các em trên chuyến 16:10 vì giờ ấy in trên một vé mẫu. Cậu cần so nó với thông báo ngừng chuyến trước khi dùng lời tôi làm mốc thời gian.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P015"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Kaori",
+        "text": "Tôi tưởng Yui sẽ vào cùng em. Cô ấy nhờ mượn chìa, nhưng không nói sẽ có ai cần đọc hồ sơ tối nay."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em cũng chưa biết mình sẽ đọc gì. Em không đến với một kết luận. Em có một băng ghi và một tờ thông báo ở ga không khớp điều mình nhớ."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Như thế tốt hơn việc đến để chờ tôi xác nhận điều em đã quyết định. Nhưng tôi không hứa sẽ nhớ đúng chỉ vì em hỏi cẩn thận."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô vẫn có thể nói không nhớ. Em muốn điều đó được ghi lại như một câu trả lời, không phải một chỗ trống để người sau tự điền."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Ngày trước tôi rất ghét những chỗ trống trong sổ. Tôi nghĩ một giáo viên có trách nhiệm phải làm mọi ô có thể đọc được. Có những ô lẽ ra nên để câu hỏi ở trong lâu hơn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô có muốn em đứng ngoài khi cô lấy giấy không?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Không cần. Nhưng em đặt túi xuống, để chúng ta nhìn hai bàn tay của nhau. Tôi đã chán việc nghĩ người khác sẽ lén lấy một tờ mình chưa quyết định có đưa hay không."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Dòng bút chì và dòng mực đỏ không cùng nét. Em sẽ hỏi ai sửa câu, thay vì gọi tất cả chữ trên tờ này là lời của đứa trẻ."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi từng nói đã thấy các em trên chuyến 16:10 vì giờ ấy in trên một vé mẫu. Cậu cần so nó với thông báo ngừng chuyến trước khi dùng lời tôi làm mốc thời gian."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_red_ink",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P011"
+    ],
+    "after_dialogues": [
+      "D_teacher_threshold"
+    ],
+    "order": 5,
+    "important": true,
+    "links": [
+      "P011",
+      "P018"
+    ],
+    "clue_links": [
+      {
+        "target": "P011",
+        "line": 8,
+        "quote": "Chữ bút chì ghi giữ cửa, mực đỏ ghi tránh cửa. Đó là hai hành động khác nhau, không phải một lỗi chính tả vô hại.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P011"
+      },
+      {
+        "target": "P018",
+        "line": 9,
+        "quote": "Nếu phải chọn cách lưu, hãy giữ cả nhật ký lẫn bản sửa. Đừng giải quyết việc một lời đã bị xóa bằng cách xóa thêm lời còn lại.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P018"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Em thấy dưới chữ sửa vẫn còn đọc được một phần. Cô có muốn em dừng lại không?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi muốn, nhưng không có quyền biến mong muốn đó thành yêu cầu em phải làm. Tờ giấy này nói về những đứa trẻ mà tôi đã không cho đủ chỗ để nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em sợ nếu đọc tiếp thì mọi điều mình nhớ về cô sẽ đổi. Có những hôm cô đã ở lại giúp em làm bài, khi mẹ chưa thể tới đón."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Những hôm ấy đã có thật. Chúng không được dùng để trả tiền cho chữ tôi sửa. Em cũng không cần xóa chúng để có thể nói tôi đã làm sai một chuyện khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tại sao cô không hỏi lại trước khi đổi từ?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi đã hỏi bằng giọng khiến đứa trẻ biết tôi đang chờ câu nào. Lúc em ấy im lặng, tôi gọi đó là đồng ý. Tôi chỉ hiểu sự thuận tiện của cách làm ấy sau khi đã quen dùng nó."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em không biết nên giận thế nào để không làm cả cuộc nói chuyện thành một cuộc xử tội."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Em không phải làm cho tôi dễ chịu. Chỉ cần để cả hai bản tồn tại, để lời mình nói hôm nay cũng có thứ kiểm lại."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chữ bút chì ghi giữ cửa, mực đỏ ghi tránh cửa. Đó là hai hành động khác nhau, không phải một lỗi chính tả vô hại."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Nếu phải chọn cách lưu, hãy giữ cả nhật ký lẫn bản sửa. Đừng giải quyết việc một lời đã bị xóa bằng cách xóa thêm lời còn lại."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_rei_waits",
+    "character": "rei",
+    "room": "school_vestibule",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P011"
+    ],
+    "after_dialogues": [],
+    "order": 6,
+    "important": true,
+    "links": [
+      "P009",
+      "P069"
+    ],
+    "clue_links": [
+      {
+        "target": "P009",
+        "line": 6,
+        "quote": "Lịch trực ngoài tủ giày có ghi môn học bằng chữ đầu. Thứ tự trên mảnh giấy là Nhạc rồi Vẽ rồi Toán; đừng đọc theo hàng tủ bên dưới.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P009"
+      },
+      {
+        "target": "P069",
+        "line": 7,
+        "quote": "Còn việc nhiều người kể giống nhau, anh sẽ tìm câu hỏi đã được đặt trước lời kể. Một câu lặp lại có thể đến từ cách người lớn hỏi, không phải từ những người nhớ độc lập.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P069"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Rei",
+        "text": "Anh đang tìm mẹ em? Bà bảo ghé lấy sách cũ, nhưng mang theo cả hộp mực đóng dấu. Em không tin người ta cần dấu để đem sách của mình về."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô ở trong phòng giáo viên. Anh vừa nói chuyện với cô, nhưng phần ấy em nên hỏi cô, không nghe lại qua anh ở hành lang."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Cảm ơn. Em đã nghĩ anh sẽ bảo em còn nhỏ nên đừng biết. Có những người nói câu đó rồi lại bắt em phải hiểu mẹ nhiều hơn bất kỳ ai."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em không phải làm người giải thích thay cô. Nếu có điều gì muốn hỏi, em được phép hỏi bằng giọng của em."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em muốn xin nghỉ một kỳ. Chỉ nói thế thôi mà em đã nghĩ ra ba cách để làm nó nghe giống một kế hoạch thành tích khác. Em không biết nói mình mệt như một lý do đủ thật."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh cũng mang cả xấp giấy về vì nghĩ làm xong giấy sẽ thay được cuộc nói chuyện. Có lẽ chúng ta đều đang xin một thứ không có mẫu đơn."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Lịch trực ngoài tủ giày có ghi môn học bằng chữ đầu. Thứ tự trên mảnh giấy là Nhạc rồi Vẽ rồi Toán; đừng đọc theo hàng tủ bên dưới."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Còn việc nhiều người kể giống nhau, anh sẽ tìm câu hỏi đã được đặt trước lời kể. Một câu lặp lại có thể đến từ cách người lớn hỏi, không phải từ những người nhớ độc lập."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_haruka_courtyard",
+    "character": "haruka",
+    "room": "school",
+    "position": [
+      448,
+      224
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P011"
+    ],
+    "after_dialogues": [
+      "D_yard"
+    ],
+    "order": 7,
+    "important": true,
+    "links": [
+      "P010",
+      "P019"
+    ],
+    "clue_links": [
+      {
+        "target": "P010",
+        "line": 7,
+        "quote": "Cái bàn sạch dưới cửa sổ là vì có người tiếp tục chăm nó, không phải mọi đồ vật trong lớp đều tự đổi chỗ khi đêm xuống.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P010"
+      },
+      {
+        "target": "P019",
+        "line": 8,
+        "quote": "Khăn có hai nét thêu khác nhau, MI ở một phía và chữ cuối tròn không đều. Nếu tìm thấy, đừng vội biến chiếc khăn thành một tấm biển có tên cho mọi người chụp.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P019"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Haruka",
+        "text": "Tôi chỉ vào sân thôi. Nếu anh muốn hỏi chuyện trong lớp, đừng bắt tôi đi tới cái bàn để cuộc nói chuyện có vẻ thật hơn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi có thể đứng đây. Yui nói có người thỉnh thoảng tới chăm một chỗ trong lớp. Tôi chưa biết có phải chị không."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Tôi thay khăn dưới bình hoa khi cần. Có người khác mang hoa. Tôi không giữ danh sách ai làm phần nào, vì đây không phải việc để xét xem ai nhớ người đã mất nhiều nhất."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi đã đứng trước chiếc bàn khá lâu. Tôi sợ nếu quay đi mà chưa hiểu thì lại là một lần bỏ mặc."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Đứng thật lâu cũng không bảo đảm anh đang nghe. Có khi anh chỉ chờ mình có một cảm giác đủ mạnh để gọi là đã hiểu người khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy tôi nên hỏi điều gì?"
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Hỏi tôi muốn kể phần nào hôm nay. Tôi muốn kể một buổi chúng tôi gói bánh. Một người cứ kéo chỉ quá mạnh làm chữ cuối trên khăn méo đi; cả buổi chiều chỉ cười chuyện nhỏ ấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái bàn sạch dưới cửa sổ là vì có người tiếp tục chăm nó, không phải mọi đồ vật trong lớp đều tự đổi chỗ khi đêm xuống."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Khăn có hai nét thêu khác nhau, MI ở một phía và chữ cuối tròn không đều. Nếu tìm thấy, đừng vội biến chiếc khăn thành một tấm biển có tên cho mọi người chụp."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_broadcast_dust",
+    "character": "ren",
+    "room": "school_broadcast",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P009"
+    ],
+    "after_dialogues": [],
+    "order": 8,
+    "important": true,
+    "links": [
+      "P012",
+      "P013"
+    ],
+    "clue_links": [
+      {
+        "target": "P012",
+        "line": 5,
+        "quote": "Sơ đồ ghi xanh vào cổng một, trắng vào cổng hai, đỏ vào cổng ba. Thứ tự máy cần là trắng, xanh, đỏ; vị trí dây trên bàn không thay đổi nhãn cổng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P012"
+      },
+      {
+        "target": "P013",
+        "line": 6,
+        "quote": "Tiếng gõ trong cassette có hai tiếng liền rồi một tiếng sau khoảng nghỉ. Một loa chạy lặp đều có thể phát đúng ba tiếng mà vẫn không trả lại đúng nhịp ấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P013"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cái micro thấp đến ngang ngực. Hồi được đọc thông báo lớp, mình đã đứng thẳng đến mức sau đó đau cả lưng. Chỉ muốn giọng mình nghe như người được phép nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bây giờ phòng không có ai, mà mình vẫn thấy phải xin phép trước khi chạm nút. Có những thói quen đi theo mình lâu hơn người đã dạy chúng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Dây bên trái bị quấn bằng băng dính mới. Ai đó đã vào đây sau ngày trường đóng, nhưng một miếng băng dính không cho biết họ dùng loa làm gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình có thể nhìn sơ đồ, thử từng đường trong giới hạn an toàn rồi ngắt nguồn trước khi đổi. Không cần bật hết thiết bị để xem thứ nào sẽ trả lời."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trong băng có giọng người nói nhỏ dưới tiếng máy. Lần này nếu thử âm, mình sẽ để một khoảng lặng sau đó. Chỗ trống ấy không phải phần thừa để lấp cho hết sợ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Sơ đồ ghi xanh vào cổng một, trắng vào cổng hai, đỏ vào cổng ba. Thứ tự máy cần là trắng, xanh, đỏ; vị trí dây trên bàn không thay đổi nhãn cổng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tiếng gõ trong cassette có hai tiếng liền rồi một tiếng sau khoảng nghỉ. Một loa chạy lặp đều có thể phát đúng ba tiếng mà vẫn không trả lại đúng nhịp ấy."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_small_apology",
+    "character": "masato",
+    "room": "school_vestibule",
+    "position": [
+      256,
+      272
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P012"
+    ],
+    "after_dialogues": [
+      "D_rei_waits"
+    ],
+    "order": 9,
+    "important": true,
+    "links": [
+      "P018",
+      "P095"
+    ],
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 7,
+        "quote": "Một bản nhật ký và một bản giáo viên sửa đều phải được giữ. Chọn chỉ bản khiến mình trông tốt hơn sẽ biến việc xin lỗi thành một lần sửa lời nữa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P018"
+      },
+      {
+        "target": "P095",
+        "line": 8,
+        "quote": "Và khi lời kể khác nhau, đừng ép động cơ phải thống nhất. Có thể cùng xác nhận ai đã làm một việc, dù chưa ai biết hết vì sao người ấy làm.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P095"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Masato",
+        "text": "Yui bảo cậu đang ở đây. Tôi mang đèn dự phòng, nhưng thấy đèn hành lang còn sáng nên chưa biết mình nên đứng làm gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu có thể đặt nó cạnh cửa. Không phải việc nào cũng cần làm cho xong ngay lúc tới nơi."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi thường sửa đồ vì thế. Có cái hỏng, mình tìm ra chỗ hỏng, thay nó, rồi người khác nói được rồi. Chuyện giữa người với người không chịu có bước cuối rõ ràng như vậy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu đang nói về Haruka?"
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi đang cố nói mà không gọi việc mình làm là một trò đùa. Tôi đã lấy một trang nhật ký, rồi kể với những người khác rằng bạn ấy viết quá lên. Tôi không kiểm tra chuyện được viết. Tôi chỉ muốn tiếng cười quay sang một người khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu không cần kể lý do nếu lý do chỉ khiến mình nhẹ trách nhiệm hơn."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi muốn nói lý do để lần sau nhận ra lúc mình sắp làm lại. Nhưng cậu đúng, nó không trả lại trang giấy cho người đã bị lấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Một bản nhật ký và một bản giáo viên sửa đều phải được giữ. Chọn chỉ bản khiến mình trông tốt hơn sẽ biến việc xin lỗi thành một lần sửa lời nữa."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Và khi lời kể khác nhau, đừng ép động cơ phải thống nhất. Có thể cùng xác nhận ai đã làm một việc, dù chưa ai biết hết vì sao người ấy làm."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_listen_pause",
+    "character": "ren",
+    "room": "school_corridor",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P012"
+    ],
+    "after_dialogues": [
+      "D_broadcast_dust"
+    ],
+    "order": 10,
+    "important": true,
+    "links": [
+      "P013",
+      "P020"
+    ],
+    "clue_links": [
+      {
+        "target": "P013",
+        "line": 5,
+        "quote": "Hai tiếng, nghỉ, rồi một tiếng. Mình sẽ gõ bằng chính nhịp đã nghe, có phụ đề để không phải dựa vào việc tai mình đang căng đến đâu.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P013"
+      },
+      {
+        "target": "P020",
+        "line": 6,
+        "quote": "Bản dây loa chỉ tới buồng một, không tới buồng ba. Một hơi thở lệch nhịp ở phía không có loa sẽ cần cách kiểm tra khác với âm thanh máy phát.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P020"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Mình đã tắt loa. Tiếng ù nhỏ đi, nhưng mình vẫn nghe nhịp chân của chính mình rất rõ. Không phải âm nào xuất hiện sau khi tắt máy cũng thuộc về người khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình sẽ đứng yên một lúc vừa đủ để phân biệt. Không cần tự buộc mình ở đây đến khi sợ đến mức tin bất cứ điều gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Lời đồn nói gõ ba lần và gọi Hanako. Ai đã kể lần đầu cho lớp mình nhỉ? Mình nhớ cả lớp nói câu ấy, nhưng không nhớ đã nghe người nào bắt đầu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu một cái tên được truyền miệng dễ hơn tên thật, người ta có thể dùng nó đến mức quên hỏi có ai từng muốn được gọi như thế không."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình không muốn gọi lớn chỉ để ép phía bên kia chứng minh có tồn tại. Nếu không có câu trả lời, đó cũng phải là điều được phép xảy ra."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hai tiếng, nghỉ, rồi một tiếng. Mình sẽ gõ bằng chính nhịp đã nghe, có phụ đề để không phải dựa vào việc tai mình đang căng đến đâu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bản dây loa chỉ tới buồng một, không tới buồng ba. Một hơi thở lệch nhịp ở phía không có loa sẽ cần cách kiểm tra khác với âm thanh máy phát."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_clock_wall",
+    "character": "ren",
+    "room": "school_corridor",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P013"
+    ],
+    "after_dialogues": [
+      "D_listen_pause"
+    ],
+    "order": 11,
+    "important": true,
+    "links": [
+      "P014",
+      "P016"
+    ],
+    "clue_links": [
+      {
+        "target": "P014",
+        "line": 5,
+        "quote": "Biển hiện tại ghi phòng y tế, còn trong hồi tưởng là nhà kho. Hai lỗ đinh lệch và vết sơn phía dưới giúp kiểm điều ấy, không chỉ màu sắc của ký ức.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P014"
+      },
+      {
+        "target": "P016",
+        "line": 6,
+        "quote": "Đồng hồ dừng ở bốn giờ bốn mươi bốn. Tủ có ký hiệu chiếc đồng hồ sẽ dùng ba chữ số ấy, chứ không lấy số tầng hay số buồng vệ sinh.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P016"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Cái đồng hồ không chạy. Mình đã nhìn nó mấy lần, nhưng cảm giác mỗi lần đều lâu hơn lần trước. Thời gian trong đầu không phải kim đồng hồ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu mình nói đã đứng đây một tiếng, có thể đó là cách nói về sợ hãi chứ không phải một lời khai đủ dùng để dựng lại lịch."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mẹ sẽ muốn mình gọi khi về. Mình có thể quay ra sân, thở một chút, rồi quyết định có vào tiếp. Việc rời căn phòng không khiến giấy trong đó mất đi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có một vết đinh dưới tấm biển. Đặt tay gần nó làm mình nhớ một mùi thuốc khác, nhưng mình không thể yêu cầu mùi ấy nói chính xác tên phòng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình sẽ so hai phiên bản và giữ điều thay đổi được quan sát. Nếu có phần không rõ thì ghi không rõ; không cần làm hồi tưởng của mình thành một bản đồ hoàn hảo để được tin."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Biển hiện tại ghi phòng y tế, còn trong hồi tưởng là nhà kho. Hai lỗ đinh lệch và vết sơn phía dưới giúp kiểm điều ấy, không chỉ màu sắc của ký ức."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Đồng hồ dừng ở bốn giờ bốn mươi bốn. Tủ có ký hiệu chiếc đồng hồ sẽ dùng ba chữ số ấy, chứ không lấy số tầng hay số buồng vệ sinh."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_name_on_door",
+    "character": "mio",
+    "room": "school_toilets",
+    "position": [
+      112,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P019"
+    ],
+    "after_dialogues": [],
+    "order": 12,
+    "important": true,
+    "links": [
+      "P019",
+      "P020"
+    ],
+    "clue_links": [
+      {
+        "target": "P019",
+        "line": 8,
+        "quote": "MI ở khăn, O ở nhãn áo. Cái tên ghép từ hai vật ấy khác tên Hanako mọi người dùng khi không muốn hỏi thêm.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P019"
+      },
+      {
+        "target": "P020",
+        "line": 9,
+        "quote": "Ở cửa một có tiếng loa đều, cửa hai im, cửa ba có hơi thở ngắt quãng. Anh sẽ phân biệt điều nghe được trước khi chọn một cánh cửa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P020"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Mio",
+        "text": "Anh nói nhỏ hơn rồi. Lần trước tiếng anh và tiếng máy cứ đuổi nhau, em không biết lúc nào được nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh không nhớ lần trước. Anh có nghe giọng trong băng, nhưng không muốn giả vờ đã nhớ chỉ để em chịu kể tiếp."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Không nhớ cũng là một câu trả lời. Em chỉ không thích khi người ta đổi nó thành chắc chắn em đã nhớ sai."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh có chiếc khăn. Anh giữ nó trong túi khô, chưa đưa cho người ngoài sân xem."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Anh có biết khăn từng dùng làm gì không?"
+      },
+      {
+        "speaker": "Ren",
+        "text": "Haruka kể chuyện gói bánh. Một buổi chiều có tiếng cười vì chữ thêu méo, trước khi mọi người chỉ kể những buổi chiều đáng sợ."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Em muốn anh giữ cả chuyện đó. Nhưng đừng dùng nó để nói em lúc nào cũng hiền. Có lúc em rất giận, và có lúc em đã muốn người khác đứng trong chỗ tối như mình."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh có thể nghe em giận mà không cần biến sự giận ấy thành toàn bộ tên em."
+      },
+      {
+        "speaker": "Mio",
+        "text": "MI ở khăn, O ở nhãn áo. Cái tên ghép từ hai vật ấy khác tên Hanako mọi người dùng khi không muốn hỏi thêm."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Ở cửa một có tiếng loa đều, cửa hai im, cửa ba có hơi thở ngắt quãng. Anh sẽ phân biệt điều nghe được trước khi chọn một cánh cửa."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_storage_medicine",
+    "character": "ren",
+    "room": "school_store",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P013"
+    ],
+    "after_dialogues": [
+      "D_clock_wall"
+    ],
+    "order": 13,
+    "important": true,
+    "links": [
+      "P014",
+      "P019"
+    ],
+    "clue_links": [
+      {
+        "target": "P014",
+        "line": 5,
+        "quote": "Khi chuyển về hiện tại, biển ngoài cửa lại là phòng y tế; trong hồi tưởng nó ghi nhà kho. Chỉ có chi tiết ấy đổi, không phải mọi lối trong trường đều được phép biến tùy ý.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P014"
+      },
+      {
+        "target": "P019",
+        "line": 6,
+        "quote": "Trên khăn còn MI, nhãn áo giữ O. Hai dấu ở hai vật khác nhau hỗ trợ một tên, nhưng không cho mình quyền kể cả cuộc đời người mang tên ấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P019"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Phòng hẹp hơn trong trí nhớ. Hoặc trong trí nhớ mình đã đứng ở một phía khác của những chiếc kệ này."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Không khí có mùi giấy ẩm lẫn thuốc sát trùng cũ. Hai mùi cùng tồn tại không chứng minh kho chưa từng là phòng y tế; một chỗ có thể được dùng cho nhiều việc qua nhiều năm."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình đã từng muốn một lời giải duy nhất vì như thế sẽ không còn chỗ để sợ. Nhưng một lời giải rộng quá cũng có thể nuốt cả những điều đáng lẽ phải giữ riêng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hộp khăn không khóa. Điều đó không có nghĩa đồ trong hộp không thuộc ai. Mình sẽ ghi nó ở đâu và mang về cho người nhận ra nó, không bỏ vào túi như phần thưởng của người đã tìm thấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nếu ai hỏi vì sao mình cầm khăn, mình sẽ nói mình chưa biết tên chủ nhân cho chắc. Không cần thêm một từ chắc chắn chỉ vì câu nói không có nó nghe yếu hơn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Khi chuyển về hiện tại, biển ngoài cửa lại là phòng y tế; trong hồi tưởng nó ghi nhà kho. Chỉ có chi tiết ấy đổi, không phải mọi lối trong trường đều được phép biến tùy ý."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Trên khăn còn MI, nhãn áo giữ O. Hai dấu ở hai vật khác nhau hỗ trợ một tên, nhưng không cho mình quyền kể cả cuộc đời người mang tên ấy."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_wrong_train",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P014"
+    ],
+    "after_dialogues": [
+      "D_red_ink"
+    ],
+    "order": 14,
+    "important": true,
+    "links": [
+      "P007",
+      "P015"
+    ],
+    "clue_links": [
+      {
+        "target": "P007",
+        "line": 6,
+        "quote": "Em sẽ ghi nguồn của giờ 16:10 là vé mẫu, không phải việc cô nhìn đồng hồ lúc gặp.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P007"
+      },
+      {
+        "target": "P015",
+        "line": 7,
+        "quote": "Và giữ thông báo ngừng chuyến cạnh lời tôi. Khi hai nguồn không khớp, việc đầu tiên là tách điều mỗi nguồn chứng minh, không xóa nguồn làm mình khó chịu.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P015"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Em mang bản thông báo ở ga. Chuyến 16:10 đã ngừng trước ngày cô nói mình gặp chúng em."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi thấy rồi. Tờ vé trong hồ sơ trông rất rõ, nên tôi đã để nó đứng vào chỗ trí nhớ mình không rõ. Tôi kể nhiều lần đến mức không còn nghe thấy mối nối ấy nữa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Như vậy có phải cô không gặp em không?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Không thể kết luận chỉ từ giờ sai. Tôi nhớ thấy mặt em phía cửa sổ. Nhưng tôi phải nói riêng hai điều: phần có thể đã xảy ra, và mốc giờ tôi đã mượn từ giấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em đã muốn có một người bị chứng minh nói dối. Khi có người như thế thì ít nhất câu chuyện sẽ có một chỗ để dồn sự giận."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi đã sửa chữ thật. Việc nhầm ngày này không làm chữ sửa biến mất, nhưng cũng không khiến mọi điều tôi kể đều cố ý giả. Em không cần chọn giữa tôi hoàn toàn đúng và tôi hoàn toàn nói dối."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em sẽ ghi nguồn của giờ 16:10 là vé mẫu, không phải việc cô nhìn đồng hồ lúc gặp."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Và giữ thông báo ngừng chuyến cạnh lời tôi. Khi hai nguồn không khớp, việc đầu tiên là tách điều mỗi nguồn chứng minh, không xóa nguồn làm mình khó chịu."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_rei_outside",
+    "character": "rei",
+    "room": "school_vestibule",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P015"
+    ],
+    "after_dialogues": [
+      "D_rei_waits"
+    ],
+    "order": 15,
+    "important": true,
+    "links": [
+      "P011",
+      "P075"
+    ],
+    "clue_links": [
+      {
+        "target": "P011",
+        "line": 7,
+        "quote": "Dòng mực đỏ phủ chữ bút chì là một hành động cụ thể; không thể gọi nó chỉ là viết lại cho gọn.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P011"
+      },
+      {
+        "target": "P075",
+        "line": 8,
+        "quote": "Và nếu nhiều lời kể lặp cùng một câu hiếm, nên tìm bản hỏi trước. Mọi người có thể cùng nhớ cách được hỏi, chứ không cùng thấy đúng một điều.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P075"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Rei",
+        "text": "Anh có nghe mẹ nói bà đã sửa chữ không? Em không muốn anh kể chi tiết, chỉ muốn biết bà có chịu dùng chủ ngữ là tôi không."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô đã nhận nét mực. Phần giữa hai người thì anh không nên chọn câu giúp cuộc nói chuyện ở nhà dễ hơn hoặc khó hơn."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em vừa viết một lá thư xin nghỉ học rồi xé đi. Trong thư em xin lỗi nhiều đến mức không còn chỗ nói mình cần nghỉ vì điều gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em có thể viết lại mà chưa gửi. Một bản nháp không cần thuyết phục được mọi người ngay."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em sợ nếu không đủ lễ phép thì người ta sẽ chỉ nhìn cách em nói và bỏ qua điều em muốn nói. Mẹ từng dặn học sinh như thế. Có lẽ bà cũng từng được dặn như vậy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hiểu chuyện đi từ đâu không làm cách nó gây hại trở thành điều phải chấp nhận. Em vẫn được hỏi một câu khó bằng giọng bình thường."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em sẽ giữ bản nháp đầu tiên. Chữ bị gạch có thể giúp em nhớ lúc viết mình đã sợ điều gì, thay vì chỉ còn một lá thư trông rất ngoan."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Dòng mực đỏ phủ chữ bút chì là một hành động cụ thể; không thể gọi nó chỉ là viết lại cho gọn."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Và nếu nhiều lời kể lặp cùng một câu hiếm, nên tìm bản hỏi trước. Mọi người có thể cùng nhớ cách được hỏi, chứ không cùng thấy đúng một điều."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_paper_weight",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P016"
+    ],
+    "after_dialogues": [
+      "D_wrong_train"
+    ],
+    "order": 16,
+    "important": true,
+    "links": [
+      "P016",
+      "P070"
+    ],
+    "clue_links": [
+      {
+        "target": "P016",
+        "line": 7,
+        "quote": "Tủ hồ sơ lấy mã theo chiếc đồng hồ 4:44 treo hành lang. Ký hiệu đồng hồ xác định nguồn của mã, không phải một sự trùng hợp của con số.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P016"
+      },
+      {
+        "target": "P070",
+        "line": 8,
+        "quote": "Khi kiểm bản giấy khác, hãy xem mực phủ nếp gấp hay nằm dưới nó. Một chữ ký mới trên giấy cũ không có nghĩa chữ ký ấy cũng có tuổi bằng tờ giấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P070"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Kaori",
+        "text": "Cái chặn giấy này do lớp làm tặng. Nó nặng hơn cần thiết vì các em tranh nhau bỏ thêm sỏi vào khuôn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô vẫn dùng nó. Em từng nghĩ người giữ đồ học sinh tặng chắc sẽ không làm một việc như sửa lời học sinh."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi cũng từng thích nghĩ như vậy về mình. Một vật được giữ cẩn thận rất dễ thành bằng chứng mình dùng để tự bào chữa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cô có định bỏ nó đi không?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Không. Nếu bỏ mọi thứ nhắc mình đã được tin, tôi chỉ làm bàn nhẹ hơn. Tôi muốn nó nằm đây khi viết bản giải trình, để không quên có người đã mang sỏi tới vì nghĩ mình sẽ nghe họ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em không thể hứa việc giữ lại sẽ khiến người khác nhìn cô khác đi."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi không nên yêu cầu em hứa. Tôi chỉ cần viết điều mình làm bằng ngày hôm nay, không sửa ngày trên giấy cũ để hai bản trông như chưa từng mâu thuẫn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tủ hồ sơ lấy mã theo chiếc đồng hồ 4:44 treo hành lang. Ký hiệu đồng hồ xác định nguồn của mã, không phải một sự trùng hợp của con số."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Khi kiểm bản giấy khác, hãy xem mực phủ nếp gấp hay nằm dưới nó. Một chữ ký mới trên giấy cũ không có nghĩa chữ ký ấy cũng có tuổi bằng tờ giấy."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_photo_edge",
+    "character": "haruka",
+    "room": "school_class",
+    "position": [
+      352,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P017"
+    ],
+    "after_dialogues": [
+      "D_haruka_courtyard"
+    ],
+    "order": 17,
+    "important": true,
+    "links": [
+      "P017",
+      "P085"
+    ],
+    "clue_links": [
+      {
+        "target": "P017",
+        "line": 7,
+        "quote": "Kính phản chiếu cả người cầm máy nên không thể chỉ đếm hàng học sinh đứng trước ống kính.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P017"
+      },
+      {
+        "target": "P085",
+        "line": 8,
+        "quote": "Còn tên trong hồ sơ có thể theo người bảo lãnh. Sau này nếu hai tên hay một tên không khớp số người, hãy kiểm quan hệ giữa hồ sơ và con người, đừng để con số tự chọn thay anh.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P085"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Haruka",
+        "text": "Anh đừng miết mép ảnh cho phẳng. Chỗ nứt đó đã có từ trước, miết thêm sẽ làm mặt giấy bong ra."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi đã muốn lau phần bị cào để nhìn rõ. Rồi nhận ra việc ấy có thể làm mất luôn dấu ai đó đã cào."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Có những người chỉ muốn bức ảnh trở lại đẹp. Họ tưởng thế là sửa được điều xảy ra với người trong ảnh. Tôi không muốn ảnh hỏng thêm, nhưng cũng không cần nó trông như một lớp chưa từng có chuyện gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi đếm được sáu bóng, nhưng chỉ năm dòng tên. Tôi sợ mình đang tìm một con số vì lá thư đã bảo phải tìm."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Anh đang kiểm nó bằng thứ nhìn được, như vậy tốt hơn chỉ tin lá thư. Nhưng tiếp theo phải hỏi các dòng tên ghi cái gì. Có thể là người có mặt, có thể là danh sách đã được chép từ một giấy khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vậy đếm sáu chưa trả lời ai là người thứ sáu."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Chưa. Nó chỉ làm câu tất cả đều có tên không còn đủ. Tôi thích một kết luận nhỏ mà giữ được hơn một lời giải lớn phải bóp giấy mới vừa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Kính phản chiếu cả người cầm máy nên không thể chỉ đếm hàng học sinh đứng trước ống kính."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Còn tên trong hồ sơ có thể theo người bảo lãnh. Sau này nếu hai tên hay một tên không khớp số người, hãy kiểm quan hệ giữa hồ sơ và con người, đừng để con số tự chọn thay anh."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_masato_page",
+    "character": "masato",
+    "room": "school_vestibule",
+    "position": [
+      256,
+      272
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P017"
+    ],
+    "after_dialogues": [
+      "D_small_apology"
+    ],
+    "order": 18,
+    "important": true,
+    "links": [
+      "P018",
+      "P088"
+    ],
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 6,
+        "quote": "Nếu có hai lời kể về chốt cửa, giữ cả bản trẻ viết và bản người lớn sửa. Đừng chọn một bản vì nó giúp cậu đứng ngoài chuyện ấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P018"
+      },
+      {
+        "target": "P088",
+        "line": 7,
+        "quote": "Một người giữ chốt vì định bảo vệ bạn vẫn có thể khiến bạn không ra được. Động cơ thiện chí không thay vị trí của chốt và hậu quả của bàn tay đã giữ nó.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P088"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Masato",
+        "text": "Tôi đã gọi cho Emi. Con bé bảo sẽ trả trang giấy bằng phong bì, nhưng muốn tự hỏi Haruka sẽ nhận cách nào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cậu để em tự nói được không? Đừng đứng cạnh để sửa câu nào làm mình xấu hổ."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi sẽ cố. Lúc nó kể đã đọc trang ấy, câu đầu tôi định nói là sao em dám. Rồi nghe câu đó trong đầu và thấy thật buồn cười, theo kiểu chẳng có gì đáng cười."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nó đọc trộm là một việc, cậu lấy trang là một việc khác. Cậu vẫn có thể nói về điều thứ nhất mà không làm điều thứ hai nhỏ đi."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Đúng. Tôi đã quen chờ người khác sai một chỗ để được ngừng nói về chỗ mình sai. Có lẽ đó là lý do chúng tôi cãi nhau cả tối mà chẳng ai nhận lại được thứ đã mất."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ cũng đang sợ những gì mình có thể đã làm. Không nhớ khiến tớ muốn lấy việc người khác làm làm câu chuyện chính."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Nếu có hai lời kể về chốt cửa, giữ cả bản trẻ viết và bản người lớn sửa. Đừng chọn một bản vì nó giúp cậu đứng ngoài chuyện ấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Một người giữ chốt vì định bảo vệ bạn vẫn có thể khiến bạn không ra được. Động cơ thiện chí không thay vị trí của chốt và hậu quả của bàn tay đã giữ nó."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_two_accounts",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P018"
+    ],
+    "after_dialogues": [
+      "D_paper_weight"
+    ],
+    "order": 19,
+    "important": true,
+    "links": [
+      "P018",
+      "P081"
+    ],
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 6,
+        "quote": "Hai bản được giữ để người sau thấy chữ thay đổi. Nếu em thích tin một bản hơn, sở thích ấy không được biến thành việc bản kia chưa từng có.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P018"
+      },
+      {
+        "target": "P081",
+        "line": 7,
+        "quote": "Khi em nhớ hành động của mình, hãy gọi đúng việc đã làm. Một lời xin lỗi cụ thể về giữ chốt có ích hơn nhận mọi tội trong thị trấn rồi không ai còn biết em chịu trách nhiệm cho điều nào.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P081"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Em đã chọn cách giữ hồ sơ. Nhưng lựa chọn trên giấy không làm em biết ngay mình sẽ sống với điều đọc được thế nào."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Nó cũng không làm tôi biết người khác có muốn gặp mình nữa không. Chúng ta có thể bắt đầu bằng việc không bắt một tờ giấy hứa điều nó không thể hứa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em muốn nghe cô xin lỗi, rồi lại sợ nếu cô nói ra thì em phải đáp không sao. Em đã dùng câu ấy quá nhiều lần để cho cuộc nói chuyện được kết thúc."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Em không cần đáp như vậy. Tôi xin lỗi vì đã sửa lời của những người không có quyền sửa lại sổ của tôi. Tôi không xin em nói rằng việc ấy không còn quan trọng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em nghe được. Em chưa biết có thể nói gì thêm."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Như thế cũng được. Câu trả lời không đến ngay không phải một khoảng trống tôi được phép điền tiếp."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hai bản được giữ để người sau thấy chữ thay đổi. Nếu em thích tin một bản hơn, sở thích ấy không được biến thành việc bản kia chưa từng có."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Khi em nhớ hành động của mình, hãy gọi đúng việc đã làm. Một lời xin lỗi cụ thể về giữ chốt có ích hơn nhận mọi tội trong thị trấn rồi không ai còn biết em chịu trách nhiệm cho điều nào."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_cloth_fold",
+    "character": "haruka",
+    "room": "school_class",
+    "position": [
+      352,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P019"
+    ],
+    "after_dialogues": [
+      "D_photo_edge"
+    ],
+    "order": 20,
+    "important": true,
+    "links": [
+      "P019",
+      "P096"
+    ],
+    "clue_links": [
+      {
+        "target": "P019",
+        "line": 7,
+        "quote": "MI ở khăn và O ở nhãn áo hỗ trợ tên Mio. Chúng không chứng minh mọi lời đồn Hanako đều nói về cùng một người.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P019"
+      },
+      {
+        "target": "P096",
+        "line": 8,
+        "quote": "Nếu sau này muốn đọc tên đó trước nhiều người, hãy hỏi phạm vi được phép. Được xác nhận một tên khác với được quyền dùng nó trong mọi câu chuyện.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P096"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Haruka",
+        "text": "Anh đã tìm được rồi. Đặt khăn trên mặt bàn khô, mặt có đường chỉ quay lên. Nó không cần đứng thẳng như một vật được trưng bày."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi muốn hỏi tên mà không khiến chị phải nghe nó như câu trả lời cuối cùng của một bài đố."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Cứ hỏi. Tôi có thể trả lời phần mình biết và nói phần nào không muốn kể. Đừng chuẩn bị trước một sự im lặng trang trọng đến mức tôi không còn nói được chuyện bình thường."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chị đã bảo chiếc khăn dùng gói bánh. Tôi muốn biết hôm ấy bánh có ngon không."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Quá ngọt. Chúng tôi đổ nhầm đường hai lần vì vừa làm vừa cãi chuyện ai được cầm máy ảnh. Em ấy vẫn ăn hết một cái rồi bảo lần sau bớt đi một nửa. Một người có thể vừa lịch sự vừa nói thật, nếu được cho đủ thời gian."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi tiếc mình không nhớ buổi ấy."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Đừng nhận ký ức của tôi làm của anh để bớt tiếc. Anh có thể biết câu chuyện mà không nói mình cũng đã ở trong đúng khoảnh khắc ấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "MI ở khăn và O ở nhãn áo hỗ trợ tên Mio. Chúng không chứng minh mọi lời đồn Hanako đều nói về cùng một người."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Nếu sau này muốn đọc tên đó trước nhiều người, hãy hỏi phạm vi được phép. Được xác nhận một tên khác với được quyền dùng nó trong mọi câu chuyện."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_three_doors",
+    "character": "ren",
+    "room": "school_toilets",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P019"
+    ],
+    "after_dialogues": [
+      "D_storage_medicine"
+    ],
+    "order": 21,
+    "important": true,
+    "links": [
+      "P013",
+      "P020"
+    ],
+    "clue_links": [
+      {
+        "target": "P013",
+        "line": 5,
+        "quote": "Nhịp cần so là hai tiếng liền, nghỉ, rồi một tiếng; chuỗi đều không khớp chỉ vì cùng có ba tiếng.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P013"
+      },
+      {
+        "target": "P020",
+        "line": 6,
+        "quote": "Dây loa chỉ tới cửa một. Cửa ba có hơi thở ngắt quãng, cửa hai im; chọn cửa phải dựa vào loại âm và nguồn của nó, không dựa vào việc truyền thuyết thích số ba.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P020"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Đây là nơi lời đồn luôn gọi tới, nhưng buồng cửa vẫn có những thứ rất bình thường: chốt gỉ, đường ống, vết nước dưới bồn rửa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình từng nghĩ nhìn thấy một chỗ bình thường sẽ làm nỗi sợ biến mất. Thực ra nó chỉ làm nỗi sợ khó gọi tên hơn, vì chỗ này đã có thể chứa một ngày bình thường và một chuyện rất khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình không cần gõ thật mạnh. Nếu có ai ở bên kia, họ không có nghĩa vụ chịu một tiếng động lớn để mình biết mình đã đến đúng nơi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cái máy ở buồng đầu lặp nhịp đều. Nếu chỉ nghe tổng số tiếng, mình sẽ nhầm mọi chuỗi ba tiếng với điều trong băng. Phải giữ cả chỗ tiếng không vang lên."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình có thể dùng phụ đề âm thanh như một người ghi lại nhịp. Không có lý do câu đố này phải đo tai ai tốt hơn, nhất là lúc người chơi cũng có thể đang sợ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nhịp cần so là hai tiếng liền, nghỉ, rồi một tiếng; chuỗi đều không khớp chỉ vì cùng có ba tiếng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Dây loa chỉ tới cửa một. Cửa ba có hơi thở ngắt quãng, cửa hai im; chọn cửa phải dựa vào loại âm và nguồn của nó, không dựa vào việc truyền thuyết thích số ba."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_hand_latch",
+    "character": "mio",
+    "room": "school_toilets",
+    "position": [
+      112,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P020"
+    ],
+    "after_dialogues": [
+      "D_name_on_door"
+    ],
+    "order": 22,
+    "important": true,
+    "links": [
+      "P021",
+      "P088"
+    ],
+    "clue_links": [
+      {
+        "target": "P021",
+        "line": 7,
+        "quote": "Vết xước ở phía ngoài cho biết ai có thể chạm chốt. Một bàn tay muốn giúp vẫn có thể giữ lối ra của người khác.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P021"
+      },
+      {
+        "target": "P088",
+        "line": 8,
+        "quote": "Rút chốt rồi lùi lại khác với mở cửa để bắt người bên kia xuất hiện. Nếu thật sự muốn sửa một việc đã ngăn ai đó chọn, hãy trả lại lựa chọn ấy.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P088"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Mio",
+        "text": "Anh có thể đứng lùi lại một chút không? Bóng anh che phần tay cầm, em không biết anh đang làm gì."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh sẽ để tay xuống. Anh muốn mở, nhưng không muốn em phải tin một lời nói khi chưa thấy bàn tay."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Lần ấy em cũng nghe một lời như vậy. Có thể người nói nghĩ mình sẽ mở ngay sau một lúc. Người ở bên trong không biết một lúc của người ngoài dài đến đâu."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh nhớ mình sợ người lớn tìm thấy. Anh chưa nhớ đủ mọi người trong phòng. Anh sợ nói ra một phần rồi phần còn lại thay đổi, mọi người sẽ bảo anh cố nói dối."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Anh có thể nói đúng mức mình nhớ. Nhưng phần anh đã biết thì đừng giấu trong những phần còn chưa rõ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh đã giữ chốt. Anh chưa biết bao lâu, và chưa có quyền gọi việc ấy là bảo vệ em. Anh có thể rút chốt bây giờ, rồi để em chọn có bước qua hay không."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Đừng đợi em nói cảm ơn để mới lùi."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vết xước ở phía ngoài cho biết ai có thể chạm chốt. Một bàn tay muốn giúp vẫn có thể giữ lối ra của người khác."
+      },
+      {
+        "speaker": "Mio",
+        "text": "Rút chốt rồi lùi lại khác với mở cửa để bắt người bên kia xuất hiện. Nếu thật sự muốn sửa một việc đã ngăn ai đó chọn, hãy trả lại lựa chọn ấy."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_after_open",
+    "character": "ren",
+    "room": "school_corridor",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P021"
+    ],
+    "after_dialogues": [
+      "D_three_doors"
+    ],
+    "order": 23,
+    "important": true,
+    "links": [
+      "P021",
+      "P093"
+    ],
+    "clue_links": [
+      {
+        "target": "P021",
+        "line": 5,
+        "quote": "Chốt đã rút ra, và mình đã không đứng giữ trước ngưỡng. Hành động hôm nay không thay chốt từng ở đâu trong ký ức.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P021"
+      },
+      {
+        "target": "P093",
+        "line": 6,
+        "quote": "Yui nói mình có phần trong thư, chưa nói đã gửi cassette. Sau này cần hỏi từng người đã thêm vật nào, không dùng một lời thú nhận về phong thư để giải thích luôn mọi thứ bên trong.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P093"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Mình đã lùi lại. Cửa không mở theo cách mình tưởng, và không có ai bước ra để làm chứng rằng mình vừa làm một điều đúng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có một phần trong mình đã đợi được tha thứ ngay. Mình không thích nhận ra phần ấy, nhưng nếu không nhận thì lần sau nó sẽ lại mặc áo một hành động tốt."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Hành lang vẫn dẫn về phòng phát thanh. Những vết sơn không đổi. Việc một cánh cửa được mở không bắt cả tòa nhà phải sáng lên cho mình thấy câu chuyện đã xong."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình sẽ gọi mẹ khi ra ngoài. Có thể chỉ nói con đang về. Không dùng câu ấy để làm mẹ yên lòng nếu mình còn định đi đâu khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Băng trong túi nặng chẳng hơn lúc tới, nhưng mình không còn muốn cho nó một chủ nhân chỉ vì như thế sẽ dễ hỏi trách nhiệm hơn. Có những phần phải để riêng, đợi nguồn khác."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chốt đã rút ra, và mình đã không đứng giữ trước ngưỡng. Hành động hôm nay không thay chốt từng ở đâu trong ký ức."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Yui nói mình có phần trong thư, chưa nói đã gửi cassette. Sau này cần hỏi từng người đã thêm vật nào, không dùng một lời thú nhận về phong thư để giải thích luôn mọi thứ bên trong."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_handoff",
+    "character": "yui",
+    "room": "school",
+    "position": [
+      320,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P021"
+    ],
+    "after_dialogues": [
+      "D_yard"
+    ],
+    "order": 24,
+    "important": true,
+    "links": [
+      "P022",
+      "P034"
+    ],
+    "clue_links": [
+      {
+        "target": "P022",
+        "line": 7,
+        "quote": "Bản sao tới Yui cùng phạm vi đã đồng ý, bản gốc được giữ. Đó là một cách trao lời chứng mà không dán cả đời người lên phố.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P022"
+      },
+      {
+        "target": "P034",
+        "line": 8,
+        "quote": "Sau này nếu nhà báo hỏi ảnh, mình sẽ xin phép ảnh riêng. Đồng ý nói về chữ ký không tự có nghĩa đồng ý công bố gương mặt hay thương tích.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P034"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Tớ đã đem bìa cứng. Cậu muốn tự đặt giấy vào hay muốn tớ giúp giữ mép cho khỏi gió?"
+      },
+      {
+        "speaker": "Ren",
+        "text": "Giữ mép thôi. Tớ muốn biết bản nào đi với ai. Trước đây tớ sẽ đưa cả xấp rồi nghĩ người nhận tự hiểu phải làm gì."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ sẽ ghi đã nhận bản sao. Bản gốc ở lại trong túi niêm phong; mình không cần lấy cả kho giấy mới có thể chứng minh một câu đã bị sửa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có người nói không muốn bị chụp ảnh. Có người chỉ muốn tên được giữ trong một bản riêng. Tớ chưa biết nếu những điều đó xung đột với việc người khác muốn lên tiếng thì sẽ làm sao."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Chúng ta chưa cần giải hết tối nay. Có thể ghi rõ phần mỗi người cho phép trước. Lần sau nói chuyện sẽ có một chỗ bắt đầu đúng hơn là ai cũng tưởng người kia đã đồng ý."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ vẫn còn giận chuyện lá thư."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ biết. Tớ sẽ không lấy việc đứng chờ cậu đêm nay làm lý do để cậu thôi hỏi chuyện ấy. Nhưng nếu cậu mệt thì mình có thể đợi sáng mai để nói tiếp."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bản sao tới Yui cùng phạm vi đã đồng ý, bản gốc được giữ. Đó là một cách trao lời chứng mà không dán cả đời người lên phố."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Sau này nếu nhà báo hỏi ảnh, mình sẽ xin phép ảnh riêng. Đồng ý nói về chữ ký không tự có nghĩa đồng ý công bố gương mặt hay thương tích."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_dawn_school",
+    "character": "haruka",
+    "room": "school_class",
+    "position": [
+      352,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P022"
+    ],
+    "after_dialogues": [
+      "D_cloth_fold"
+    ],
+    "order": 25,
+    "important": true,
+    "links": [
+      "P097",
+      "P098"
+    ],
+    "clue_links": [
+      {
+        "target": "P097",
+        "line": 6,
+        "quote": "Giữ bàn được chăm không đồng nghĩa biến nó thành vật trưng bày. Người chăm có thể không muốn ảnh và khách tới xem.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P097"
+      },
+      {
+        "target": "P098",
+        "line": 7,
+        "quote": "Còn hồ sơ cần bản sao ở nơi có người chịu trách nhiệm. Để mọi thứ phụ thuộc một người giữ chìa tốt bụng thì khi người ấy vắng, sự thật lại không có cửa vào.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P098"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Haruka",
+        "text": "Anh chưa về à? Trời gần sáng rồi. Không cần đứng đây để chắc cái bàn vẫn ở đúng chỗ sau khi mình quay lưng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi muốn trả chiếc khăn vào hộp khô. Tôi đã ghi nơi tìm thấy và ai đã nhận ra đường chỉ, không ghi thêm điều chị chưa nói."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Cảm ơn. Anh có thể để nắp hộp hé một chút. Khăn còn hơi ẩm, kín quá sẽ mốc. Chuyện giữ lại đôi khi bắt đầu từ một việc nhỏ như vậy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có người sẽ muốn làm bảng tưởng niệm. Tôi chưa biết thế nào là một nơi để nhớ và thế nào là một nơi khiến người khác tới nhìn nỗi buồn của mình."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Tôi cũng chưa biết đủ để quyết định hộ mọi người. Nhưng tôi biết sáng mai cái bàn cần được lau, không cần đám đông. Nếu sau này làm bảng, chúng ta hỏi những người liên quan trước khi đặt tên họ lên gỗ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tôi sẽ không coi chuyện đêm nay xong là quyền thay cả trường bằng một câu chuyện mới do mình kể."
+      },
+      {
+        "speaker": "Haruka",
+        "text": "Giữ bàn được chăm không đồng nghĩa biến nó thành vật trưng bày. Người chăm có thể không muốn ảnh và khách tới xem."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Còn hồ sơ cần bản sao ở nơi có người chịu trách nhiệm. Để mọi thứ phụ thuộc một người giữ chìa tốt bụng thì khi người ấy vắng, sự thật lại không có cửa vào."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_water_tap",
+    "character": "ren",
+    "room": "school_toilets",
+    "position": [
+      72,
+      256
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P020"
+    ],
+    "after_dialogues": [
+      "D_three_doors"
+    ],
+    "order": 26,
+    "important": true,
+    "links": [
+      "P020",
+      "P021"
+    ],
+    "clue_links": [
+      {
+        "target": "P020",
+        "line": 5,
+        "quote": "Buồng đầu có loa và tiếng lặp đều; buồng cuối có hơi thở không đều. Hai loại âm không được xem là giống nhau chỉ vì cùng tới từ sau một cánh cửa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P020"
+      },
+      {
+        "target": "P021",
+        "line": 6,
+        "quote": "Vết xước ở phía ngoài chốt chỉ vị trí bàn tay có thể giữ. Nếu rút chốt rồi lùi lại, mình đang để người bên kia chọn, không chỉ đổi cách mình ra lệnh.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P021"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "Nước trong vòi chảy một đoạn rồi dừng. Đường ống cũng có nhịp riêng, không quan tâm mình đang muốn nghe một giọng nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Mình đã từng làm người khác hoảng bằng cách gõ vào ống từ phòng bên cạnh. Lúc ấy mình nghĩ nếu cuối cùng nói đùa thôi thì nỗi sợ của người kia cũng phải kết thúc theo."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Có người cười cùng, có người không. Mình nhớ những người cười rõ hơn, vì họ giúp mình tin chuyện ấy không có hậu quả. Những người không cười thường biến mất khỏi cách mình kể lại."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tối nay mình sẽ không dùng âm thanh để buộc người trong buồng phải trả lời. Nếu cần xác định nguồn, mình có thể tắt máy, đọc sơ đồ và nghe khoảng nghỉ. Không cần làm nơi này ồn đến mức chỉ còn nghe được sự sợ của mình."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bàn tay đang lạnh nhưng vẫn có thể đặt xuống. Mình không phải giữ một thứ chỉ vì chưa biết sau khi buông nó sẽ thế nào."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Buồng đầu có loa và tiếng lặp đều; buồng cuối có hơi thở không đều. Hai loại âm không được xem là giống nhau chỉ vì cùng tới từ sau một cánh cửa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Vết xước ở phía ngoài chốt chỉ vị trí bàn tay có thể giữ. Nếu rút chốt rồi lùi lại, mình đang để người bên kia chọn, không chỉ đổi cách mình ra lệnh."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Ghi rõ điều biết và điều chưa rõ.",
+        "value": "listen"
+      },
+      {
+        "text": "Chấp nhận ấn tượng đầu của mình.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "clarity": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": false
+      }
+    ]
+  },
+  {
+    "id": "D_quiet_library",
+    "character": "rei",
+    "room": "school_vestibule",
+    "position": [
+      384,
+      240
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P018"
+    ],
+    "after_dialogues": [
+      "D_rei_outside"
+    ],
+    "order": 27,
+    "important": true,
+    "links": [
+      "P018",
+      "P070"
+    ],
+    "clue_links": [
+      {
+        "target": "P018",
+        "line": 7,
+        "quote": "Nhật ký và bản sửa nên còn cạnh nhau; lựa chọn tin một bản không cho phép hủy bản kia.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P018"
+      },
+      {
+        "target": "P070",
+        "line": 8,
+        "quote": "Còn ngày viết phải được kiểm bằng mực và nếp gấp, không chỉ ngày in sẵn ở đầu mẫu. Một trang giấy cũ có thể mang lời mới được viết rất muộn.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P070"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Rei",
+        "text": "Em đã viết lại thư, nhưng không gửi ngay. Em muốn sáng mai đọc một lần khi không còn nghe tiếng mẹ ở phía bên kia hành lang."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em có cần một người đọc trước không?"
+      },
+      {
+        "speaker": "Rei",
+        "text": "Có lẽ, nhưng chưa phải bây giờ. Nếu đưa anh lúc này, em sẽ nhìn mặt anh để đo câu nào khiến anh khó chịu, rồi lại sửa nó trước khi biết mình có thật sự muốn sửa không."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Anh hiểu. Có những tờ giấy phải được giữ một đêm để người viết còn nhận ra giọng mình trong đó."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em từng nghĩ giữ bản nháp là thiếu tự tin. Bài ở lớp chỉ chấm bản sạch, không ai nhìn những câu đã bỏ để hỏi vì sao mình không dám viết."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bản sạch có ích cho người đọc, nhưng không nên được dùng để bảo những bản khác chưa từng tồn tại. Em được giữ cả hai mà không phải trình chúng cho mọi người."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Em sẽ giữ. Và khi hỏi mẹ về chữ bà sửa, em sẽ không đưa lá thư của mình làm ví dụ để bà phải thấy có lỗi thêm. Hai chuyện có thể liên quan mà vẫn cần được nói riêng."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Nhật ký và bản sửa nên còn cạnh nhau; lựa chọn tin một bản không cho phép hủy bản kia."
+      },
+      {
+        "speaker": "Rei",
+        "text": "Còn ngày viết phải được kiểm bằng mực và nếp gấp, không chỉ ngày in sẵn ở đầu mẫu. Một trang giấy cũ có thể mang lời mới được viết rất muộn."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_lamp_return",
+    "character": "masato",
+    "room": "school_vestibule",
+    "position": [
+      256,
+      272
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P021"
+    ],
+    "after_dialogues": [
+      "D_masato_page"
+    ],
+    "order": 28,
+    "important": true,
+    "links": [
+      "P081",
+      "P092"
+    ],
+    "clue_links": [
+      {
+        "target": "P081",
+        "line": 7,
+        "quote": "Tớ sẽ nhận việc đã giữ chốt, không dùng câu tớ cũng là nạn nhân để làm hành động ấy biến mất.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P081"
+      },
+      {
+        "target": "P092",
+        "line": 8,
+        "quote": "Còn chiếc khóa đồng có thể được trả lại ngoài ngưỡng. Giữ nó làm bằng chứng không có nghĩa phải tiếp tục giữ quyền khóa một người khác ở bên trong.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P092"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Masato",
+        "text": "Đèn vẫn còn pin. Tôi chưa dùng đến, nhưng cũng chưa đem về vì sợ trông như đã bỏ đi trước khi mọi chuyện xong."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Không có người chấm việc cậu đứng ở đây đủ lâu chưa. Nếu muốn về thì nói mình về. Nếu muốn ở lại thì hỏi có việc gì cần."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Có việc gì cần không?"
+      },
+      {
+        "speaker": "Ren",
+        "text": "Cầm đèn cho Rei đi xuống bậc trước, nếu em ấy đồng ý. Rồi trả nó về chỗ cậu lấy. Những việc ấy không cần một câu chuyện lớn hơn để có ích."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi đã quen thêm một lời giải thích vào mọi hành động. Nói mình làm vì cái này cái kia, để nếu ai hiểu sai thì ít nhất mình đã nói trước."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ vừa đứng trước một cái chốt với rất nhiều lời giải thích như thế trong đầu. Cuối cùng điều cần làm lại ngắn hơn điều cần nói."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Tôi không biết cậu nhớ được gì, và sẽ không hỏi để so xem phần ai tệ hơn. Khi Emi trả trang giấy, tôi sẽ nhận đúng phần mình đã lấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ sẽ nhận việc đã giữ chốt, không dùng câu tớ cũng là nạn nhân để làm hành động ấy biến mất."
+      },
+      {
+        "speaker": "Masato",
+        "text": "Còn chiếc khóa đồng có thể được trả lại ngoài ngưỡng. Giữ nó làm bằng chứng không có nghĩa phải tiếp tục giữ quyền khóa một người khác ở bên trong."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_teacher_copy",
+    "character": "kaori",
+    "room": "school_teachers",
+    "position": [
+      400,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P021"
+    ],
+    "after_dialogues": [
+      "D_two_accounts"
+    ],
+    "order": 29,
+    "important": true,
+    "links": [
+      "P022",
+      "P098"
+    ],
+    "clue_links": [
+      {
+        "target": "P022",
+        "line": 7,
+        "quote": "Bản đưa cho Yui là bản sao có phạm vi, không phải toàn bộ hồ sơ bệnh hay đời tư của người có tên.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P022"
+      },
+      {
+        "target": "P098",
+        "line": 8,
+        "quote": "Hai bản độc lập có ghi nguồn sẽ bền hơn một ngăn tủ chỉ mở khi người giữ chìa thấy người xin giấy đáng tin. Việc ấy tôi nên hiểu từ trước khi trường đóng cửa.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P098"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Kaori",
+        "text": "Tôi đã lấy một bìa khác. Cái này không có tên trường ở ngoài. Tôi không muốn một người nhìn bìa rồi tin tất cả giấy bên trong chỉ vì thấy con dấu quen."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Em sẽ ghi bản nào là bản sao. Có cần cô ký xác nhận không?"
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Tôi có thể xác nhận mình sao từ trang nào, ngày nào. Tôi không thể ký rằng mọi lời trên trang đều đúng, vì có cả phần tôi đã sửa mà không nên sửa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Như vậy chữ ký có phạm vi. Nó không phải một tấm giấy khiến người cầm khỏi cần suy nghĩ nữa."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Đúng. Tôi đã dùng chữ ký theo cách thứ hai quá lâu. Tôi thích sự gọn gàng của nó, thích việc người nhận không hỏi thêm nếu tôi viết đủ ngay ngắn."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Người giữ bản sao cũng cần biết họ được làm gì với nó. Em chưa muốn gửi nó đi xa hơn những người đã đồng ý."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Em hãy viết điều ấy. Và giữ một bản ở nơi khác, có người nhận chịu trách nhiệm, để không một ai có thể quyết định một mình rằng tờ nào không nên tồn tại nữa."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Bản đưa cho Yui là bản sao có phạm vi, không phải toàn bộ hồ sơ bệnh hay đời tư của người có tên."
+      },
+      {
+        "speaker": "Kaori",
+        "text": "Hai bản độc lập có ghi nguồn sẽ bền hơn một ngăn tủ chỉ mở khi người giữ chìa thấy người xin giấy đáng tin. Việc ấy tôi nên hiểu từ trước khi trường đóng cửa."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
+      }
+    ]
+  },
+  {
+    "id": "D_walk_home",
+    "character": "yui",
+    "room": "school",
+    "position": [
+      320,
+      208
+    ],
+    "chapter": 1,
+    "status": "playable",
+    "requires": [
+      "P022"
+    ],
+    "after_dialogues": [
+      "D_handoff"
+    ],
+    "order": 30,
+    "important": true,
+    "links": [
+      "P078",
+      "P093"
+    ],
+    "clue_links": [
+      {
+        "target": "P078",
+        "line": 7,
+        "quote": "Khi nói tiếp, tớ sẽ hỏi từng vật: giấy gói, ảnh, chìa và bài báo. Nếp gấp của cậu không tự chứng minh cậu chuẩn bị toàn bộ nội dung.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P078"
+      },
+      {
+        "target": "P093",
+        "line": 8,
+        "quote": "Còn cassette, tớ chưa nhận mình đã cho vào. Cậu cứ giữ phần đó riêng với phần tớ nhận đã làm, dù một câu chuyện có một người gửi duy nhất sẽ dễ kể hơn.",
+        "relationship": "Chi tiết trong lời nói chuẩn bị hoặc đối chiếu cho P093"
+      }
+    ],
+    "lines": [
+      {
+        "speaker": "Yui",
+        "text": "Cậu muốn đi cùng hay muốn về một mình? Tớ có thể đi chậm ở phía sau, nhưng không muốn đoán điều cậu chưa nói."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Đi cùng. Tớ chưa muốn nói tiếp về trường, nhưng không muốn cả đoạn phố chỉ nghe bước chân mình."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Vậy mình có thể nói chuyện khác. Tiệm bánh ngoài ga đổi chủ rồi. Bánh hồi nhỏ cậu thích bây giờ nhỏ hơn, hoặc chúng ta lại đang dùng một ký ức quá rộng để đo cái bánh hiện tại."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Chúng ta có thể mua một cái rồi cân. Lần đầu tiên tối nay có một câu hỏi mà cách kiểm nghe rất dễ chịu."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Mai nhé. Hôm nay tiệm chưa mở, và không có truyền thuyết nào giúp cậu mua bánh ngoài giờ."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Tớ vẫn sẽ hỏi về lá thư. Nhưng tớ muốn có một cuộc nói chuyện khác trước khi chỉ còn nhìn cậu như người đã gửi nó."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Tớ đồng ý. Việc mình còn nói được chuyện bánh không làm tớ được miễn trả lời chuyện thư. Nó chỉ nhắc rằng chúng ta đã có một tình bạn trước khi có phong bì ấy."
+      },
+      {
+        "speaker": "Ren",
+        "text": "Khi nói tiếp, tớ sẽ hỏi từng vật: giấy gói, ảnh, chìa và bài báo. Nếp gấp của cậu không tự chứng minh cậu chuẩn bị toàn bộ nội dung."
+      },
+      {
+        "speaker": "Yui",
+        "text": "Còn cassette, tớ chưa nhận mình đã cho vào. Cậu cứ giữ phần đó riêng với phần tớ nhận đã làm, dù một câu chuyện có một người gửi duy nhất sẽ dễ kể hơn."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Giữ lời kể trong phạm vi đã nói.",
+        "value": "listen"
+      },
+      {
+        "text": "Kể lại ngay, chưa hỏi người nói.",
+        "value": "repeat"
+      }
+    ],
+    "choice_effects": [
+      {
+        "trust": 1,
+        "willingness": 1
+      },
+      {
+        "guilt": 1,
+        "rumor": true
       }
     ]
   }

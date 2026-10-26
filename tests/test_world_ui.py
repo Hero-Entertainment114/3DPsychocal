@@ -17,8 +17,8 @@ def reachable_positions(w,start):
 
 def test_every_hotspot_and_exit_can_be_reached(content):
     for rid,m in content.maps.items():
-        s=State(room=rid,x=64,y=280);w=World(content,s)
-        start=(96,172) if rid=='station' else (80,240)
+        s=State(room=rid,x=64,y=272,solved=[p['id'] for p in content.playable],heard=list(content.dialogues));w=World(content,s)
+        start=m['entry']
         assert not w.blocked(*start),rid
         seen=reachable_positions(w,start)
         for obj in w.objects():
@@ -44,11 +44,12 @@ def key(g,k,text=''):
 def test_menu_dialogue_puzzle_and_pause_through_input(game):
     g=game;key(g,pygame.K_RETURN);assert g.mode=='message'
     key(g,pygame.K_ESCAPE);assert g.mode=='play'
-    g.state.x=224;g.state.y=140;key(g,pygame.K_e);assert g.mode=='puzzle'
+    for oid in g.content.puzzles['P001']['observations']:g.state.flags['observed_'+oid]=True
+    g.state.room='station_hall';g.state.x=144;g.state.y=184;key(g,pygame.K_e);assert g.mode=='puzzle'
     key(g,pygame.K_2,'2');key(g,pygame.K_RETURN);assert 'P001' in g.state.solved
-    g.state.x=140;g.state.y=230;key(g,pygame.K_e);assert g.mode=='dialogue'
+    g.state.room='station';g.state.x=192;g.state.y=248;key(g,pygame.K_e);assert g.mode=='dialogue'
     while not g.choice:key(g,pygame.K_RETURN)
-    key(g,pygame.K_1);assert g.state.relations['hiroshi']['trust']==2
+    key(g,pygame.K_1);assert g.state.relations['hiroshi']['trust']==1
     key(g,pygame.K_ESCAPE);assert g.mode=='pause';before=(g.state.x,g.state.y,g.state.play_seconds);g.update(1);assert (g.state.x,g.state.y,g.state.play_seconds)==before
     key(g,pygame.K_ESCAPE);assert g.mode=='play'
 
@@ -56,24 +57,31 @@ def test_draw_every_screen_and_all_text_pages(game):
     g=game
     for mode in ('menu','play','pause','settings','save','load','inventory','journal','chapters','extras','new_confirm'):
         g.mode=mode;g.draw()
+    g.state.solved=[p['id'] for p in g.content.playable];g.state.heard=list(g.content.dialogues)
     for d in g.content.dialogues.values():
-        g.open_dialogue(d['character'])
-        for i,page in enumerate(g.dialogue_pages):
+        pages=[]
+        for index,line in enumerate(d['lines']):
+            wrapped=g.render.wrap(line['text'],305,11)
+            for start in range(0,len(wrapped),6):pages.append((index,wrapped[start:start+6]))
+        for i,page in enumerate(pages):
             assert len(page[1])<=6
             assert all(g.render.fonts[11].size(line)[0]<=305 for line in page[1])
-            g.dialogue_index=i;g.draw()
+            g.render.dialogue(d,pages,i,False)
     for p in g.content.playable:
-        g.pid=p['id'];g.mode='puzzle';g.draw()
-        height=len(g.render.wrap(p['prompt'],414,11))*15+sum(len(g.render.wrap('— '+c,414,10))*14+5 for c in p['clues'])
-        assert height<=133,p['id']
+        from systems.mechanics import Mechanism
+        g.pid=p['id'];g.mechanism=Mechanism(p);g.mode='puzzle';g.draw()
+        assert len(g.render.wrap(p['prompt'],414,10))<=3,p['id']
     for e in 'ABCDE':
         g.ending_id=e;g.mode='ending'
         for page in range(8):g.ending_page=page;g.draw()
 
 def test_memory_required_for_observation_puzzle(game):
     g=game
-    for p in g.content.playable[:13]:g.progress.solve(p['id'],p['answers'][-1])
-    g.state.room='school';g.pid='P014';g.input='2';g.answer();assert 'P014' not in g.state.solved
+    for p in g.content.playable[:13]:
+        for oid in p['observations']:g.state.flags['observed_'+oid]=True
+        assert g.progress.solve(p['id'],p['answers'][-1])
+    for oid in g.content.puzzles['P014']['observations']:g.state.flags['observed_'+oid]=True
+    g.state.room='school_store';g.open_puzzle('P014');g.input='2';g.answer();assert 'P014' not in g.state.solved
     g.mode='play';key(g,pygame.K_m);assert g.state.flags['school_memory_seen']
     g.answer();assert 'P014' in g.state.solved
 
@@ -82,3 +90,12 @@ def test_settings_keys_and_persistence(game):
     assert g.settings['keys']['interact']=='q'
     assert g.store.settings()['keys']['interact']=='q'
     g.selection=0;key(g,pygame.K_LEFT);assert g.settings['master']==.6
+
+
+def test_hint_can_be_hidden_without_resetting_progress(game):
+    g=game;g.open_puzzle('P001');key(g,pygame.K_h)
+    assert g.hint_visible and g.state.hints['P001']==1
+    key(g,pygame.K_TAB)
+    assert not g.hint_visible and g.state.hints['P001']==1
+    key(g,pygame.K_h);key(g,pygame.K_ESCAPE);g.open_puzzle('P001')
+    assert not g.hint_visible and g.state.hints['P001']==2

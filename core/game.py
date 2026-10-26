@@ -8,6 +8,8 @@ from systems.progression import Progression, select_ending, ending_fixture
 from systems.storage import Storage, SaveError
 from systems.world import World
 from systems.audio import Audio
+from systems.mechanics import Mechanism
+from systems.dialogue import choose, eligible, complete
 from scenes.render import Renderer, C
 
 class Game:
@@ -27,7 +29,7 @@ class Game:
         self.toast='';self.toast_time=0.;self.page=0;self.input='';self.pid=None;self.dialogue=None
         self.dialogue_pages=[];self.dialogue_index=0;self.choice=False
         self.return_mode='menu';self.selected_evidence=[];self.journal_tab=0;self.ending_id='A';self.ending_page=0
-        self.remap=None;self.step_timer=0.;self.last_scale=(2,0,0)
+        self.hint_visible=False;self.knock_queue=[];self.mechanism=None;self.remap=None;self.step_timer=0.;self.last_scale=(2,0,0)
         self.set_state(State())
         self.menu_progress=0
         if self.store.path('auto').exists():
@@ -49,12 +51,12 @@ class Game:
         except SaveError as e:self.notify(str(e));return False
     def start(self):
         self.set_state(State());self.mode='play';self.audio.ambience('rain');self.audio.music(0)
-        self.show_message('Ba ngày ở quê','Tháng 10, 1998. Mẹ nhập viện, hồ sơ căn nhà cần chữ ký. Ren xin nghỉ ba ngày ở công ty vận chuyển. Trong túi là lá thư không người gửi, một bức ảnh bị cào và cassette chưa nghe.\n\nTìm tờ vé trên bàn bên phải. E để xem đồ vật hoặc nói chuyện. Ghé bệnh viện qua phố chính.\n\nCó âm thanh và chủ đề mất mát. Có thể giảm hiệu ứng trong Thiết lập.','play')
+        self.show_message('Ba ngày ở quê','Tháng 10, 1998. Mẹ nhập viện, hồ sơ căn nhà cần chữ ký. Ren xin nghỉ ba ngày ở công ty vận chuyển. Trong túi là lá thư không người gửi, một bức ảnh bị cào và cassette chưa nghe.\n\nQua sảnh vé ở lối ra cuối sân ga. Quan sát nhãn vé và biển cửa. E để xem đồ vật hoặc nói chuyện. Ghé bệnh viện qua phố chính.\n\nCó âm thanh và chủ đề mất mát. Có thể giảm hiệu ứng trong Thiết lập.','play')
     def show_message(self,title,text,back='play'):
         self.message_title=title;self.message_text=text;self.return_mode=back;self.mode='message';self.page=0
     def open_dialogue(self,cid):
-        d=self.content.dialogues.get('D_'+cid)
-        if not d:return
+        d=self.content.dialogues.get(cid) if cid.startswith('D_') else choose(self.content,self.state,self.state.room,cid)
+        if not d or not eligible(d,self.state):return
         self.dialogue=d;self.dialogue_pages=[]
         for i,l in enumerate(d['lines']):
             wrapped=self.render.wrap(l['text'],305,11)
@@ -65,18 +67,25 @@ class Game:
         if self.dialogue_index<len(self.dialogue_pages)-1:self.dialogue_index+=1
         else:
             self.choice=True
-            did=self.dialogue['id']
-            if did not in self.state.heard:
-                self.state.heard.append(did)
-                self.state.journal.append('Đã trò chuyện với '+self.content.characters[self.dialogue['character']]['name']+'.')
     def interact(self):
         o=self.world.nearest()
         if not o:self.notify('Đến gần đồ vật hoặc một người rồi nhấn E.');return
         if o['kind']=='portal':
             if self.world.travel(int(o['id'])):
                 self.save();self.audio.ambience(self.world.room['ambient'])
-            else:self.notify('Yui biết đường vào. Hãy nghe cassette và kiểm tra lịch tàu trước.')
-        elif o['kind']=='npc':self.open_dialogue(o['id'])
+            else:
+                gate=self.world.room['portals'][int(o['id'])].get('requires')
+                self.notify('Chưa mở lối: '+self.content.puzzles[gate]['title'] if gate else 'Lối này chưa mở.')
+        elif o['kind']=='npc':self.open_dialogue(o['dialogue'])
+        elif o['kind']=='reflection':self.open_dialogue(o['id'])
+        elif o['kind']=='observation':
+            note=self.content.observations[o['id']]
+            flag='observed_'+o['id']
+            if not self.state.flags.get(flag):
+                self.state.flags[flag]=True
+                self.state.journal.append(note['title']+' — '+note['text'])
+                self.save()
+            self.show_message(note['title'],note['text'])
         else:self.open_puzzle(o['id'])
     def open_puzzle(self,pid):
         p=self.content.puzzles[pid]
@@ -85,25 +94,24 @@ class Game:
         if not self.progress.available(pid):
             missing=[self.content.puzzles[x]['title'] for x in p['requires'] if x not in self.state.solved]
             self.show_message(p['title'],'Ren chưa đủ thông tin. Quay lại sau khi tìm hiểu:\n\n'+'\n'.join(missing));return
-        self.pid=pid;self.input='';self.mode='puzzle';self.page=0
-        if pid=='P013':self.audio.play('knock')
+        self.pid=pid;self.input='';self.mode='puzzle';self.page=0;self.hint_visible=False;self.mechanism=Mechanism(p)
+        if pid=='P013':self.knock_queue=[self.time,self.time+.28,self.time+.95]
     def answer(self,assisted=False):
         pid=self.pid;p=self.content.puzzles[pid]
-        if pid=='P014' and not self.state.flags.get('school_memory_seen') and not assisted:
-            self.notify('Khép bảng và nhấn M trong trường để quan sát hồi tưởng.');return
+        if self.mechanism is not None and self.mechanism.answer() is not None:self.input=self.mechanism.answer()
         if self.progress.solve(pid,self.input,assisted):
             self.audio.play('chime');self.mode='play';self.save();self.notify('Ren ghi lại: '+p['title'])
-            if pid=='P004' and 'D_ren' not in self.state.heard:self.open_dialogue('ren')
+            if pid=='P004' and 'D_ren' not in self.state.heard:self.open_dialogue('D_ren')
             if pid=='P008':
                 self.audio.music(1);self.show_message('I • Tiếng gõ sau cánh cửa','Yui mở cổng phía Đông. Trường vẫn có mùi phấn ẩm. Ren tự nhủ sẽ chỉ tìm người đã gửi băng, rồi trở về bệnh viện.\n\nLối vào trường nằm cuối phố. Các đồ vật có dấu ! đã đủ điều kiện để tìm hiểu.')
             if pid=='P013':
                 self.scare=3.5;self.state.fear=min(70,self.state.fear+20)
                 self.notify('Có tiếng chân dừng sau lưng. [cộc cộc — nghỉ — cộc]')
             if pid=='P022':
-                self.show_message('Cánh cửa đã được mở','Ren rút chốt, giữ cả hai lời khai và trao bản sao cho Yui. Bên kia không còn tiếng yêu cầu mở cửa. Nhưng trên khăn, tên ấy vẫn chưa thuộc về bất kỳ hồ sơ nào.\n\nHẾT GIAI ĐOẠN CHƠI 0.1\nMở đầu và Hanako đã khép lại. Chương II–VI còn ở mức thiết kế. Bạn có thể trở lại phố, đọc sổ hoặc xem phân cảnh kết thúc thử trong Tư liệu.','play')
+                self.show_message('Cánh cửa đã được mở','Ren rút chốt, giữ cả hai lời khai và trao bản sao cho Yui. Bên kia không còn tiếng yêu cầu mở cửa. Nhưng trên khăn, tên ấy vẫn chưa thuộc về bất kỳ hồ sơ nào.\n\nHẾT GIAI ĐOẠN CHƠI 0.2\nMở đầu và Hanako đã khép lại. Hai chương đầu có 16 bản đồ. Sáu chương còn lại chưa được triển khai. Bạn có thể trở lại phố, đọc sổ hoặc xem phân cảnh kết thúc thử trong Tư liệu.','play')
         else:
             attempts=self.state.attempts.get(pid,0)
-            self.notify('Chưa khớp dữ kiện. H để xem gợi ý.'+(' F để bỏ qua câu đố này.' if attempts>=3 else ''))
+            self.notify('Cần đủ ghi chép và thao tác đúng. H xem gợi ý.'+(' F để bỏ qua câu đố này.' if attempts>=3 else ''))
     def toggle_fullscreen(self,persist=True):
         if persist:self.settings['fullscreen']=not self.settings['fullscreen']
         self.display=pygame.display.set_mode((0,0),pygame.FULLSCREEN) if self.settings['fullscreen'] else pygame.display.set_mode((960,540),pygame.RESIZABLE)
@@ -130,7 +138,7 @@ class Game:
         elif i==2:self.mode='chapters'
         elif i==3:self.mode='settings';self.return_mode='menu'
         elif i==4:self.mode='extras'
-        elif i==5:self.show_message('Thực hiện & nguồn tài nguyên','Wasurerareta Koe — Những Tiếng Nói Bị Lãng Quên\nBản sản xuất độc lập 0.1. Mã và nội dung gốc: Apache-2.0. Mỹ thuật pixel và âm thanh được tạo bằng công cụ trong repo. Font Noto: SIL OFL.\n\nAlpix: canvas đã mở, không xuất ảnh. AutoSprite: nhân vật đã tạo, chưa có ảnh trả về; không dùng làm sprite runtime.\n\nTsukimori, Kiroku và các sự kiện đều hư cấu. Không coi truyện Inunaki trong game là lịch sử.','menu')
+        elif i==5:self.show_message('Thực hiện & nguồn tài nguyên','Wasurerareta Koe — Những Tiếng Nói Bị Lãng Quên\nBản sản xuất độc lập 0.2. Mã và nội dung gốc: Apache-2.0. Mỹ thuật pixel và âm thanh được tạo bằng công cụ trong repo. Font Noto: SIL OFL.\n\nAlpix: canvas đã mở, không xuất ảnh. AutoSprite: nhân vật đã tạo, chưa có ảnh trả về; không dùng làm sprite runtime.\n\nTsukimori, Kiroku và các sự kiện đều hư cấu. Không coi truyện Inunaki trong game là lịch sử.','menu')
         else:self.running=False
     def handle(self,event):
         if event.type==pygame.QUIT:self.running=False;return
@@ -144,7 +152,7 @@ class Game:
             if self.mode=='menu' and 31<=mx<=228 and 136<=my<242:
                 self.selection=min(6,int((my-136)//15));self.choose_menu()
             elif self.mode=='dialogue' and self.choice:
-                if 138<=mx<=448 and 187<=my<226:self.finish_dialogue('listen' if my<207 else 'repeat')
+                if 138<=mx<=448 and 187<=my<242:self.finish_dialogue('listen' if my<214 else 'repeat')
             elif self.mode=='dialogue':self.next_dialogue()
             elif self.mode=='play':self.interact()
             return
@@ -164,7 +172,7 @@ class Game:
                 if 'P006' not in self.state.solved:self.notify('Cần nghe cassette trước khi nối lại ký ức.')
                 else:
                     self.state.memory=not self.state.memory
-                    if self.state.room=='school' and self.state.memory:self.state.flags['school_memory_seen']=True
+                    if self.state.room=='school_store' and self.state.memory:self.state.flags['school_memory_seen']=True
                     self.notify('Ký ức • biển phòng và sắc cảnh đã thay đổi.' if self.state.memory else 'Hiện tại')
             elif key==pygame.K_F5:self.mode='save';self.selection=0
             elif key==pygame.K_F9:self.mode='load';self.return_mode='play';self.selection=0
@@ -195,9 +203,14 @@ class Game:
         elif self.mode=='puzzle':
             if key==pygame.K_ESCAPE:self.mode='play'
             elif key==pygame.K_RETURN:self.answer()
-            elif key==pygame.K_BACKSPACE:self.input=self.input[:-1]
-            elif key==pygame.K_h:self.state.hints[self.pid]=min(3,self.state.hints.get(self.pid,0)+1)
+            elif key==pygame.K_h:
+                self.state.hints[self.pid]=min(3,self.state.hints.get(self.pid,0)+1);self.hint_visible=True
+            elif key==pygame.K_TAB:self.hint_visible=False
             elif key==pygame.K_f and self.state.attempts.get(self.pid,0)>=3:self.answer(assisted=True)
+            elif self.mechanism is not None and self.mechanism.answer() is not None:
+                self.mechanism.key(name)
+                if self.mechanism.kind=='rhythm' and name=='space':self.audio.play('knock')
+            elif key==pygame.K_BACKSPACE:self.input=self.input[:-1]
             elif event.unicode and event.unicode.isprintable() and len(self.input)<48:self.input+=event.unicode
         elif self.mode=='message':
             lines=self.render.wrap(self.message_text,402,11);pages=max(1,(len(lines)+8)//9)
@@ -234,7 +247,7 @@ class Game:
             elif key==pygame.K_1:self.start()
             elif key==pygame.K_2:
                 if self.load() and 'P008' in self.state.solved:
-                    self.state.room='school';self.state.x=64;self.state.y=280;self.world.follow(1)
+                    self.state.room='school';self.state.x=64;self.state.y=272;self.world.follow(1)
                 else:self.mode='chapters';self.notify('Chương I mở sau khi hoàn thành phần mở đầu.')
         elif self.mode=='extras':
             if key==pygame.K_ESCAPE:self.mode='menu'
@@ -245,10 +258,14 @@ class Game:
             elif key in (pygame.K_RETURN,pygame.K_RIGHT):self.ending_page=min(7,self.ending_page+1)
             elif key==pygame.K_LEFT:self.ending_page=max(0,self.ending_page-1)
     def finish_dialogue(self,choice):
-        self.progress.relationship(self.dialogue['character'],choice);self.mode='play';self.save()
-        self.notify('Ren quyết định ngồi lại.' if choice=='listen' else 'Lời kể đã rời khỏi cuộc trò chuyện. Người khác có thể kể khác đi.')
+        complete(self.content,self.state,self.dialogue['id'],choice)
+        self.mode='play';self.save()
+        self.notify('Ren ghi rõ điều đã nghe.' if choice=='listen' else 'Ấn tượng này có thể đổi cách người khác kể lại chuyện.')
     def update(self,dt):
         self.time+=dt;self.toast_time=max(0,self.toast_time-dt)
+        if self.mode!='puzzle':self.knock_queue=[]
+        while self.knock_queue and self.knock_queue[0]<=self.time:
+            self.audio.play('knock');self.knock_queue.pop(0)
         if self.mode=='play':
             self.state.play_seconds+=dt;self.scare=max(0,self.scare-dt)
             self.world.update(dt,pygame.key.get_pressed());self.state.fear=max(0,self.state.fear-dt*1.2)
@@ -272,17 +289,23 @@ class Game:
         elif self.mode=='pause':self.draw_list('Trang đang mở',['Tiếp tục','Lưu vào trang nhật ký','Đọc trang đã lưu','Thiết lập','Về hành lang','Thoát'],self.selection)
         elif self.mode=='dialogue':r.dialogue(self.dialogue,self.dialogue_pages,self.dialogue_index,self.choice)
         elif self.mode=='puzzle':
-            p=self.content.puzzles[self.pid];r.panel(p['title'],'Enter Kiểm tra • H Gợi ý • Esc Khép lại')
-            y=r.paragraph(p['prompt'],32,74,414,11,lineheight=15)
-            for clue in p['clues']:
-                y=r.paragraph('— '+clue,32,y+5,414,10,'muted',14)
-            # Main puzzle copy is bounded by schema validation; hint replaces lower copy.
+            p=self.content.puzzles[self.pid];r.panel(p['title'],'Enter Kiểm tra • H Gợi ý • Tab Ẩn gợi ý • Esc Trở lại')
+            r.paragraph(p['prompt'],32,73,414,10,lineheight=14,maxlines=3)
+            model=self.mechanism
+            if model and model.answer() is not None:
+                r.mechanism(model)
+            else:
+                pygame.draw.rect(self.surface,C['blue'],(30,132,420,28))
+                r.text('Trả lời: '+self.input,36,138,'paper',12)
+            known=sum(bool(self.state.flags.get('observed_'+oid)) for oid in p.get('observations',[]))
+            r.text(f'Ghi chép đã xem: {known}/2 • J trong thế giới để đọc lại.',32,192,'muted',9)
             n=self.state.hints.get(self.pid,0)
-            if n:
-                pygame.draw.rect(self.surface,C['ink'],(29,159,422,51));r.paragraph(f'Gợi ý {n}/3: '+p['hints'][n-1],32,161,414,10,'amber',14,maxlines=3)
-            pygame.draw.rect(self.surface,C['blue'],(30,212,420,22))
-            r.text('Trả lời: '+self.input+('▏' if int(self.time*2)%2 else ''),36,215,'paper',11)
-            if self.state.attempts.get(self.pid,0)>=3:r.text('F: bỏ qua sau ba lần sai — không mất tuyến truyện',32,237,'amber',9)
+            if n and self.hint_visible:
+                pygame.draw.rect(self.surface,C['ink'],(29,73,422,113))
+                r.paragraph(f'Gợi ý {n}/3: '+p['hints'][n-1],32,81,414,11,'amber',16)
+                rooms=[self.content.maps[self.content.observations[o]['room']]['name'] for o in p.get('observations',[]) if not self.state.flags.get('observed_'+o)]
+                r.paragraph('Tìm ghi chép: '+', '.join(rooms),32,144,414,9,'muted',13,maxlines=3)
+            if self.state.attempts.get(self.pid,0)>=3:r.text('F: bỏ qua có ghi nhận • không khóa truyện',32,221,'amber',10)
         elif self.mode=='message':
             r.panel(self.message_title,'Enter Trang tiếp / Khép lại • Esc Khép lại')
             lines=r.wrap(self.message_text,402,11);last=max(0,(len(lines)-1)//9);self.page=min(self.page,last)
@@ -294,7 +317,7 @@ class Game:
                 y=73+i*21
                 if start+i==self.selection:pygame.draw.rect(self.surface,C['blue'],(29,y-1,420,21))
                 r.text(label,37,y,'amber' if start+i==self.selection else 'paper',10)
-            r.text('* Chưa có lồng tiếng / cảnh máu trong bản 0.1. UI: tiếng Việt.',31,226,'muted',9)
+            r.text('* Chưa có lồng tiếng / cảnh máu trong bản 0.2. UI: tiếng Việt.',31,226,'muted',9)
             if self.remap:r.text('Nhấn phím mới • Esc Hủy',31,239,'amber',9)
         elif self.mode in ('save','load'):
             r.panel('Lưu nhật ký' if self.mode=='save' else 'Đọc nhật ký','1 / 2 / 3 Chọn trang • A Tự động (đọc) • Esc Quay lại')
@@ -389,6 +412,6 @@ class Game:
             if frames and count>=frames:break
         if screenshot:pygame.image.save(self.surface,str(screenshot))
         # Saving on exit preserves in-progress attempts, memory, and exact location.
-        if self.state.solved:self.save()
+        if self.state.solved or self.state.heard or self.state.flags:self.save()
         self.store.save_settings(self.settings)
         pygame.quit()

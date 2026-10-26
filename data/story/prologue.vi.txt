@@ -1,0 +1,228 @@
+@arrival|hiroshi|station||D_hiroshi|1,7
+Hiroshi: Cậu cứ đứng dưới mái này. Chỗ ngoài kia nhìn khô nhưng nước từ tấm biển sẽ đổ xuống khi có tàu đi qua. Tôi đã học chuyện đó bằng một cái mũ mới.
+Ren: Cháu không chắc mẹ đã biết chuyến cháu đi. Điện thoại trong bệnh viện có người nghe, rồi bảo cháu đợi. Sau đó đường dây ngắt.
+Hiroshi: Sachiko không thích làm phiền người đang làm việc. Nhưng hôm qua bà ấy hỏi tôi chuyến từ Tokyo có đổi sân không. Hỏi xong còn bảo chỉ hỏi hộ người khác.
+Ren: Công ty cháu đang giảm ca. Cháu xin ba ngày mà trưởng nhóm nhìn lịch rất lâu. Cháu cứ nghĩ nếu giải quyết giấy nhà nhanh thì mọi chuyện sẽ gọn.
+Hiroshi: Gọn là từ người giữ sổ rất thích. Người đợi ở sân ga thì ít dùng hơn. Có khi họ chỉ muốn người kia ngồi xuống, để mình biết người đó thực sự đã tới.
+Ren: Bác vẫn nhớ tất cả người xuống ga sao?
+Hiroshi: Không. Có người tôi quên tên, có người tôi nhớ một chiếc ô mà quên mặt. Tôi giữ thông báo cũ để khi nhớ sai còn có thứ sửa mình. Già rồi, đáng sợ nhất là người khác ngại sửa mình.
+Ren: Vậy cháu nên làm gì trước?
+Hiroshi: Qua sảnh, xem lại mép vé. Cửa hai vẫn dành cho khách; cửa một nhận hàng, không cần chen vào đó cùng chiếc túi nhỏ này.
+Ren: Còn tấm bảng 16:10 ở sân? Nếu tuyến đã ngừng từ năm tám tám thì nhìn nó thôi không thể biết hôm ấy có chuyến tàu hay không.
+
+@phone|hiroshi|station_hall|P001|D_arrival|2,6
+Ren: Cháu đã gọi được vào bệnh viện. Người nghe bảo mẹ đang ngủ. Cháu không biết nên thấy nhẹ người hay lo hơn.
+Hiroshi: Cứ đến đó. Ngủ được trong một chỗ lạ cũng là một việc tốt. Đừng đánh thức bà ấy chỉ để hỏi vì sao bà không nói mình mệt từ trước.
+Ren: Bác nói giống như biết cháu sẽ hỏi gì.
+Hiroshi: Tôi từng hỏi vợ như vậy. Bà ấy bảo nếu đã biết nên nghỉ lúc nào thì còn cần người nhà để làm gì. Tôi đã nhớ câu trả lời ấy lâu hơn điều bác sĩ dặn hôm đó.
+Ren: Cái điện thoại này vẫn nhận đồng mười yên. Hồi nhỏ cháu thường giữ một đồng trong giày, sợ làm rơi túi.
+Hiroshi: Tôi nhớ những đứa gọi về để nghe cha mẹ nói rồi không dám trả lời. Cứ im đến lúc hết tiền. Có những cuộc gọi không phải để báo một tin gì cả.
+Ren: Cháu làm việc với những địa chỉ cả ngày. Lúc nghe giọng mẹ qua dây điện thoại, cháu lại không biết mình nên nói câu đầu thế nào.
+Hiroshi: Thử hỏi bà ấy có muốn con mang gì tới. Một câu nhỏ, để người bên kia có quyền trả lời bằng điều họ thực sự cần.
+Ren: Y tá đã dặn đừng mua thuốc thêm. Cháu sẽ hỏi về trà, không tự chọn thứ có vẻ đắt và gọi đó là chăm sóc.
+Hiroshi: Nếu tiện thì lấy pin ở tiệm Sakurai. Máy ghi âm cũ dùng hai viên giống nhau; đừng lấy hai loại khác rồi trách chiếc máy đã già.
+
+@waiting|natsuki|hospital_lobby|P001||28,2
+Natsuki: Anh là Ren? Tôi nhận ra chiếc túi. Mẹ anh nói con bà đi đâu cũng mang cái túi như thể có thể chuyển cả căn nhà bằng vai.
+Ren: Trong này gần như toàn giấy. Cháu chưa biết bệnh viện cần giấy nào nên mang cả những thứ có lẽ không cần.
+Natsuki: Tốt, nhưng anh đặt nó xuống ghế bên cạnh trước đã. Quầy tiếp nhận không phải nơi anh phải trả lời hết mọi chuyện trong một phút.
+Ren: Tôi có phải ký vào chỗ người thân không? Mẹ bảo bà đã ký rồi nhưng lúc nào bà cũng nói mình làm được.
+Natsuki: Tôi sẽ chỉ đúng tờ cần ký. Tờ xanh là đơn hiện tại; tờ trắng đã được thay. Chúng ta giữ bản cũ để đối chiếu, không dùng cả hai vì sợ bỏ sót một thứ.
+Ren: Có người từng dùng nhầm sao?
+Natsuki: Có người đọc rất kỹ từng tờ, nhưng không biết hai tờ thuộc hai thời điểm khác nhau. Cẩn thận không chỉ là đọc nhiều. Đôi khi là hỏi ai viết, khi nào và để làm gì.
+Ren: Tôi thường chỉ kiểm địa chỉ và chữ ký ở cuối phiếu. Nếu hai thứ khớp thì xe đi.
+Natsuki: Ở đây chữ ký còn cần đúng người. Hồ sơ cùng tên chưa chắc cùng ngày sinh; tôi phải kiểm điều đó trước khi nói anh có thể xem phần nào.
+Ren: Tôi hiểu. Trước mắt, đơn mới không yêu cầu thêm thuốc; mẹ muốn một thức uống không caffeine. Tôi sẽ mang câu hỏi ấy vào phòng thay cho cả xấp giấy này.
+
+@chair|sachiko|hospital|P001|D_sachiko|4,62
+Sachiko: Chiếc ghế gần cửa không bị hỏng đâu. Nó thấp hơn chiếc còn lại một chút, mẹ thấy ngồi thế dễ buộc giày hơn.
+Ren: Mẹ chưa cần buộc giày để về ngay. Con không đến để kéo mẹ ra trước khi bác sĩ cho phép.
+Sachiko: Mẹ biết. Mẹ chỉ không thích phải gọi người khác giúp một việc mình đã làm mấy chục năm. Có những ngày cái dây giày dài hơn bình thường.
+Ren: Con có thể ngồi ở đây đến giờ ăn. Công ty không biết chính xác chuyến tàu nào con đi, nên ít nhất chiều nay họ chưa gọi được con quay lại.
+Sachiko: Đừng nói dối họ chỉ để mẹ thấy mình quan trọng. Con làm thế rồi mẹ sẽ phải giả vờ không nhận ra. Chúng ta đã giỏi trò ấy đủ lâu rồi.
+Ren: Vậy con nói thật. Con lo mất ca, nhưng nếu không về thì lúc đứng ở kho con cũng chẳng làm được việc gì.
+Sachiko: Thế thì ngồi xuống. Mẹ không có câu trả lời giúp con giữ được cả tiền lẫn mọi người. Mẹ chỉ có chỗ để con ngồi một lúc.
+Ren: Ở nhà còn gì ăn không? Con có thể mua thêm trên đường.
+Sachiko: Bát con úp trên kệ, nồi cơm còn phần ăn tối. Mẹ vẫn để hai bộ đũa vì khi nấu mẹ chưa chắc tối ấy ai sẽ ghé.
+Ren: Còn giấy nhà mẹ nói? Nếu có chữ ký thay cho bố, con sẽ hỏi mẹ trước khi tự coi nó là chữ ký của người có tên trên mẫu.
+
+@permissions|natsuki|hospital_lobby|P002|D_waiting|28,80
+Ren: Tôi đã nói chuyện với mẹ. Bà không muốn tôi xem một phần giấy nằm ở ngăn đầu giường. Tôi thấy mình hơi giận, rồi lại ngại vì đã giận.
+Natsuki: Cảm giác ấy có thể có. Nhưng nó không biến giấy của bà thành giấy của anh. Anh có thể hỏi mình cần biết điều gì để giúp, thay vì xin xem tất cả.
+Ren: Nếu bà giấu một chuyện nghiêm trọng thì sao?
+Natsuki: Chúng tôi có trách nhiệm giải thích những điều cần cho việc chăm sóc và những trường hợp phải xử lý khẩn. Còn chuyện riêng không tự mất đi chỉ vì người ta đang nằm trên một chiếc giường bệnh.
+Ren: Tôi đã từng nghĩ thân nhau thì không nên có phần nào phải xin phép.
+Natsuki: Tôi có một người chị. Chị ấy biết tôi ghét thuốc đắng, biết tôi khóc khi xem phim ngớ ngẩn, nhưng vẫn hỏi trước khi mở thư của tôi. Tôi thấy điều đó gần gũi hơn việc chị đoán hộ mình sẽ đồng ý.
+Ren: Vậy lần này tôi giữ phần mẹ đã đưa, còn phần khác để bà tự nói khi muốn.
+Natsuki: Nếu sau này anh phải so hai hồ sơ cùng tên, hãy xem ngày sinh và người lập. Việc gộp nhầm không được sửa bằng cách công khai cả hai đời người.
+Ren: Và nếu chỉ cần chứng minh một chữ ký đã bị sửa, tôi có thể trích phần liên quan, che bệnh án đi. Sự thật không buộc phải mang tất cả thông tin riêng ra ngoài.
+
+@counter|tomoko|shop|P002|D_tomoko|3,43
+Tomoko: Cậu đứng chỗ ấy làm con mèo tưởng mình sắp được mua cá. Nó phân biệt người đang nhìn kệ và người đang tính tiền rất giỏi.
+Ren: Cháu đang tính xem một trăm yên còn lại có đủ gọi điện về công ty không. Nếu mua cơm, trà, pin rồi thì chắc không nên mua thêm gì.
+Tomoko: Đúng. Tiệm này không có nghĩa vụ làm mọi khách hết sạch tiền. Có thứ để mai mua cũng được, kể cả thứ đang được tôi xếp rất đẹp ngoài cửa.
+Ren: Hồi nhỏ cháu tưởng cô chỉ cần đứng sau quầy, biết hết giá và không bao giờ phải lo mình thiếu tiền.
+Tomoko: Hồi nhỏ tôi cũng nghĩ thế về người bán hàng. Sau đó tôi trở thành người bán hàng và biết cái ngăn kéo có thể kêu rất to dù bên trong chẳng có bao nhiêu.
+Ren: Chú Yuji có giúp cô kiểm hàng không?
+Tomoko: Chú ấy sửa cái kệ lệch, đổi bóng đèn và đôi khi đếm một thùng hàng hai lần. Tôi cần chú ấy ngồi ăn trưa hơn là nghĩ ra một việc mới để chứng minh mình hữu ích.
+Ren: Cháu sẽ không hỏi chú ấy chuyện ca làm trước mặt khách.
+Tomoko: Cơm một trăm hai mươi, trà tám mươi, pin hai trăm; ba món là bốn trăm. Giá trên nhãn đã có thuế, không cộng thêm lần nữa.
+Ren: Cô nói chú ấy vẫn ra ngoài mỗi sáng nhưng không gọi đó là đi xưởng. Nếu muốn biết, cháu phải hỏi chú ấy, không lấy giờ rời nhà làm bằng chứng còn công việc.
+
+@delivery|tomoko|shop|P003|D_counter|5,25
+Ren: Cô có cần cháu bê thùng giấy này vào kho không? Cháu làm chuyện ấy cả ngày nên biết cách bê mà không làm đổ.
+Tomoko: Nếu cậu thực sự muốn giúp thì đặt cạnh cửa, đừng vào kho. Trong đó có một cái ván sàn đang cong. Hôm nay chưa sửa được.
+Ren: Cháu tưởng làm giúp thì càng làm hết càng tốt.
+Tomoko: Tôi đang tập nói rõ mình cần đến đâu. Ngày trước người ta sửa hộ giá hàng, rồi tiện tay xếp lại cả những thứ tôi chỉ mình mới biết đặt ở đâu. Sáng hôm sau tôi bán nhầm đường thành muối.
+Ren: Mẹ cũng vừa bảo con đừng quyết định thay. Cháu về chưa lâu mà đã bị nhắc cùng một chuyện hai lần.
+Tomoko: Thế là thị trấn còn nhất trí được chuyện gì đó. Nhưng đừng vì hai người nói giống mà nghĩ chúng tôi đã họp để dặn cậu.
+Ren: Tờ báo ngoài cửa có ghi ngày trường đóng. Cháu nên tin báo hay tin radio?
+Tomoko: Radio đã đọc lời cải chính: thứ Tư. Tôi giữ cả tờ báo in thứ Sáu để người mua biết vì sao hôm trước mình nhớ khác.
+Ren: Nếu cháu kể lại mà bỏ phần cải chính, người nghe sẽ chỉ biết cô đã nói sai. Lời đồn có thể đúng từng chữ nhưng sai cả câu chuyện vì bị mất đoạn phía sau.
+
+@umbrella|yui|town|P003||8,17
+Yui: Cậu lại đứng ở mép mái hiên. Hồi nhỏ cậu nghĩ chỗ ấy là ranh giới giữa đang đi và đang đợi, nên nếu ai hỏi thì cậu vẫn có thể nói mình không trễ.
+Ren: Tớ không nhớ đã nghĩ ra một cách biện hộ cầu kỳ như thế. Có lẽ cậu nhớ thêm cho câu chuyện vui hơn.
+Yui: Có thể. Tớ đang cố tập nói có thể trước những chuyện chỉ một mình mình nhớ. Nó làm câu nói kém chắc chắn, nhưng người nghe còn chỗ đặt ký ức của họ vào.
+Ren: Tớ định đến nhà rồi gọi cho cậu. Mẹ nằm viện, tớ chưa biết có cần đem giấy gì tới nữa không.
+Yui: Cậu không phải đến từng nhà để chứng minh đã về. Ăn tối trước đi. Chiều nay tớ còn một lượt thư, sau đó sẽ đi ngang đường nhà cậu.
+Ren: Cậu vẫn làm ở bưu điện? Tớ thấy nét gấp trên bao thư giống cách cậu gấp bài tập.
+Yui: Nhiều người gấp kiểu ấy. Cậu có thể hỏi tớ, nhưng đừng coi một nếp giấy là chữ ký. Tớ sẽ không bắt cậu phải đoán điều mình có thể nói.
+Ren: Trong ảnh lớp có một mép kính phản chiếu mà tớ chưa nhìn kỹ. Đếm những người đứng trước máy có thể chưa phải đếm hết người có mặt.
+Yui: Nếu cần tới trường, cổng Đông vẫn dùng chìa đồng có hai vết khía. Nhưng tớ không muốn chìa khóa thành lý do khiến cậu bỏ qua bữa tối đầu tiên ở nhà.
+
+@shoes|ren|home_entry|P002||4,77
+Ren: Đôi dép của mẹ vẫn quay mũi vào trong. Hồi nhỏ mình cứ đá nó sang một bên để chạy lên nhà, rồi tối mẹ lại đặt thẳng.
+Ren: Không có ai đứng đây hỏi sao về muộn. Mình đã tưởng điều ấy sẽ làm căn nhà dễ thở hơn. Nhưng im lặng không giống khoảng riêng mà hồi nhỏ mình đòi.
+Ren: Cái túi giấy nằm trên ghế đã mềm vì bị cầm nhiều lần. Nếu mẹ định đưa mình xem, bà ấy có thể đã đem ra cửa rồi lại mang vào. Mình không biết, và chưa cần biến nó thành một câu chuyện chắc chắn.
+Ren: Mình có thể cất giày, treo áo và hâm cơm. Những việc ấy không trả lời được lá thư, nhưng ít nhất khi mẹ về bà không phải cúi nhặt chiếc áo ướt của con.
+Ren: Bố từng đóng cái móc này thấp xuống vì mình với không tới. Sau khi bố đi, không ai nâng nó lên lại. Một đồ vật còn hữu ích không chứng minh người làm ra nó đã ở lại đủ lâu.
+Ren: Bát sứt vẫn úp trên kệ bếp; tối nay mình sẽ dùng nó chứ không chỉ nhìn hai bộ đũa rồi đoán mẹ đang chờ ai.
+Ren: Phong bì chuyển tiền được xếp theo ngày, nhưng khoảng trống giữa chúng không kể được lý do bố rời nhà. Muốn biết chuyện ấy phải đọc lời người còn sống, không bắt đồ vật nói thay.
+
+@meal|ren|home|P004|D_ren|4,87
+Ren: Cơm hâm lại hơi khô. Mẹ sẽ bảo thêm một chút nước, còn mình hồi nhỏ luôn đổ quá tay rồi nói đó là cháo.
+Ren: Mình nhớ tiếng mẹ cười chuyện ấy. Nó không phải một manh mối. Có những điều nên được nhớ vì đã làm một buổi tối dễ chịu, không cần chứng minh thêm việc gì.
+Ren: Hôm nay mình mới ngồi xuống đã nghĩ tới giấy nhà, như thể nếu làm xong thì có thể trở về ca làm mà không mắc nợ ai một cuộc trò chuyện.
+Ren: Mẹ không hỏi mình kiếm được bao nhiêu. Bà hỏi áo có khô không. Mình nghe thành một lời trách vì đã chuẩn bị sẵn để phòng thủ trước điều bà chưa nói.
+Ren: Ngày mai có lẽ mình sẽ mang theo một cái khăn khô. Không phải một món quà khiến bà phải khen con đã biết quan tâm, chỉ là cái khăn để lau tóc sau lúc tắm.
+Ren: Cái bát của mình và phần cơm mẹ để lại đủ cho một bữa thật. Không cần cất chúng như thể người trong nhà đã biến thành người chỉ được nhắc đến.
+Ren: Trong những băng gia đình, mẹ thường gọi một câu rất quen rồi đợi mình đáp. Sau này nếu nghe lại, phải phân biệt câu nói với việc bà đang chờ câu trả lời nào.
+
+@television|ren|home_entry|P004|D_shoes|5,44
+Ren: Cái nút âm lượng của TV vẫn phải xoay hơi quá rồi xoay lại. Không phải mọi thứ cũ đều hoạt động theo hướng mình tưởng.
+Ren: Người đọc bản tin nói xin cải chính rồi cúi xuống tờ giấy. Họ chỉ mất vài giây, nhưng người đã tắt máy trước đó sẽ mang một ngày khác trong đầu.
+Ren: Ở kho hàng cũng có những tờ báo thay ca viết đè giờ mới. Ai nhìn tờ trước sẽ bị nói đi muộn, dù lúc nhận giấy họ chưa thể biết người quản lý đổi ý.
+Ren: Mình đã từng trách một người cùng ca vì chuyện ấy. Sau đó thấy tờ họ giữ, mình vẫn không xin lỗi ngay. Tìm ra nguyên nhân dễ hơn quay lại nói mình đã sai.
+Ren: Điện thoại công ty có lẽ vẫn còn người nghe. Mình có thể gọi, nói rõ ngày về thay vì để cả nhóm tự đoán mình định nghỉ bao lâu.
+Ren: TV vừa nhắc cổng trường đóng thứ Tư, không phải thứ Sáu trên báo. Mình sẽ ghi cả việc đã có lời cải chính, để sau này nhớ sai còn biết vì sao.
+Ren: Bản tin ở ga nói giờ nhận điện báo. Nếu một ngày cần so với tai nạn thật, không được tự coi giờ nhận tin là giờ mọi việc xảy ra.
+
+@batteries|tomoko|shop|P005|D_delivery|6,12
+Tomoko: Cậu quay lại nhanh thế. Đừng nói hai viên pin đã hết sau một buổi tối, kẻo tôi phải gọi nhà phân phối trong lúc họ đang ăn cơm.
+Ren: Chưa ạ. Cháu muốn hỏi cách mở nắp máy. Cháu sợ kéo mạnh sẽ làm gãy cái chốt nhựa.
+Tomoko: Đẩy theo mũi tên rồi mới nâng. Người thiết kế có ghi hướng, chỉ là chữ chìm cùng màu nhựa. Họ chắc chưa thử đọc nó dưới bóng đèn nhà cậu.
+Ren: Cháu vẫn muốn bật máy ngay, dù chưa biết sẽ nghe gì. Cảm giác đó làm cháu khó chịu. Cháu chỉ định về vì mẹ.
+Tomoko: Cậu có thể để nó đến ngày mai. Một cái máy không được quyền quyết định giờ ngủ của cậu chỉ vì nó khiến cậu tò mò.
+Ren: Cháu sẽ mở nắp trước, còn nghe hay không thì tự chọn. Cô vẫn sửa radio cho khách sao?
+Tomoko: Tôi thay pin và chỉ đường tới Fumiko. Phải biết mình làm được đến đâu; nếu không một người bán trà cũng sẽ bắt đầu nói như thợ điện.
+Ren: Lò xo chạm đáy phẳng có dấu âm, vậy đầu tròn không phải phía nào cũng đặt được. Cháu sẽ nhìn ký hiệu trước khi lắp.
+Tomoko: Và màu vỏ dây không tự cho biết nó nối vào đâu. Thiết bị cũ còn sơ đồ thì giữ sơ đồ; đừng dùng sự quen tay thay cho việc đọc nhãn cổng.
+
+@call_home|sachiko|hospital|P004|D_chair|6,72
+Sachiko: Con đã ăn chưa? Đừng nói ăn rồi nếu ý con là đã mua một thứ có thể ăn.
+Ren: Con hâm cơm, dùng bát sứt. Nó vẫn không làm cơm ngon hơn như mẹ từng hứa.
+Sachiko: Mẹ chỉ nói cơm không bị rơi qua chỗ sứt. Con thường nhớ lời mẹ hào phóng hơn lúc mẹ thực sự nói.
+Ren: Con tìm thấy máy cassette. Trong thư có một cuộn băng. Con nghĩ nó có giọng mình, nhưng mới nghe một đoạn chưa rõ.
+Sachiko: Nếu muốn so giọng, mẹ còn băng sinh nhật trong hộp có dây buộc. Nhưng con không cần bật cả hai trong cùng một đêm.
+Ren: Mẹ không hỏi lá thư viết gì sao?
+Sachiko: Có. Mẹ muốn hỏi nhiều chuyện. Mẹ cũng vừa bảo con đừng mở ngăn giấy của mẹ, nên mẹ đang tập chờ một câu trả lời không đến theo giờ mình muốn.
+Ren: Con sẽ kể khi nghe xong. Hoặc khi biết mình chưa muốn nghe hết. Con không muốn bịa rằng máy hỏng để khỏi phải nói thật.
+Sachiko: Máy dùng hai viên pin; lò xo ở phía âm. Nếu nó chạy chậm, đừng vội kết luận giọng người trong băng đã thay đổi.
+Ren: Băng sinh nhật là một bản độc lập để so cách con phát âm. Một cuộn băng có vẻ giống con chưa đủ chứng minh toàn bộ câu chuyện trong nó đều đúng.
+
+@after_tape|ren|home|P006|D_meal|13,21
+Ren: Mình đã nghe hết. Tiếng gõ cuối băng không phải ba nhịp đều như lúc người ta kể chuyện trong lớp.
+Ren: Bàn tay mình đang giữ nút dừng, dù băng đã hết. Có lẽ cơ thể chỉ phản ứng với một âm thanh quen. Điều đó không có nghĩa mình đã hiểu âm thanh ấy.
+Ren: Mình có thể gọi Yui. Không cần mở đầu bằng câu cậu có tin ma không. Có thể nói mình vừa nghe một thứ khiến mình sợ và không muốn ngồi với nó một mình.
+Ren: Lúc nhỏ mình từng cười một bạn vì bạn không dám đi cuối hành lang. Mình không nhớ đã xin lỗi chưa. Nhớ được cảm giác xấu hổ không cho mình quyền tự viết thêm một lời xin lỗi vào quá khứ.
+Ren: Băng không nói ai còn ở bên kia. Câu đừng mở cửa có thể là lời đe dọa, cũng có thể là một người đang cố bảo vệ điều mình hiểu sai. Mình sẽ không chọn cách hiểu khiến bản thân dễ chịu nhất chỉ vì nó có thể đúng.
+Ren: Có hai tiếng liền, một khoảng nghỉ, rồi một tiếng. Nếu nghe lại ở trường, mình sẽ tìm cả khoảng nghỉ, không chỉ đếm tổng số tiếng gõ.
+Ren: Trong băng có tiếng kim loại gần tay cầm. Trước khi hỏi ai khóa cửa, mình cần xem chốt nằm ở phía nào và ai có thể chạm vào nó.
+
+@return_platform|hiroshi|station|P006|D_arrival|7,37
+Ren: Cháu nghe lại băng rồi. Có tiếng tàu ở phía sau, nhưng nếu chuyến 16:10 đã hủy thì cháu chưa biết âm thanh ấy tới từ đâu.
+Hiroshi: Đừng bắt một tiếng tàu mang cả bảng giờ. Chuyến hàng cũng có bánh xe, loa nhà ga cũng có thể phát lại một đoạn cũ. Cháu đang hỏi một câu đúng, nhưng có nhiều việc phải kiểm tra trước khi trả lời.
+Ren: Bác có thấy phiền khi cháu trở lại vì chuyện cũ không?
+Hiroshi: Phiền thì có, nhất là khi tôi sắp khóa phòng. Nhưng phiền không có nghĩa là không nên làm. Cậu đợi tôi buộc nốt cái bạt này, rồi chúng ta xem bảng cùng nhau.
+Ren: Cháu từng nghĩ người lớn nhớ mọi thứ rõ hơn vì họ đã sống lâu hơn.
+Hiroshi: Tôi có nhiều thứ để nhầm với nhau hơn. Những ngày cùng mưa, cùng giờ trực, cùng một đứa trẻ chạy qua cửa. Nếu không có sổ, tôi có thể nối chúng thành một ngày rất thuyết phục.
+Ren: Vậy thông báo ngừng chuyến phải được đọc cùng ngày áp dụng. Một vé in sẵn không chứng minh tàu chạy vào ngày người kể nói.
+Hiroshi: Và khi đổi lịch mùa, phải kiểm ngày chuyển. Hai bảng giờ khác nhau không nhất thiết có một bảng nói dối; chúng có thể cùng đúng ở hai thời điểm.
+
+@route_east|yui|town|P007|D_umbrella|8,15
+Yui: Tớ đã hết lượt thư. Nếu cậu vẫn muốn đi thì chúng ta có thể tới cổng trường trước, chưa cần vào bên trong.
+Ren: Tớ không biết muốn đi hay chỉ muốn thôi nghĩ đến chuyện có nên đi. Hai cảm giác ấy gần nhau quá.
+Yui: Vậy đừng quyết định cả đêm trong một câu. Đến cổng, nhìn khóa, rồi cậu có thể quay về. Tớ sẽ không kể rằng cậu hèn vì đã làm thế.
+Ren: Cậu đã giữ chìa này ở đâu? Trên bao thư có một nếp gấp mà tớ nhận ra.
+Yui: Tớ có phần trong chuyện lá thư. Tớ sẽ nói rõ phần mình biết khi chúng ta có giấy để đối chiếu. Tớ không muốn thêm một lời giải thích bằng trí nhớ rồi bắt cậu tin chỉ vì chúng ta từng thân.
+Ren: Tớ đang giận. Nhưng tớ cũng thấy nhẹ vì ít nhất có người thật để hỏi.
+Yui: Cậu có thể giận trong lúc đi cạnh tớ. Chúng ta không cần hòa giải xong mới được đứng dưới cùng một chiếc ô.
+Ren: Chìa đồng có hai vết khía, bản đồ chỉ cổng phía Đông. Tớ sẽ dùng đúng chỗ đó, không thử nó vào mọi ổ rồi coi cái mở được là số phận.
+Yui: Nếu cô Kaori nhắc chuyến 16:10, đem theo bản thông báo ngừng chuyến. Cậu có thể nhớ đúng người nhưng ghép họ vào một giờ mình chỉ thấy trên giấy.
+
+@tea_return|sachiko|hospital|P007|D_call_home|19,87
+Sachiko: Trà hôm nay nhạt hơn. Con pha ít hạt hay lấy nhiều nước?
+Ren: Con đổ nhiều nước. Con muốn có thêm một cốc để ngồi cùng mẹ, rồi mới nhớ có thể pha hai lần.
+Sachiko: Mẹ thích lý do đó hơn một cốc pha đúng. Nhưng lần sau con vẫn nên pha hai lần, để lý do tốt không làm trà dở mãi.
+Ren: Tối nay con có thể ghé trường. Yui biết người giữ khóa. Con muốn xem vài giấy tờ trong ảnh.
+Sachiko: Con nói cho mẹ biết khi về tới nhà. Không cần kể hết ngay. Một cuộc gọi chỉ để nói mình đã về cũng là một cuộc gọi có ích.
+Ren: Hồi nhỏ mẹ thường hỏi con một câu rất quen khi con im lặng. Con đã nghĩ mẹ không nghe được nên cứ hỏi lại.
+Sachiko: Có lúc mẹ thực sự không nghe. Có lúc mẹ cần nghe con đáp, để biết người đang đứng trước mặt vẫn chịu nói với mình. Mẹ không nhớ lúc nào thuộc loại nào.
+Ren: Con sẽ không ép mẹ chọn một cách giải thích cho mọi lần hỏi ấy.
+Sachiko: Chiếc khăn trong ảnh có đường thêu khác màu ở chữ cuối. Người thêu tiếp thường kéo chỉ mạnh hơn, nhưng chỉ một nét chỉ chưa cho mẹ biết tên người đó.
+Ren: Vậy câu hỏi quen của mẹ và đường chỉ trên khăn đều cần người biết bối cảnh. Con sẽ giữ chúng, không biến chúng thành một lời giải chỉ vì chúng làm con xúc động.
+
+@before_gate|yui|town|P008|D_route_east|9,13
+Yui: Cậu buộc lại dây giày đi. Sân trường mọc rêu ở mép bậc, không cần có ma mới ngã được.
+Ren: Tớ tưởng sau lá thư ấy cậu sẽ nói gì huyền bí hơn.
+Yui: Tớ đang cố bớt huyền bí. Tớ có thể giữ ô, chỉ đường và thừa nhận việc mình đã làm. Những việc ấy khó hơn đứng dưới mưa nói một câu khiến cậu mất ngủ.
+Ren: Tớ chưa biết sẽ hỏi cô Kaori thế nào. Nếu vào đó chỉ để nói cô đã làm gì chúng em thì có lẽ cô sẽ không nghe nữa.
+Yui: Hỏi một tờ giấy trước. Ai viết nó, tại sao có hai màu mực. Đừng bắt một cuộc gặp đầu tiên chịu toàn bộ mười năm mình không nói chuyện.
+Ren: Cậu có vào cùng không?
+Yui: Tớ đợi ở sân rồi mang bản sao đến khi cậu cần. Có người đã hẹn tớ ở ngoài. Tớ không muốn tất cả kéo vào đứng quanh một chiếc bàn và đợi cậu nhớ ra điều đúng.
+Ren: Lịch trong sảnh vẫn đánh ngày Hai là hai, Ba là ba, Tư là bốn. Nếu có ký hiệu môn học, tớ sẽ đọc thứ tự từ giấy, không đoán theo số phòng.
+Yui: Và nếu nghe tiếng gõ, đừng làm theo lời đồn ba tiếng ngay. Băng có một khoảng nghỉ. Tiếng đáp biết nghỉ khác tiếng vang chỉ lặp lại điều vừa phát.
+
+@late_shop|tomoko|shop|P008|D_batteries|34,50
+Tomoko: Tôi sắp kéo cửa. Cậu cần mua gì thì nói trước, đừng đợi tôi tắt đèn rồi mới nhớ ở nhà hết nước rửa bát.
+Ren: Cháu không mua gì. Cháu chỉ muốn báo mẹ đã uống trà. Cô không cần giữ thêm phần cho bà tối nay.
+Tomoko: Cảm ơn cậu đã quay lại vì một chuyện không phải hóa đơn. Có những ngày nghe khách nói món mình bán đã tới đúng người là đủ để bớt thấy quầy hàng chỉ là chỗ đổi tiền.
+Ren: Nếu cháu tìm được giấy trong trường, có lẽ cháu sẽ phải nhờ người khác đọc. Cháu sợ nói không rõ rồi làm một người bị nhắc tên theo cách họ không muốn.
+Tomoko: Bắt đầu bằng việc hỏi người đó muốn chuyện gì được biết. Ai cũng thích nói mình đứng về sự thật, nhưng ít người hỏi người đang đứng cạnh sự thật có muốn lên mặt báo không.
+Ren: Có người làm điều tốt mà vẫn bị kể chỉ bằng một việc họ từng làm sai.
+Tomoko: Cũng có người dùng một việc tốt để chặn mọi câu hỏi về việc sai. Cậu phải kể đủ hành động và bối cảnh, đừng đổi một nhãn xấu lấy một nhãn đẹp rồi thôi.
+Ren: Nếu có ảnh riêng và lời chứng, cháu sẽ xin phép từng phần, không hiểu một chữ đồng ý là quyền dùng tất cả.
+Tomoko: Còn nếu gặp chuyện ở ga, nhớ hỏi về người đã giúp. Một bản tin chỉ giữ tai nạn mà bỏ việc cứu người có thể đúng từng số giờ và vẫn thiếu một con người.
+@dry_towel|sachiko|hospital|P005|D_call_home|4,28
+Sachiko: Cái khăn này mẹ chưa từng thấy. Con mua mới à? Mẹ bảo đừng mua gì đắt chỉ để tới bệnh viện trông có quà.
+Ren: Nó ở ngăn tủ nhà mình. Con mang tới vì thấy khăn ở đây lâu khô. Nếu mẹ không cần thì con đem về, không cần khen con đã biết nghĩ.
+Sachiko: Mẹ cần. Và mẹ có thể nói cảm ơn mà không biến nó thành một bài kiểm tra con đã lớn đến đâu. Hai mẹ con mình đúng là giỏi làm những chuyện nhỏ thành một cuộc thi kín.
+Ren: Con cứ muốn mang tới đúng thứ để khỏi phải hỏi. Như vậy nếu mẹ không vui thì ít nhất con có thể bảo mình đã làm đủ việc.
+Sachiko: Mẹ cũng thế. Nấu đủ cơm, giặt đủ áo, rồi nghĩ con không còn lý do gì phải buồn. Có những hôm mẹ hỏi con đã ăn chưa vì không biết bắt đầu câu khác thế nào.
+Ren: Mẹ có thể hỏi con hôm nay thấy thế nào. Con có thể trả lời không biết, thay vì kiếm một chuyện vui cho mẹ nghe.
+Sachiko: Vậy hôm nay con thấy thế nào?
+Ren: Con thấy vừa muốn ở lại vừa muốn về thật nhanh. Con không nghĩ một trong hai cảm giác làm điều còn lại thành nói dối.
+Sachiko: Tối nay cứ dùng phần cơm trong nồi và bát trên kệ. Đừng cất mọi thứ đi để căn nhà trông gọn như chưa ai cần ăn nữa.
+Ren: Còn hai tờ đơn thuốc, con sẽ giữ bản cũ để đối chiếu nhưng chỉ theo bản hiện tại. Giống nhau ở tên không làm chúng thành cùng một lần kê.
+
+@hall_bench|hiroshi|station_hall|P007|D_phone|37,47
+Hiroshi: Cậu ngồi chỗ ghế giữa đi. Hai đầu lạnh hơn vì gió từ cửa lùa vào. Tôi vẫn thấy người mới tới chọn đầu ghế để dễ rời đi.
+Ren: Cháu cũng chọn vì thế. Cháu luôn nghĩ ngồi xuống hẳn sẽ làm người khác tưởng mình có nhiều thời gian.
+Hiroshi: Người ta có thể hỏi cậu ở được bao lâu. Cậu không cần dùng tư thế ngồi để báo trước một chuyện chưa ai hỏi.
+Ren: Bác có muốn nghỉ việc không? Lúc cháu đi, bác đã làm ở đây lâu rồi. Bây giờ mọi thứ ít chuyến hơn mà bác vẫn trực.
+Hiroshi: Có ngày muốn, có ngày không. Tôi thích nhìn người trở về, nhưng không thích lúc mình giữ một cái ghế chỉ vì sợ không còn ai cần mình. Con Ai nói bản đồ nó vẽ phải có chỗ để ngồi nghỉ. Bản của tôi chỉ có chỗ để đi.
+Ren: Cháu thường vẽ đường giao hàng như vậy. Không tính người cầm hàng có lúc phải dừng lại.
+Hiroshi: Vậy tối nay cậu đã có một điều mới đem về Tokyo, dù những chuyện trong băng chưa được giải thích. Một điều nhỏ cũng có thể đáng mang theo.
+Ren: Khi so lịch mùa đông, cháu sẽ tìm ngày bắt đầu áp dụng. Hai giờ khác nhau có thể đúng ở hai ngày, không nhất thiết phải xóa một bảng.
+Hiroshi: Và nếu hỏi ai đã trực hôm đó, xem cả sổ đổi ca. Tên trên lịch dự kiến không chắc là người đã đứng ở sân ga khi tàu tới.

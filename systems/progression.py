@@ -14,6 +14,9 @@ class Progression:
         if not self.available(pid):
             return False
         normalized = str(answer).strip().casefold()
+        if not assisted and (any(not s.flags.get('observed_'+o) for o in p.get('observations',[])) or (pid=='P014' and not s.flags.get('school_memory_seen'))):
+            s.attempts[pid]=s.attempts.get(pid,0)+1
+            return False
         if normalized not in [str(a).casefold() for a in p['answers']] and not assisted:
             s.attempts[pid] = s.attempts.get(pid, 0) + 1
             s.fear = min(70, s.fear + 3)

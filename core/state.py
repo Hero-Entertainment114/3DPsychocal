@@ -2,10 +2,10 @@ from dataclasses import dataclass, field, asdict
 
 @dataclass
 class State:
-    schema: int = 1
+    schema: int = 2
     room: str = 'station'
-    x: float = 96.0
-    y: float = 172.0
+    x: float = 64.0
+    y: float = 272.0
     solved: list = field(default_factory=list)
     inventory: list = field(default_factory=lambda: ['Ảnh lớp bị cào', 'Chìa khóa đồng', 'Cassette chưa nghe'])
     evidence: list = field(default_factory=list)

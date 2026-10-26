@@ -2,7 +2,7 @@
 
 ## Asset runtime
 
-Toàn bộ PNG ngoài font-rendered logo được vẽ bằng Pillow primitives ở độ phân giải pixel thấp trong `tools/generate_assets.py`. Không dùng ảnh đầu vào, tài nguyên từ game khác, hoặc bộ lọc biến ảnh thành pixel. WAV được tổng hợp bằng sin/noise có seed trong cùng công cụ. Code, dữ liệu tự viết, PNG và WAV phát hành Apache-2.0 cùng repo. Manifest liệt kê path/bytes/SHA-256 cho 77 tệp.
+Toàn bộ PNG ngoài font-rendered logo được vẽ bằng Pillow primitives ở độ phân giải pixel thấp trong `tools/generate_assets.py` và `tools/build_world_art.py`. Không dùng ảnh đầu vào, tài nguyên từ game khác, hoặc bộ lọc biến ảnh thành pixel. WAV được tổng hợp bằng sin/noise có seed trong cùng công cụ. Code, dữ liệu tự viết, PNG và WAV phát hành Apache-2.0 cùng repo. Manifest liệt kê path/bytes/SHA-256 cho 88 tệp.
 
 Font `NotoSans-Regular.ttf` và chữ logo từ Noto Serif CJK là Google Noto, SIL Open Font License. Giấy phép và thông báo gốc được giữ trong `assets/fonts/NOTO-LICENSE.txt` và `NOTO-CJK-LICENSE.txt`. Font license độc lập với Apache-2.0 của dự án.
 

@@ -3,7 +3,7 @@
     "id": "P001",
     "title": "Tờ vé bị ướt",
     "chapter": 0,
-    "room": "station",
+    "room": "station_hall",
     "status": "playable",
     "category": "observation",
     "mechanic": "code",
@@ -29,8 +29,13 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      224,
-      112
+      144,
+      160
+    ],
+    "visible_requires": [],
+    "observations": [
+      "P001a",
+      "P001b"
     ]
   },
   {
@@ -66,17 +71,24 @@
     "cross_links": [],
     "position": [
       192,
-      128
+      168
+    ],
+    "visible_requires": [
+      "P001"
+    ],
+    "observations": [
+      "P002a",
+      "P002b"
     ]
   },
   {
     "id": "P003",
     "title": "Giỏ hàng ba ngày",
     "chapter": 0,
-    "room": "town",
+    "room": "shop",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "basket",
     "prompt": "Tổng tiền: cơm 120, trà 80, pin 200 yên. Nhập tổng.",
     "clues": [
       "Giá đã gồm thuế trên hóa đơn.",
@@ -101,10 +113,17 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      256,
-      128
+      320,
+      192
     ],
-    "item": "Pin mới"
+    "item": "Pin mới",
+    "visible_requires": [
+      "P002"
+    ],
+    "observations": [
+      "P003a",
+      "P003b"
+    ]
   },
   {
     "id": "P004",
@@ -138,15 +157,22 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      176,
-      144
+      144,
+      240
+    ],
+    "visible_requires": [
+      "P003"
+    ],
+    "observations": [
+      "P004a",
+      "P004b"
     ]
   },
   {
     "id": "P005",
     "title": "Tin lúc sáu giờ",
     "chapter": 0,
-    "room": "home",
+    "room": "home_entry",
     "status": "playable",
     "category": "observation",
     "mechanic": "choice",
@@ -175,7 +201,14 @@
     "cross_links": [],
     "position": [
       288,
-      128
+      168
+    ],
+    "visible_requires": [
+      "P004"
+    ],
+    "observations": [
+      "P005a",
+      "P005b"
     ]
   },
   {
@@ -185,7 +218,7 @@
     "room": "home",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "battery",
     "prompt": "Mặt nào của pin chạm lò xo? Nhập dấu + hoặc -.",
     "clues": [
       "Nắp máy in dấu âm cạnh lò xo.",
@@ -212,9 +245,17 @@
     "cross_links": [],
     "position": [
       352,
-      144
+      224
     ],
-    "item": "Máy cassette"
+    "item": "Máy cassette",
+    "visible_requires": [
+      "P003",
+      "P004"
+    ],
+    "observations": [
+      "P006a",
+      "P006b"
+    ]
   },
   {
     "id": "P007",
@@ -250,7 +291,15 @@
     "cross_links": [],
     "position": [
       352,
-      112
+      184
+    ],
+    "visible_requires": [
+      "P001",
+      "P005"
+    ],
+    "observations": [
+      "P007a",
+      "P007b"
     ]
   },
   {
@@ -286,18 +335,26 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      416,
-      128
+      464,
+      224
+    ],
+    "visible_requires": [
+      "P006",
+      "P007"
+    ],
+    "observations": [
+      "P008a",
+      "P008b"
     ]
   },
   {
     "id": "P009",
     "title": "Lịch học bị xé",
     "chapter": 1,
-    "room": "school",
+    "room": "school_vestibule",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "sequence",
     "prompt": "Ngày trực của lớp: thứ Hai học Nhạc, thứ Ba học Vẽ, thứ Tư học Toán. Mã N-V-T là gì?",
     "clues": [
       "Lịch ghi Hai = 2, Ba = 3, Tư = 4.",
@@ -327,15 +384,22 @@
       }
     ],
     "position": [
-      96,
-      112
+      192,
+      176
+    ],
+    "visible_requires": [
+      "P008"
+    ],
+    "observations": [
+      "P009a",
+      "P009b"
     ]
   },
   {
     "id": "P010",
     "title": "Ngăn bàn còn sạch",
     "chapter": 1,
-    "room": "school",
+    "room": "school_class",
     "status": "playable",
     "category": "observation",
     "mechanic": "choice",
@@ -363,15 +427,22 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      160,
-      112
+      448,
+      176
+    ],
+    "visible_requires": [
+      "P009"
+    ],
+    "observations": [
+      "P010a",
+      "P010b"
     ]
   },
   {
     "id": "P011",
     "title": "Hai nét chữ",
     "chapter": 1,
-    "room": "school",
+    "room": "school_teachers",
     "status": "playable",
     "category": "inference",
     "mechanic": "choice",
@@ -399,18 +470,25 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      224,
-      112
+      256,
+      208
+    ],
+    "visible_requires": [
+      "P010"
+    ],
+    "observations": [
+      "P011a",
+      "P011b"
     ]
   },
   {
     "id": "P012",
     "title": "Dây loa cũ",
     "chapter": 1,
-    "room": "school",
+    "room": "school_broadcast",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "wires",
     "prompt": "Nối đầu dây: xanh tới 1, trắng tới 2, đỏ tới 3. Máy yêu cầu trắng-xanh-đỏ.",
     "clues": [
       "Sơ đồ nối còn nguyên ở dưới loa.",
@@ -435,18 +513,25 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      288,
-      112
+      224,
+      192
+    ],
+    "visible_requires": [
+      "P009"
+    ],
+    "observations": [
+      "P012a",
+      "P012b"
     ]
   },
   {
     "id": "P013",
     "title": "Nhịp gõ bên kia",
     "chapter": 1,
-    "room": "school",
+    "room": "school_corridor",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "rhythm",
     "prompt": "Nghe hoặc đọc phụ đề: cộc cộc — nghỉ — cộc. Nhập số tiếng hai cụm.",
     "clues": [
       "Băng của Ren có hai nhịp, rồi một nhịp.",
@@ -478,14 +563,22 @@
     ],
     "position": [
       352,
-      112
+      192
+    ],
+    "visible_requires": [
+      "P006",
+      "P012"
+    ],
+    "observations": [
+      "P013a",
+      "P013b"
     ]
   },
   {
     "id": "P014",
     "title": "Hành lang thứ hai",
     "chapter": 1,
-    "room": "school",
+    "room": "school_store",
     "status": "playable",
     "category": "memory_choice",
     "mechanic": "choice",
@@ -514,15 +607,23 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      416,
-      112
+      256,
+      224
+    ],
+    "visible_requires": [
+      "P011",
+      "P013"
+    ],
+    "observations": [
+      "P014a",
+      "P014b"
     ]
   },
   {
     "id": "P015",
     "title": "Nhân chứng chuyến cuối",
     "chapter": 1,
-    "room": "school",
+    "room": "school_teachers",
     "status": "playable",
     "category": "cross_chapter",
     "mechanic": "choice",
@@ -556,18 +657,26 @@
       }
     ],
     "position": [
-      96,
-      192
+      352,
+      240
+    ],
+    "visible_requires": [
+      "P007",
+      "P014"
+    ],
+    "observations": [
+      "P015a",
+      "P015b"
     ]
   },
   {
     "id": "P016",
     "title": "Tủ hồ sơ 4:44",
     "chapter": 1,
-    "room": "school",
+    "room": "school_store",
     "status": "playable",
     "category": "logic",
-    "mechanic": "code",
+    "mechanic": "dials",
     "prompt": "Khóa tủ cần ba chữ số đồng hồ hành lang.",
     "clues": [
       "Kim giờ chỉ 4; hai ô phút đều là 4.",
@@ -592,18 +701,25 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      160,
-      192
+      304,
+      288
+    ],
+    "visible_requires": [
+      "P015"
+    ],
+    "observations": [
+      "P016a",
+      "P016b"
     ]
   },
   {
     "id": "P017",
     "title": "Ảnh thiếu một người",
     "chapter": 1,
-    "room": "school",
+    "room": "school_class",
     "status": "playable",
     "category": "inference",
-    "mechanic": "code",
+    "mechanic": "count",
     "prompt": "Sáu bóng trên kính, năm tên dưới ảnh. Có bao nhiêu người không được ghi tên?",
     "clues": [
       "Đếm bóng cả người cầm máy trong phản chiếu.",
@@ -629,15 +745,23 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      224,
-      192
+      448,
+      256
+    ],
+    "visible_requires": [
+      "P010",
+      "P016"
+    ],
+    "observations": [
+      "P017a",
+      "P017b"
     ]
   },
   {
     "id": "P018",
     "title": "Lời khai của đứa trẻ",
     "chapter": 1,
-    "room": "school",
+    "room": "school_teachers",
     "status": "playable",
     "category": "memory_choice",
     "mechanic": "choice",
@@ -667,15 +791,23 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      288,
-      192
+      160,
+      256
+    ],
+    "visible_requires": [
+      "P011",
+      "P017"
+    ],
+    "observations": [
+      "P018a",
+      "P018b"
     ]
   },
   {
     "id": "P019",
     "title": "Tên trên chiếc khăn",
     "chapter": 1,
-    "room": "school",
+    "room": "school_store",
     "status": "playable",
     "category": "inference",
     "mechanic": "code",
@@ -703,19 +835,26 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      352,
-      192
+      160,
+      288
     ],
-    "item": "Khăn thêu MIO"
+    "item": "Khăn thêu MIO",
+    "visible_requires": [
+      "P018"
+    ],
+    "observations": [
+      "P019a",
+      "P019b"
+    ]
   },
   {
     "id": "P020",
     "title": "Cánh cửa có tiếng thở",
     "chapter": 1,
-    "room": "school",
+    "room": "school_toilets",
     "status": "playable",
     "category": "memory_choice",
-    "mechanic": "choice",
+    "mechanic": "doors",
     "prompt": "Ba cửa: 1 Tiếng loa đều; 2 Im lặng; 3 Hơi thở lệch nhịp. Chọn cửa thật.",
     "clues": [
       "Sơ đồ loa không đi đến buồng số ba.",
@@ -741,18 +880,26 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      416,
+      224,
       192
+    ],
+    "visible_requires": [
+      "P013",
+      "P019"
+    ],
+    "observations": [
+      "P020a",
+      "P020b"
     ]
   },
   {
     "id": "P021",
     "title": "Không khóa nữa",
     "chapter": 1,
-    "room": "school",
+    "room": "school_toilets",
     "status": "playable",
     "category": "memory_choice",
-    "mechanic": "choice",
+    "mechanic": "latch",
     "prompt": "Ren nhớ đã giữ chốt vì sợ bạn bị phát hiện. Hành động nào bây giờ? 1 Giữ chốt; 2 Rút chốt rồi lùi lại.",
     "clues": [
       "Vết xước nằm ngoài cánh cửa, không ở trong.",
@@ -778,8 +925,16 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      480,
-      192
+      352,
+      232
+    ],
+    "visible_requires": [
+      "P014",
+      "P020"
+    ],
+    "observations": [
+      "P021a",
+      "P021b"
     ]
   },
   {
@@ -815,8 +970,16 @@
     "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
     "cross_links": [],
     "position": [
-      544,
-      192
+      432,
+      240
+    ],
+    "visible_requires": [
+      "P018",
+      "P021"
+    ],
+    "observations": [
+      "P022a",
+      "P022b"
     ]
   },
   {

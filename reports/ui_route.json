@@ -1,140 +1,161 @@
 {
   "result": "pass",
-  "kind": "scripted UI route, not human playtest",
-  "duration_seconds": 1.929,
-  "completed": 22,
+  "kind": "scripted full input route, not human playtest",
+  "duration_seconds": 4.254,
+  "completed_puzzles": 22,
+  "visited_maps": [
+    "home",
+    "home_entry",
+    "hospital",
+    "hospital_lobby",
+    "school",
+    "school_broadcast",
+    "school_class",
+    "school_corridor",
+    "school_store",
+    "school_teachers",
+    "school_toilets",
+    "school_vestibule",
+    "shop",
+    "station",
+    "station_hall",
+    "town"
+  ],
+  "observations": 44,
+  "conversations_heard": 59,
+  "spoken_units_reachable": 13777,
   "route": [
     {
       "puzzle": "P001",
-      "walk_steps": 34,
-      "mode": "play",
-      "room": "station"
+      "room": "station_hall",
+      "approach_steps": 35,
+      "heard_so_far": 2
     },
     {
       "puzzle": "P002",
-      "walk_steps": 43,
-      "mode": "play",
-      "room": "hospital"
+      "room": "hospital",
+      "approach_steps": 45,
+      "heard_so_far": 7
     },
     {
       "puzzle": "P003",
-      "walk_steps": 26,
-      "mode": "play",
-      "room": "town"
+      "room": "shop",
+      "approach_steps": 57,
+      "heard_so_far": 11
     },
     {
       "puzzle": "P004",
-      "walk_steps": 35,
-      "mode": "play",
-      "room": "home"
+      "room": "home",
+      "approach_steps": 15,
+      "heard_so_far": 15
     },
     {
       "puzzle": "P005",
-      "walk_steps": 32,
-      "mode": "play",
-      "room": "home"
+      "room": "home_entry",
+      "approach_steps": 69,
+      "heard_so_far": 18
     },
     {
       "puzzle": "P006",
-      "walk_steps": 13,
-      "mode": "play",
-      "room": "home"
+      "room": "home",
+      "approach_steps": 64,
+      "heard_so_far": 20
     },
     {
       "puzzle": "P007",
-      "walk_steps": 45,
-      "mode": "play",
-      "room": "station"
+      "room": "station",
+      "approach_steps": 81,
+      "heard_so_far": 22
     },
     {
       "puzzle": "P008",
-      "walk_steps": 99,
-      "mode": "play",
-      "room": "town"
+      "room": "town",
+      "approach_steps": 108,
+      "heard_so_far": 25
     },
     {
       "puzzle": "P009",
-      "walk_steps": 37,
-      "mode": "play",
-      "room": "school"
+      "room": "school_vestibule",
+      "approach_steps": 10,
+      "heard_so_far": 29
     },
     {
       "puzzle": "P010",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_class",
+      "approach_steps": 107,
+      "heard_so_far": 31
     },
     {
       "puzzle": "P011",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_teachers",
+      "approach_steps": 52,
+      "heard_so_far": 32
     },
     {
       "puzzle": "P012",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_broadcast",
+      "approach_steps": 9,
+      "heard_so_far": 35
     },
     {
       "puzzle": "P013",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_corridor",
+      "approach_steps": 79,
+      "heard_so_far": 37
     },
     {
       "puzzle": "P014",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_store",
+      "approach_steps": 47,
+      "heard_so_far": 39
     },
     {
       "puzzle": "P015",
-      "walk_steps": 74,
-      "mode": "play",
-      "room": "school"
+      "room": "school_teachers",
+      "approach_steps": 67,
+      "heard_so_far": 40
     },
     {
       "puzzle": "P016",
-      "walk_steps": 6,
-      "mode": "play",
-      "room": "school"
+      "room": "school_store",
+      "approach_steps": 68,
+      "heard_so_far": 42
     },
     {
       "puzzle": "P017",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_class",
+      "approach_steps": 96,
+      "heard_so_far": 43
     },
     {
       "puzzle": "P018",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_teachers",
+      "approach_steps": 16,
+      "heard_so_far": 45
     },
     {
       "puzzle": "P019",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_store",
+      "approach_steps": 66,
+      "heard_so_far": 47
     },
     {
       "puzzle": "P020",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_toilets",
+      "approach_steps": 47,
+      "heard_so_far": 50
     },
     {
       "puzzle": "P021",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school_toilets",
+      "approach_steps": 24,
+      "heard_so_far": 53
     },
     {
       "puzzle": "P022",
-      "walk_steps": 16,
-      "mode": "play",
-      "room": "school"
+      "room": "school",
+      "approach_steps": 73,
+      "heard_so_far": 57
     }
   ]
 }

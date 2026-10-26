@@ -1,9 +1,9 @@
 {
   "errors": [],
   "warnings": [
-    "9–12 hour runtime is NOT verified.",
+    "45,000–50,000 spoken units are the full-project target; see narrative_audit.json.",
     "78 puzzles are design-only; do not count them as playable.",
-    "17 dialogues are written but not placed in playable scenes.",
+    "Future-chapter written dialogue is not included in playable word totals.",
     "Five endings are previews, not earned campaign endings.",
     "English/Japanese localization, later maps and production sound are pending."
   ],
@@ -11,15 +11,16 @@
     "puzzles_designed": 100,
     "puzzles_playable": 22,
     "characters": 25,
-    "characters_on_stage": 8,
-    "dialogues_written": 25,
-    "dialogues_playable": 8,
-    "dialogue_whitespace_units": 3914,
-    "playable_dialogue_whitespace_units": 1246,
+    "characters_on_stage": 11,
+    "dialogues_written": 76,
+    "dialogues_playable": 59,
+    "dialogue_whitespace_units": 16586,
+    "playable_dialogue_whitespace_units": 13777,
     "cross_chapter_edges_designed": 125,
-    "maps_playable": 5,
+    "maps_playable": 16,
+    "chapters_playable": 2,
     "ending_previews": 5,
-    "assets": 77
+    "assets": 88
   },
   "categories": {
     "observation": 16,

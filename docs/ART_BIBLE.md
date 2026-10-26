@@ -20,3 +20,9 @@ Menu hành lang phối cảnh, cửa cuối, bảng thông báo, cửa sổ mưa
 WAV đều là tổng hợp có seed, không sample bên ngoài. Rain/hum nền, step/knock/chime, bảy motif (sáu chương thiếu nốt cuối + Sixth Name đủ sáu nốt). Âm lượng nhỏ, đầu/cuối fade. Cần nghe kiểm trên loa/tai nghe trước production; headless test chỉ xác nhận tệp phát được, không xác nhận chất lượng nghe.
 
 Tái tạo: `python tools/generate_assets.py`. Cần Pillow, font Latin đã đóng gói. Muốn tái tạo Japanese logo trên Linux cần NotoSerifCJK-Regular.ttc hệ thống và giấy phép tương ứng; logo có sẵn nên máy chơi không cần CJK font. Trình sinh ghi atlas và manifest SHA-256. Không tải asset khi chạy game.
+
+## Bản đồ 0.2
+
+16 ảnh gốc tương ứng 16 collision maps, vẽ bằng `tools/build_world_art.py`. Hai ga/phòng vé có đường ray, ghế, cửa soát và điện thoại; phố có mái hiên, tiệm có kệ và mèo; bệnh viện có hàng chờ, giường, bình truyền; nhà có kệ giày, CRT, bát và bếp. Trường chia sân, tủ giày, bàn học/bảng, giấy giáo viên, máy phát/reel, đồng hồ 4:44, kệ thuốc và ba buồng vệ sinh. Vật chứng hiện theo trạng thái runtime; không vẽ toàn bộ manh mối tương lai lên ảnh nền.
+
+Tất cả 16 ảnh có hash khác nhau. Điều này xác nhận tệp riêng, không thay đánh giá thẩm mỹ. Các hình screenshot trong reports là ảnh game thật, giữ giới hạn bộ sprite phát triển hiện tại.

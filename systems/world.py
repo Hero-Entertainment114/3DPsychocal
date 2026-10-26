@@ -1,13 +1,7 @@
 import math
 import pygame
 
-NPCS = {
-    'station': [('hiroshi', 140, 208)],
-    'town': [('tomoko', 224, 190), ('yui', 420, 190)],
-    'hospital': [('sachiko', 350, 220), ('natsuki', 270, 190)],
-    'home': [('ren', 128, 198)],
-    'school': [('kaori', 200, 280), ('mio', 480, 280)],
-}
+from systems.dialogue import available, choose
 
 class World:
     def __init__(self, content, state):
@@ -19,19 +13,24 @@ class World:
     @property
     def room(self): return self.content.maps[self.state.room]
     def actors(self):
-        result = []
-        for cid,x,y in NPCS[self.state.room]:
-            if cid=='mio' and 'P018' not in self.state.solved: continue
-            if cid=='yui' and self.state.phase=='night': x,y=520,200
-            if cid=='ren' and self.state.room=='home': continue
-            result.append(dict(kind='npc',id=cid,x=x,y=y,label=self.content.characters[cid]['name']))
-        return result
+        groups={}
+        for d in available(self.content,self.state,self.state.room):
+            if d['character']!='ren':groups[d['character']]=choose(self.content,self.state,self.state.room,d['character'])
+        # An actor with an unheard scene has priority; never pack a room with a cast list.
+        rows=sorted(groups.values(),key=lambda d:(d['id'] in self.state.heard,d.get('order',0)))[:2]
+        return [dict(kind='npc',id=d['character'],dialogue=d['id'],x=d['position'][0],y=d['position'][1],label=self.content.characters[d['character']]['name']) for d in rows]
     def objects(self):
         s=self.state
         rows=[]
         for p in self.content.playable:
-            if p['room'] == s.room:
+            if p['room'] == s.room and all(d in s.solved for d in p.get('visible_requires',[])):
                 x,y=p['position'];rows.append(dict(kind='puzzle',id=p['id'],x=x,y=y,label=p['title']))
+        for o in self.content.observations.values():
+            if o['room']==s.room and all(d in s.solved for d in o['requires']):
+                x,y=o['position'];rows.append(dict(kind='observation',id=o['id'],x=x,y=y,label=o['title']))
+        d=choose(self.content,s,s.room,'ren')
+        if d:
+            x,y=d['position'];rows.append(dict(kind='reflection',id=d['id'],x=x,y=y,label='Dừng lại một chút'))
         for i,p in enumerate(self.room['portals']):
             rows.append(dict(kind='portal',id=str(i),x=p['x'],y=p['y'],label=p['label']))
         return rows+self.actors()
@@ -47,7 +46,7 @@ class World:
             for tx in range(r.left//16,r.right//16+1):
                 if not 0<=tx<m['width'] or not 0<=ty<m['height'] or m['tiles'][ty][tx] in (1,3):return True
         for p in self.content.playable:
-            if p['room']==self.state.room:
+            if p['room']==self.state.room and all(d in self.state.solved for d in p.get('visible_requires',[])):
                 px,py=p['position']
                 if r.colliderect(pygame.Rect(px-12,py-12,24,12)):return True
         return False
