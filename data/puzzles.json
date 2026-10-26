@@ -1,0 +1,4266 @@
+[
+  {
+    "id": "P001",
+    "title": "Tờ vé bị ướt",
+    "chapter": 0,
+    "room": "station_hall",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "code",
+    "prompt": "Vé của Ren ghi cửa số nào? Nhập số cửa.",
+    "clues": [
+      "Mực trên vé còn rõ: CỬA 2.",
+      "Cửa 1 ghi dành riêng cho hàng hóa."
+    ],
+    "requires": [],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Mực trên vé còn rõ: CỬA 2.",
+      "Cửa 1 ghi dành riêng cho hàng hóa.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E001",
+    "resolution": "Tờ vé bị ướt: Cửa 1 ghi dành riêng cho hàng hóa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      144,
+      160
+    ],
+    "visible_requires": [],
+    "observations": [
+      "P001a",
+      "P001b"
+    ]
+  },
+  {
+    "id": "P002",
+    "title": "Đơn thuốc của mẹ",
+    "chapter": 0,
+    "room": "hospital",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "choice",
+    "prompt": "Mẹ cần túi nào? 1 Thuốc cũ; 2 Trà lúa mạch; 3 Kẹo.",
+    "clues": [
+      "Y tá dặn không tự thêm thuốc.",
+      "Mẹ muốn uống thứ không có caffeine, Tomoko có trà lúa mạch."
+    ],
+    "requires": [
+      "P001"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Y tá dặn không tự thêm thuốc.",
+      "Mẹ muốn uống thứ không có caffeine, Tomoko có trà lúa mạch.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E002",
+    "resolution": "Đơn thuốc của mẹ: Mẹ muốn uống thứ không có caffeine, Tomoko có trà lúa mạch.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      192,
+      168
+    ],
+    "visible_requires": [
+      "P001"
+    ],
+    "observations": [
+      "P002a",
+      "P002b"
+    ]
+  },
+  {
+    "id": "P003",
+    "title": "Giỏ hàng ba ngày",
+    "chapter": 0,
+    "room": "shop",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "basket",
+    "prompt": "Tổng tiền: cơm 120, trà 80, pin 200 yên. Nhập tổng.",
+    "clues": [
+      "Giá đã gồm thuế trên hóa đơn.",
+      "Ren có một tờ 500 yên; không mua thêm báo."
+    ],
+    "requires": [
+      "P002"
+    ],
+    "answers": [
+      "400"
+    ],
+    "hints": [
+      "Giá đã gồm thuế trên hóa đơn.",
+      "Ren có một tờ 500 yên; không mua thêm báo.",
+      "Đáp án hỗ trợ: 400"
+    ],
+    "reward": "E003",
+    "resolution": "Giỏ hàng ba ngày: Ren có một tờ 500 yên; không mua thêm báo.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      320,
+      192
+    ],
+    "item": "Pin mới",
+    "visible_requires": [
+      "P002"
+    ],
+    "observations": [
+      "P003a",
+      "P003b"
+    ]
+  },
+  {
+    "id": "P004",
+    "title": "Hai bộ đũa",
+    "chapter": 0,
+    "room": "home",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "choice",
+    "prompt": "Bàn đã có đũa của mẹ. Chuẩn bị cho Ren: 1 Cất cả hai; 2 Thêm một bát; 3 Đổ cơm đi.",
+    "clues": [
+      "Sachiko nhắn: ăn phần trong nồi trước.",
+      "Chiếc bát thứ hai sạch, còn úp trên kệ."
+    ],
+    "requires": [
+      "P003"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Sachiko nhắn: ăn phần trong nồi trước.",
+      "Chiếc bát thứ hai sạch, còn úp trên kệ.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E004",
+    "resolution": "Hai bộ đũa: Chiếc bát thứ hai sạch, còn úp trên kệ.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      144,
+      240
+    ],
+    "visible_requires": [
+      "P003"
+    ],
+    "observations": [
+      "P004a",
+      "P004b"
+    ]
+  },
+  {
+    "id": "P005",
+    "title": "Tin lúc sáu giờ",
+    "chapter": 0,
+    "room": "home_entry",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "choice",
+    "prompt": "TV nói cổng trường đóng thứ mấy? 1 Hai; 2 Tư; 3 Sáu.",
+    "clues": [
+      "Bản tin chạy chữ: đóng cổng THỨ TƯ.",
+      "Tờ báo cùng ngày in nhầm thứ Sáu; radio có lời cải chính."
+    ],
+    "requires": [
+      "P004"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Bản tin chạy chữ: đóng cổng THỨ TƯ.",
+      "Tờ báo cùng ngày in nhầm thứ Sáu; radio có lời cải chính.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E005",
+    "resolution": "Tin lúc sáu giờ: Tờ báo cùng ngày in nhầm thứ Sáu; radio có lời cải chính.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      288,
+      168
+    ],
+    "visible_requires": [
+      "P004"
+    ],
+    "observations": [
+      "P005a",
+      "P005b"
+    ]
+  },
+  {
+    "id": "P006",
+    "title": "Cuộn băng im tiếng",
+    "chapter": 0,
+    "room": "home",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "battery",
+    "prompt": "Mặt nào của pin chạm lò xo? Nhập dấu + hoặc -.",
+    "clues": [
+      "Nắp máy in dấu âm cạnh lò xo.",
+      "Hai pin cũ có vết gỉ đúng phía đáy phẳng."
+    ],
+    "requires": [
+      "P003",
+      "P004"
+    ],
+    "answers": [
+      "-"
+    ],
+    "hints": [
+      "Nắp máy in dấu âm cạnh lò xo.",
+      "Hai pin cũ có vết gỉ đúng phía đáy phẳng.",
+      "Đáp án hỗ trợ: -"
+    ],
+    "reward": "E006",
+    "resolution": "Cuộn băng im tiếng: Hai pin cũ có vết gỉ đúng phía đáy phẳng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      352,
+      224
+    ],
+    "item": "Máy cassette",
+    "visible_requires": [
+      "P003",
+      "P004"
+    ],
+    "observations": [
+      "P006a",
+      "P006b"
+    ]
+  },
+  {
+    "id": "P007",
+    "title": "Chuyến tàu bị hủy",
+    "chapter": 0,
+    "room": "station",
+    "status": "playable",
+    "category": "inference",
+    "mechanic": "choice",
+    "prompt": "So vé 16:10 và bảng thông báo. Chuyến ấy: 1 Đến muộn; 2 Đã hủy; 3 Chạy ngầm.",
+    "clues": [
+      "Thông báo tháng 10 ghi 16:10 ngừng từ 1988.",
+      "Hiroshi vẫn giữ vé mẫu, không phải vé đã soát."
+    ],
+    "requires": [
+      "P001",
+      "P005"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Thông báo tháng 10 ghi 16:10 ngừng từ 1988.",
+      "Hiroshi vẫn giữ vé mẫu, không phải vé đã soát.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E007",
+    "resolution": "Chuyến tàu bị hủy: Hiroshi vẫn giữ vé mẫu, không phải vé đã soát.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      352,
+      184
+    ],
+    "visible_requires": [
+      "P001",
+      "P005"
+    ],
+    "observations": [
+      "P007a",
+      "P007b"
+    ]
+  },
+  {
+    "id": "P008",
+    "title": "Chìa khóa đồng",
+    "chapter": 0,
+    "room": "town",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "choice",
+    "prompt": "Ổ cổng trường khắc chữ nào? 1 Kho; 2 Phía Đông; 3 Phòng y tế.",
+    "clues": [
+      "Yui chỉ lối qua sân phía Đông.",
+      "Chìa trong thư có vết khía giống ký hiệu Đông trên bản đồ."
+    ],
+    "requires": [
+      "P006",
+      "P007"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Yui chỉ lối qua sân phía Đông.",
+      "Chìa trong thư có vết khía giống ký hiệu Đông trên bản đồ.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E008",
+    "resolution": "Chìa khóa đồng: Chìa trong thư có vết khía giống ký hiệu Đông trên bản đồ.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 1,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      464,
+      224
+    ],
+    "visible_requires": [
+      "P006",
+      "P007"
+    ],
+    "observations": [
+      "P008a",
+      "P008b"
+    ]
+  },
+  {
+    "id": "P009",
+    "title": "Lịch học bị xé",
+    "chapter": 1,
+    "room": "school_vestibule",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "sequence",
+    "prompt": "Ngày trực của lớp: thứ Hai học Nhạc, thứ Ba học Vẽ, thứ Tư học Toán. Mã N-V-T là gì?",
+    "clues": [
+      "Lịch ghi Hai = 2, Ba = 3, Tư = 4.",
+      "Mảnh nhật ký gạch chân thứ tự Nhạc, Vẽ, Toán."
+    ],
+    "requires": [
+      "P008"
+    ],
+    "answers": [
+      "234"
+    ],
+    "hints": [
+      "Lịch ghi Hai = 2, Ba = 3, Tư = 4.",
+      "Mảnh nhật ký gạch chân thứ tự Nhạc, Vẽ, Toán.",
+      "Đáp án hỗ trợ: 234"
+    ],
+    "reward": "E009",
+    "resolution": "Lịch học bị xé: Mảnh nhật ký gạch chân thứ tự Nhạc, Vẽ, Toán.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P008",
+        "reason": "Dùng kết quả: Chìa khóa đồng"
+      }
+    ],
+    "position": [
+      192,
+      176
+    ],
+    "visible_requires": [
+      "P008"
+    ],
+    "observations": [
+      "P009a",
+      "P009b"
+    ]
+  },
+  {
+    "id": "P010",
+    "title": "Ngăn bàn còn sạch",
+    "chapter": 1,
+    "room": "school_class",
+    "status": "playable",
+    "category": "observation",
+    "mechanic": "choice",
+    "prompt": "Bàn nào không phủ bụi? 1 Sát bảng; 2 Cạnh cửa; 3 Dưới cửa sổ.",
+    "clues": [
+      "Vệt khăn ẩm dừng ở cửa sổ.",
+      "Yui kể có người vẫn đặt hoa ở đó mỗi tuần."
+    ],
+    "requires": [
+      "P009"
+    ],
+    "answers": [
+      "3"
+    ],
+    "hints": [
+      "Vệt khăn ẩm dừng ở cửa sổ.",
+      "Yui kể có người vẫn đặt hoa ở đó mỗi tuần.",
+      "Đáp án hỗ trợ: 3"
+    ],
+    "reward": "E010",
+    "resolution": "Ngăn bàn còn sạch: Yui kể có người vẫn đặt hoa ở đó mỗi tuần.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      448,
+      176
+    ],
+    "visible_requires": [
+      "P009"
+    ],
+    "observations": [
+      "P010a",
+      "P010b"
+    ]
+  },
+  {
+    "id": "P011",
+    "title": "Hai nét chữ",
+    "chapter": 1,
+    "room": "school_teachers",
+    "status": "playable",
+    "category": "inference",
+    "mechanic": "choice",
+    "prompt": "Chữ sửa trong học bạ do ai viết? 1 Học sinh; 2 Người lớn; 3 Không có sửa.",
+    "clues": [
+      "Dòng ban đầu bằng bút chì thấp hơn ô kẻ.",
+      "Chữ sửa dùng mực đỏ cùng vết nhòe với chữ ký giáo viên."
+    ],
+    "requires": [
+      "P010"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Dòng ban đầu bằng bút chì thấp hơn ô kẻ.",
+      "Chữ sửa dùng mực đỏ cùng vết nhòe với chữ ký giáo viên.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E011",
+    "resolution": "Hai nét chữ: Chữ sửa dùng mực đỏ cùng vết nhòe với chữ ký giáo viên.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      256,
+      208
+    ],
+    "visible_requires": [
+      "P010"
+    ],
+    "observations": [
+      "P011a",
+      "P011b"
+    ]
+  },
+  {
+    "id": "P012",
+    "title": "Dây loa cũ",
+    "chapter": 1,
+    "room": "school_broadcast",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "wires",
+    "prompt": "Nối đầu dây: xanh tới 1, trắng tới 2, đỏ tới 3. Máy yêu cầu trắng-xanh-đỏ.",
+    "clues": [
+      "Sơ đồ nối còn nguyên ở dưới loa.",
+      "Vết cháy chỉ nằm ở nút nguồn, không ở ba đầu dây."
+    ],
+    "requires": [
+      "P009"
+    ],
+    "answers": [
+      "213"
+    ],
+    "hints": [
+      "Sơ đồ nối còn nguyên ở dưới loa.",
+      "Vết cháy chỉ nằm ở nút nguồn, không ở ba đầu dây.",
+      "Đáp án hỗ trợ: 213"
+    ],
+    "reward": "E012",
+    "resolution": "Dây loa cũ: Vết cháy chỉ nằm ở nút nguồn, không ở ba đầu dây.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      224,
+      192
+    ],
+    "visible_requires": [
+      "P009"
+    ],
+    "observations": [
+      "P012a",
+      "P012b"
+    ]
+  },
+  {
+    "id": "P013",
+    "title": "Nhịp gõ bên kia",
+    "chapter": 1,
+    "room": "school_corridor",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "rhythm",
+    "prompt": "Nghe hoặc đọc phụ đề: cộc cộc — nghỉ — cộc. Nhập số tiếng hai cụm.",
+    "clues": [
+      "Băng của Ren có hai nhịp, rồi một nhịp.",
+      "Cửa thật trả lại đúng nhịp; tiếng vọng không có khoảng nghỉ."
+    ],
+    "requires": [
+      "P006",
+      "P012"
+    ],
+    "answers": [
+      "21"
+    ],
+    "hints": [
+      "Băng của Ren có hai nhịp, rồi một nhịp.",
+      "Cửa thật trả lại đúng nhịp; tiếng vọng không có khoảng nghỉ.",
+      "Đáp án hỗ trợ: 21"
+    ],
+    "reward": "E013",
+    "resolution": "Nhịp gõ bên kia: Cửa thật trả lại đúng nhịp; tiếng vọng không có khoảng nghỉ.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      }
+    ],
+    "position": [
+      352,
+      192
+    ],
+    "visible_requires": [
+      "P006",
+      "P012"
+    ],
+    "observations": [
+      "P013a",
+      "P013b"
+    ]
+  },
+  {
+    "id": "P014",
+    "title": "Hành lang thứ hai",
+    "chapter": 1,
+    "room": "school_store",
+    "status": "playable",
+    "category": "memory_choice",
+    "mechanic": "choice",
+    "prompt": "Trong ký ức, biển y tế đổi thành gì? 1 Thư viện; 2 Nhà kho; 3 Phòng nhạc.",
+    "clues": [
+      "Nhấn M ngoài bảng câu đố để xem phiên bản ký ức.",
+      "Bảng gỗ treo trước lối cuối ghi NHÀ KHO trong hồi tưởng."
+    ],
+    "requires": [
+      "P011",
+      "P013"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Nhấn M ngoài bảng câu đố để xem phiên bản ký ức.",
+      "Bảng gỗ treo trước lối cuối ghi NHÀ KHO trong hồi tưởng.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E014",
+    "resolution": "Hành lang thứ hai: Bảng gỗ treo trước lối cuối ghi NHÀ KHO trong hồi tưởng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      256,
+      224
+    ],
+    "visible_requires": [
+      "P011",
+      "P013"
+    ],
+    "observations": [
+      "P014a",
+      "P014b"
+    ]
+  },
+  {
+    "id": "P015",
+    "title": "Nhân chứng chuyến cuối",
+    "chapter": 1,
+    "room": "school_teachers",
+    "status": "playable",
+    "category": "cross_chapter",
+    "mechanic": "choice",
+    "prompt": "Kaori nói gặp cả lớp trên chuyến 16:10. Mâu thuẫn ở đâu? 1 Tên tàu; 2 Chuyến đã hủy; 3 Màu ghế.",
+    "clues": [
+      "Thông báo nhà ga vẫn còn trong sổ tay của Ren.",
+      "Lời Kaori nói là giờ in trên vé mẫu, không phải giờ soát vé."
+    ],
+    "requires": [
+      "P007",
+      "P014"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Thông báo nhà ga vẫn còn trong sổ tay của Ren.",
+      "Lời Kaori nói là giờ in trên vé mẫu, không phải giờ soát vé.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E015",
+    "resolution": "Nhân chứng chuyến cuối: Lời Kaori nói là giờ in trên vé mẫu, không phải giờ soát vé.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P007",
+        "reason": "Dùng kết quả: Chuyến tàu bị hủy"
+      }
+    ],
+    "position": [
+      352,
+      240
+    ],
+    "visible_requires": [
+      "P007",
+      "P014"
+    ],
+    "observations": [
+      "P015a",
+      "P015b"
+    ]
+  },
+  {
+    "id": "P016",
+    "title": "Tủ hồ sơ 4:44",
+    "chapter": 1,
+    "room": "school_store",
+    "status": "playable",
+    "category": "logic",
+    "mechanic": "dials",
+    "prompt": "Khóa tủ cần ba chữ số đồng hồ hành lang.",
+    "clues": [
+      "Kim giờ chỉ 4; hai ô phút đều là 4.",
+      "Tủ mang hình chiếc đồng hồ, không phải số phòng."
+    ],
+    "requires": [
+      "P015"
+    ],
+    "answers": [
+      "444"
+    ],
+    "hints": [
+      "Kim giờ chỉ 4; hai ô phút đều là 4.",
+      "Tủ mang hình chiếc đồng hồ, không phải số phòng.",
+      "Đáp án hỗ trợ: 444"
+    ],
+    "reward": "E016",
+    "resolution": "Tủ hồ sơ 4:44: Tủ mang hình chiếc đồng hồ, không phải số phòng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      304,
+      288
+    ],
+    "visible_requires": [
+      "P015"
+    ],
+    "observations": [
+      "P016a",
+      "P016b"
+    ]
+  },
+  {
+    "id": "P017",
+    "title": "Ảnh thiếu một người",
+    "chapter": 1,
+    "room": "school_class",
+    "status": "playable",
+    "category": "inference",
+    "mechanic": "count",
+    "prompt": "Sáu bóng trên kính, năm tên dưới ảnh. Có bao nhiêu người không được ghi tên?",
+    "clues": [
+      "Đếm bóng cả người cầm máy trong phản chiếu.",
+      "Danh sách có đúng năm dòng, một dòng bị dán băng trắng."
+    ],
+    "requires": [
+      "P010",
+      "P016"
+    ],
+    "answers": [
+      "1"
+    ],
+    "hints": [
+      "Đếm bóng cả người cầm máy trong phản chiếu.",
+      "Danh sách có đúng năm dòng, một dòng bị dán băng trắng.",
+      "Đáp án hỗ trợ: 1"
+    ],
+    "reward": "E017",
+    "resolution": "Ảnh thiếu một người: Danh sách có đúng năm dòng, một dòng bị dán băng trắng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      448,
+      256
+    ],
+    "visible_requires": [
+      "P010",
+      "P016"
+    ],
+    "observations": [
+      "P017a",
+      "P017b"
+    ]
+  },
+  {
+    "id": "P018",
+    "title": "Lời khai của đứa trẻ",
+    "chapter": 1,
+    "room": "school_teachers",
+    "status": "playable",
+    "category": "memory_choice",
+    "mechanic": "choice",
+    "prompt": "Bạn giữ bản nào? 1 Bản giáo viên đã sửa; 2 Giữ cả nhật ký và bản sửa để đối chiếu.",
+    "clues": [
+      "Nhật ký ghi cửa bị giữ từ bên ngoài.",
+      "Bản sửa đổi giữ cửa thành tránh cửa. Cả hai là bằng chứng."
+    ],
+    "requires": [
+      "P011",
+      "P017"
+    ],
+    "answers": [
+      "1",
+      "2"
+    ],
+    "hints": [
+      "Nhật ký ghi cửa bị giữ từ bên ngoài.",
+      "Bản sửa đổi giữ cửa thành tránh cửa. Cả hai là bằng chứng.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E018",
+    "resolution": "Lựa chọn của Ren được lưu: lời giáo viên và lời trẻ vẫn có thể đối chiếu, nhưng động cơ chưa rõ.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      160,
+      256
+    ],
+    "visible_requires": [
+      "P011",
+      "P017"
+    ],
+    "observations": [
+      "P018a",
+      "P018b"
+    ]
+  },
+  {
+    "id": "P019",
+    "title": "Tên trên chiếc khăn",
+    "chapter": 1,
+    "room": "school_store",
+    "status": "playable",
+    "category": "inference",
+    "mechanic": "code",
+    "prompt": "Khăn thêu MI_, nhãn áo viết _O. Ghép thành tên Latin ba chữ.",
+    "clues": [
+      "Chữ M và I còn nguyên trên khăn.",
+      "Nhãn áo còn chữ O cuối; không phải tên Hanako trong lời đồn."
+    ],
+    "requires": [
+      "P018"
+    ],
+    "answers": [
+      "mio"
+    ],
+    "hints": [
+      "Chữ M và I còn nguyên trên khăn.",
+      "Nhãn áo còn chữ O cuối; không phải tên Hanako trong lời đồn.",
+      "Đáp án hỗ trợ: mio"
+    ],
+    "reward": "E019",
+    "resolution": "Tên trên chiếc khăn: Nhãn áo còn chữ O cuối; không phải tên Hanako trong lời đồn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      160,
+      288
+    ],
+    "item": "Khăn thêu MIO",
+    "visible_requires": [
+      "P018"
+    ],
+    "observations": [
+      "P019a",
+      "P019b"
+    ]
+  },
+  {
+    "id": "P020",
+    "title": "Cánh cửa có tiếng thở",
+    "chapter": 1,
+    "room": "school_toilets",
+    "status": "playable",
+    "category": "memory_choice",
+    "mechanic": "doors",
+    "prompt": "Ba cửa: 1 Tiếng loa đều; 2 Im lặng; 3 Hơi thở lệch nhịp. Chọn cửa thật.",
+    "clues": [
+      "Sơ đồ loa không đi đến buồng số ba.",
+      "Hanako chỉ đáp sau khi tiếng băng dừng; âm thanh có phụ đề tương đương."
+    ],
+    "requires": [
+      "P013",
+      "P019"
+    ],
+    "answers": [
+      "3"
+    ],
+    "hints": [
+      "Sơ đồ loa không đi đến buồng số ba.",
+      "Hanako chỉ đáp sau khi tiếng băng dừng; âm thanh có phụ đề tương đương.",
+      "Đáp án hỗ trợ: 3"
+    ],
+    "reward": "E020",
+    "resolution": "Cánh cửa có tiếng thở: Hanako chỉ đáp sau khi tiếng băng dừng; âm thanh có phụ đề tương đương.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      224,
+      192
+    ],
+    "visible_requires": [
+      "P013",
+      "P019"
+    ],
+    "observations": [
+      "P020a",
+      "P020b"
+    ]
+  },
+  {
+    "id": "P021",
+    "title": "Không khóa nữa",
+    "chapter": 1,
+    "room": "school_toilets",
+    "status": "playable",
+    "category": "memory_choice",
+    "mechanic": "latch",
+    "prompt": "Ren nhớ đã giữ chốt vì sợ bạn bị phát hiện. Hành động nào bây giờ? 1 Giữ chốt; 2 Rút chốt rồi lùi lại.",
+    "clues": [
+      "Vết xước nằm ngoài cánh cửa, không ở trong.",
+      "Không ai phía bên kia nhờ Ren giữ cửa nữa."
+    ],
+    "requires": [
+      "P014",
+      "P020"
+    ],
+    "answers": [
+      "2"
+    ],
+    "hints": [
+      "Vết xước nằm ngoài cánh cửa, không ở trong.",
+      "Không ai phía bên kia nhờ Ren giữ cửa nữa.",
+      "Đáp án hỗ trợ: 2"
+    ],
+    "reward": "E021",
+    "resolution": "Không khóa nữa: Không ai phía bên kia nhờ Ren giữ cửa nữa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      352,
+      232
+    ],
+    "visible_requires": [
+      "P014",
+      "P020"
+    ],
+    "observations": [
+      "P021a",
+      "P021b"
+    ]
+  },
+  {
+    "id": "P022",
+    "title": "Gửi lại lời chứng",
+    "chapter": 1,
+    "room": "school",
+    "status": "playable",
+    "category": "inference",
+    "mechanic": "choice",
+    "prompt": "Chuyển bản sao cho ai? 1 Yui, có sự đồng ý của người liên quan; 2 Dán toàn bộ hồ sơ lên phố.",
+    "clues": [
+      "Yui hứa giữ tên trẻ em khỏi tờ báo.",
+      "Bản gốc được niêm phong; bản sao vẫn đủ chứng minh chữ đã bị sửa."
+    ],
+    "requires": [
+      "P018",
+      "P021"
+    ],
+    "answers": [
+      "1"
+    ],
+    "hints": [
+      "Yui hứa giữ tên trẻ em khỏi tờ báo.",
+      "Bản gốc được niêm phong; bản sao vẫn đủ chứng minh chữ đã bị sửa.",
+      "Đáp án hỗ trợ: 1"
+    ],
+    "reward": "E022",
+    "resolution": "Gửi lại lời chứng: Bản gốc được niêm phong; bản sao vẫn đủ chứng minh chữ đã bị sửa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": [
+      432,
+      240
+    ],
+    "visible_requires": [
+      "P018",
+      "P021"
+    ],
+    "observations": [
+      "P022a",
+      "P022b"
+    ]
+  },
+  {
+    "id": "P023",
+    "title": "Tờ báo ở phòng khám",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Dòng nào đã bị cắt khỏi bản in?",
+    "clues": [
+      "Ảnh âm bản còn mép chú thích.",
+      "Bản in thiếu tên người được phỏng vấn."
+    ],
+    "requires": [
+      "P011"
+    ],
+    "answers": [
+      "Tên người phụ nữ"
+    ],
+    "hints": [
+      "Ảnh âm bản còn mép chú thích.",
+      "Bản in thiếu tên người được phỏng vấn.",
+      "Hướng giải: Tên người phụ nữ"
+    ],
+    "reward": "E023",
+    "resolution": "Tờ báo ở phòng khám: Bản in thiếu tên người được phỏng vấn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P011",
+        "reason": "Dùng kết quả: Hai nét chữ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P024",
+    "title": "Hai tấm gương",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Hướng gương để soi nhãn sau khung.",
+    "clues": [
+      "Gương trái nhận tia từ cửa Tây.",
+      "Nhãn quay vào vách phía Bắc."
+    ],
+    "requires": [
+      "P023"
+    ],
+    "answers": [
+      "Tây-Bắc"
+    ],
+    "hints": [
+      "Gương trái nhận tia từ cửa Tây.",
+      "Nhãn quay vào vách phía Bắc.",
+      "Hướng giải: Tây-Bắc"
+    ],
+    "reward": "E024",
+    "resolution": "Hai tấm gương: Nhãn quay vào vách phía Bắc.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P025",
+    "title": "Lời đồn qua ba miệng",
+    "chapter": 2,
+    "room": "town",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Xếp các phiên bản câu hỏi theo ngày.",
+    "clues": [
+      "Tomoko nghe từ khách tối thứ Hai.",
+      "Rika chỉ đăng bài vào thứ Tư."
+    ],
+    "requires": [
+      "P005",
+      "P023"
+    ],
+    "answers": [
+      "Khách-Tomoko-báo"
+    ],
+    "hints": [
+      "Tomoko nghe từ khách tối thứ Hai.",
+      "Rika chỉ đăng bài vào thứ Tư.",
+      "Hướng giải: Khách-Tomoko-báo"
+    ],
+    "reward": "E025",
+    "resolution": "Lời đồn qua ba miệng: Rika chỉ đăng bài vào thứ Tư.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P005",
+        "reason": "Dùng kết quả: Tin lúc sáu giờ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P026",
+    "title": "Chiếc khẩu trang sạch",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Tìm đồ vật người bệnh tự chọn.",
+    "clues": [
+      "Khẩu trang không có số kho.",
+      "Hộp riêng có thư xin giữ lại màu trắng."
+    ],
+    "requires": [
+      "P024"
+    ],
+    "answers": [
+      "Khẩu trang vải"
+    ],
+    "hints": [
+      "Khẩu trang không có số kho.",
+      "Hộp riêng có thư xin giữ lại màu trắng.",
+      "Hướng giải: Khẩu trang vải"
+    ],
+    "reward": "E026",
+    "resolution": "Chiếc khẩu trang sạch: Hộp riêng có thư xin giữ lại màu trắng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P027",
+    "title": "Câu trả lời bỏ trống",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Phản hồi mà không phán xét diện mạo.",
+    "clues": [
+      "Băng ghi cô ngừng khi bị cắt lời.",
+      "Thư riêng xin được nói hết tên mình."
+    ],
+    "requires": [
+      "P018",
+      "P026"
+    ],
+    "answers": [
+      "Lắng nghe"
+    ],
+    "hints": [
+      "Băng ghi cô ngừng khi bị cắt lời.",
+      "Thư riêng xin được nói hết tên mình.",
+      "Hướng giải: Lắng nghe"
+    ],
+    "reward": "E027",
+    "resolution": "Câu trả lời bỏ trống: Thư riêng xin được nói hết tên mình.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P018",
+        "reason": "Dùng kết quả: Lời khai của đứa trẻ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P028",
+    "title": "Đơn thuốc trùng tên",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Tách hai bệnh án bị gộp.",
+    "clues": [
+      "Tuổi bệnh nhân khác 12 năm.",
+      "Địa chỉ ở hai quận khác nhau."
+    ],
+    "requires": [
+      "P002",
+      "P026"
+    ],
+    "answers": [
+      "Tách theo ngày sinh"
+    ],
+    "hints": [
+      "Tuổi bệnh nhân khác 12 năm.",
+      "Địa chỉ ở hai quận khác nhau.",
+      "Hướng giải: Tách theo ngày sinh"
+    ],
+    "reward": "E028",
+    "resolution": "Đơn thuốc trùng tên: Địa chỉ ở hai quận khác nhau.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P002",
+        "reason": "Dùng kết quả: Đơn thuốc của mẹ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P029",
+    "title": "Giao ánh sáng",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Tạo bóng có lối thoát trong phòng gương.",
+    "clues": [
+      "Đèn giữa làm kín cả hai cửa.",
+      "Đèn bên trái mở bóng lối sau rèm."
+    ],
+    "requires": [
+      "P024",
+      "P027"
+    ],
+    "answers": [
+      "Tắt đèn giữa"
+    ],
+    "hints": [
+      "Đèn giữa làm kín cả hai cửa.",
+      "Đèn bên trái mở bóng lối sau rèm.",
+      "Hướng giải: Tắt đèn giữa"
+    ],
+    "reward": "E029",
+    "resolution": "Giao ánh sáng: Đèn bên trái mở bóng lối sau rèm.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P030",
+    "title": "Lối ngõ có chuông",
+    "chapter": 2,
+    "room": "town",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Đi qua ngõ tránh bước chân thực thể.",
+    "clues": [
+      "Chuông báo lúc đèn cửa tiệm sáng.",
+      "Mái hiên gỗ không vang tiếng bước chân."
+    ],
+    "requires": [
+      "P013",
+      "P029"
+    ],
+    "answers": [
+      "Mái hiên-đợi-chuông"
+    ],
+    "hints": [
+      "Chuông báo lúc đèn cửa tiệm sáng.",
+      "Mái hiên gỗ không vang tiếng bước chân.",
+      "Hướng giải: Mái hiên-đợi-chuông"
+    ],
+    "reward": "E030",
+    "resolution": "Lối ngõ có chuông: Mái hiên gỗ không vang tiếng bước chân.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P013",
+        "reason": "Dùng kết quả: Nhịp gõ bên kia"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P031",
+    "title": "Mảnh kính không nói dối",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "So phản chiếu với ảnh báo.",
+    "clues": [
+      "Ảnh báo đảo chiều vết khâu.",
+      "Biển chữ trong ảnh cũng bị đảo."
+    ],
+    "requires": [
+      "P017",
+      "P023"
+    ],
+    "answers": [
+      "Âm bản lật"
+    ],
+    "hints": [
+      "Ảnh báo đảo chiều vết khâu.",
+      "Biển chữ trong ảnh cũng bị đảo.",
+      "Hướng giải: Âm bản lật"
+    ],
+    "reward": "E031",
+    "resolution": "Mảnh kính không nói dối: Biển chữ trong ảnh cũng bị đảo.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P017",
+        "reason": "Dùng kết quả: Ảnh thiếu một người"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P032",
+    "title": "Tên do ai đặt",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Tìm tên thật sau biệt danh.",
+    "clues": [
+      "Lá thư ký Akane.",
+      "Bệnh án khác ghi cùng ngày nhập viện."
+    ],
+    "requires": [
+      "P019",
+      "P028"
+    ],
+    "answers": [
+      "Akane"
+    ],
+    "hints": [
+      "Lá thư ký Akane.",
+      "Bệnh án khác ghi cùng ngày nhập viện.",
+      "Hướng giải: Akane"
+    ],
+    "reward": "E032",
+    "resolution": "Tên do ai đặt: Bệnh án khác ghi cùng ngày nhập viện.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P019",
+        "reason": "Dùng kết quả: Tên trên chiếc khăn"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P033",
+    "title": "Sổ chi phí thủ thuật",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Ai đã thanh toán lần khám bị giấu?",
+    "clues": [
+      "Biên nhận đóng dấu chương trình phúc lợi.",
+      "Mã quỹ trùng tập hồ sơ trường."
+    ],
+    "requires": [
+      "P016",
+      "P028"
+    ],
+    "answers": [
+      "Quỹ Kiroku"
+    ],
+    "hints": [
+      "Biên nhận đóng dấu chương trình phúc lợi.",
+      "Mã quỹ trùng tập hồ sơ trường.",
+      "Hướng giải: Quỹ Kiroku"
+    ],
+    "reward": "E033",
+    "resolution": "Sổ chi phí thủ thuật: Mã quỹ trùng tập hồ sơ trường.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P016",
+        "reason": "Dùng kết quả: Tủ hồ sơ 4:44"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P034",
+    "title": "Bức ảnh xin phép",
+    "chapter": 2,
+    "room": "town",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Chọn phạm vi công bố có sự đồng thuận.",
+    "clues": [
+      "Akane đồng ý nói về chữ ký giả.",
+      "Cô không đồng ý dùng ảnh thương tích."
+    ],
+    "requires": [
+      "P022",
+      "P031",
+      "P032"
+    ],
+    "answers": [
+      "Đăng lời chứng",
+      " giữ ảnh riêng"
+    ],
+    "hints": [
+      "Akane đồng ý nói về chữ ký giả.",
+      "Cô không đồng ý dùng ảnh thương tích.",
+      "Hướng giải: Đăng lời chứng, giữ ảnh riêng"
+    ],
+    "reward": "E034",
+    "resolution": "Bức ảnh xin phép: Cô không đồng ý dùng ảnh thương tích.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P022",
+        "reason": "Dùng kết quả: Gửi lại lời chứng"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P035",
+    "title": "Phòng đợi sáng đèn",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Mở đường cho người đi sau.",
+    "clues": [
+      "Công tắc phụ nối đèn cửa thoát.",
+      "Cầu dao chính làm hành lang tối."
+    ],
+    "requires": [
+      "P029",
+      "P030"
+    ],
+    "answers": [
+      "Giữ nguồn phụ"
+    ],
+    "hints": [
+      "Công tắc phụ nối đèn cửa thoát.",
+      "Cầu dao chính làm hành lang tối.",
+      "Hướng giải: Giữ nguồn phụ"
+    ],
+    "reward": "E035",
+    "resolution": "Phòng đợi sáng đèn: Cầu dao chính làm hành lang tối.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P036",
+    "title": "Lời chào không có câu hỏi",
+    "chapter": 2,
+    "room": "clinic",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Đặt vật được người phụ nữ chọn lên ghế.",
+    "clues": [
+      "Khẩu trang vải do cô tự may.",
+      "Cô đã nhờ lấy hộp riêng thay hoa tang."
+    ],
+    "requires": [
+      "P026",
+      "P027",
+      "P034",
+      "P035"
+    ],
+    "answers": [
+      "Hộp khẩu trang"
+    ],
+    "hints": [
+      "Khẩu trang vải do cô tự may.",
+      "Cô đã nhờ lấy hộp riêng thay hoa tang.",
+      "Hướng giải: Hộp khẩu trang"
+    ],
+    "reward": "E036",
+    "resolution": "Lời chào không có câu hỏi: Cô đã nhờ lấy hộp riêng thay hoa tang.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P037",
+    "title": "Lịch tàu mùa đông",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Tìm ngày lịch và lời khai cùng đúng.",
+    "clues": [
+      "Vé mẫu của tháng trước.",
+      "Lịch mùa đông đổi từ ngày 15."
+    ],
+    "requires": [
+      "P007",
+      "P015"
+    ],
+    "answers": [
+      "Ngày 14"
+    ],
+    "hints": [
+      "Vé mẫu của tháng trước.",
+      "Lịch mùa đông đổi từ ngày 15.",
+      "Hướng giải: Ngày 14"
+    ],
+    "reward": "E037",
+    "resolution": "Lịch tàu mùa đông: Lịch mùa đông đổi từ ngày 15.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P007",
+        "reason": "Dùng kết quả: Chuyến tàu bị hủy"
+      },
+      {
+        "puzzle": "P015",
+        "reason": "Dùng kết quả: Nhân chứng chuyến cuối"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P038",
+    "title": "Đồng hồ ca đêm",
+    "chapter": 3,
+    "room": "dorm",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Hiệu chỉnh bảng chấm công.",
+    "clues": [
+      "Đồng hồ ca chạy chậm bốn phút.",
+      "Còi xưởng phát đúng từ ga."
+    ],
+    "requires": [
+      "P016",
+      "P037"
+    ],
+    "answers": [
+      "Cộng bốn phút"
+    ],
+    "hints": [
+      "Đồng hồ ca chạy chậm bốn phút.",
+      "Còi xưởng phát đúng từ ga.",
+      "Hướng giải: Cộng bốn phút"
+    ],
+    "reward": "E038",
+    "resolution": "Đồng hồ ca đêm: Còi xưởng phát đúng từ ga.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P016",
+        "reason": "Dùng kết quả: Tủ hồ sơ 4:44"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P039",
+    "title": "Phong bì lương",
+    "chapter": 3,
+    "room": "dorm",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Xác định phong bì được phát trước đóng cửa.",
+    "clues": [
+      "Mực dấu trả lương màu tím.",
+      "Dấu đen chỉ dùng sau giải thể."
+    ],
+    "requires": [
+      "P003",
+      "P038"
+    ],
+    "answers": [
+      "Phong bì tím"
+    ],
+    "hints": [
+      "Mực dấu trả lương màu tím.",
+      "Dấu đen chỉ dùng sau giải thể.",
+      "Hướng giải: Phong bì tím"
+    ],
+    "reward": "E039",
+    "resolution": "Phong bì lương: Dấu đen chỉ dùng sau giải thể.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P003",
+        "reason": "Dùng kết quả: Giỏ hàng ba ngày"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P040",
+    "title": "Bài tập của Ai",
+    "chapter": 3,
+    "room": "station",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Đọc sơ đồ ray cô bé vẽ.",
+    "clues": [
+      "Nét phấn đứt là ray cũ.",
+      "Nét liền đến sân ga hàng hóa."
+    ],
+    "requires": [
+      "P001",
+      "P037"
+    ],
+    "answers": [
+      "Theo nét liền"
+    ],
+    "hints": [
+      "Nét phấn đứt là ray cũ.",
+      "Nét liền đến sân ga hàng hóa.",
+      "Hướng giải: Theo nét liền"
+    ],
+    "reward": "E040",
+    "resolution": "Bài tập của Ai: Nét liền đến sân ga hàng hóa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P001",
+        "reason": "Dùng kết quả: Tờ vé bị ướt"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P041",
+    "title": "Tiếng bánh xe hụt",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Phân biệt tàu với tiếng truy đuổi.",
+    "clues": [
+      "Tàu có nhịp bốn bánh.",
+      "Âm lạ lặp ba tiếng, không tiếng còi."
+    ],
+    "requires": [
+      "P013",
+      "P040"
+    ],
+    "answers": [
+      "Ba tiếng là thực thể"
+    ],
+    "hints": [
+      "Tàu có nhịp bốn bánh.",
+      "Âm lạ lặp ba tiếng, không tiếng còi.",
+      "Hướng giải: Ba tiếng là thực thể"
+    ],
+    "reward": "E041",
+    "resolution": "Tiếng bánh xe hụt: Âm lạ lặp ba tiếng, không tiếng còi.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P013",
+        "reason": "Dùng kết quả: Nhịp gõ bên kia"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P042",
+    "title": "Cầu dao chuyển ray",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Mở ray phụ mà không ngắt tín hiệu.",
+    "clues": [
+      "Đèn đỏ bảo vệ đường đang dùng.",
+      "Cần B nối sang ray phụ đã trống."
+    ],
+    "requires": [
+      "P012",
+      "P040"
+    ],
+    "answers": [
+      "Giữ đèn đỏ",
+      " kéo B"
+    ],
+    "hints": [
+      "Đèn đỏ bảo vệ đường đang dùng.",
+      "Cần B nối sang ray phụ đã trống.",
+      "Hướng giải: Giữ đèn đỏ, kéo B"
+    ],
+    "reward": "E042",
+    "resolution": "Cầu dao chuyển ray: Cần B nối sang ray phụ đã trống.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P012",
+        "reason": "Dùng kết quả: Dây loa cũ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P043",
+    "title": "Giấy thôi việc chưa đưa",
+    "chapter": 3,
+    "room": "dorm",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Giải thích thời gian Yuji vẫn rời nhà.",
+    "clues": [
+      "Xưởng đóng nhưng trung tâm việc làm mở.",
+      "Vé xe ghi điểm đến trung tâm."
+    ],
+    "requires": [
+      "P004",
+      "P039"
+    ],
+    "answers": [
+      "Anh đi tìm việc"
+    ],
+    "hints": [
+      "Xưởng đóng nhưng trung tâm việc làm mở.",
+      "Vé xe ghi điểm đến trung tâm.",
+      "Hướng giải: Anh đi tìm việc"
+    ],
+    "reward": "E043",
+    "resolution": "Giấy thôi việc chưa đưa: Vé xe ghi điểm đến trung tâm.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P004",
+        "reason": "Dùng kết quả: Hai bộ đũa"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P044",
+    "title": "Bản tin tai nạn",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Đối chiếu giờ báo với cuộc gọi.",
+    "clues": [
+      "Báo dùng giờ nhận tin.",
+      "Trực ban ghi giờ xảy ra sớm hơn."
+    ],
+    "requires": [
+      "P005",
+      "P038"
+    ],
+    "answers": [
+      "Hai mốc khác nhau"
+    ],
+    "hints": [
+      "Báo dùng giờ nhận tin.",
+      "Trực ban ghi giờ xảy ra sớm hơn.",
+      "Hướng giải: Hai mốc khác nhau"
+    ],
+    "reward": "E044",
+    "resolution": "Bản tin tai nạn: Trực ban ghi giờ xảy ra sớm hơn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P005",
+        "reason": "Dùng kết quả: Tin lúc sáu giờ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P045",
+    "title": "Tàu không chở người",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Giải vòng lặp sân ga.",
+    "clues": [
+      "Vé mẫu không có lỗ bấm.",
+      "Máy soát chỉ trả vé thực đã đi."
+    ],
+    "requires": [
+      "P007",
+      "P037",
+      "P041"
+    ],
+    "answers": [
+      "Để vé mẫu xuống"
+    ],
+    "hints": [
+      "Vé mẫu không có lỗ bấm.",
+      "Máy soát chỉ trả vé thực đã đi.",
+      "Hướng giải: Để vé mẫu xuống"
+    ],
+    "reward": "E045",
+    "resolution": "Tàu không chở người: Máy soát chỉ trả vé thực đã đi.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P007",
+        "reason": "Dùng kết quả: Chuyến tàu bị hủy"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P046",
+    "title": "Đôi găng trong tủ",
+    "chapter": 3,
+    "room": "dorm",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Tìm chủ nhân găng sửa ray.",
+    "clues": [
+      "Khuy vá bằng chỉ vàng của Daichi.",
+      "Yuji chỉ dùng găng không ngón."
+    ],
+    "requires": [
+      "P039",
+      "P043"
+    ],
+    "answers": [
+      "Daichi"
+    ],
+    "hints": [
+      "Khuy vá bằng chỉ vàng của Daichi.",
+      "Yuji chỉ dùng găng không ngón.",
+      "Hướng giải: Daichi"
+    ],
+    "reward": "E046",
+    "resolution": "Đôi găng trong tủ: Yuji chỉ dùng găng không ngón.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P047",
+    "title": "Lời thú nhận của trưởng ga",
+    "chapter": 3,
+    "room": "station",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Chọn thông tin cần xác nhận trước.",
+    "clues": [
+      "Hiroshi nhớ người, không nhớ ngày.",
+      "Sổ đổi ca có chữ ký người khác."
+    ],
+    "requires": [
+      "P015",
+      "P038",
+      "P044"
+    ],
+    "answers": [
+      "Đối chiếu sổ đổi ca"
+    ],
+    "hints": [
+      "Hiroshi nhớ người, không nhớ ngày.",
+      "Sổ đổi ca có chữ ký người khác.",
+      "Hướng giải: Đối chiếu sổ đổi ca"
+    ],
+    "reward": "E047",
+    "resolution": "Lời thú nhận của trưởng ga: Sổ đổi ca có chữ ký người khác.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P015",
+        "reason": "Dùng kết quả: Nhân chứng chuyến cuối"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P048",
+    "title": "Tín hiệu cho người trở về",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Gửi nhịp an toàn qua loa.",
+    "clues": [
+      "Bảng hướng dẫn quy định dài-ngắn-dài.",
+      "Băng trẻ em bỏ mất tiếng đầu."
+    ],
+    "requires": [
+      "P006",
+      "P013",
+      "P042"
+    ],
+    "answers": [
+      "Dài-ngắn-dài"
+    ],
+    "hints": [
+      "Bảng hướng dẫn quy định dài-ngắn-dài.",
+      "Băng trẻ em bỏ mất tiếng đầu.",
+      "Hướng giải: Dài-ngắn-dài"
+    ],
+    "reward": "E048",
+    "resolution": "Tín hiệu cho người trở về: Băng trẻ em bỏ mất tiếng đầu.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      },
+      {
+        "puzzle": "P013",
+        "reason": "Dùng kết quả: Nhịp gõ bên kia"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P049",
+    "title": "Đèn cuối sân ga",
+    "chapter": 3,
+    "room": "annex",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Thoát đuổi bằng nhịp tín hiệu.",
+    "clues": [
+      "Thực thể dừng trước vạch sáng.",
+      "Nguồn phụ giữ vạch sáng khi tàu qua."
+    ],
+    "requires": [
+      "P035",
+      "P041",
+      "P048"
+    ],
+    "answers": [
+      "Chờ sáng rồi sang"
+    ],
+    "hints": [
+      "Thực thể dừng trước vạch sáng.",
+      "Nguồn phụ giữ vạch sáng khi tàu qua.",
+      "Hướng giải: Chờ sáng rồi sang"
+    ],
+    "reward": "E049",
+    "resolution": "Đèn cuối sân ga: Nguồn phụ giữ vạch sáng khi tàu qua.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P035",
+        "reason": "Dùng kết quả: Phòng đợi sáng đèn"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P050",
+    "title": "Bài báo có tên người",
+    "chapter": 3,
+    "room": "town",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Bổ sung phần bị lược bỏ ở ga.",
+    "clues": [
+      "Daichi xin ghi cả việc cứu người.",
+      "Bản nháp chỉ mô tả tai nạn."
+    ],
+    "requires": [
+      "P034",
+      "P046",
+      "P047",
+      "P049"
+    ],
+    "answers": [
+      "Ghi tên và hành động cứu người"
+    ],
+    "hints": [
+      "Daichi xin ghi cả việc cứu người.",
+      "Bản nháp chỉ mô tả tai nạn.",
+      "Hướng giải: Ghi tên và hành động cứu người"
+    ],
+    "reward": "E050",
+    "resolution": "Bài báo có tên người: Bản nháp chỉ mô tả tai nạn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P051",
+    "title": "Hai con đường lên núi",
+    "chapter": 4,
+    "room": "tunnel",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Chọn bản đồ không xóa nhà dân.",
+    "clues": [
+      "Bản cũ có giếng chung.",
+      "Bản mới cắt con đường qua giếng."
+    ],
+    "requires": [
+      "P008",
+      "P050"
+    ],
+    "answers": [
+      "Bản có giếng"
+    ],
+    "hints": [
+      "Bản cũ có giếng chung.",
+      "Bản mới cắt con đường qua giếng.",
+      "Hướng giải: Bản có giếng"
+    ],
+    "reward": "E051",
+    "resolution": "Hai con đường lên núi: Bản mới cắt con đường qua giếng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P008",
+        "reason": "Dùng kết quả: Chìa khóa đồng"
+      },
+      {
+        "puzzle": "P050",
+        "reason": "Dùng kết quả: Bài báo có tên người"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P052",
+    "title": "Dấu phấn trên vách",
+    "chapter": 4,
+    "room": "tunnel",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Thoát đoạn hầm lặp bằng dấu khác nhau.",
+    "clues": [
+      "Dấu thật có bụi bám ở đáy.",
+      "Dấu phản chiếu sạch cả hai phía."
+    ],
+    "requires": [
+      "P014",
+      "P051"
+    ],
+    "answers": [
+      "Theo dấu có bụi"
+    ],
+    "hints": [
+      "Dấu thật có bụi bám ở đáy.",
+      "Dấu phản chiếu sạch cả hai phía.",
+      "Hướng giải: Theo dấu có bụi"
+    ],
+    "reward": "E052",
+    "resolution": "Dấu phấn trên vách: Dấu phản chiếu sạch cả hai phía.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P014",
+        "reason": "Dùng kết quả: Hành lang thứ hai"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P053",
+    "title": "Radio của Fumiko",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Chỉnh tần số từ ghi chú linh kiện.",
+    "clues": [
+      "Tụ thay được ghi 76.",
+      "Mặt số dùng đơn vị phần mười MHz."
+    ],
+    "requires": [
+      "P006",
+      "P012"
+    ],
+    "answers": [
+      "76.0"
+    ],
+    "hints": [
+      "Tụ thay được ghi 76.",
+      "Mặt số dùng đơn vị phần mười MHz.",
+      "Hướng giải: 76.0"
+    ],
+    "reward": "E053",
+    "resolution": "Radio của Fumiko: Mặt số dùng đơn vị phần mười MHz.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      },
+      {
+        "puzzle": "P012",
+        "reason": "Dùng kết quả: Dây loa cũ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P054",
+    "title": "Thư chưa có tem",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Ghép địa chỉ từ ba thư.",
+    "clues": [
+      "Tên họ không đổi qua ba đời.",
+      "Số nhà bị đổi sau nhập thôn."
+    ],
+    "requires": [
+      "P019",
+      "P051"
+    ],
+    "answers": [
+      "Theo số cũ"
+    ],
+    "hints": [
+      "Tên họ không đổi qua ba đời.",
+      "Số nhà bị đổi sau nhập thôn.",
+      "Hướng giải: Theo số cũ"
+    ],
+    "reward": "E054",
+    "resolution": "Thư chưa có tem: Số nhà bị đổi sau nhập thôn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P019",
+        "reason": "Dùng kết quả: Tên trên chiếc khăn"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P055",
+    "title": "Hai bộ hộ tịch",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Tìm bản sao có vết dập gốc.",
+    "clues": [
+      "Bản sao máy thiếu dấu giáp lai.",
+      "Bản viết tay có trang đánh số liên tục."
+    ],
+    "requires": [
+      "P011",
+      "P028",
+      "P054"
+    ],
+    "answers": [
+      "Bản dấu giáp lai"
+    ],
+    "hints": [
+      "Bản sao máy thiếu dấu giáp lai.",
+      "Bản viết tay có trang đánh số liên tục.",
+      "Hướng giải: Bản dấu giáp lai"
+    ],
+    "reward": "E055",
+    "resolution": "Hai bộ hộ tịch: Bản viết tay có trang đánh số liên tục.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P011",
+        "reason": "Dùng kết quả: Hai nét chữ"
+      },
+      {
+        "puzzle": "P028",
+        "reason": "Dùng kết quả: Đơn thuốc trùng tên"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P056",
+    "title": "Bếp của người vắng mặt",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Xác định số người sống trước di dời.",
+    "clues": [
+      "Có ba vết bát trên kệ.",
+      "Sổ lương thực cấp ba phần."
+    ],
+    "requires": [
+      "P004",
+      "P039"
+    ],
+    "answers": [
+      "Ba người"
+    ],
+    "hints": [
+      "Có ba vết bát trên kệ.",
+      "Sổ lương thực cấp ba phần.",
+      "Hướng giải: Ba người"
+    ],
+    "reward": "E056",
+    "resolution": "Bếp của người vắng mặt: Sổ lương thực cấp ba phần.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P004",
+        "reason": "Dùng kết quả: Hai bộ đũa"
+      },
+      {
+        "puzzle": "P039",
+        "reason": "Dùng kết quả: Phong bì lương"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P057",
+    "title": "Giếng nghe được tàu",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Xác định đường âm thanh đi qua.",
+    "clues": [
+      "Hầm thoát nước chạy dưới ray.",
+      "Tiếng vang trễ khi tàu qua cầu."
+    ],
+    "requires": [
+      "P041",
+      "P052"
+    ],
+    "answers": [
+      "Hầm thoát nước"
+    ],
+    "hints": [
+      "Hầm thoát nước chạy dưới ray.",
+      "Tiếng vang trễ khi tàu qua cầu.",
+      "Hướng giải: Hầm thoát nước"
+    ],
+    "reward": "E057",
+    "resolution": "Giếng nghe được tàu: Tiếng vang trễ khi tàu qua cầu.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P041",
+        "reason": "Dùng kết quả: Tiếng bánh xe hụt"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P058",
+    "title": "Biển cấm không ký tên",
+    "chapter": 4,
+    "room": "tunnel",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Ai có quyền đặt biển?",
+    "clues": [
+      "Biển không có số quyết định.",
+      "Hóa đơn đóng dấu công ty thi công."
+    ],
+    "requires": [
+      "P033",
+      "P051"
+    ],
+    "answers": [
+      "Doanh nghiệp",
+      " không phải luật"
+    ],
+    "hints": [
+      "Biển không có số quyết định.",
+      "Hóa đơn đóng dấu công ty thi công.",
+      "Hướng giải: Doanh nghiệp, không phải luật"
+    ],
+    "reward": "E058",
+    "resolution": "Biển cấm không ký tên: Hóa đơn đóng dấu công ty thi công.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P033",
+        "reason": "Dùng kết quả: Sổ chi phí thủ thuật"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P059",
+    "title": "Phòng có hai lịch",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Tách ngày thực và ngày người dân kể.",
+    "clues": [
+      "Lịch dừng ở ngày di dời.",
+      "Bóng nắng đổi theo hiện tại."
+    ],
+    "requires": [
+      "P037",
+      "P056"
+    ],
+    "answers": [
+      "Ngày di dời là ký ức"
+    ],
+    "hints": [
+      "Lịch dừng ở ngày di dời.",
+      "Bóng nắng đổi theo hiện tại.",
+      "Hướng giải: Ngày di dời là ký ức"
+    ],
+    "reward": "E059",
+    "resolution": "Phòng có hai lịch: Bóng nắng đổi theo hiện tại.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P037",
+        "reason": "Dùng kết quả: Lịch tàu mùa đông"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P060",
+    "title": "Thông báo bị ghi đè",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Phục hồi phần radio dưới bản nhạc.",
+    "clues": [
+      "Băng còn rãnh âm bên phải.",
+      "Nhạc mới chỉ phủ rãnh trái."
+    ],
+    "requires": [
+      "P006",
+      "P053"
+    ],
+    "answers": [
+      "Nghe rãnh phải"
+    ],
+    "hints": [
+      "Băng còn rãnh âm bên phải.",
+      "Nhạc mới chỉ phủ rãnh trái.",
+      "Hướng giải: Nghe rãnh phải"
+    ],
+    "reward": "E060",
+    "resolution": "Thông báo bị ghi đè: Nhạc mới chỉ phủ rãnh trái.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P061",
+    "title": "Lối rẽ của sổ tay",
+    "chapter": 4,
+    "room": "tunnel",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Đánh dấu thông tin có hai nguồn.",
+    "clues": [
+      "Bản đồ giếng có trong hộ tịch.",
+      "Biển cấm không có nguồn công quyền."
+    ],
+    "requires": [
+      "P051",
+      "P055",
+      "P058"
+    ],
+    "answers": [
+      "Chọn giếng",
+      " bỏ biển"
+    ],
+    "hints": [
+      "Bản đồ giếng có trong hộ tịch.",
+      "Biển cấm không có nguồn công quyền.",
+      "Hướng giải: Chọn giếng, bỏ biển"
+    ],
+    "reward": "E061",
+    "resolution": "Lối rẽ của sổ tay: Biển cấm không có nguồn công quyền.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P062",
+    "title": "Căn nhà dưới tên khác",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Nối hai hộ qua người bảo lãnh.",
+    "clues": [
+      "Sachiko từng ký thay Haruto.",
+      "Họ người bảo lãnh trùng thư bệnh viện."
+    ],
+    "requires": [
+      "P002",
+      "P054",
+      "P055"
+    ],
+    "answers": [
+      "Gia đình Mizuhara"
+    ],
+    "hints": [
+      "Sachiko từng ký thay Haruto.",
+      "Họ người bảo lãnh trùng thư bệnh viện.",
+      "Hướng giải: Gia đình Mizuhara"
+    ],
+    "reward": "E062",
+    "resolution": "Căn nhà dưới tên khác: Họ người bảo lãnh trùng thư bệnh viện.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P002",
+        "reason": "Dùng kết quả: Đơn thuốc của mẹ"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P063",
+    "title": "Mộ chưa khắc chữ",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Giữ dấu người chưa xác định.",
+    "clues": [
+      "Bia chỉ có số hồ sơ.",
+      "Gia đình chưa đồng ý với tên suy đoán."
+    ],
+    "requires": [
+      "P019",
+      "P034",
+      "P055"
+    ],
+    "answers": [
+      "Giữ số",
+      " không đoán tên"
+    ],
+    "hints": [
+      "Bia chỉ có số hồ sơ.",
+      "Gia đình chưa đồng ý với tên suy đoán.",
+      "Hướng giải: Giữ số, không đoán tên"
+    ],
+    "reward": "E063",
+    "resolution": "Mộ chưa khắc chữ: Gia đình chưa đồng ý với tên suy đoán.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P019",
+        "reason": "Dùng kết quả: Tên trên chiếc khăn"
+      },
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P064",
+    "title": "Bản đồ từ trẻ em",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "observation",
+    "mechanic": "authored_design",
+    "prompt": "Định vị trường cũ trong bản vẽ.",
+    "clues": [
+      "Trẻ vẽ nhìn từ giếng.",
+      "Mặt trời ở sau ngôi trường."
+    ],
+    "requires": [
+      "P010",
+      "P040",
+      "P051"
+    ],
+    "answers": [
+      "Phía Tây giếng"
+    ],
+    "hints": [
+      "Trẻ vẽ nhìn từ giếng.",
+      "Mặt trời ở sau ngôi trường.",
+      "Hướng giải: Phía Tây giếng"
+    ],
+    "reward": "E064",
+    "resolution": "Bản đồ từ trẻ em: Mặt trời ở sau ngôi trường.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P010",
+        "reason": "Dùng kết quả: Ngăn bàn còn sạch"
+      },
+      {
+        "puzzle": "P040",
+        "reason": "Dùng kết quả: Bài tập của Ai"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P065",
+    "title": "Lời chứng không có máy",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Ghi lời kể đúng phạm vi đồng ý.",
+    "clues": [
+      "Fumiko muốn lưu cho con cháu.",
+      "Bà không muốn phát trên báo."
+    ],
+    "requires": [
+      "P022",
+      "P034",
+      "P060"
+    ],
+    "answers": [
+      "Lưu bản riêng có ký nhận"
+    ],
+    "hints": [
+      "Fumiko muốn lưu cho con cháu.",
+      "Bà không muốn phát trên báo.",
+      "Hướng giải: Lưu bản riêng có ký nhận"
+    ],
+    "reward": "E065",
+    "resolution": "Lời chứng không có máy: Bà không muốn phát trên báo.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P022",
+        "reason": "Dùng kết quả: Gửi lại lời chứng"
+      },
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P066",
+    "title": "Ngôi làng còn địa chỉ",
+    "chapter": 4,
+    "room": "village",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Ghép hồ sơ để phục hồi địa chỉ.",
+    "clues": [
+      "Hộ tịch xác nhận người ở.",
+      "Bản đồ giếng xác nhận vị trí."
+    ],
+    "requires": [
+      "P055",
+      "P061",
+      "P062",
+      "P064",
+      "P065"
+    ],
+    "answers": [
+      "Hộ tịch cộng bản đồ"
+    ],
+    "hints": [
+      "Hộ tịch xác nhận người ở.",
+      "Bản đồ giếng xác nhận vị trí.",
+      "Hướng giải: Hộ tịch cộng bản đồ"
+    ],
+    "reward": "E066",
+    "resolution": "Ngôi làng còn địa chỉ: Bản đồ giếng xác nhận vị trí.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  },
+  {
+    "id": "P067",
+    "title": "Băng VHS số không",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Tìm bản không qua cắt dựng.",
+    "clues": [
+      "Bản gốc có leader sáu giây.",
+      "Bản sao cắt mất đầu băng."
+    ],
+    "requires": [
+      "P006",
+      "P060"
+    ],
+    "answers": [
+      "Bản có leader"
+    ],
+    "hints": [
+      "Bản gốc có leader sáu giây.",
+      "Bản sao cắt mất đầu băng.",
+      "Hướng giải: Bản có leader"
+    ],
+    "reward": "E067",
+    "resolution": "Băng VHS số không: Bản sao cắt mất đầu băng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      },
+      {
+        "puzzle": "P060",
+        "reason": "Dùng kết quả: Thông báo bị ghi đè"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P068",
+    "title": "Cửa ngoài sơ đồ",
+    "chapter": 5,
+    "room": "hospital_old",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Tìm vách không khớp kích thước.",
+    "clues": [
+      "Hành lang dài thêm hai mét.",
+      "Sơ đồ kho thiếu một ô kết cấu."
+    ],
+    "requires": [
+      "P014",
+      "P033"
+    ],
+    "answers": [
+      "Sau kho hồ sơ"
+    ],
+    "hints": [
+      "Hành lang dài thêm hai mét.",
+      "Sơ đồ kho thiếu một ô kết cấu.",
+      "Hướng giải: Sau kho hồ sơ"
+    ],
+    "reward": "E068",
+    "resolution": "Cửa ngoài sơ đồ: Sơ đồ kho thiếu một ô kết cấu.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P014",
+        "reason": "Dùng kết quả: Hành lang thứ hai"
+      },
+      {
+        "puzzle": "P033",
+        "reason": "Dùng kết quả: Sổ chi phí thủ thuật"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P069",
+    "title": "Lời dẫn của người hỏi",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Tách câu gợi ý khỏi câu tự kể.",
+    "clues": [
+      "Máy ghi hai giọng khác âm sắc.",
+      "Từ khóa xuất hiện ở người hỏi trước."
+    ],
+    "requires": [
+      "P018",
+      "P047",
+      "P067"
+    ],
+    "answers": [
+      "Bỏ lời dẫn khi so chứng cứ"
+    ],
+    "hints": [
+      "Máy ghi hai giọng khác âm sắc.",
+      "Từ khóa xuất hiện ở người hỏi trước.",
+      "Hướng giải: Bỏ lời dẫn khi so chứng cứ"
+    ],
+    "reward": "E069",
+    "resolution": "Lời dẫn của người hỏi: Từ khóa xuất hiện ở người hỏi trước.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P018",
+        "reason": "Dùng kết quả: Lời khai của đứa trẻ"
+      },
+      {
+        "puzzle": "P047",
+        "reason": "Dùng kết quả: Lời thú nhận của trưởng ga"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P070",
+    "title": "Hai bản xác nhận",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Tìm chữ ký được viết sau sự kiện.",
+    "clues": [
+      "Mực mới phủ vết gấp cũ.",
+      "Biên nhận giấy có ngày muộn hơn."
+    ],
+    "requires": [
+      "P011",
+      "P055"
+    ],
+    "answers": [
+      "Bản mực phủ nếp gấp"
+    ],
+    "hints": [
+      "Mực mới phủ vết gấp cũ.",
+      "Biên nhận giấy có ngày muộn hơn.",
+      "Hướng giải: Bản mực phủ nếp gấp"
+    ],
+    "reward": "E070",
+    "resolution": "Hai bản xác nhận: Biên nhận giấy có ngày muộn hơn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P011",
+        "reason": "Dùng kết quả: Hai nét chữ"
+      },
+      {
+        "puzzle": "P055",
+        "reason": "Dùng kết quả: Hai bộ hộ tịch"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P071",
+    "title": "Tên quỹ không tên người",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Theo dòng tiền Kiroku.",
+    "clues": [
+      "Khoản chi ghi theo mã phòng.",
+      "Mã phòng trùng sổ thủ thuật."
+    ],
+    "requires": [
+      "P028",
+      "P033"
+    ],
+    "answers": [
+      "Theo mã phòng"
+    ],
+    "hints": [
+      "Khoản chi ghi theo mã phòng.",
+      "Mã phòng trùng sổ thủ thuật.",
+      "Hướng giải: Theo mã phòng"
+    ],
+    "reward": "E071",
+    "resolution": "Tên quỹ không tên người: Mã phòng trùng sổ thủ thuật.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P028",
+        "reason": "Dùng kết quả: Đơn thuốc trùng tên"
+      },
+      {
+        "puzzle": "P033",
+        "reason": "Dùng kết quả: Sổ chi phí thủ thuật"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P072",
+    "title": "Giọng trẻ con của Ren",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Nhận dạng giọng không dựa ký ức.",
+    "clues": [
+      "Sachiko giữ băng sinh nhật.",
+      "Tiếng nuốt âm cuối trùng bản ghi."
+    ],
+    "requires": [
+      "P006",
+      "P062",
+      "P067"
+    ],
+    "answers": [
+      "So với băng sinh nhật"
+    ],
+    "hints": [
+      "Sachiko giữ băng sinh nhật.",
+      "Tiếng nuốt âm cuối trùng bản ghi.",
+      "Hướng giải: So với băng sinh nhật"
+    ],
+    "reward": "E072",
+    "resolution": "Giọng trẻ con của Ren: Tiếng nuốt âm cuối trùng bản ghi.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      },
+      {
+        "puzzle": "P062",
+        "reason": "Dùng kết quả: Căn nhà dưới tên khác"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P073",
+    "title": "Bản sao của người đáng nghi",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Vì sao Naoto giấu hồ sơ?",
+    "clues": [
+      "Bản ông giấu còn tên trẻ.",
+      "Bản công khai đã bỏ tên dưới áp lực."
+    ],
+    "requires": [
+      "P016",
+      "P055",
+      "P070"
+    ],
+    "answers": [
+      "Bảo vệ bản gốc"
+    ],
+    "hints": [
+      "Bản ông giấu còn tên trẻ.",
+      "Bản công khai đã bỏ tên dưới áp lực.",
+      "Hướng giải: Bảo vệ bản gốc"
+    ],
+    "reward": "E073",
+    "resolution": "Bản sao của người đáng nghi: Bản công khai đã bỏ tên dưới áp lực.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P016",
+        "reason": "Dùng kết quả: Tủ hồ sơ 4:44"
+      },
+      {
+        "puzzle": "P055",
+        "reason": "Dùng kết quả: Hai bộ hộ tịch"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P074",
+    "title": "Cánh cửa đỏ không sơn",
+    "chapter": 5,
+    "room": "hospital_old",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Xác định màu đến từ đâu.",
+    "clues": [
+      "Đèn báo nằm trong phòng.",
+      "Tắt đèn vẫn còn một vệt đỏ không đổi."
+    ],
+    "requires": [
+      "P020",
+      "P068"
+    ],
+    "answers": [
+      "Đèn giải thích một phần"
+    ],
+    "hints": [
+      "Đèn báo nằm trong phòng.",
+      "Tắt đèn vẫn còn một vệt đỏ không đổi.",
+      "Hướng giải: Đèn giải thích một phần"
+    ],
+    "reward": "E074",
+    "resolution": "Cánh cửa đỏ không sơn: Tắt đèn vẫn còn một vệt đỏ không đổi.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P020",
+        "reason": "Dùng kết quả: Cánh cửa có tiếng thở"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P075",
+    "title": "Nhớ theo lời người khác",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "So ba lời kể có cùng lỗi.",
+    "clues": [
+      "Ba người dùng cùng một câu hiếm.",
+      "Bản hướng dẫn hỏi có nguyên câu ấy."
+    ],
+    "requires": [
+      "P015",
+      "P025",
+      "P069"
+    ],
+    "answers": [
+      "Lời kể bị dẫn dắt"
+    ],
+    "hints": [
+      "Ba người dùng cùng một câu hiếm.",
+      "Bản hướng dẫn hỏi có nguyên câu ấy.",
+      "Hướng giải: Lời kể bị dẫn dắt"
+    ],
+    "reward": "E075",
+    "resolution": "Nhớ theo lời người khác: Bản hướng dẫn hỏi có nguyên câu ấy.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P015",
+        "reason": "Dùng kết quả: Nhân chứng chuyến cuối"
+      },
+      {
+        "puzzle": "P025",
+        "reason": "Dùng kết quả: Lời đồn qua ba miệng"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P076",
+    "title": "Khoảng lặng sáu giây",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Nghe phần băng không có lời.",
+    "clues": [
+      "Tiếng chốt mở nằm trong leader.",
+      "Máy ghi chưa dừng sau lời dặn."
+    ],
+    "requires": [
+      "P013",
+      "P021",
+      "P067"
+    ],
+    "answers": [
+      "Chốt được mở muộn"
+    ],
+    "hints": [
+      "Tiếng chốt mở nằm trong leader.",
+      "Máy ghi chưa dừng sau lời dặn.",
+      "Hướng giải: Chốt được mở muộn"
+    ],
+    "reward": "E076",
+    "resolution": "Khoảng lặng sáu giây: Máy ghi chưa dừng sau lời dặn.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P013",
+        "reason": "Dùng kết quả: Nhịp gõ bên kia"
+      },
+      {
+        "puzzle": "P021",
+        "reason": "Dùng kết quả: Không khóa nữa"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P077",
+    "title": "Hồ sơ Haruto",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Tìm lý do cha Ren rời nhà.",
+    "clues": [
+      "Thư chuyển tiền tiếp tục sau khi đi.",
+      "Biên bản ông từ chối ký bản sửa."
+    ],
+    "requires": [
+      "P003",
+      "P062",
+      "P071"
+    ],
+    "answers": [
+      "Bị ép rời dự án"
+    ],
+    "hints": [
+      "Thư chuyển tiền tiếp tục sau khi đi.",
+      "Biên bản ông từ chối ký bản sửa.",
+      "Hướng giải: Bị ép rời dự án"
+    ],
+    "reward": "E077",
+    "resolution": "Hồ sơ Haruto: Biên bản ông từ chối ký bản sửa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P003",
+        "reason": "Dùng kết quả: Giỏ hàng ba ngày"
+      },
+      {
+        "puzzle": "P062",
+        "reason": "Dùng kết quả: Căn nhà dưới tên khác"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P078",
+    "title": "Phong bì nhiều người gửi",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Xác định ai chuẩn bị lá thư.",
+    "clues": [
+      "Giấy từ kho của Naoto.",
+      "Dấu gói giống cách Yui gấp bài tập."
+    ],
+    "requires": [
+      "P008",
+      "P017",
+      "P073"
+    ],
+    "answers": [
+      "Yui và Naoto cùng gửi"
+    ],
+    "hints": [
+      "Giấy từ kho của Naoto.",
+      "Dấu gói giống cách Yui gấp bài tập.",
+      "Hướng giải: Yui và Naoto cùng gửi"
+    ],
+    "reward": "E078",
+    "resolution": "Phong bì nhiều người gửi: Dấu gói giống cách Yui gấp bài tập.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P008",
+        "reason": "Dùng kết quả: Chìa khóa đồng"
+      },
+      {
+        "puzzle": "P017",
+        "reason": "Dùng kết quả: Ảnh thiếu một người"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P079",
+    "title": "Màn hình không nối dây",
+    "chapter": 5,
+    "room": "hospital_old",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Kiểm chứng hiện tượng ngoài Kiroku.",
+    "clues": [
+      "Ổ điện đã ngắt khỏi tòa nhà.",
+      "Màn hình vẫn hiện tiếng gõ người chơi vừa tạo."
+    ],
+    "requires": [
+      "P012",
+      "P020",
+      "P074"
+    ],
+    "answers": [
+      "Không kết luận là băng dựng"
+    ],
+    "hints": [
+      "Ổ điện đã ngắt khỏi tòa nhà.",
+      "Màn hình vẫn hiện tiếng gõ người chơi vừa tạo.",
+      "Hướng giải: Không kết luận là băng dựng"
+    ],
+    "reward": "E079",
+    "resolution": "Màn hình không nối dây: Màn hình vẫn hiện tiếng gõ người chơi vừa tạo.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P012",
+        "reason": "Dùng kết quả: Dây loa cũ"
+      },
+      {
+        "puzzle": "P020",
+        "reason": "Dùng kết quả: Cánh cửa có tiếng thở"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P080",
+    "title": "Bản gốc hay người còn sống",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Chọn cách sao tài liệu không lộ bệnh án.",
+    "clues": [
+      "Tên trẻ nằm cùng trang chẩn đoán.",
+      "Phần sửa lời khai có thể trích riêng."
+    ],
+    "requires": [
+      "P028",
+      "P034",
+      "P070"
+    ],
+    "answers": [
+      "Sao phần lời khai có che riêng tư"
+    ],
+    "hints": [
+      "Tên trẻ nằm cùng trang chẩn đoán.",
+      "Phần sửa lời khai có thể trích riêng.",
+      "Hướng giải: Sao phần lời khai có che riêng tư"
+    ],
+    "reward": "E080",
+    "resolution": "Bản gốc hay người còn sống: Phần sửa lời khai có thể trích riêng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P028",
+        "reason": "Dùng kết quả: Đơn thuốc trùng tên"
+      },
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P081",
+    "title": "Lời xin lỗi không thay thế",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Nhận trách nhiệm cụ thể.",
+    "clues": [
+      "Ren giữ chốt để tránh người lớn.",
+      "Đứa trẻ đã yêu cầu mở từ trước."
+    ],
+    "requires": [
+      "P018",
+      "P021",
+      "P072",
+      "P076"
+    ],
+    "answers": [
+      "Thừa nhận đã giữ chốt"
+    ],
+    "hints": [
+      "Ren giữ chốt để tránh người lớn.",
+      "Đứa trẻ đã yêu cầu mở từ trước.",
+      "Hướng giải: Thừa nhận đã giữ chốt"
+    ],
+    "reward": "E081",
+    "resolution": "Lời xin lỗi không thay thế: Đứa trẻ đã yêu cầu mở từ trước.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P018",
+        "reason": "Dùng kết quả: Lời khai của đứa trẻ"
+      },
+      {
+        "puzzle": "P021",
+        "reason": "Dùng kết quả: Không khóa nữa"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P082",
+    "title": "Hồ sơ có quyền từ chối",
+    "chapter": 5,
+    "room": "archive",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Chuẩn bị cuộc gặp cuối.",
+    "clues": [
+      "Mỗi nhân chứng chọn phần cho phép.",
+      "Bản sao niêm phong cho người chưa sẵn sàng."
+    ],
+    "requires": [
+      "P065",
+      "P073",
+      "P080",
+      "P081"
+    ],
+    "answers": [
+      "Lưu phạm vi đồng thuận"
+    ],
+    "hints": [
+      "Mỗi nhân chứng chọn phần cho phép.",
+      "Bản sao niêm phong cho người chưa sẵn sàng.",
+      "Hướng giải: Lưu phạm vi đồng thuận"
+    ],
+    "reward": "E082",
+    "resolution": "Hồ sơ có quyền từ chối: Bản sao niêm phong cho người chưa sẵn sàng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P065",
+        "reason": "Dùng kết quả: Lời chứng không có máy"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P083",
+    "title": "Sáu chiếc ghế",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Đặt ghế cho người không có tên.",
+    "clues": [
+      "Ảnh có bóng người thứ sáu.",
+      "Khoảng trống luôn ở cạnh cửa."
+    ],
+    "requires": [
+      "P017",
+      "P064",
+      "P082"
+    ],
+    "answers": [
+      "Ghế cạnh cửa"
+    ],
+    "hints": [
+      "Ảnh có bóng người thứ sáu.",
+      "Khoảng trống luôn ở cạnh cửa.",
+      "Hướng giải: Ghế cạnh cửa"
+    ],
+    "reward": "E083",
+    "resolution": "Sáu chiếc ghế: Khoảng trống luôn ở cạnh cửa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P017",
+        "reason": "Dùng kết quả: Ảnh thiếu một người"
+      },
+      {
+        "puzzle": "P064",
+        "reason": "Dùng kết quả: Bản đồ từ trẻ em"
+      },
+      {
+        "puzzle": "P082",
+        "reason": "Dùng kết quả: Hồ sơ có quyền từ chối"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P084",
+    "title": "Bản đồ ký ức chung",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "logic",
+    "mechanic": "authored_design",
+    "prompt": "Đặt vị trí mà hai nguồn cùng xác nhận.",
+    "clues": [
+      "Bản trẻ em chỉ giếng.",
+      "Sổ nhà ga xác nhận đường hầm qua cầu."
+    ],
+    "requires": [
+      "P040",
+      "P057",
+      "P064"
+    ],
+    "answers": [
+      "Giếng-hầm-cầu"
+    ],
+    "hints": [
+      "Bản trẻ em chỉ giếng.",
+      "Sổ nhà ga xác nhận đường hầm qua cầu.",
+      "Hướng giải: Giếng-hầm-cầu"
+    ],
+    "reward": "E084",
+    "resolution": "Bản đồ ký ức chung: Sổ nhà ga xác nhận đường hầm qua cầu.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P040",
+        "reason": "Dùng kết quả: Bài tập của Ai"
+      },
+      {
+        "puzzle": "P057",
+        "reason": "Dùng kết quả: Giếng nghe được tàu"
+      },
+      {
+        "puzzle": "P064",
+        "reason": "Dùng kết quả: Bản đồ từ trẻ em"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P085",
+    "title": "Năm tên không năm người",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Phân biệt tên pháp lý với người hiện diện.",
+    "clues": [
+      "Một đứa trẻ dùng họ người bảo lãnh.",
+      "Hai hồ sơ thuộc cùng một người."
+    ],
+    "requires": [
+      "P019",
+      "P055",
+      "P062"
+    ],
+    "answers": [
+      "Năm tên không đủ đếm người"
+    ],
+    "hints": [
+      "Một đứa trẻ dùng họ người bảo lãnh.",
+      "Hai hồ sơ thuộc cùng một người.",
+      "Hướng giải: Năm tên không đủ đếm người"
+    ],
+    "reward": "E085",
+    "resolution": "Năm tên không năm người: Hai hồ sơ thuộc cùng một người.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P019",
+        "reason": "Dùng kết quả: Tên trên chiếc khăn"
+      },
+      {
+        "puzzle": "P055",
+        "reason": "Dùng kết quả: Hai bộ hộ tịch"
+      },
+      {
+        "puzzle": "P062",
+        "reason": "Dùng kết quả: Căn nhà dưới tên khác"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P086",
+    "title": "Ngày ai cũng nhớ sai",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Sửa ngày dựa sự kiện độc lập.",
+    "clues": [
+      "Tàu đã ngừng vào ngày lời khai.",
+      "Bản tin thời tiết lưu đúng cơn mưa hôm trước."
+    ],
+    "requires": [
+      "P007",
+      "P037",
+      "P044",
+      "P075"
+    ],
+    "answers": [
+      "Lùi một ngày"
+    ],
+    "hints": [
+      "Tàu đã ngừng vào ngày lời khai.",
+      "Bản tin thời tiết lưu đúng cơn mưa hôm trước.",
+      "Hướng giải: Lùi một ngày"
+    ],
+    "reward": "E086",
+    "resolution": "Ngày ai cũng nhớ sai: Bản tin thời tiết lưu đúng cơn mưa hôm trước.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P007",
+        "reason": "Dùng kết quả: Chuyến tàu bị hủy"
+      },
+      {
+        "puzzle": "P037",
+        "reason": "Dùng kết quả: Lịch tàu mùa đông"
+      },
+      {
+        "puzzle": "P044",
+        "reason": "Dùng kết quả: Bản tin tai nạn"
+      },
+      {
+        "puzzle": "P075",
+        "reason": "Dùng kết quả: Nhớ theo lời người khác"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P087",
+    "title": "Câu dặn trong bữa cơm",
+    "chapter": 6,
+    "room": "home",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Nhận ra mục đích câu hỏi của mẹ.",
+    "clues": [
+      "Băng sinh nhật có câu gọi đáp.",
+      "Bản cứu hộ dùng câu ấy xác nhận Ren tỉnh."
+    ],
+    "requires": [
+      "P004",
+      "P062",
+      "P072"
+    ],
+    "answers": [
+      "Một tín hiệu nhận người"
+    ],
+    "hints": [
+      "Băng sinh nhật có câu gọi đáp.",
+      "Bản cứu hộ dùng câu ấy xác nhận Ren tỉnh.",
+      "Hướng giải: Một tín hiệu nhận người"
+    ],
+    "reward": "E087",
+    "resolution": "Câu dặn trong bữa cơm: Bản cứu hộ dùng câu ấy xác nhận Ren tỉnh.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P004",
+        "reason": "Dùng kết quả: Hai bộ đũa"
+      },
+      {
+        "puzzle": "P062",
+        "reason": "Dùng kết quả: Căn nhà dưới tên khác"
+      },
+      {
+        "puzzle": "P072",
+        "reason": "Dùng kết quả: Giọng trẻ con của Ren"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P088",
+    "title": "Giúp đỡ đã thành im lặng",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Xác định hậu quả hành động thiện chí.",
+    "clues": [
+      "Chốt ngoài do Ren giữ.",
+      "Lời hỏi dẫn dắt đổi động cơ thành đùa nghịch."
+    ],
+    "requires": [
+      "P018",
+      "P021",
+      "P069",
+      "P081"
+    ],
+    "answers": [
+      "Giữ cửa cũng là trách nhiệm"
+    ],
+    "hints": [
+      "Chốt ngoài do Ren giữ.",
+      "Lời hỏi dẫn dắt đổi động cơ thành đùa nghịch.",
+      "Hướng giải: Giữ cửa cũng là trách nhiệm"
+    ],
+    "reward": "E088",
+    "resolution": "Giúp đỡ đã thành im lặng: Lời hỏi dẫn dắt đổi động cơ thành đùa nghịch.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P018",
+        "reason": "Dùng kết quả: Lời khai của đứa trẻ"
+      },
+      {
+        "puzzle": "P021",
+        "reason": "Dùng kết quả: Không khóa nữa"
+      },
+      {
+        "puzzle": "P069",
+        "reason": "Dùng kết quả: Lời dẫn của người hỏi"
+      },
+      {
+        "puzzle": "P081",
+        "reason": "Dùng kết quả: Lời xin lỗi không thay thế"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P089",
+    "title": "Nhà báo trước trang trắng",
+    "chapter": 6,
+    "room": "town",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Đặt nguyên tắc bản tin cuối.",
+    "clues": [
+      "Rika còn bản đầy đủ và bản đã đồng thuận.",
+      "Người sống có quyền giấu thông tin y tế."
+    ],
+    "requires": [
+      "P034",
+      "P050",
+      "P080"
+    ],
+    "answers": [
+      "Đăng phần đã đối chiếu và được phép"
+    ],
+    "hints": [
+      "Rika còn bản đầy đủ và bản đã đồng thuận.",
+      "Người sống có quyền giấu thông tin y tế.",
+      "Hướng giải: Đăng phần đã đối chiếu và được phép"
+    ],
+    "reward": "E089",
+    "resolution": "Nhà báo trước trang trắng: Người sống có quyền giấu thông tin y tế.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      },
+      {
+        "puzzle": "P050",
+        "reason": "Dùng kết quả: Bài báo có tên người"
+      },
+      {
+        "puzzle": "P080",
+        "reason": "Dùng kết quả: Bản gốc hay người còn sống"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P090",
+    "title": "Năm người dám nói",
+    "chapter": 6,
+    "room": "town",
+    "status": "designed",
+    "category": "inference",
+    "mechanic": "authored_design",
+    "prompt": "Mời nhân chứng không ép cùng lời.",
+    "clues": [
+      "Hiroshi nói về giờ.",
+      "Akane chỉ cho phép nói chữ ký."
+    ],
+    "requires": [
+      "P047",
+      "P065",
+      "P082"
+    ],
+    "answers": [
+      "Giữ phạm vi từng người"
+    ],
+    "hints": [
+      "Hiroshi nói về giờ.",
+      "Akane chỉ cho phép nói chữ ký.",
+      "Hướng giải: Giữ phạm vi từng người"
+    ],
+    "reward": "E090",
+    "resolution": "Năm người dám nói: Akane chỉ cho phép nói chữ ký.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P047",
+        "reason": "Dùng kết quả: Lời thú nhận của trưởng ga"
+      },
+      {
+        "puzzle": "P065",
+        "reason": "Dùng kết quả: Lời chứng không có máy"
+      },
+      {
+        "puzzle": "P082",
+        "reason": "Dùng kết quả: Hồ sơ có quyền từ chối"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P091",
+    "title": "Tên trên băng gốc",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Tách tên thật khỏi tên được đọc theo.",
+    "clues": [
+      "Leader có tiếng gọi trước phỏng vấn.",
+      "Lời sau câu hỏi thay tên ấy bằng Hanako."
+    ],
+    "requires": [
+      "P019",
+      "P067",
+      "P075",
+      "P076"
+    ],
+    "answers": [
+      "Mio"
+    ],
+    "hints": [
+      "Leader có tiếng gọi trước phỏng vấn.",
+      "Lời sau câu hỏi thay tên ấy bằng Hanako.",
+      "Hướng giải: Mio"
+    ],
+    "reward": "E091",
+    "resolution": "Tên trên băng gốc: Lời sau câu hỏi thay tên ấy bằng Hanako.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P019",
+        "reason": "Dùng kết quả: Tên trên chiếc khăn"
+      },
+      {
+        "puzzle": "P067",
+        "reason": "Dùng kết quả: Băng VHS số không"
+      },
+      {
+        "puzzle": "P075",
+        "reason": "Dùng kết quả: Nhớ theo lời người khác"
+      },
+      {
+        "puzzle": "P076",
+        "reason": "Dùng kết quả: Khoảng lặng sáu giây"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P092",
+    "title": "Chiếc khóa trả lại",
+    "chapter": 6,
+    "room": "school",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Trả vật dùng ngăn cửa.",
+    "clues": [
+      "Khóa đồng mở chốt ngoài.",
+      "Không cần khóa để giữ ký ức nữa."
+    ],
+    "requires": [
+      "P008",
+      "P021",
+      "P088"
+    ],
+    "answers": [
+      "Đặt khóa ngoài ngưỡng"
+    ],
+    "hints": [
+      "Khóa đồng mở chốt ngoài.",
+      "Không cần khóa để giữ ký ức nữa.",
+      "Hướng giải: Đặt khóa ngoài ngưỡng"
+    ],
+    "reward": "E092",
+    "resolution": "Chiếc khóa trả lại: Không cần khóa để giữ ký ức nữa.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P008",
+        "reason": "Dùng kết quả: Chìa khóa đồng"
+      },
+      {
+        "puzzle": "P021",
+        "reason": "Dùng kết quả: Không khóa nữa"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P093",
+    "title": "Người gửi thư thứ ba",
+    "chapter": 6,
+    "room": "archive",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Nhận ra phần không ai gửi.",
+    "clues": [
+      "Yui chỉ gói ảnh và chìa.",
+      "Naoto chỉ sao báo, cassette không thuộc cả hai."
+    ],
+    "requires": [
+      "P006",
+      "P078",
+      "P079"
+    ],
+    "answers": [
+      "Cassette không rõ nguồn"
+    ],
+    "hints": [
+      "Yui chỉ gói ảnh và chìa.",
+      "Naoto chỉ sao báo, cassette không thuộc cả hai.",
+      "Hướng giải: Cassette không rõ nguồn"
+    ],
+    "reward": "E093",
+    "resolution": "Người gửi thư thứ ba: Naoto chỉ sao báo, cassette không thuộc cả hai.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P006",
+        "reason": "Dùng kết quả: Cuộn băng im tiếng"
+      },
+      {
+        "puzzle": "P078",
+        "reason": "Dùng kết quả: Phong bì nhiều người gửi"
+      },
+      {
+        "puzzle": "P079",
+        "reason": "Dùng kết quả: Màn hình không nối dây"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P094",
+    "title": "Hai chữ không ký",
+    "chapter": 6,
+    "room": "home",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Chấp nhận thư cha mà không tha thứ thay mẹ.",
+    "clues": [
+      "Haruto xin nhận phần trách nhiệm.",
+      "Sachiko chưa đồng ý gặp lại."
+    ],
+    "requires": [
+      "P062",
+      "P077",
+      "P087"
+    ],
+    "answers": [
+      "Giữ thư",
+      " để mẹ quyết định"
+    ],
+    "hints": [
+      "Haruto xin nhận phần trách nhiệm.",
+      "Sachiko chưa đồng ý gặp lại.",
+      "Hướng giải: Giữ thư, để mẹ quyết định"
+    ],
+    "reward": "E094",
+    "resolution": "Hai chữ không ký: Sachiko chưa đồng ý gặp lại.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P062",
+        "reason": "Dùng kết quả: Căn nhà dưới tên khác"
+      },
+      {
+        "puzzle": "P077",
+        "reason": "Dùng kết quả: Hồ sơ Haruto"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P095",
+    "title": "Cánh cửa của mỗi người",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Chọn bản ký ức không xóa bất đồng.",
+    "clues": [
+      "Sổ giờ và giọng nói xác nhận việc xảy ra.",
+      "Động cơ chưa có nhân chứng độc lập."
+    ],
+    "requires": [
+      "P069",
+      "P075",
+      "P086",
+      "P088"
+    ],
+    "answers": [
+      "Giữ sự kiện",
+      " để mở động cơ"
+    ],
+    "hints": [
+      "Sổ giờ và giọng nói xác nhận việc xảy ra.",
+      "Động cơ chưa có nhân chứng độc lập.",
+      "Hướng giải: Giữ sự kiện, để mở động cơ"
+    ],
+    "reward": "E095",
+    "resolution": "Cánh cửa của mỗi người: Động cơ chưa có nhân chứng độc lập.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P069",
+        "reason": "Dùng kết quả: Lời dẫn của người hỏi"
+      },
+      {
+        "puzzle": "P075",
+        "reason": "Dùng kết quả: Nhớ theo lời người khác"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P096",
+    "title": "Quyền được gọi tên",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Xin phép trước khi công bố tên thứ sáu.",
+    "clues": [
+      "Mio muốn được nhớ nhưng không thành biểu tượng.",
+      "Hồ sơ có người còn sống liên quan."
+    ],
+    "requires": [
+      "P063",
+      "P082",
+      "P085",
+      "P091"
+    ],
+    "answers": [
+      "Hỏi và ghi phạm vi cho phép"
+    ],
+    "hints": [
+      "Mio muốn được nhớ nhưng không thành biểu tượng.",
+      "Hồ sơ có người còn sống liên quan.",
+      "Hướng giải: Hỏi và ghi phạm vi cho phép"
+    ],
+    "reward": "E096",
+    "resolution": "Quyền được gọi tên: Hồ sơ có người còn sống liên quan.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P063",
+        "reason": "Dùng kết quả: Mộ chưa khắc chữ"
+      },
+      {
+        "puzzle": "P082",
+        "reason": "Dùng kết quả: Hồ sơ có quyền từ chối"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P097",
+    "title": "Một chỗ trống có thật",
+    "chapter": 6,
+    "room": "school",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Giữ bàn thay vì biến thành vật trưng bày.",
+    "clues": [
+      "Hoa được thay đều từ trước.",
+      "Người chăm bàn không muốn khách chụp ảnh."
+    ],
+    "requires": [
+      "P010",
+      "P034",
+      "P092",
+      "P096"
+    ],
+    "answers": [
+      "Giữ nơi tưởng nhớ riêng"
+    ],
+    "hints": [
+      "Hoa được thay đều từ trước.",
+      "Người chăm bàn không muốn khách chụp ảnh.",
+      "Hướng giải: Giữ nơi tưởng nhớ riêng"
+    ],
+    "reward": "E097",
+    "resolution": "Một chỗ trống có thật: Người chăm bàn không muốn khách chụp ảnh.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P010",
+        "reason": "Dùng kết quả: Ngăn bàn còn sạch"
+      },
+      {
+        "puzzle": "P034",
+        "reason": "Dùng kết quả: Bức ảnh xin phép"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P098",
+    "title": "Bản lưu cho ngày mai",
+    "chapter": 6,
+    "room": "archive",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Chọn nơi giữ bản sao có người chịu trách nhiệm.",
+    "clues": [
+      "Kho công đã từng sửa hồ sơ.",
+      "Các bản độc lập có chữ ký đối chiếu."
+    ],
+    "requires": [
+      "P055",
+      "P073",
+      "P080",
+      "P089"
+    ],
+    "answers": [
+      "Hai bản niêm phong ở hai nơi"
+    ],
+    "hints": [
+      "Kho công đã từng sửa hồ sơ.",
+      "Các bản độc lập có chữ ký đối chiếu.",
+      "Hướng giải: Hai bản niêm phong ở hai nơi"
+    ],
+    "reward": "E098",
+    "resolution": "Bản lưu cho ngày mai: Các bản độc lập có chữ ký đối chiếu.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P055",
+        "reason": "Dùng kết quả: Hai bộ hộ tịch"
+      },
+      {
+        "puzzle": "P073",
+        "reason": "Dùng kết quả: Bản sao của người đáng nghi"
+      },
+      {
+        "puzzle": "P080",
+        "reason": "Dùng kết quả: Bản gốc hay người còn sống"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P099",
+    "title": "Buổi họp không đồng thanh",
+    "chapter": 6,
+    "room": "town",
+    "status": "designed",
+    "category": "cross_chapter",
+    "mechanic": "authored_design",
+    "prompt": "Cho phép lời chứng mâu thuẫn tồn tại.",
+    "clues": [
+      "Sai lệch giờ đã được giải thích.",
+      "Không ai biết hết động cơ người khác."
+    ],
+    "requires": [
+      "P047",
+      "P086",
+      "P090",
+      "P095",
+      "P098"
+    ],
+    "answers": [
+      "Lưu lời khác nhau cùng nguồn"
+    ],
+    "hints": [
+      "Sai lệch giờ đã được giải thích.",
+      "Không ai biết hết động cơ người khác.",
+      "Hướng giải: Lưu lời khác nhau cùng nguồn"
+    ],
+    "reward": "E099",
+    "resolution": "Buổi họp không đồng thanh: Không ai biết hết động cơ người khác.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [
+      {
+        "puzzle": "P047",
+        "reason": "Dùng kết quả: Lời thú nhận của trưởng ga"
+      }
+    ],
+    "position": null
+  },
+  {
+    "id": "P100",
+    "title": "Người thứ sáu",
+    "chapter": 6,
+    "room": "memory",
+    "status": "designed",
+    "category": "memory_choice",
+    "mechanic": "authored_design",
+    "prompt": "Chọn cách sống sau sự thật theo trạng thái tích lũy.",
+    "clues": [
+      "Quyền công bố phụ thuộc đồng thuận.",
+      "Cộng đồng chỉ đổi khi nhiều người chịu lên tiếng."
+    ],
+    "requires": [
+      "P083",
+      "P084",
+      "P085",
+      "P087",
+      "P088",
+      "P091",
+      "P093",
+      "P094",
+      "P095",
+      "P096",
+      "P097",
+      "P098",
+      "P099"
+    ],
+    "answers": [
+      "Tính ending từ flags và quan hệ"
+    ],
+    "hints": [
+      "Quyền công bố phụ thuộc đồng thuận.",
+      "Cộng đồng chỉ đổi khi nhiều người chịu lên tiếng.",
+      "Hướng giải: Tính ending từ flags và quan hệ"
+    ],
+    "reward": "E100",
+    "resolution": "Người thứ sáu: Cộng đồng chỉ đổi khi nhiều người chịu lên tiếng.",
+    "effect": "Ghi chứng cứ và mở các câu đố phụ thuộc.",
+    "difficulty": 2,
+    "softlock": "Vật phẩm không tiêu hao. Đọc lại manh mối, ba gợi ý; bỏ qua sau ba lần sai.",
+    "test": "Đúng mở reward; sai không khóa; lưu/tải giữ đủ điều kiện.",
+    "cross_links": [],
+    "position": null
+  }
+]

@@ -1,0 +1,680 @@
+[
+  {
+    "id": "P001a",
+    "room": "station_hall",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Tờ vé bị ướt",
+    "text": "Mực trên vé còn rõ: CỬA 2.",
+    "target": "P001",
+    "requires": [],
+    "prop": "paper"
+  },
+  {
+    "id": "P001b",
+    "room": "station",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Chi tiết: Tờ vé bị ướt",
+    "text": "Cửa 1 ghi dành riêng cho hàng hóa.",
+    "target": "P001",
+    "requires": [],
+    "prop": "detail"
+  },
+  {
+    "id": "P002a",
+    "room": "hospital",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Đơn thuốc của mẹ",
+    "text": "Y tá dặn không tự thêm thuốc.",
+    "target": "P002",
+    "requires": [
+      "P001"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P002b",
+    "room": "hospital_lobby",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Chi tiết: Đơn thuốc của mẹ",
+    "text": "Mẹ muốn uống thứ không có caffeine, Tomoko có trà lúa mạch.",
+    "target": "P002",
+    "requires": [
+      "P001"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P003a",
+    "room": "shop",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Giỏ hàng ba ngày",
+    "text": "Giá đã gồm thuế trên hóa đơn.",
+    "target": "P003",
+    "requires": [
+      "P002"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P003b",
+    "room": "shop",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Chi tiết: Giỏ hàng ba ngày",
+    "text": "Ren có một tờ 500 yên; không mua thêm báo.",
+    "target": "P003",
+    "requires": [
+      "P002"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P004a",
+    "room": "home",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Hai bộ đũa",
+    "text": "Sachiko nhắn: ăn phần trong nồi trước.",
+    "target": "P004",
+    "requires": [
+      "P003"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P004b",
+    "room": "home_entry",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Chi tiết: Hai bộ đũa",
+    "text": "Chiếc bát thứ hai sạch, còn úp trên kệ.",
+    "target": "P004",
+    "requires": [
+      "P003"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P005a",
+    "room": "home_entry",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Ghi chép: Tin lúc sáu giờ",
+    "text": "Bản tin chạy chữ: đóng cổng THỨ TƯ.",
+    "target": "P005",
+    "requires": [
+      "P004"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P005b",
+    "room": "shop",
+    "position": [
+      336,
+      96
+    ],
+    "title": "Chi tiết: Tin lúc sáu giờ",
+    "text": "Tờ báo cùng ngày in nhầm thứ Sáu; radio có lời cải chính.",
+    "target": "P005",
+    "requires": [
+      "P004"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P006a",
+    "room": "home",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Ghi chép: Cuộn băng im tiếng",
+    "text": "Nắp máy in dấu âm cạnh lò xo.",
+    "target": "P006",
+    "requires": [
+      "P003",
+      "P004"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P006b",
+    "room": "home",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Chi tiết: Cuộn băng im tiếng",
+    "text": "Hai pin cũ có vết gỉ đúng phía đáy phẳng.",
+    "target": "P006",
+    "requires": [
+      "P003",
+      "P004"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P007a",
+    "room": "station",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Ghi chép: Chuyến tàu bị hủy",
+    "text": "Thông báo tháng 10 ghi 16:10 ngừng từ 1988.",
+    "target": "P007",
+    "requires": [
+      "P001",
+      "P005"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P007b",
+    "room": "station_hall",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Chi tiết: Chuyến tàu bị hủy",
+    "text": "Hiroshi vẫn giữ vé mẫu, không phải vé đã soát.",
+    "target": "P007",
+    "requires": [
+      "P001",
+      "P005"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P008a",
+    "room": "town",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Chìa khóa đồng",
+    "text": "Yui chỉ lối qua sân phía Đông.",
+    "target": "P008",
+    "requires": [
+      "P006",
+      "P007"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P008b",
+    "room": "town",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Chi tiết: Chìa khóa đồng",
+    "text": "Chìa trong thư có vết khía giống ký hiệu Đông trên bản đồ.",
+    "target": "P008",
+    "requires": [
+      "P006",
+      "P007"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P009a",
+    "room": "school_vestibule",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Lịch học bị xé",
+    "text": "Lịch ghi Hai = 2, Ba = 3, Tư = 4.",
+    "target": "P009",
+    "requires": [
+      "P008"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P009b",
+    "room": "school_vestibule",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Chi tiết: Lịch học bị xé",
+    "text": "Mảnh nhật ký gạch chân thứ tự Nhạc, Vẽ, Toán.",
+    "target": "P009",
+    "requires": [
+      "P008"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P010a",
+    "room": "school_class",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Ngăn bàn còn sạch",
+    "text": "Vệt khăn ẩm dừng ở cửa sổ.",
+    "target": "P010",
+    "requires": [
+      "P009"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P010b",
+    "room": "school",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Chi tiết: Ngăn bàn còn sạch",
+    "text": "Yui kể có người vẫn đặt hoa ở đó mỗi tuần.",
+    "target": "P010",
+    "requires": [
+      "P009"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P011a",
+    "room": "school_teachers",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Hai nét chữ",
+    "text": "Dòng ban đầu bằng bút chì thấp hơn ô kẻ.",
+    "target": "P011",
+    "requires": [
+      "P010"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P011b",
+    "room": "school_teachers",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Chi tiết: Hai nét chữ",
+    "text": "Chữ sửa dùng mực đỏ cùng vết nhòe với chữ ký giáo viên.",
+    "target": "P011",
+    "requires": [
+      "P010"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P012a",
+    "room": "school_broadcast",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Dây loa cũ",
+    "text": "Sơ đồ nối còn nguyên ở dưới loa.",
+    "target": "P012",
+    "requires": [
+      "P009"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P012b",
+    "room": "school_broadcast",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Chi tiết: Dây loa cũ",
+    "text": "Vết cháy chỉ nằm ở nút nguồn, không ở ba đầu dây.",
+    "target": "P012",
+    "requires": [
+      "P009"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P013a",
+    "room": "school_corridor",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Nhịp gõ bên kia",
+    "text": "Băng của Ren có hai nhịp, rồi một nhịp.",
+    "target": "P013",
+    "requires": [
+      "P006",
+      "P012"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P013b",
+    "room": "school_broadcast",
+    "position": [
+      112,
+      144
+    ],
+    "title": "Chi tiết: Nhịp gõ bên kia",
+    "text": "Cửa thật trả lại đúng nhịp; tiếng vọng không có khoảng nghỉ.",
+    "target": "P013",
+    "requires": [
+      "P006",
+      "P012"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P014a",
+    "room": "school_store",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Hành lang thứ hai",
+    "text": "Nhấn M ngoài bảng câu đố để xem phiên bản ký ức.",
+    "target": "P014",
+    "requires": [
+      "P011",
+      "P013"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P014b",
+    "room": "school_corridor",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Chi tiết: Hành lang thứ hai",
+    "text": "Bảng gỗ treo trước lối cuối ghi NHÀ KHO trong hồi tưởng.",
+    "target": "P014",
+    "requires": [
+      "P011",
+      "P013"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P015a",
+    "room": "school_teachers",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Ghi chép: Nhân chứng chuyến cuối",
+    "text": "Thông báo nhà ga vẫn còn trong sổ tay của Ren.",
+    "target": "P015",
+    "requires": [
+      "P007",
+      "P014"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P015b",
+    "room": "school_vestibule",
+    "position": [
+      112,
+      144
+    ],
+    "title": "Chi tiết: Nhân chứng chuyến cuối",
+    "text": "Lời Kaori nói là giờ in trên vé mẫu, không phải giờ soát vé.",
+    "target": "P015",
+    "requires": [
+      "P007",
+      "P014"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P016a",
+    "room": "school_corridor",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Ghi chép: Tủ hồ sơ 4:44",
+    "text": "Kim giờ chỉ 4; hai ô phút đều là 4.",
+    "target": "P016",
+    "requires": [
+      "P015"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P016b",
+    "room": "school_store",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Chi tiết: Tủ hồ sơ 4:44",
+    "text": "Tủ mang hình chiếc đồng hồ, không phải số phòng.",
+    "target": "P016",
+    "requires": [
+      "P015"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P017a",
+    "room": "school_class",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Ghi chép: Ảnh thiếu một người",
+    "text": "Đếm bóng cả người cầm máy trong phản chiếu.",
+    "target": "P017",
+    "requires": [
+      "P010",
+      "P016"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P017b",
+    "room": "school_class",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Chi tiết: Ảnh thiếu một người",
+    "text": "Danh sách có đúng năm dòng, một dòng bị dán băng trắng.",
+    "target": "P017",
+    "requires": [
+      "P010",
+      "P016"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P018a",
+    "room": "school_teachers",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Ghi chép: Lời khai của đứa trẻ",
+    "text": "Nhật ký ghi cửa bị giữ từ bên ngoài.",
+    "target": "P018",
+    "requires": [
+      "P011",
+      "P017"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P018b",
+    "room": "school_class",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Chi tiết: Lời khai của đứa trẻ",
+    "text": "Bản sửa đổi giữ cửa thành tránh cửa. Cả hai là bằng chứng.",
+    "target": "P018",
+    "requires": [
+      "P011",
+      "P017"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P019a",
+    "room": "school_store",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Ghi chép: Tên trên chiếc khăn",
+    "text": "Chữ M và I còn nguyên trên khăn.",
+    "target": "P019",
+    "requires": [
+      "P018"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P019b",
+    "room": "school_store",
+    "position": [
+      336,
+      96
+    ],
+    "title": "Chi tiết: Tên trên chiếc khăn",
+    "text": "Nhãn áo còn chữ O cuối; không phải tên Hanako trong lời đồn.",
+    "target": "P019",
+    "requires": [
+      "P018"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P020a",
+    "room": "school_toilets",
+    "position": [
+      48,
+      96
+    ],
+    "title": "Ghi chép: Cánh cửa có tiếng thở",
+    "text": "Sơ đồ loa không đi đến buồng số ba.",
+    "target": "P020",
+    "requires": [
+      "P013",
+      "P019"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P020b",
+    "room": "school_corridor",
+    "position": [
+      336,
+      96
+    ],
+    "title": "Chi tiết: Cánh cửa có tiếng thở",
+    "text": "Hanako chỉ đáp sau khi tiếng băng dừng; âm thanh có phụ đề tương đương.",
+    "target": "P020",
+    "requires": [
+      "P013",
+      "P019"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P021a",
+    "room": "school_toilets",
+    "position": [
+      176,
+      96
+    ],
+    "title": "Ghi chép: Không khóa nữa",
+    "text": "Vết xước nằm ngoài cánh cửa, không ở trong.",
+    "target": "P021",
+    "requires": [
+      "P014",
+      "P020"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P021b",
+    "room": "school_toilets",
+    "position": [
+      416,
+      96
+    ],
+    "title": "Chi tiết: Không khóa nữa",
+    "text": "Không ai phía bên kia nhờ Ren giữ cửa nữa.",
+    "target": "P021",
+    "requires": [
+      "P014",
+      "P020"
+    ],
+    "prop": "detail"
+  },
+  {
+    "id": "P022a",
+    "room": "school",
+    "position": [
+      112,
+      96
+    ],
+    "title": "Ghi chép: Gửi lại lời chứng",
+    "text": "Yui hứa giữ tên trẻ em khỏi tờ báo.",
+    "target": "P022",
+    "requires": [
+      "P018",
+      "P021"
+    ],
+    "prop": "paper"
+  },
+  {
+    "id": "P022b",
+    "room": "school",
+    "position": [
+      256,
+      96
+    ],
+    "title": "Chi tiết: Gửi lại lời chứng",
+    "text": "Bản gốc được niêm phong; bản sao vẫn đủ chứng minh chữ đã bị sửa.",
+    "target": "P022",
+    "requires": [
+      "P018",
+      "P021"
+    ],
+    "prop": "detail"
+  }
+]

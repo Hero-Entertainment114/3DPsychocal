@@ -1,0 +1,29 @@
+{
+  "counting_rule": "Whitespace-delimited spoken Vietnamese units; excludes speaker names, UI, descriptions, notes, code, and repeated playback. Not linguistic Vietnamese word segmentation. Full release gate also excludes duplicate lines.",
+  "errors": [],
+  "spoken_units_written": 16586,
+  "spoken_units_playable": 13777,
+  "spoken_units_playable_unique_lines": 13777,
+  "duplicate_spoken_units": 0,
+  "playable_conversations": 59,
+  "written_conversations": 76,
+  "per_chapter_spoken_units": {
+    "0": 6176,
+    "1": 7601
+  },
+  "per_chapter_maps": {
+    "0": 8,
+    "1": 16
+  },
+  "dialogue_budget": 50000,
+  "release_gates": {
+    "eight_chapters_playable": false,
+    "eight_maps_each_chapter": false,
+    "45000_playable_nonduplicate_spoken_units": false,
+    "25_character_biographies": true,
+    "100_playable_connected_puzzles": false,
+    "five_campaign_endings": false,
+    "two_anchored_clues_every_conversation": true
+  },
+  "full_release_ready": false
+}

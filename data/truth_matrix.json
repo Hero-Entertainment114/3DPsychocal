@@ -1,0 +1,213 @@
+[
+  {
+    "id": "T01",
+    "event": "Vé chuyến 16:10",
+    "objective_truth": "Chuyến 16:10 đã ngừng; vé trong hồ sơ là vé mẫu.",
+    "witnesses": {
+      "hiroshi": {
+        "knows": "Chuyến đã ngừng năm 1988.",
+        "believes": "Giữ thông báo giúp con hiểu thay đổi.",
+        "says": "Vé không chứng minh hành khách đã đi."
+      },
+      "kaori": {
+        "knows": "Đã nhìn thấy mặt Ren.",
+        "believes": "Giờ trên vé là giờ mình gặp.",
+        "says": "Gặp cả lớp trên chuyến 16:10."
+      }
+    },
+    "clues": [
+      "P001",
+      "P007",
+      "P015",
+      "P037",
+      "P086"
+    ],
+    "reveal": "III / VI"
+  },
+  {
+    "id": "T02",
+    "event": "Chữ sửa trong học bạ",
+    "objective_truth": "Kaori đổi giữ cửa thành tránh cửa, rồi bản sửa trở thành câu chung.",
+    "witnesses": {
+      "kaori": {
+        "knows": "Mực sửa do mình viết.",
+        "believes": "Lúc đầu nghĩ chỉ làm câu dễ hiểu.",
+        "says": "Thừa nhận nét mực nhưng chưa biết hết sự kiện."
+      },
+      "rei": {
+        "knows": "Đọc được hai lớp chữ.",
+        "believes": "Mẹ có thể sai dù luôn là người được tin.",
+        "says": "Lời giống nhau có thể được dạy."
+      }
+    },
+    "clues": [
+      "P011",
+      "P018",
+      "P069",
+      "P075",
+      "P095"
+    ],
+    "reveal": "I / V"
+  },
+  {
+    "id": "T03",
+    "event": "Chốt ngoài",
+    "objective_truth": "Ren giữ chốt để giấu bạn khỏi người lớn; điều đó ngăn người bên trong ra.",
+    "witnesses": {
+      "ren": {
+        "knows": "Nhớ tay và âm thanh rời rạc.",
+        "believes": "Mình đã bảo vệ người khác.",
+        "says": "Không biết vì sao phải mở cửa."
+      },
+      "mio": {
+        "knows": "Đã yêu cầu mở khi chốt còn giữ.",
+        "believes": "Ren nghe nhưng sợ.",
+        "says": "Nhìn xem tay anh có giữ chốt không."
+      }
+    },
+    "clues": [
+      "P006",
+      "P013",
+      "P014",
+      "P018",
+      "P021",
+      "P076",
+      "P081",
+      "P088"
+    ],
+    "reveal": "I từng phần / V đầy đủ"
+  },
+  {
+    "id": "T04",
+    "event": "Hồ sơ gộp",
+    "objective_truth": "Người khác nhau bị gộp tên; người bảo lãnh tạo chồng lấn hộ tịch.",
+    "witnesses": {
+      "natsuki": {
+        "knows": "Hai ngày sinh và hồ sơ không trùng.",
+        "believes": "Chữ ký chưa đủ chứng minh đã đồng ý.",
+        "says": "Không trộn hai tờ thuốc vì chữ giống nhau."
+      },
+      "sachiko": {
+        "knows": "Đã ký thay khi Haruto rời đi.",
+        "believes": "Giấy chuyển hộ giúp trẻ được chăm.",
+        "says": "Hồ sơ nhà trong ngăn bàn."
+      }
+    },
+    "clues": [
+      "P002",
+      "P019",
+      "P028",
+      "P055",
+      "P062",
+      "P085"
+    ],
+    "reveal": "II / IV / VI"
+  },
+  {
+    "id": "T05",
+    "event": "Người giấu giấy",
+    "objective_truth": "Naoto giữ bản gốc tránh tiêu hủy, rồi giữ quyền tiếp cận quá lâu.",
+    "witnesses": {
+      "naoto": {
+        "knows": "Bản công khai thiếu tên.",
+        "believes": "Chỉ mình biết giữ giấy đúng cách.",
+        "says": "Đòi ghi người nhận và nơi giữ bản thứ hai."
+      },
+      "yui": {
+        "knows": "Ông giúp sao báo để gửi Ren.",
+        "believes": "Cassette trong gói là của ông.",
+        "says": "Biết khóa mở cổng Đông."
+      }
+    },
+    "clues": [
+      "P016",
+      "P033",
+      "P055",
+      "P067",
+      "P070",
+      "P073"
+    ],
+    "reveal": "V"
+  },
+  {
+    "id": "T06",
+    "event": "Lá thư",
+    "objective_truth": "Yui góp ảnh/khóa, Naoto góp báo; không ai trong hai người thêm cassette.",
+    "witnesses": {
+      "yui": {
+        "knows": "Đã dùng lá thư kéo Ren vào chuyện.",
+        "believes": "Naoto đã thêm băng.",
+        "says": "Né giải thích giữa cửa tiệm."
+      },
+      "naoto": {
+        "knows": "Mình chỉ sao bài báo.",
+        "believes": "Có phần không thể giải thích.",
+        "says": "Ghi riêng phần chúng tôi nhận đã làm."
+      }
+    },
+    "clues": [
+      "P006",
+      "P008",
+      "P017",
+      "P060",
+      "P067",
+      "P078",
+      "P093"
+    ],
+    "reveal": "V / VI"
+  },
+  {
+    "id": "T07",
+    "event": "Ngôi làng",
+    "objective_truth": "Địa chỉ và hồ sơ bị sửa do di dời; dân cư không phải thực thể ngoài luật.",
+    "witnesses": {
+      "fumiko": {
+        "knows": "Địa chỉ cũ tồn tại trong băng.",
+        "believes": "Con cháu nên được nghe trước báo.",
+        "says": "Tai phải còn thông báo cũ."
+      },
+      "chihiro": {
+        "knows": "Đã mang ba phần ăn.",
+        "believes": "Im lặng từng bảo vệ chồng.",
+        "says": "Không nấu cơm theo hồ sơ."
+      }
+    },
+    "clues": [
+      "P004",
+      "P051",
+      "P053",
+      "P055",
+      "P056",
+      "P058",
+      "P060",
+      "P066"
+    ],
+    "reveal": "IV"
+  },
+  {
+    "id": "T08",
+    "event": "Nguồn hiện tượng",
+    "objective_truth": "Có nhịp phản hồi trên thiết bị không nối nguồn và cassette ngoài chuỗi gửi.",
+    "witnesses": {
+      "shinji": {
+        "knows": "Mình soạn bản hỏi, không tạo mọi hiện tượng.",
+        "believes": "Không biết nguồn màn hình đỏ.",
+        "says": "Kiểm tra thiết bị, đừng cho tôi một lời giải thích bao trùm."
+      },
+      "ren": {
+        "knows": "Đã kiểm dây và nhịp vừa tạo.",
+        "believes": "Có phần vượt điều mình biết.",
+        "says": "Giữ phần chưa giải thích, không xóa chứng cứ."
+      }
+    },
+    "clues": [
+      "P012",
+      "P020",
+      "P067",
+      "P074",
+      "P079",
+      "P093"
+    ],
+    "reveal": "V / VI"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "C00",
+    "index": 0,
+    "title": "Mở đầu — Ba ngày ở quê",
+    "inspiration": "Đời sống Tsukimori; gieo lời đồn Hanako",
+    "dialogue_budget": 6000,
+    "puzzle_budget": 8,
+    "map_minimum": 8,
+    "status": "playable",
+    "maps": [
+      "station",
+      "station_hall",
+      "town",
+      "shop",
+      "hospital_lobby",
+      "hospital",
+      "home_entry",
+      "home"
+    ]
+  },
+  {
+    "id": "C01",
+    "index": 1,
+    "title": "I — Tiếng gõ sau cánh cửa",
+    "inspiration": "Toire no Hanako-san",
+    "dialogue_budget": 7500,
+    "puzzle_budget": 14,
+    "map_minimum": 8,
+    "status": "playable",
+    "maps": [
+      "school",
+      "school_vestibule",
+      "school_class",
+      "school_teachers",
+      "school_broadcast",
+      "school_corridor",
+      "school_store",
+      "school_toilets",
+      "school_hall1",
+      "school_stairs1",
+      "school_hall2",
+      "school_stairs2",
+      "school_library",
+      "school_medical",
+      "school_guard",
+      "school_toilets2"
+    ]
+  },
+  {
+    "id": "C02",
+    "index": 2,
+    "title": "II — Người sau chiếc khẩu trang",
+    "inspiration": "Kuchisake-onna",
+    "dialogue_budget": 7000,
+    "puzzle_budget": 14,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  },
+  {
+    "id": "C03",
+    "index": 3,
+    "title": "III — Nhà ga không trở về",
+    "inspiration": "Teke Teke",
+    "dialogue_budget": 6500,
+    "puzzle_budget": 14,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  },
+  {
+    "id": "C04",
+    "index": 4,
+    "title": "IV — Ngôi làng ngoài bản đồ",
+    "inspiration": "Inunaki: ngôi làng hư cấu",
+    "dialogue_budget": 7000,
+    "puzzle_budget": 16,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  },
+  {
+    "id": "C05",
+    "index": 5,
+    "title": "V — Căn phòng đỏ",
+    "inspiration": "Akai Heya: tiền thân VHS nguyên bản năm 1998",
+    "dialogue_budget": 7000,
+    "puzzle_budget": 16,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  },
+  {
+    "id": "C06",
+    "index": 6,
+    "title": "VI — Người thứ sáu",
+    "inspiration": "Các truyền thuyết hội tụ, không quy về một nguyên nhân",
+    "dialogue_budget": 6000,
+    "puzzle_budget": 18,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  },
+  {
+    "id": "C07",
+    "index": 7,
+    "title": "Kết — Những người ở lại",
+    "inspiration": "Hậu quả năm kết thúc; không thêm huyền thoại mới",
+    "dialogue_budget": 3000,
+    "puzzle_budget": 0,
+    "map_minimum": 8,
+    "status": "planned",
+    "maps": []
+  }
+]

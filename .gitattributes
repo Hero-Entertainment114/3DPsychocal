@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.wav binary
+*.ttf binary
+assets/fonts/*.txt whitespace=-blank-at-eol,-blank-at-eof
+docs/BRIEF*.txt whitespace=-blank-at-eol,-blank-at-eof

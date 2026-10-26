@@ -1,0 +1,71 @@
+flowchart TB
+  station["SÂN GA TSUKIMORI"]
+  station -->|door| station_hall
+  station_hall["SẢNH VÉ CŨ"]
+  station_hall -->|door| station
+  station_hall -->|P001| town
+  town["PHỐ DƯỚI MƯA"]
+  town -->|door| station_hall
+  town -->|door| shop
+  town -->|door| hospital_lobby
+  town -->|P002| home_entry
+  town -->|P008| school
+  shop["TIỆM SAKURAI"]
+  shop -->|door| town
+  hospital_lobby["SẢNH BỆNH VIỆN"]
+  hospital_lobby -->|door| town
+  hospital_lobby -->|door| hospital
+  hospital["PHÒNG BỆNH CỦA MẸ"]
+  hospital -->|door| hospital_lobby
+  home_entry["HIÊN NHÀ MIZUHARA"]
+  home_entry -->|door| town
+  home_entry -->|door| home
+  home["BẾP VÀ BÀN ĂN"]
+  home -->|door| home_entry
+  school["SÂN TRƯỜNG TSUKIMORI"]
+  school -->|door| town
+  school -->|door| school_vestibule
+  school_vestibule["SẢNH TỦ GIÀY"]
+  school_vestibule -->|door| school
+  school_vestibule -->|door| school_hall1
+  school_class["LỚP 6–2"]
+  school_class -->|door| school_hall2
+  school_teachers["PHÒNG GIÁO VIÊN"]
+  school_teachers -->|door| school_hall1
+  school_broadcast["PHÒNG PHÁT THANH"]
+  school_broadcast -->|door| school_hall1
+  school_corridor["HÀNH LANG TẦNG BA"]
+  school_corridor -->|stairs| school_stairs2
+  school_corridor -->|P019| school_toilets
+  school_store["KHO SAU PHÒNG Y TẾ"]
+  school_store -->|door| school_hall2
+  school_toilets["BA CÁNH CỬA"]
+  school_toilets -->|door| school_corridor
+  school_hall1["Hành lang tầng một"]
+  school_hall1 -->|door| school_vestibule
+  school_hall1 -->|P010| school_teachers
+  school_hall1 -->|P009| school_broadcast
+  school_hall1 -->|door| school_medical
+  school_hall1 -->|door| school_guard
+  school_hall1 -->|P009| school_stairs1
+  school_stairs1["Cầu thang một–hai"]
+  school_stairs1 -->|door| school_hall1
+  school_stairs1 -->|stairs| school_hall2
+  school_hall2["Hành lang tầng hai"]
+  school_hall2 -->|stairs| school_stairs1
+  school_hall2 -->|door| school_class
+  school_hall2 -->|P013| school_store
+  school_hall2 -->|door| school_library
+  school_hall2 -->|door| school_toilets2
+  school_hall2 -->|P012| school_stairs2
+  school_stairs2["Cầu thang hai–ba"]
+  school_stairs2 -->|door| school_hall2
+  school_stairs2 -->|stairs| school_corridor
+  school_library["Thư viện"]
+  school_library -->|door| school_hall2
+  school_medical["Phòng y tế"]
+  school_medical -->|door| school_hall1
+  school_guard["Phòng trực"]
+  school_guard -->|door| school_hall1
+  school_toilets2["Nhà vệ sinh tầng hai"]
+  school_toilets2 -->|door| school_hall2

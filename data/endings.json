@@ -1,0 +1,177 @@
+[
+  {
+    "id": "A",
+    "title": "Sự thật dễ chấp nhận",
+    "english_title": "The Convenient Truth",
+    "status": "preview_only",
+    "scenes": [
+      {
+        "location": "station",
+        "title": "Tờ báo mới",
+        "text": "Một tai nạn cũ được giải thích bằng một lỗi hành chính. Đủ rõ để người ta xếp báo lại. Ren giữ băng trong túi, không đưa nó ra."
+      },
+      {
+        "location": "town",
+        "title": "Bữa sáng",
+        "text": "Cửa tiệm mở đúng giờ. Một chỗ trên bảng tên vẫn trắng. Khi khách hỏi, Tomoko không còn nhớ câu trả lời nào ít làm đau người khác."
+      },
+      {
+        "location": "school",
+        "title": "Cửa đóng",
+        "text": "Ren thay ổ khóa rồi trở về Tokyo. Buổi tối, từ một băng chưa từng chạy, có tiếng hỏi rất nhỏ: lần này ai đang giữ cửa?"
+      }
+    ],
+    "epilogues": [
+      "Ren trở lại ca giao hàng, tránh nghe cassette.",
+      "Sachiko có người đưa về nhưng lại ăn cơm trong im lặng.",
+      "Haruto gửi thư không nhận hồi âm.",
+      "Yui thôi hỏi Ren bao giờ về.",
+      "Kaori tiếp tục lau một chiếc bàn.",
+      "Haruka giữ nhật ký khỏi lời giải chính thức.",
+      "Masato trả trang giấy mà không được gặp người nhận.",
+      "Tomoko vẫn mua trà cho Sachiko.",
+      "Hiroshi giữ thông báo chuyến bị hủy.",
+      "Mio tồn tại trong một khoảng tên bị bỏ trắng."
+    ]
+  },
+  {
+    "id": "B",
+    "title": "Cái giá của ký ức",
+    "english_title": "The Price of Memory",
+    "status": "preview_only",
+    "scenes": [
+      {
+        "location": "archive",
+        "title": "Bản lời khai",
+        "text": "Ren ký vào phần trách nhiệm của mình. Bản sao lan ra trước khi các gia đình kịp chọn phần muốn kể. Sự thật không biến anh thành người được chào đón."
+      },
+      {
+        "location": "home",
+        "title": "Chiếc bàn dài",
+        "text": "Sachiko đặt hai bát cơm. Họ ngồi hết bữa mà không hỏi giấy tờ. Ngoài hiên, những lá thư chưa mở được giữ lại, không đốt."
+      },
+      {
+        "location": "station",
+        "title": "Chuyến đi muộn",
+        "text": "Ren mất ca làm vì ở lại thêm. Anh đứng trước bảng tuyển người với một chiếc túi nhẹ hơn và một ký ức nặng hơn."
+      }
+    ],
+    "epilogues": [
+      "Ren tìm việc mới sau khi nhận trách nhiệm.",
+      "Sachiko đòi quyền giữ phần bệnh án riêng.",
+      "Haruto về ga, chờ được mời vào nhà.",
+      "Yui giận Ren vì đưa giấy quá sớm.",
+      "Kaori nộp bản giải trình có tên mình.",
+      "Haruka từ chối phỏng vấn thêm.",
+      "Masato nói cụ thể việc đã làm.",
+      "Tomoko không treo tờ báo có ảnh trẻ em.",
+      "Hiroshi sửa giờ nhưng giữ cả sổ cũ.",
+      "Mio được gọi tên trong một câu chuyện chưa thuộc về em."
+    ]
+  },
+  {
+    "id": "C",
+    "title": "Những tiếng nói bị lãng quên",
+    "english_title": "The Forgotten Voices",
+    "status": "preview_only",
+    "scenes": [
+      {
+        "location": "archive",
+        "title": "Hai bản lưu",
+        "text": "Một bản được niêm phong, một bản chỉ chứa phần các nhân chứng đồng ý công bố. Ren ký tên cạnh câu mình từng không dám nói: tôi đã giữ chốt."
+      },
+      {
+        "location": "school",
+        "title": "Cửa mở",
+        "text": "Họ rút chốt rồi lùi lại. Không có ánh sáng chữa lành tất cả. Chỉ có tiếng bước chân ở phía bên kia dừng lại, như một người cuối cùng đã được quyền không trả lời."
+      },
+      {
+        "location": "home",
+        "title": "Cơm đã nguội",
+        "text": "Ren và Sachiko hâm lại cơm. Mẹ hỏi hôm nay con có mệt không. Lần này anh nói có, không kèm một lời giải thích để bà yên lòng."
+      }
+    ],
+    "epilogues": [
+      "Ren ở lại thêm một tuần bằng lựa chọn của mình.",
+      "Sachiko bắt đầu kể những điều bà chưa biết chắc.",
+      "Haruto nhận rằng chuyển tiền không thay được hiện diện.",
+      "Yui trao thư trước khi tự ý gửi nó.",
+      "Kaori giữ bản gốc cạnh bản giải trình.",
+      "Haruka treo biển tiệm may bằng tên mình.",
+      "Masato học cách chịu một lời từ chối.",
+      "Tomoko và Yuji ăn trưa cùng nhau.",
+      "Hiroshi chú thích ngày trên vé mẫu.",
+      "Mio được nhớ cùng chiếc khăn gói bánh, không chỉ cánh cửa."
+    ]
+  },
+  {
+    "id": "D",
+    "title": "Cái tên thứ sáu",
+    "english_title": "The Sixth Name",
+    "status": "preview_only",
+    "scenes": [
+      {
+        "location": "memory",
+        "title": "Băng chưa ghi",
+        "text": "Leader sáu giây còn một tên gọi trước mọi câu hỏi. Nhưng trong băng gốc, giọng đáp lại không giống giọng của bất kỳ đứa trẻ nào được ghi tên."
+      },
+      {
+        "location": "school",
+        "title": "Quyền im lặng",
+        "text": "Ren hỏi có được đọc tên trước thị trấn không. Mio lắc đầu. Em muốn chiếc bàn còn đó, không muốn đời mình trở thành lời giải cho mọi chuyện người lớn làm."
+      },
+      {
+        "location": "station",
+        "title": "Người trên kính",
+        "text": "Ren giữ lời. Khi tàu rời ga, cửa kính phản chiếu sáu người dù trên sân chỉ còn năm. Anh không quay lại đếm, cũng không xóa dòng ghi chú."
+      }
+    ],
+    "epilogues": [
+      "Ren giữ một tên trong bản lưu có giới hạn.",
+      "Sachiko tin có điều con chưa sẵn sàng kể.",
+      "Haruto thôi gửi thư xin một câu trả lời.",
+      "Yui không sao thêm cassette.",
+      "Kaori để trống mục giải thích hiện tượng.",
+      "Haruka thêu lại chữ O theo nét cũ.",
+      "Masato không dùng bí mật mới để giảm trách nhiệm.",
+      "Tomoko giữ một gói bánh bên cửa.",
+      "Hiroshi không ghi người phản chiếu thành hành khách.",
+      "Mio giữ quyền tồn tại mà không bị định nghĩa hết."
+    ]
+  },
+  {
+    "id": "E",
+    "title": "Thị trấn còn nhớ",
+    "english_title": "The Town That Remembers",
+    "status": "preview_only",
+    "scenes": [
+      {
+        "location": "town",
+        "title": "Cuộc họp",
+        "text": "Năm người lên tiếng. Không ai kể đúng cùng một chuyện. Người ghi biên bản để nguyên mâu thuẫn, thêm nguồn và ngày thay vì sửa tất cả cho giống nhau."
+      },
+      {
+        "location": "archive",
+        "title": "Chìa khóa thứ hai",
+        "text": "Kho lưu trữ có hai người giữ chìa. Hồ sơ không còn phụ thuộc lòng tốt của một người già. Một gia đình vẫn từ chối công bố, và quyết định ấy được ghi nhận."
+      },
+      {
+        "location": "school",
+        "title": "Cửa sổ buổi sáng",
+        "text": "Trường chưa mở lại. Có người lau cửa sổ, người làm bảng giải thích, người chỉ đến ngồi. Ren nhìn thấy việc mình không thể làm một mình cuối cùng đã có người cùng làm."
+      }
+    ],
+    "epilogues": [
+      "Ren tham gia nhóm lưu trữ ngoài giờ làm.",
+      "Sachiko dạy người trẻ ghi băng có xin phép.",
+      "Haruto sửa điện theo lời mời của cộng đồng.",
+      "Yui lập sổ giao nhận thư thất lạc.",
+      "Kaori trả lời câu hỏi công khai, kể cả câu khó.",
+      "Haruka có quyền rút lời chứng riêng khỏi triển lãm.",
+      "Masato sửa bàn theo yêu cầu, không tìm sự tha thứ ở đó.",
+      "Tomoko dành quầy cho thông báo cải chính.",
+      "Hiroshi và Ai vẽ lại bản đồ có chỗ nghỉ.",
+      "Mio có một nơi được chăm sóc nhưng không thành điểm tham quan."
+    ]
+  }
+]

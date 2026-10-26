@@ -1,0 +1,101 @@
+﻿id,title,chapter,category,status,room,dependencies,answer
+P001,Tờ vé bị ướt,0,observation,playable,station_hall,,2
+P002,Đơn thuốc của mẹ,0,observation,playable,hospital,P001,2
+P003,Giỏ hàng ba ngày,0,logic,playable,shop,P002,400
+P004,Hai bộ đũa,0,observation,playable,home,P003,2
+P005,Tin lúc sáu giờ,0,observation,playable,home_entry,P004,2
+P006,Cuộn băng im tiếng,0,logic,playable,home,"P003,P004",-
+P007,Chuyến tàu bị hủy,0,inference,playable,station,"P001,P005",2
+P008,Chìa khóa đồng,0,observation,playable,town,"P006,P007",2
+P009,Lịch học bị xé,1,logic,playable,school_vestibule,P008,234
+P010,Ngăn bàn còn sạch,1,observation,playable,school_class,P009,3
+P011,Hai nét chữ,1,inference,playable,school_teachers,P010,2
+P012,Dây loa cũ,1,logic,playable,school_broadcast,P009,213
+P013,Nhịp gõ bên kia,1,logic,playable,school_corridor,"P006,P012",21
+P014,Hành lang thứ hai,1,memory_choice,playable,school_store,"P011,P013",2
+P015,Nhân chứng chuyến cuối,1,cross_chapter,playable,school_teachers,"P007,P014",2
+P016,Tủ hồ sơ 4:44,1,logic,playable,school_store,P015,444
+P017,Ảnh thiếu một người,1,inference,playable,school_class,"P010,P016",1
+P018,Lời khai của đứa trẻ,1,memory_choice,playable,school_teachers,"P011,P017",1/2
+P019,Tên trên chiếc khăn,1,inference,playable,school_store,P018,mio
+P020,Cánh cửa có tiếng thở,1,memory_choice,playable,school_toilets,"P013,P019",3
+P021,Không khóa nữa,1,memory_choice,playable,school_toilets,"P014,P020",2
+P022,Gửi lại lời chứng,1,inference,playable,school,"P018,P021",1
+P023,Tờ báo ở phòng khám,2,inference,designed,clinic,P011,Tên người phụ nữ
+P024,Hai tấm gương,2,logic,designed,clinic,P023,Tây-Bắc
+P025,Lời đồn qua ba miệng,2,inference,designed,town,"P005,P023",Khách-Tomoko-báo
+P026,Chiếc khẩu trang sạch,2,observation,designed,clinic,P024,Khẩu trang vải
+P027,Câu trả lời bỏ trống,2,memory_choice,designed,clinic,"P018,P026",Lắng nghe
+P028,Đơn thuốc trùng tên,2,cross_chapter,designed,clinic,"P002,P026",Tách theo ngày sinh
+P029,Giao ánh sáng,2,logic,designed,clinic,"P024,P027",Tắt đèn giữa
+P030,Lối ngõ có chuông,2,observation,designed,town,"P013,P029",Mái hiên-đợi-chuông
+P031,Mảnh kính không nói dối,2,cross_chapter,designed,clinic,"P017,P023",Âm bản lật
+P032,Tên do ai đặt,2,inference,designed,clinic,"P019,P028",Akane
+P033,Sổ chi phí thủ thuật,2,cross_chapter,designed,clinic,"P016,P028",Quỹ Kiroku
+P034,Bức ảnh xin phép,2,inference,designed,town,"P022,P031,P032",Đăng lời chứng/ giữ ảnh riêng
+P035,Phòng đợi sáng đèn,2,observation,designed,clinic,"P029,P030",Giữ nguồn phụ
+P036,Lời chào không có câu hỏi,2,memory_choice,designed,clinic,"P026,P027,P034,P035",Hộp khẩu trang
+P037,Lịch tàu mùa đông,3,logic,designed,annex,"P007,P015",Ngày 14
+P038,Đồng hồ ca đêm,3,logic,designed,dorm,"P016,P037",Cộng bốn phút
+P039,Phong bì lương,3,observation,designed,dorm,"P003,P038",Phong bì tím
+P040,Bài tập của Ai,3,observation,designed,station,"P001,P037",Theo nét liền
+P041,Tiếng bánh xe hụt,3,logic,designed,annex,"P013,P040",Ba tiếng là thực thể
+P042,Cầu dao chuyển ray,3,logic,designed,annex,"P012,P040",Giữ đèn đỏ/ kéo B
+P043,Giấy thôi việc chưa đưa,3,inference,designed,dorm,"P004,P039",Anh đi tìm việc
+P044,Bản tin tai nạn,3,cross_chapter,designed,annex,"P005,P038",Hai mốc khác nhau
+P045,Tàu không chở người,3,logic,designed,annex,"P007,P037,P041",Để vé mẫu xuống
+P046,Đôi găng trong tủ,3,observation,designed,dorm,"P039,P043",Daichi
+P047,Lời thú nhận của trưởng ga,3,cross_chapter,designed,station,"P015,P038,P044",Đối chiếu sổ đổi ca
+P048,Tín hiệu cho người trở về,3,logic,designed,annex,"P006,P013,P042",Dài-ngắn-dài
+P049,Đèn cuối sân ga,3,logic,designed,annex,"P035,P041,P048",Chờ sáng rồi sang
+P050,Bài báo có tên người,3,inference,designed,town,"P034,P046,P047,P049",Ghi tên và hành động cứu người
+P051,Hai con đường lên núi,4,observation,designed,tunnel,"P008,P050",Bản có giếng
+P052,Dấu phấn trên vách,4,logic,designed,tunnel,"P014,P051",Theo dấu có bụi
+P053,Radio của Fumiko,4,logic,designed,village,"P006,P012",76.0
+P054,Thư chưa có tem,4,observation,designed,village,"P019,P051",Theo số cũ
+P055,Hai bộ hộ tịch,4,cross_chapter,designed,village,"P011,P028,P054",Bản dấu giáp lai
+P056,Bếp của người vắng mặt,4,observation,designed,village,"P004,P039",Ba người
+P057,Giếng nghe được tàu,4,logic,designed,village,"P041,P052",Hầm thoát nước
+P058,Biển cấm không ký tên,4,inference,designed,tunnel,"P033,P051",Doanh nghiệp/ không phải luật
+P059,Phòng có hai lịch,4,memory_choice,designed,village,"P037,P056",Ngày di dời là ký ức
+P060,Thông báo bị ghi đè,4,logic,designed,village,"P006,P053",Nghe rãnh phải
+P061,Lối rẽ của sổ tay,4,logic,designed,tunnel,"P051,P055,P058",Chọn giếng/ bỏ biển
+P062,Căn nhà dưới tên khác,4,cross_chapter,designed,village,"P002,P054,P055",Gia đình Mizuhara
+P063,Mộ chưa khắc chữ,4,memory_choice,designed,village,"P019,P034,P055",Giữ số/ không đoán tên
+P064,Bản đồ từ trẻ em,4,observation,designed,village,"P010,P040,P051",Phía Tây giếng
+P065,Lời chứng không có máy,4,inference,designed,village,"P022,P034,P060",Lưu bản riêng có ký nhận
+P066,Ngôi làng còn địa chỉ,4,cross_chapter,designed,village,"P055,P061,P062,P064,P065",Hộ tịch cộng bản đồ
+P067,Băng VHS số không,5,logic,designed,archive,"P006,P060",Bản có leader
+P068,Cửa ngoài sơ đồ,5,logic,designed,hospital_old,"P014,P033",Sau kho hồ sơ
+P069,Lời dẫn của người hỏi,5,cross_chapter,designed,archive,"P018,P047,P067",Bỏ lời dẫn khi so chứng cứ
+P070,Hai bản xác nhận,5,cross_chapter,designed,archive,"P011,P055",Bản mực phủ nếp gấp
+P071,Tên quỹ không tên người,5,cross_chapter,designed,archive,"P028,P033",Theo mã phòng
+P072,Giọng trẻ con của Ren,5,cross_chapter,designed,archive,"P006,P062,P067",So với băng sinh nhật
+P073,Bản sao của người đáng nghi,5,cross_chapter,designed,archive,"P016,P055,P070",Bảo vệ bản gốc
+P074,Cánh cửa đỏ không sơn,5,logic,designed,hospital_old,"P020,P068",Đèn giải thích một phần
+P075,Nhớ theo lời người khác,5,cross_chapter,designed,archive,"P015,P025,P069",Lời kể bị dẫn dắt
+P076,Khoảng lặng sáu giây,5,cross_chapter,designed,archive,"P013,P021,P067",Chốt được mở muộn
+P077,Hồ sơ Haruto,5,cross_chapter,designed,archive,"P003,P062,P071",Bị ép rời dự án
+P078,Phong bì nhiều người gửi,5,cross_chapter,designed,archive,"P008,P017,P073",Yui và Naoto cùng gửi
+P079,Màn hình không nối dây,5,logic,designed,hospital_old,"P012,P020,P074",Không kết luận là băng dựng
+P080,Bản gốc hay người còn sống,5,inference,designed,archive,"P028,P034,P070",Sao phần lời khai có che riêng tư
+P081,Lời xin lỗi không thay thế,5,memory_choice,designed,archive,"P018,P021,P072,P076",Thừa nhận đã giữ chốt
+P082,Hồ sơ có quyền từ chối,5,inference,designed,archive,"P065,P073,P080,P081",Lưu phạm vi đồng thuận
+P083,Sáu chiếc ghế,6,memory_choice,designed,memory,"P017,P064,P082",Ghế cạnh cửa
+P084,Bản đồ ký ức chung,6,logic,designed,memory,"P040,P057,P064",Giếng-hầm-cầu
+P085,Năm tên không năm người,6,cross_chapter,designed,memory,"P019,P055,P062",Năm tên không đủ đếm người
+P086,Ngày ai cũng nhớ sai,6,cross_chapter,designed,memory,"P007,P037,P044,P075",Lùi một ngày
+P087,Câu dặn trong bữa cơm,6,cross_chapter,designed,home,"P004,P062,P072",Một tín hiệu nhận người
+P088,Giúp đỡ đã thành im lặng,6,memory_choice,designed,memory,"P018,P021,P069,P081",Giữ cửa cũng là trách nhiệm
+P089,Nhà báo trước trang trắng,6,inference,designed,town,"P034,P050,P080",Đăng phần đã đối chiếu và được phép
+P090,Năm người dám nói,6,inference,designed,town,"P047,P065,P082",Giữ phạm vi từng người
+P091,Tên trên băng gốc,6,memory_choice,designed,memory,"P019,P067,P075,P076",Mio
+P092,Chiếc khóa trả lại,6,memory_choice,designed,school,"P008,P021,P088",Đặt khóa ngoài ngưỡng
+P093,Người gửi thư thứ ba,6,memory_choice,designed,archive,"P006,P078,P079",Cassette không rõ nguồn
+P094,Hai chữ không ký,6,cross_chapter,designed,home,"P062,P077,P087",Giữ thư/ để mẹ quyết định
+P095,Cánh cửa của mỗi người,6,memory_choice,designed,memory,"P069,P075,P086,P088",Giữ sự kiện/ để mở động cơ
+P096,Quyền được gọi tên,6,memory_choice,designed,memory,"P063,P082,P085,P091",Hỏi và ghi phạm vi cho phép
+P097,Một chỗ trống có thật,6,memory_choice,designed,school,"P010,P034,P092,P096",Giữ nơi tưởng nhớ riêng
+P098,Bản lưu cho ngày mai,6,cross_chapter,designed,archive,"P055,P073,P080,P089",Hai bản niêm phong ở hai nơi
+P099,Buổi họp không đồng thanh,6,cross_chapter,designed,town,"P047,P086,P090,P095,P098",Lưu lời khác nhau cùng nguồn
+P100,Người thứ sáu,6,memory_choice,designed,memory,"P083,P084,P085,P087,P088,P091,P093,P094,P095,P096,P097,P098,P099",Tính ending từ flags và quan hệ

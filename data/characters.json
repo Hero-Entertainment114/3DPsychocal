@@ -1,0 +1,807 @@
+[
+  {
+    "id": "ren",
+    "name": "Mizuhara Ren",
+    "age": "24",
+    "occupation": "Nhân viên vận chuyển",
+    "pixel_design": "Áo khoác olive, túi nâu",
+    "personality": "Ngại phiền người khác",
+    "fear": "Mất việc khi nghỉ quá ba ngày",
+    "desire": "Đưa mẹ về nhà",
+    "secret": "Đã giữ chốt cửa để giấu bạn",
+    "misbelief": "Tưởng im lặng bảo vệ mọi người",
+    "past_action": "Giữ chốt ngoài",
+    "puzzle": "P001",
+    "relations": [
+      "sachiko",
+      "yui"
+    ],
+    "arc": {
+      "opening": "Ngại phiền người khác",
+      "middle": "Đã giữ chốt cửa để giấu bạn",
+      "final": "Học nói rõ phần trách nhiệm"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Đã giữ chốt cửa để giấu bạn",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "sachiko",
+    "name": "Mizuhara Sachiko",
+    "age": "49",
+    "occupation": "Nhân viên giặt là",
+    "pixel_design": "Tóc búi, áo len xanh bạc",
+    "personality": "Hay hỏi chuyện ăn uống",
+    "fear": "Con biến mất lần nữa",
+    "desire": "Một bữa cơm không phải hỏi dò",
+    "secret": "Giữ băng nhận giọng Ren",
+    "misbelief": "Tưởng con không chịu được sự thật",
+    "past_action": "Ký giấy chuyển hộ",
+    "puzzle": "P002",
+    "relations": [
+      "ren",
+      "haruto"
+    ],
+    "arc": {
+      "opening": "Hay hỏi chuyện ăn uống",
+      "middle": "Giữ băng nhận giọng Ren",
+      "final": "Thôi nói thay con"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giữ băng nhận giọng Ren",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "haruto",
+    "name": "Mizuhara Haruto",
+    "age": "52",
+    "occupation": "Thợ điện xa nhà",
+    "pixel_design": "Áo công nhân xám",
+    "personality": "Ít lời, sửa đồ thay xin lỗi",
+    "fear": "Gia đình đọc hết thư",
+    "desire": "Được nhận trách nhiệm",
+    "secret": "Rời dự án sau khi từ chối ký",
+    "misbelief": "Tưởng gửi tiền thay được hiện diện",
+    "past_action": "Bỏ đi không giải thích",
+    "puzzle": "P077",
+    "relations": [
+      "sachiko",
+      "shinji"
+    ],
+    "arc": {
+      "opening": "Ít lời, sửa đồ thay xin lỗi",
+      "middle": "Rời dự án sau khi từ chối ký",
+      "final": "Viết lời xin lỗi không đòi tha thứ"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Rời dự án sau khi từ chối ký",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "yui",
+    "name": "Akiyama Yui",
+    "age": "24",
+    "occupation": "Nhân viên bưu điện",
+    "pixel_design": "Áo mưa vàng, kẹp tóc đỏ",
+    "personality": "Trêu nhẹ khi lo lắng",
+    "fear": "Ren lại bỏ đi",
+    "desire": "Nghe bạn kể điều thật",
+    "secret": "Cùng Naoto gửi phong thư",
+    "misbelief": "Tưởng băng do Naoto bỏ vào",
+    "past_action": "Dùng sợ hãi kéo Ren về",
+    "puzzle": "P008",
+    "relations": [
+      "ren",
+      "sora",
+      "naoto"
+    ],
+    "arc": {
+      "opening": "Trêu nhẹ khi lo lắng",
+      "middle": "Cùng Naoto gửi phong thư",
+      "final": "Xin phép trước khi đưa hồ sơ"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Cùng Naoto gửi phong thư",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "sora",
+    "name": "Akiyama Sora",
+    "age": "17",
+    "occupation": "Học sinh",
+    "pixel_design": "Túi thể thao bạc",
+    "personality": "Nói nhanh, vẽ tàu giỏi",
+    "fear": "Thi trượt làm chị thất vọng",
+    "desire": "Một ngày không bị chấm điểm",
+    "secret": "Giấu giấy báo thi",
+    "misbelief": "Tưởng Yui chỉ thích người thành đạt",
+    "past_action": "Truyền lời đồn để hòa nhóm",
+    "puzzle": "P025",
+    "relations": [
+      "yui",
+      "rei"
+    ],
+    "arc": {
+      "opening": "Nói nhanh, vẽ tàu giỏi",
+      "middle": "Giấu giấy báo thi",
+      "final": "Nói không với lời đồn"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giấu giấy báo thi",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "natsuki",
+    "name": "Tachibana Natsuki",
+    "age": "29",
+    "occupation": "Y tá",
+    "pixel_design": "Áo trắng, đồng hồ bỏ túi",
+    "personality": "Dứt khoát nhưng biết đùa",
+    "fear": "Làm sai hồ sơ bệnh nhân",
+    "desire": "Người bệnh được tự chọn",
+    "secret": "Giữ phiếu thuốc chưa sửa",
+    "misbelief": "Tưởng chữ ký đồng nghĩa đồng ý",
+    "past_action": "Đã làm theo lệnh sao hồ sơ",
+    "puzzle": "P028",
+    "relations": [
+      "sachiko",
+      "akane"
+    ],
+    "arc": {
+      "opening": "Dứt khoát nhưng biết đùa",
+      "middle": "Giữ phiếu thuốc chưa sửa",
+      "final": "Đòi xác nhận đồng thuận"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giữ phiếu thuốc chưa sửa",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "kaori",
+    "name": "Fujimoto Kaori",
+    "age": "48",
+    "occupation": "Giáo viên cũ",
+    "pixel_design": "Cardigan nâu, tóc buộc",
+    "personality": "Giọng đều khi căng thẳng",
+    "fear": "Con gái biết chữ sửa",
+    "desire": "Được nói một lần không biện hộ",
+    "secret": "Đổi giữ cửa thành tránh cửa",
+    "misbelief": "Tưởng tên xấu làm trường đóng",
+    "past_action": "Sửa lời trẻ em",
+    "puzzle": "P011",
+    "relations": [
+      "rei",
+      "haruka"
+    ],
+    "arc": {
+      "opening": "Giọng đều khi căng thẳng",
+      "middle": "Đổi giữ cửa thành tránh cửa",
+      "final": "Giữ bản gốc mình từng sửa"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Đổi giữ cửa thành tránh cửa",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "rei",
+    "name": "Fujimoto Rei",
+    "age": "18",
+    "occupation": "Học sinh",
+    "pixel_design": "Áo xanh đậm, kính tròn",
+    "personality": "Lễ phép đến mệt mỏi",
+    "fear": "Không còn giỏi sẽ không được yêu",
+    "desire": "Được nghỉ một kỳ",
+    "secret": "Đọc được nhật ký mẹ",
+    "misbelief": "Tưởng mẹ không bao giờ sai",
+    "past_action": "Từ chối nghe Haruka",
+    "puzzle": "P069",
+    "relations": [
+      "kaori",
+      "sora"
+    ],
+    "arc": {
+      "opening": "Lễ phép đến mệt mỏi",
+      "middle": "Đọc được nhật ký mẹ",
+      "final": "Bảo vệ người nói trái mẹ"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Đọc được nhật ký mẹ",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "haruka",
+    "name": "Shimizu Haruka",
+    "age": "24",
+    "occupation": "Thợ may",
+    "pixel_design": "Khăn tím, tay dính phấn",
+    "personality": "Nhìn đường chỉ trước khi nhìn người",
+    "fear": "Lại bị hỏi tại sao không chống trả",
+    "desire": "Mở tiệm nhỏ",
+    "secret": "Giữ khăn thêu của Mio",
+    "misbelief": "Tưởng Ren chủ động muốn hại bạn",
+    "past_action": "Không đưa nhật ký vì sợ",
+    "puzzle": "P019",
+    "relations": [
+      "kaori",
+      "masato",
+      "mio"
+    ],
+    "arc": {
+      "opening": "Nhìn đường chỉ trước khi nhìn người",
+      "middle": "Giữ khăn thêu của Mio",
+      "final": "Đặt giới hạn cho lời chứng"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giữ khăn thêu của Mio",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "masato",
+    "name": "Kuroda Masato",
+    "age": "24",
+    "occupation": "Thợ sửa xe",
+    "pixel_design": "Áo xanh dầu, tay áo vá",
+    "personality": "Cười quá to khi xấu hổ",
+    "fear": "Em gái biết mình từng bắt nạt",
+    "desire": "Tự sửa điều mình gây ra",
+    "secret": "Giấu một trang nhật ký",
+    "misbelief": "Tưởng cả lớp đều đồng ý",
+    "past_action": "Đẩy Haruka khỏi nhóm",
+    "puzzle": "P018",
+    "relations": [
+      "emi",
+      "haruka"
+    ],
+    "arc": {
+      "opening": "Cười quá to khi xấu hổ",
+      "middle": "Giấu một trang nhật ký",
+      "final": "Nhận việc cụ thể đã làm"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giấu một trang nhật ký",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "emi",
+    "name": "Kuroda Emi",
+    "age": "16",
+    "occupation": "Học sinh",
+    "pixel_design": "Áo đỏ đất, cặp trắng",
+    "personality": "Không thích câu ai cũng thế",
+    "fear": "Trở thành cái cớ của anh",
+    "desire": "Có bạn riêng",
+    "secret": "Giữ trang Masato giấu",
+    "misbelief": "Tưởng sửa sai là đủ xóa hậu quả",
+    "past_action": "Đọc trộm thư của Haruka",
+    "puzzle": "P095",
+    "relations": [
+      "masato",
+      "rei"
+    ],
+    "arc": {
+      "opening": "Không thích câu ai cũng thế",
+      "middle": "Giữ trang Masato giấu",
+      "final": "Trả lại quyền riêng tư"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giữ trang Masato giấu",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "tomoko",
+    "name": "Sakurai Tomoko",
+    "age": "43",
+    "occupation": "Chủ tiệm",
+    "pixel_design": "Tạp dề đỏ, tóc xoăn ngắn",
+    "personality": "Tính nhẩm giỏi, nói đùa khô",
+    "fear": "Không trả nổi tiền hàng",
+    "desire": "Được nghe chồng nói thật",
+    "secret": "Biết Yuji mất việc",
+    "misbelief": "Tưởng hỏi sẽ khiến chồng xấu hổ",
+    "past_action": "Để lời đồn trôi qua quầy",
+    "puzzle": "P003",
+    "relations": [
+      "yuji",
+      "fumiko"
+    ],
+    "arc": {
+      "opening": "Tính nhẩm giỏi, nói đùa khô",
+      "middle": "Biết Yuji mất việc",
+      "final": "Hỏi thẳng mà không làm nhục"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Biết Yuji mất việc",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "yuji",
+    "name": "Sakurai Yuji",
+    "age": "46",
+    "occupation": "Công nhân thất nghiệp",
+    "pixel_design": "Áo ca xanh, giày sạch",
+    "personality": "Chỉnh ghế ngay ngắn",
+    "fear": "Con người chỉ còn là lương tháng",
+    "desire": "Làm công việc có ích",
+    "secret": "Vẫn đi trung tâm việc làm mỗi sáng",
+    "misbelief": "Tưởng vợ không biết",
+    "past_action": "Nói mình tăng ca",
+    "puzzle": "P043",
+    "relations": [
+      "tomoko",
+      "daichi"
+    ],
+    "arc": {
+      "opening": "Chỉnh ghế ngay ngắn",
+      "middle": "Vẫn đi trung tâm việc làm mỗi sáng",
+      "final": "Ăn trưa ở nhà không giấu mặt"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Vẫn đi trung tâm việc làm mỗi sáng",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "hiroshi",
+    "name": "Nakamura Hiroshi",
+    "age": "57",
+    "occupation": "Trưởng ga",
+    "pixel_design": "Mũ xanh, ria bạc",
+    "personality": "Nhớ người hơn nhớ giờ",
+    "fear": "Một lỗi nữa gây hại",
+    "desire": "Giữ ga cho người về",
+    "secret": "Đã đổi ca ngày xảy ra chuyện",
+    "misbelief": "Tưởng vé mẫu là chuyến thật",
+    "past_action": "Xác nhận giờ chưa kiểm tra",
+    "puzzle": "P007",
+    "relations": [
+      "ai",
+      "kazuo"
+    ],
+    "arc": {
+      "opening": "Nhớ người hơn nhớ giờ",
+      "middle": "Đã đổi ca ngày xảy ra chuyện",
+      "final": "Công khai sổ đổi ca"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Đã đổi ca ngày xảy ra chuyện",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "ai",
+    "name": "Nakamura Ai",
+    "age": "12",
+    "occupation": "Học sinh",
+    "pixel_design": "Mũ vàng, váy navy",
+    "personality": "Vẽ ray thành cây",
+    "fear": "Cha bị mất việc",
+    "desire": "Người lớn xem tranh nghiêm túc",
+    "secret": "Vẽ được hầm thoát nước",
+    "misbelief": "Tưởng mọi ray đều chở khách",
+    "past_action": "Đưa bản vẽ thiếu chú thích",
+    "puzzle": "P040",
+    "relations": [
+      "hiroshi",
+      "mei"
+    ],
+    "arc": {
+      "opening": "Vẽ ray thành cây",
+      "middle": "Vẽ được hầm thoát nước",
+      "final": "Thêm chú giải cho người lớn"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Vẽ được hầm thoát nước",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "rika",
+    "name": "Hasegawa Rika",
+    "age": "31",
+    "occupation": "Phóng viên",
+    "pixel_design": "Áo camel, sổ nhỏ",
+    "personality": "Hỏi ngắn, nghe lâu",
+    "fear": "Bài đúng gây hại người vô tội",
+    "desire": "Sửa bài từng viết",
+    "secret": "Tòa soạn cắt bối cảnh",
+    "misbelief": "Tưởng chính xác là đủ công bằng",
+    "past_action": "Đăng ảnh khi chưa xin phép",
+    "puzzle": "P034",
+    "relations": [
+      "akane",
+      "kazuo"
+    ],
+    "arc": {
+      "opening": "Hỏi ngắn, nghe lâu",
+      "middle": "Tòa soạn cắt bối cảnh",
+      "final": "Chấp nhận không đăng mọi thứ"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Tòa soạn cắt bối cảnh",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "kazuo",
+    "name": "Mori Kazuo",
+    "age": "45",
+    "occupation": "Cảnh sát khu vực",
+    "pixel_design": "Áo navy, túi hồ sơ",
+    "personality": "Cố nhớ sinh nhật dân phố",
+    "fear": "Mất niềm tin của Chihiro",
+    "desire": "Một biên bản đúng",
+    "secret": "Biết lời khai bị dẫn dắt",
+    "misbelief": "Tưởng giữ yên là giữ an toàn",
+    "past_action": "Không ghi phản đối",
+    "puzzle": "P044",
+    "relations": [
+      "chihiro",
+      "rika"
+    ],
+    "arc": {
+      "opening": "Cố nhớ sinh nhật dân phố",
+      "middle": "Biết lời khai bị dẫn dắt",
+      "final": "Ghi cả điều bất tiện"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Biết lời khai bị dẫn dắt",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "chihiro",
+    "name": "Mori Chihiro",
+    "age": "42",
+    "occupation": "Thợ làm bánh",
+    "pixel_design": "Áo tím, bột trên tay",
+    "personality": "Đưa bánh trước khi hỏi",
+    "fear": "Chồng chỉ còn nói bằng mẫu đơn",
+    "desire": "Nói chuyện như người nhà",
+    "secret": "Từng đưa cơm cho trẻ mất tên",
+    "misbelief": "Tưởng giữ bí mật là giữ mái nhà",
+    "past_action": "Không hỏi lại người nhận cơm",
+    "puzzle": "P056",
+    "relations": [
+      "kazuo",
+      "fumiko"
+    ],
+    "arc": {
+      "opening": "Đưa bánh trước khi hỏi",
+      "middle": "Từng đưa cơm cho trẻ mất tên",
+      "final": "Nói ra ký ức bữa ăn"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Từng đưa cơm cho trẻ mất tên",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "shinji",
+    "name": "Takeda Shinji",
+    "age": "50",
+    "occupation": "Cựu nhân viên Kiroku",
+    "pixel_design": "Kính vuông, áo xám",
+    "personality": "Sửa từ ngữ rất kỹ",
+    "fear": "Thừa nhận phần mình trong bản hỏi",
+    "desire": "Dừng người khác lặp lại",
+    "secret": "Soạn câu hỏi dẫn dắt",
+    "misbelief": "Tưởng dữ liệu chỉ là giấy",
+    "past_action": "Chuẩn hóa lời kể khác nhau",
+    "puzzle": "P069",
+    "relations": [
+      "akane",
+      "haruto"
+    ],
+    "arc": {
+      "opening": "Sửa từ ngữ rất kỹ",
+      "middle": "Soạn câu hỏi dẫn dắt",
+      "final": "Chú thích lỗi thay vì xóa"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Soạn câu hỏi dẫn dắt",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "akane",
+    "name": "Takeda Akane",
+    "age": "37",
+    "occupation": "Thợ làm tóc",
+    "pixel_design": "Khẩu trang vải, áo chàm",
+    "personality": "Bực khi bị thương hại",
+    "fear": "Bị biến thành ảnh vết thương",
+    "desire": "Được gọi tên và tự chọn ảnh",
+    "secret": "Không phải mọi lời đồn đều về cô",
+    "misbelief": "Tưởng im lặng làm báo quên",
+    "past_action": "Đã bỏ lời nhờ giúp vì sợ lộ mặt",
+    "puzzle": "P032",
+    "relations": [
+      "shinji",
+      "natsuki",
+      "rika"
+    ],
+    "arc": {
+      "opening": "Bực khi bị thương hại",
+      "middle": "Không phải mọi lời đồn đều về cô",
+      "final": "Nói trong phạm vi tự chọn"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Không phải mọi lời đồn đều về cô",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "fumiko",
+    "name": "Ogawa Fumiko",
+    "age": "73",
+    "occupation": "Thợ sửa radio nghỉ hưu",
+    "pixel_design": "Áo nâu, kính dây",
+    "personality": "Chê trà rồi uống hết",
+    "fear": "Tiếng mình mất cùng máy cũ",
+    "desire": "Dạy người trẻ sửa đồ",
+    "secret": "Giữ băng phát thanh di dời",
+    "misbelief": "Tưởng thư không tới vì đường xa",
+    "past_action": "Không ghi địa chỉ mới",
+    "puzzle": "P053",
+    "relations": [
+      "tomoko",
+      "chihiro"
+    ],
+    "arc": {
+      "opening": "Chê trà rồi uống hết",
+      "middle": "Giữ băng phát thanh di dời",
+      "final": "Đọc thư cho người chịu nghe"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giữ băng phát thanh di dời",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "daichi",
+    "name": "Hayashi Daichi",
+    "age": "41",
+    "occupation": "Thợ cơ khí",
+    "pixel_design": "Găng chỉ vàng, áo bạc",
+    "personality": "Rửa tay rất lâu",
+    "fear": "Mei chỉ nhớ mình thất nghiệp",
+    "desire": "Đưa con xem việc mình từng làm",
+    "secret": "Cứu người trong hầm thoát nước",
+    "misbelief": "Tưởng mình làm chưa đủ",
+    "past_action": "Bỏ qua tiếng gọi vì tiếng máy",
+    "puzzle": "P046",
+    "relations": [
+      "mei",
+      "yuji"
+    ],
+    "arc": {
+      "opening": "Rửa tay rất lâu",
+      "middle": "Cứu người trong hầm thoát nước",
+      "final": "Kể cả phần không anh hùng"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Cứu người trong hầm thoát nước",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "mei",
+    "name": "Hayashi Mei",
+    "age": "10",
+    "occupation": "Học sinh",
+    "pixel_design": "Áo len cam, hai bím",
+    "personality": "Hỏi câu người lớn né",
+    "fear": "Cha không còn cười",
+    "desire": "Cùng cha đi tàu một lần",
+    "secret": "Biết nơi cha cất găng",
+    "misbelief": "Tưởng mình cần ít ăn hơn",
+    "past_action": "Giấu tiền ăn để giúp cha",
+    "puzzle": "P039",
+    "relations": [
+      "daichi",
+      "ai"
+    ],
+    "arc": {
+      "opening": "Hỏi câu người lớn né",
+      "middle": "Biết nơi cha cất găng",
+      "final": "Hiểu mình không phải gánh nặng"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Biết nơi cha cất găng",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  },
+  {
+    "id": "mio",
+    "name": "Tsukishima Mio",
+    "age": "14 (năm 1988)",
+    "occupation": "Đứa trẻ thứ sáu",
+    "pixel_design": "Váy đỏ sẫm, khăn trắng",
+    "personality": "Chỉ nói khi được chờ",
+    "fear": "Được nhớ thành biểu tượng khác",
+    "desire": "Tên không bị lấy thay lời mình",
+    "secret": "Không đồng nhất với mọi lời đồn Hanako",
+    "misbelief": "Tưởng giữ cửa là giữ bạn",
+    "past_action": "Đã gọi Ren quay lại dù biết nguy hiểm",
+    "puzzle": "P019",
+    "relations": [
+      "ren",
+      "haruka",
+      "naoto"
+    ],
+    "arc": {
+      "opening": "Chỉ nói khi được chờ",
+      "middle": "Không đồng nhất với mọi lời đồn Hanako",
+      "final": "Đòi quyền từ chối được công bố"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Không đồng nhất với mọi lời đồn Hanako",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "implemented"
+  },
+  {
+    "id": "naoto",
+    "name": "Asakura Naoto",
+    "age": "61",
+    "occupation": "Quản lý kho lưu trữ",
+    "pixel_design": "Áo gile xanh, ngón tay mực",
+    "personality": "Không cho gấp góc giấy",
+    "fear": "Bản gốc biến mất khi mình chết",
+    "desire": "Có người tiếp quản có trách nhiệm",
+    "secret": "Giấu bản gốc để tránh tiêu hủy",
+    "misbelief": "Tưởng ai xin hồ sơ cũng muốn sửa nó",
+    "past_action": "Ngăn gia đình đọc giấy của mình",
+    "puzzle": "P073",
+    "relations": [
+      "yui",
+      "mio",
+      "shinji"
+    ],
+    "arc": {
+      "opening": "Không cho gấp góc giấy",
+      "middle": "Giấu bản gốc để tránh tiêu hủy",
+      "final": "Giao bản sao với người nhận chịu trách nhiệm"
+    },
+    "trust_condition": "Lắng nghe và tôn trọng giới hạn thông tin.",
+    "alienation_condition": "Đăng lời chứng chưa được đồng ý.",
+    "mystery_link": "Giấu bản gốc để tránh tiêu hủy",
+    "schedule": {
+      "afternoon": "town",
+      "evening": "home",
+      "night": "home"
+    },
+    "status": "designed"
+  }
+]
