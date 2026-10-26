@@ -31,7 +31,7 @@ Số lời thoại chỉ đếm nội dung nhân vật nói, **không tính tên
 [Tải toàn bộ mã nguồn ZIP](https://github.com/Hero-Entertainment114/3DPsychocal/archive/refs/heads/codex/forgotten-voices-stage1.zip) · [Nhánh bàn giao](https://github.com/Hero-Entertainment114/3DPsychocal/tree/codex/forgotten-voices-stage1).
 
 <!-- WINDOWS_BUILD -->
-Gói Windows 0.2 đang chờ lượt CI của commit này; kết quả và artifact sẽ được ghi tại [QA](reports/QA.md). Gói 0.1 trước đây không đại diện cho nội dung 0.2.
+**[Tải Windows 0.2 standalone](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324/artifacts/12622788024)** · [CI đã thành công](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324). Giải nén toàn bộ, mở `3DPsychocal.exe`; giữ thư mục `_internal` bên cạnh. Gói đã build và chạy smoke-test EXE thật trên Windows CI, chưa qua playtest desktop bằng người. GitHub yêu cầu đăng nhập để tải artifact; artifact hiện lưu tới 24/01/2027.
 <!-- /WINDOWS_BUILD -->
 
 Chạy từ source với Python **3.12 hoặc 3.13**:

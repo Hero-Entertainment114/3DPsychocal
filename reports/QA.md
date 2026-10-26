@@ -16,7 +16,9 @@ Ngày 26/10/2026 UTC. Local: Linux x86_64, Python 3.12.14, Pygame CE 2.5.8, SDL 
 ## Packaging
 
 <!-- CURRENT_BUILD -->
-CI của commit 0.2 đang chờ chạy; không dùng artifact 0.1 làm bằng chứng cho bản này. Kết quả build Windows và smoke-test EXE thật sẽ được cập nhật sau khi workflow hoàn tất.
+**Windows và Ubuntu đều thành công:** [run 40257150324](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324), code commit `71b285fccb1062885c86306983983edae88a8662`. Cả hai job đã qua validator, narrative audit, pytest, full input route và source startup. Windows đã qua PyInstaller build và smoke-test **EXE thật 60 frames**.
+
+[Tải gói Windows 0.2](https://github.com/Hero-Entertainment114/3DPsychocal/actions/runs/40257150324/artifacts/12622788024): 19.206.435 bytes; SHA-256 artifact ZIP `572078d399283daf4f7d888319b1604ced28eccb4853b47a8cdd2c073846e049`. GitHub yêu cầu đăng nhập để tải; metadata hiện ghi hạn 24/01/2027. Giữ cả `_internal` khi giải nén. Chi tiết máy đọc được ở build_verification.json. Commit tài liệu sau code commit chỉ bổ sung bằng chứng và đường tải, không thay chương trình.
 <!-- /CURRENT_BUILD -->
 
 Lịch sử 0.1: run 40203737430 đã qua Ubuntu/Windows và EXE 60 frames; code commit 1cfc56fa87bf24233540fdadc85723895769e00e. Lỗi path separator Windows ở lượt trước đó đã sửa bằng Path.as_posix(); test này được giữ. Đây là bằng chứng lịch sử, không thay kiểm bản 0.2.
