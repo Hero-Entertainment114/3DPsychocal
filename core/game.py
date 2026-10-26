@@ -57,6 +57,8 @@ class Game:
     def open_dialogue(self,cid):
         d=self.content.dialogues.get(cid) if cid.startswith('D_') else choose(self.content,self.state,self.state.room,cid)
         if not d or not eligible(d,self.state):return
+        if d['id'] in self.state.heard:
+            self.notify('Cuộc trò chuyện đã được ghi trong sổ tay.');return
         self.dialogue=d;self.dialogue_pages=[]
         for i,l in enumerate(d['lines']):
             wrapped=self.render.wrap(l['text'],305,11)
@@ -76,6 +78,9 @@ class Game:
             else:
                 gate=self.world.room['portals'][int(o['id'])].get('requires')
                 self.notify('Chưa mở lối: '+self.content.puzzles[gate]['title'] if gate else 'Lối này chưa mở.')
+        elif o['kind']=='pickup':
+            self.state.inventory.append('Đèn pin đã lắp pin');self.state.flags['flashlight_on']=True;self.save()
+            self.notify('Ren cất đèn pin. L để bật hoặc tắt.')
         elif o['kind']=='npc':self.open_dialogue(o['dialogue'])
         elif o['kind']=='reflection':self.open_dialogue(o['id'])
         elif o['kind']=='observation':
@@ -160,11 +165,13 @@ class Game:
         key=event.key;name=pygame.key.name(key)
         if self.remap:
             if key==pygame.K_ESCAPE:self.remap=None;return
-            reserved={'escape','return','space','w','a','s','d','up','down','left','right','f5','f9','h','f','1','2','3','4','5','6','7','8','9','0'}
+            reserved={'escape','return','space','w','a','s','d','up','down','left','right','f5','f9','h','f','l','1','2','3','4','5','6','7','8','9','0'}
             if name in reserved or (name in self.settings['keys'].values() and self.settings['keys'][self.remap]!=name):self.notify('Phím này dành cho điều khiển khác.');return
             self.settings['keys'][self.remap]=name;self.store.save_settings(self.settings);self.remap=None;return
         if self.mode=='play':
-            if key==pygame.K_ESCAPE:self.mode='pause';self.selection=0
+            if key==pygame.K_l and 'Đèn pin đã lắp pin' in self.state.inventory:
+                self.state.flags['flashlight_on']=not self.state.flags.get('flashlight_on',False);self.audio.play('knock');self.save()
+            elif key==pygame.K_ESCAPE:self.mode='pause';self.selection=0
             elif name==self.settings['keys']['interact']:self.interact()
             elif name==self.settings['keys']['journal']:self.mode='journal';self.page=0;self.selection=0;self.journal_tab=0
             elif name==self.settings['keys']['inventory']:self.mode='inventory';self.page=0

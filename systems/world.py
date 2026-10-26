@@ -33,6 +33,8 @@ class World:
             x,y=d['position'];rows.append(dict(kind='reflection',id=d['id'],x=x,y=y,label='Dừng lại một chút'))
         for i,p in enumerate(self.room['portals']):
             rows.append(dict(kind='portal',id=str(i),x=p['x'],y=p['y'],label=p['label']))
+        if s.room=='shop' and 'P003' in s.solved and 'Đèn pin đã lắp pin' not in s.inventory:
+            rows.append(dict(kind='pickup',id='torch',x=280,y=240,label='Đèn pin trên quầy'))
         return rows+self.actors()
     def nearest(self):
         rows=self.objects()
@@ -70,5 +72,5 @@ class World:
     def travel(self,index):
         p=self.room['portals'][index]
         if p.get('requires') and p['requires'] not in self.state.solved:return False
-        self.state.room=p['to'];self.state.x,self.state.y=p['spawn'];self.camera.update(0,0);self.follow(1)
+        self.direction=p.get('facing',0);self.state.room=p['to'];self.state.x,self.state.y=p['spawn'];self.camera.update(0,0);self.follow(1)
         return True

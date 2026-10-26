@@ -1,0 +1,1036 @@
+# WASURERARETA KOE v0.3
+## PROMPT NÂNG CẤP TOÀN DIỆN: ĐỒ HỌA, KINH DỊ, GIẢI ĐỐ MÔI TRƯỜNG VÀ TRẢI NGHIỆM JRPG
+
+### I. NHIỆM VỤ CHÍNH
+
+Hãy đóng vai một đội ngũ phát triển game 2D kinh dị tâm lý Nhật Bản chuyên nghiệp, bao gồm Game Director, Pixel Artist, Level Designer, Gameplay Programmer, Horror Designer, Narrative Designer và QA Tester.
+
+Tôi đã có dự án **Wasurerareta Koe v0.2**, gồm phần mở đầu (Prologue) và chương Hanako-san.
+
+Nhiệm vụ của bạn là kiểm tra, sửa chữa, thiết kế lại và nâng cấp trực tiếp dự án hiện tại lên **v0.3**, thay vì xây dựng một trò chơi hoàn toàn mới.
+
+Bản v0.2 có nhiều vấn đề nghiêm trọng:
+
+- Pixel art thô sơ, các pixel quá lớn.
+- Nhân vật xấu, thiếu biểu cảm và không phù hợp bối cảnh Nhật Bản.
+- Địa điểm quá đơn điệu, thiếu đồ vật và chi tiết trang trí.
+- Câu đố chủ yếu là những câu hỏi trắc nghiệm hoặc chọn đáp án.
+- Người chơi không thực sự phải khám phá, suy luận và thao tác.
+- Đồ vật trong môi trường thiếu va chạm và khả năng tương tác.
+- Ánh sáng thiếu logic, phòng không có đèn vẫn sáng.
+- Thiếu cảm giác căng thẳng và sợ hãi.
+- Hanako-san chưa được thể hiện đúng tinh thần truyền thuyết.
+- Lời thoại và cốt truyện khó hiểu, quá dài dòng.
+- Nội dung đôi khi bị kéo dài vô nghĩa để đạt yêu cầu số ký tự.
+
+**Mục tiêu v0.3:** Biến bản game hiện tại thành một trải nghiệm JRPG kinh dị tâm lý có môi trường sống động, hình ảnh pixel art chi tiết, câu đố dựa trên hành động, ánh sáng hợp lý, kể chuyện tự nhiên và không khí rùng rợn thực sự.
+
+Ưu tiên chất lượng, tính logic và tính hoàn thiện, không chạy theo số lượng nội dung.
+
+---
+
+# II. THAY ĐỔI HOÀN TOÀN CÁCH THIẾT KẾ CÂU ĐỐ
+
+## 1. Loại bỏ kiểu câu đố hỏi đáp
+
+Đây là thay đổi QUAN TRỌNG NHẤT.
+
+**Tuyệt đối không thiết kế câu đố bằng cách hiển thị một câu hỏi do hệ thống đưa ra rồi yêu cầu người chơi chọn đáp án.**
+
+Ví dụ không được phép:
+
+"Cánh cửa này cần gì để mở?"
+
+A. Chìa khóa.
+B. Búa.
+C. Đèn pin.
+D. Cuốn sách.
+
+Hoặc:
+
+"Hanako-san xuất hiện ở đâu?"
+
+A. Tầng một.
+B. Tầng hai.
+C. Tầng ba.
+
+Không sử dụng một nhân vật vô hình đóng vai người dẫn chương trình đố vui.
+
+Không bắt người chơi nhập đáp án văn bản trừ khi đó là thao tác thực tế với một thiết bị như bàn phím máy tính, ổ khóa mật mã hoặc bảng điều khiển.
+
+Không sử dụng các câu hỏi kiến thức để thay thế gameplay.
+
+**Các câu đố phải tồn tại tự nhiên trong môi trường trò chơi.**
+
+Người chơi nhìn thấy một vấn đề, tìm hiểu hoàn cảnh, thu thập thông tin hoặc vật phẩm và tự thực hiện những hành động cần thiết.
+
+## 2. Những dạng câu đố bắt buộc
+
+### A. Tìm kiếm và sử dụng vật phẩm
+
+Ví dụ:
+
+Người chơi cần vào căn phòng chứa hồ sơ nhưng cửa bị khóa.
+
+Không hiển thị câu hỏi "Làm thế nào để mở cửa?".
+
+Người chơi có thể:
+
+- Kiểm tra ổ khóa.
+- Phát hiện khóa đã bị gỉ.
+- Đọc ghi chú của người bảo vệ.
+- Tìm chìa khóa trong phòng trực.
+- Phát hiện chìa khóa bị giấu sau một cuốn sổ.
+- Lấy chìa khóa.
+- Quay lại và tự dùng chìa khóa lên ổ khóa.
+
+Các hành động phải diễn ra bằng hệ thống tương tác và túi đồ thực sự.
+
+### B. Giúp đỡ nhân vật để tiếp tục
+
+Ví dụ:
+
+Một người phụ nữ lớn tuổi cần lấy chiếc hộp trên gác mái.
+
+Bà không đưa ra một nhiệm vụ dưới dạng cửa sổ Quest.
+
+Bà chỉ nói tự nhiên:
+
+"Chắc tôi phải nhờ ai đó lấy giúp chiếc hộp trên gác. Chân cẳng thế này thì chịu rồi."
+
+Người chơi có thể tự nguyện giúp.
+
+Sau khi lấy hộp, người chơi phải mang nó tới gặp bà và sử dụng vật phẩm hoặc tương tác để đưa.
+
+Không được tự động hoàn thành nhiệm vụ ngay sau khi lấy hộp.
+
+Người phụ nữ có thể kể một chuyện nhỏ về ngôi trường cũ. Chuyện đó chứa thông tin hữu ích nhưng không được trình bày như hướng dẫn giải đố.
+
+### C. Sửa chữa máy móc
+
+Ví dụ:
+
+Cầu dao điện trong trường học bị hỏng.
+
+Người chơi cần:
+
+- Tìm phòng kỹ thuật.
+- Quan sát bảng điện.
+- Phát hiện dây dẫn bị đứt.
+- Tìm dụng cụ thích hợp.
+- Kiểm tra nhãn mạch điện.
+- Thực hiện sửa chữa thông qua giao diện tương tác.
+- Bật cầu dao.
+- Kiểm tra những khu vực nào có điện trở lại.
+
+Không tự động khôi phục toàn bộ hệ thống điện khi thu thập đủ vật phẩm.
+
+Từng thao tác phải được thực hiện bởi người chơi.
+
+Các thao tác nguy hiểm cần được xử lý phù hợp với logic trò chơi, chẳng hạn cô lập nguồn điện trước khi tương tác với dây dẫn.
+
+### D. Câu đố bằng môi trường
+
+Ví dụ:
+
+Một cánh cửa bị chặn bởi tủ sách.
+
+Người chơi phải di chuyển tủ bằng thao tác đẩy.
+
+Những đồ vật nhỏ trên tủ có thể rơi xuống, tạo tiếng động và thu hút thứ gì đó trong hành lang.
+
+Như vậy, câu đố không chỉ liên quan đến tiến trình mà còn tạo cảm giác nguy hiểm.
+
+### E. Tương tác xã hội
+
+Ví dụ:
+
+Ren cần vào phòng giáo viên nhưng không có quyền truy cập.
+
+Một người quen có thể cho anh mượn chìa khóa nếu đủ tin tưởng, hoặc nhờ anh giúp một việc trước.
+
+Người chơi không nhất thiết phải giải quyết vấn đề bằng một con đường duy nhất.
+
+Có thể:
+
+- Xây dựng sự tin tưởng.
+- Tìm người có quyền mở cửa.
+- Chờ một thời điểm thích hợp.
+- Khám phá một lối đi khác.
+
+Mỗi cách có hậu quả hợp lý.
+
+### F. Câu đố quan sát
+
+Ví dụ:
+
+Người chơi nghe thấy ba tiếng gõ từ nhà vệ sinh tầng ba.
+
+Một thời gian sau, họ phát hiện ba tiếng động tương tự trên băng cassette.
+
+Người chơi cần nhận ra mối liên hệ và thử tái hiện nhịp gõ khi tương tác với cánh cửa.
+
+Không hiển thị dòng chữ "Hãy gõ ba lần".
+
+### G. Ghép và biến đổi vật phẩm
+
+Cho phép kết hợp vật phẩm khi hợp lý.
+
+Ví dụ:
+
+Pin + đèn pin không có pin = đèn pin hoạt động.
+
+Không cho phép ghép vô nghĩa chỉ để tạo độ khó.
+
+### H. Những câu đố kéo dài qua nhiều khu vực
+
+Một vật phẩm hoặc thông tin tìm được ở Prologue có thể giúp giải một tình huống trong chương Hanako-san.
+
+Một manh mối từ Hanako-san có thể không có ý nghĩa ngay lập tức, nhưng trở thành yếu tố quan trọng trong chương sau.
+
+Không giải thích trước toàn bộ mối liên hệ.
+
+## 3. Gợi ý phải cực kỳ tinh tế
+
+Hệ thống gợi ý được thay thế bằng **Environmental Hint System**.
+
+Gợi ý chủ yếu đến từ:
+
+- Bố cục và thiết kế môi trường.
+- Vết bẩn hoặc dấu vết trên đồ vật.
+- Âm thanh.
+- Ánh sáng.
+- Ghi chú và giấy tờ.
+- Cách sắp xếp đồ vật.
+- Những lời thoại bình thường.
+- Hành vi của nhân vật khác.
+- Những vật thể thay đổi sau một sự kiện.
+
+Ví dụ:
+
+Trong hành lang tối, người chơi nhìn thấy một chiếc tủ bảo trì có ký hiệu pin.
+
+Khi kiểm tra, Ren chỉ nói:
+
+"Ở đây hình như từng có người cất dụng cụ."
+
+Không nói:
+
+"Mình cần mở tủ này để lấy pin cho đèn pin."
+
+Một nhân vật có thể nói:
+
+"Hình như chú bảo vệ trước đây thường để chìa khóa ở phòng trực."
+
+Không nói:
+
+"Hãy đến phòng trực để lấy chìa khóa mở cửa tầng ba."
+
+Mỗi gợi ý phải khiến người chơi tự suy nghĩ chứ không đưa ra đáp án.
+
+**Không dùng:**
+
+- Mũi tên chỉ đường liên tục.
+- Đánh dấu vật phẩm cần thiết bằng ánh sáng nhấp nháy quá nổi bật.
+- Hộp thoại bật lên giải thích cách giải.
+- NPC nhắc đi nhắc lại đáp án.
+- Các nút bấm tự động giải câu đố.
+- Thông báo "Bạn cần tìm X để dùng cho Y".
+
+Có thể thiết kế hệ thống gợi ý tùy chọn dành cho người gặp khó khăn, nhưng mặc định phải tắt và không được chủ động phá hỏng cảm giác khám phá.
+
+## 4. Không biến câu đố thành trò pixel hunting
+
+Gợi ý ít không có nghĩa là thiếu logic.
+
+Người chơi phải có khả năng nhận biết vật thể tương tác nhờ vị trí, hình dạng, phản hồi âm thanh hoặc ngữ cảnh.
+
+Các vùng tương tác phải đủ rộng.
+
+Không giấu vật phẩm quan trọng sau những pixel nhỏ không có manh mối.
+
+Mỗi câu đố quan trọng cần có tối thiểu hai dấu hiệu gợi ý độc lập.
+
+Không để người chơi bị mắc kẹt vì bỏ qua một vật phẩm không thể quay lại lấy.
+
+---
+
+# III. TƯƠNG TÁC MÔI TRƯỜNG THỰC SỰ
+
+## 1. Mọi đồ vật phải có vai trò
+
+Không được đặt đồ vật trang trí mà không xem xét va chạm, phản ứng và công dụng.
+
+Phân loại thành:
+
+**Loại 1: Đồ vật có thể sử dụng**
+
+Ví dụ: cửa, tủ, ngăn kéo, công tắc, điện thoại, đèn, radio, sách, hộp, ghế di chuyển được.
+
+**Loại 2: Đồ vật có thể quan sát**
+
+Ví dụ: ảnh gia đình, bảng thông báo, lịch, vết nứt, tranh treo tường, bình hoa.
+
+Khi tương tác phải có phản hồi, dù chỉ là một nhận xét ngắn.
+
+**Loại 3: Đồ vật vật lý**
+
+Ví dụ: bàn, ghế, tủ, thùng hàng, hàng rào, xe đạp.
+
+Phải có collision đúng với hình dạng và vị trí.
+
+**Loại 4: Trang trí nhỏ**
+
+Ví dụ: giấy vụn, lá cây, bụi, vết nước, vết trầy, sỏi.
+
+Không nhất thiết phải có lời thoại, nhưng phải được render đúng lớp và không gây cản trở vô lý.
+
+**Loại 5: Đồ vật động**
+
+Ví dụ: cửa có bản lề, rèm cửa, bóng đèn, quạt máy, vòi nước, đồng hồ, rèm cửa sổ.
+
+Cần có trạng thái, hoạt ảnh hoặc phản ứng phù hợp.
+
+## 2. Interaction Feedback
+
+Khi tương tác, game cần có phản hồi thích hợp:
+
+- Âm thanh mở cửa.
+- Hoạt ảnh ngăn kéo trượt ra.
+- Vật phẩm biến mất khỏi vị trí cũ khi được nhặt.
+- Vật phẩm xuất hiện trong túi đồ.
+- Trạng thái đồ vật thay đổi.
+- Nhân vật quay về phía đồ vật.
+- Màn hình mô tả vật phẩm nếu cần quan sát kỹ.
+
+Không chỉ hiển thị một dòng chữ rồi coi như đã tương tác.
+
+## 3. Hệ thống va chạm
+
+Tạo collision theo từng đối tượng và cấu trúc môi trường.
+
+Nhân vật không được:
+
+- Đi xuyên qua bàn.
+- Đi xuyên tủ.
+- Đi xuyên tường.
+- Đi xuyên cửa đang đóng.
+- Đi qua hàng rào không có lối.
+- Đứng đè lên các đồ vật có khối vật lý.
+
+Tuy nhiên, những vật trang trí nhỏ trên sàn không nhất thiết phải cản di chuyển.
+
+Tạo các collider phù hợp với chân nhân vật, không sử dụng toàn bộ chiều cao sprite để tính va chạm.
+
+Cần hỗ trợ y-sorting và foreground occlusion để nhân vật đi phía sau hoặc phía trước đồ vật đúng cách.
+
+---
+
+# IV. THIẾT KẾ LẠI ĐỒ HỌA PIXEL ART
+
+## 1. Giảm kích thước pixel
+
+Pixel art hiện tại có pixel quá lớn, khiến nhân vật và môi trường thiếu chi tiết.
+
+Yêu cầu thiết kế lại hệ thống đồ họa theo hướng **fine-detail pixel art**.
+
+Đề xuất:
+
+- Độ phân giải nội bộ: 640×360.
+- Tile kích thước 32×32 pixel.
+- Nhân vật khoảng 32×56 hoặc 40×64 pixel.
+- Chân dung nhân vật 128×128 hoặc 160×160 pixel.
+- Render bằng nearest-neighbor.
+- Camera zoom và scaling theo bội số phù hợp.
+
+Không đơn giản tăng độ phân giải của sprite cũ.
+
+Phải vẽ lại hoặc tái tạo sprite với nhiều chi tiết hữu ích hơn.
+
+Không dùng hình chữ nhật đơn giản để biểu diễn người, bàn ghế hoặc các vật thể quan trọng.
+
+## 2. Nhân vật
+
+Thiết kế lại toàn bộ nhân vật trong hai phần chơi hiện tại.
+
+Nhân vật phải có:
+
+- Tỉ lệ cơ thể phù hợp phong cách JRPG.
+- Trang phục Nhật Bản đúng thời kỳ.
+- Màu tóc, kiểu tóc và phụ kiện riêng.
+- Đường nét khuôn mặt.
+- Mắt, miệng và biểu cảm nhận biết được.
+- Animation đi bốn hướng.
+- Animation đứng.
+- Animation tương tác.
+- Animation phản ứng sợ hãi.
+- Animation đặc biệt theo tình huống.
+
+Không sử dụng một sprite cơ bản chỉ đổi màu để tạo hàng loạt nhân vật.
+
+Với NPC quan trọng, tạo chân dung pixel riêng và các biểu cảm:
+
+- Bình thường.
+- Vui.
+- Buồn.
+- Tức giận.
+- Lo lắng.
+- Sợ hãi.
+- Ngạc nhiên.
+- Im lặng hoặc lảng tránh.
+
+## 3. Hanako-san
+
+Hanako-san phải lấy cảm hứng rõ ràng từ hình tượng truyền thuyết Nhật Bản:
+
+- Một bé gái tiểu học.
+- Tóc bob đen hoặc tóc ngắn ngang cằm.
+- Trang phục đỏ mang cảm giác đồng phục hoặc váy học sinh cổ điển.
+- Giày tối màu hoặc kiểu giày phù hợp thời kỳ.
+- Biểu cảm ban đầu khó đọc.
+- Chuyển động bất thường nhưng không lạm dụng.
+- Dáng người nhỏ, không biến thành một quái vật khổng lồ ngay từ lần đầu.
+
+Vẻ ngoài phải dễ nhận biết, nhưng vẫn là phiên bản được sáng tạo riêng cho game.
+
+Không tạo một con quái vật chung chung rồi gọi nó là Hanako-san.
+
+Trong những phân cảnh đầu, Hanako nên trông gần như một bé gái bình thường.
+
+Sự bất thường được thể hiện qua:
+
+- Tư thế đứng.
+- Cách quay đầu.
+- Sự thiếu đồng bộ giữa bóng và cơ thể.
+- Thời điểm xuất hiện.
+- Những chuyển động không tự nhiên.
+- Cách ánh sáng tương tác với nhân vật.
+- Âm thanh đặc trưng.
+
+Thiết kế một số trạng thái hình ảnh đáng sợ hơn cho các sự kiện đặc biệt, nhưng không sử dụng liên tục.
+
+---
+
+# V. THẾ GIỚI PHẢI CÓ ĐỦ CHI TIẾT THEO KHÔNG GIAN VÀ THỜI GIAN
+
+Mỗi bản đồ phải được thiết kế như một địa điểm có người từng sinh sống hoặc làm việc thực sự.
+
+Không tạo một căn phòng chỉ có ba vật phẩm cần cho câu đố.
+
+Một phòng học phải có:
+
+- Bàn ghế với vị trí hợp lý.
+- Bảng đen.
+- Phấn và khăn lau.
+- Đồng hồ.
+- Bảng thời khóa biểu.
+- Tủ đồ.
+- Sách giáo khoa.
+- Cặp sách hoặc vật dụng học sinh còn sót lại.
+- Tranh vẽ và bài thủ công.
+- Cửa sổ, rèm và cửa ra vào.
+- Quạt trần hoặc thiết bị thông gió phù hợp.
+- Giấy vụn, bụi và dấu vết xuống cấp.
+
+Một nhà vệ sinh trường học phải có:
+
+- Buồng vệ sinh.
+- Cửa có khóa.
+- Bồn rửa tay.
+- Gương.
+- Vòi nước.
+- Sàn gạch.
+- Ống nước.
+- Thiết bị chiếu sáng.
+- Vết ẩm và dấu hiệu cũ kỹ.
+- Các chi tiết liên quan đến việc vệ sinh và bảo trì.
+
+Một căn nhà Nhật Bản phải được bố trí phù hợp sinh hoạt của gia đình, có đồ dùng nhà bếp, giày dép, bàn thấp, đồ gia dụng, vật dụng cá nhân và các chi tiết phản ánh chủ nhân.
+
+Đồ vật phải phù hợp năm 1998.
+
+Không sử dụng đồ công nghệ hiện đại không thuộc bối cảnh.
+
+## Environmental Storytelling
+
+Không đặt mọi đồ vật chỉ vì chúng đẹp.
+
+Một số đồ vật cần kể chuyện:
+
+- Bức ảnh bị tháo khỏi khung.
+- Một chiếc cặp không ai đến lấy.
+- Vết kéo lê trên sàn.
+- Bảng điểm bị tẩy xóa.
+- Bàn học được lau sạch bất thường.
+- Một tờ giấy cũ bị giấu bên dưới ngăn bàn.
+
+Không phải vật nào cũng là manh mối.
+
+Cần trộn các đồ vật hữu ích, đồ vật bình thường và những chi tiết bí ẩn để người chơi không thể đoán ngay đâu là thứ quan trọng.
+
+---
+
+# VI. ÁNH SÁNG PHẢI TUÂN THEO LOGIC
+
+## 1. Không có nguồn sáng thì phải tối
+
+Đây là yêu cầu bắt buộc.
+
+Không được tạo môi trường sáng đều chỉ bằng cách phủ một màu tối mờ lên màn hình.
+
+Thiết kế lighting system thực sự cho game 2D.
+
+Nguồn sáng có thể gồm:
+
+- Ánh sáng mặt trời.
+- Ánh trăng yếu.
+- Bóng đèn.
+- Đèn đường.
+- Đèn pin.
+- Đèn bàn.
+- Tivi CRT.
+- Ánh sáng từ phòng bên cạnh.
+- Ánh sáng lọt qua cửa sổ.
+- Các nguồn sáng siêu nhiên có quy luật riêng.
+
+Nếu một căn phòng đóng kín, không có cửa sổ và đèn đã tắt, căn phòng phải gần như hoàn toàn tối.
+
+Không cho người chơi nhìn rõ tường, bàn ghế và các vật thể từ xa trong bóng tối tuyệt đối.
+
+## 2. Đèn pin là công cụ khám phá
+
+Người chơi phải sử dụng đèn pin khi đi vào khu vực tối.
+
+Đèn pin cần có:
+
+- Chùm sáng hình nón.
+- Hướng chiếu theo hướng nhân vật hoặc chuột.
+- Giới hạn khoảng cách.
+- Độ suy giảm ánh sáng.
+- Khả năng chiếu lên vật thể.
+- Bóng tối phía sau chướng ngại vật.
+- Công tắc bật/tắt.
+- Âm thanh khi bật/tắt.
+- Hoạt ảnh nhân vật cầm đèn.
+- Trạng thái pin phù hợp với cơ chế đã triển khai.
+
+Không bắt người chơi tìm pin liên tục để kéo dài game.
+
+Có thể bổ sung cơ chế ánh sáng bất thường hoặc pin bị ảnh hưởng trong một số phân cảnh, nhưng phải có quy luật rõ ràng.
+
+## 3. Dynamic Lighting
+
+Áp dụng:
+
+- Ambient lighting.
+- Point lights.
+- Directional/cone lights.
+- Light falloff.
+- Occlusion.
+- Flickering.
+- Color temperature.
+- Darkness overlay.
+
+Không sử dụng hiệu ứng quá nặng gây giảm FPS.
+
+Có thể áp dụng kỹ thuật lightmap độ phân giải thấp, occlusion theo tile và các vùng ánh sáng được dựng trước.
+
+## 4. Ánh sáng là một phần của gameplay
+
+Ví dụ:
+
+Người chơi phải bật điện để nhìn thấy nội dung trên bảng.
+
+Một căn phòng được chiếu sáng qua cửa sổ vào ban ngày, nhưng trở nên nguy hiểm vào ban đêm.
+
+Khi chiếu đèn pin vào gương, một chi tiết có thể xuất hiện.
+
+Ánh đèn đang chớp có thể giúp người chơi quan sát một vật thể chỉ xuất hiện trong những khoảnh khắc ngắn.
+
+Không được dùng hiệu ứng ánh sáng một cách tùy tiện khiến người chơi không thể suy luận.
+
+---
+
+# VII. THIẾT KẾ KINH DỊ THỰC SỰ
+
+## 1. Bỏ cách hù dọa đơn giản
+
+Không chỉ:
+
+- Làm màn hình đỏ.
+- Phát tiếng hét.
+- Cho sprite xuất hiện đột ngột.
+- Rung camera liên tục.
+- Phát nhạc rùng rợn mọi lúc.
+
+Những cách này chỉ nên sử dụng khi có tình huống phù hợp.
+
+Nỗi sợ phải đến từ sự mong đợi, không chắc chắn và cảm giác nguy hiểm.
+
+## 2. Psychological Horror Director
+
+Tạo hệ thống quản lý nhịp độ kinh dị.
+
+Hệ thống phải phân biệt:
+
+**Calm:** Không gian an toàn, âm thanh đời thường.
+
+**Unease:** Xuất hiện dấu hiệu bất thường rất nhỏ.
+
+**Suspense:** Người chơi dự đoán có điều đáng sợ sắp xảy ra.
+
+**Threat:** Nguy hiểm xuất hiện rõ ràng.
+
+**Aftermath:** Không gian trở lại yên tĩnh nhưng có thay đổi.
+
+Không được sử dụng jumpscare liên tục.
+
+Cần những khoảng thời gian đủ dài để người chơi bình tĩnh trước khi điều bất thường tiếp theo xảy ra.
+
+## 3. Các tình huống kinh dị cho chương Hanako-san
+
+### Tình huống A: Tiếng bước chân
+
+Ren đi dọc hành lang trường học.
+
+Có tiếng bước chân nhỏ phía sau.
+
+Khi Ren dừng, tiếng bước chân cũng dừng.
+
+Không hiển thị bất kỳ con ma nào.
+
+Nếu Ren quay lại, hành lang vẫn trống.
+
+Vài phút sau, âm thanh tương tự có thể xuất hiện ở một vị trí khác.
+
+### Tình huống B: Cánh cửa
+
+Một cửa buồng vệ sinh đang mở.
+
+Người chơi bước qua, nghe thấy tiếng cửa đóng nhẹ.
+
+Khi quay lại, cánh cửa đã đóng.
+
+Không dùng jumpscare ngay lập tức.
+
+Chỉ khi người chơi tiến lại gần, có thể nghe thấy tiếng thở rất nhỏ từ bên trong.
+
+### Tình huống C: Chiếc gương
+
+Gương phản chiếu phòng vệ sinh bình thường.
+
+Tuy nhiên, một đồ vật trong gương ở vị trí khác so với thực tế.
+
+Người chơi phải quan sát và tự nhận ra.
+
+Sự bất thường này về sau có thể trở thành cơ chế câu đố.
+
+### Tình huống D: Ba tiếng gõ
+
+Người chơi nghe thấy ba tiếng gõ từ buồng thứ ba.
+
+Sau đó là im lặng.
+
+Nếu tự gõ lại, có thể có phản hồi khác tùy theo trạng thái câu chuyện.
+
+Không hướng dẫn trực tiếp người chơi phải gõ.
+
+### Tình huống E: Lần chạm mặt đầu tiên
+
+Hanako xuất hiện ở cuối hành lang, chỉ trong phạm vi ánh sáng yếu.
+
+Không phát tiếng hét.
+
+Khi người chơi tiến lại gần, đèn nhấp nháy.
+
+Hanako không còn ở đó.
+
+Sau đó, người chơi thấy dấu giày nhỏ ướt trên sàn, kéo dài về phía một khu vực trước đây chưa từng có dấu vết.
+
+Các tình huống trên là định hướng. Hãy xây dựng thêm nhiều sự kiện mới nhưng không lặp đi lặp lại cùng một thủ pháp.
+
+## 4. Bạo lực và máu me có kiểm soát
+
+Cho phép những chi tiết kinh dị trực diện như vết máu, thương tích hoặc cảnh tượng đáng sợ được thể hiện bằng pixel art.
+
+Tuy nhiên, không sử dụng chúng chỉ để gây sốc.
+
+Mỗi chi tiết phải có nguyên nhân hoặc vai trò trong câu chuyện.
+
+Không đánh đổi sự tinh tế và chiều sâu tâm lý để tạo những cảnh bạo lực vô nghĩa.
+
+---
+
+# VIII. VIẾT LẠI CỐT TRUYỆN VÀ LỜI THOẠI
+
+## 1. Ngôn ngữ tự nhiên, dễ hiểu
+
+Lời thoại hiện tại quá phức tạp.
+
+Hãy viết lại toàn bộ những đoạn chưa đạt yêu cầu.
+
+Nhân vật phải nói chuyện giống người bình thường, không phải lúc nào cũng nói bằng ẩn dụ, câu triết lý hoặc lời tiên tri.
+
+Ví dụ không nên viết:
+
+"Trong vực sâu của ký ức, những âm thanh đã hóa thành tro tàn, nơi mà linh hồn tìm kiếm sự cứu rỗi giữa vô vàn cánh cửa của sự quên lãng."
+
+Nếu nhân vật chỉ đang nói về ký ức của mình, có thể viết:
+
+"Tớ không nhớ rõ chuyện hôm đó. Chỉ nhớ là trời mưa. Và có ai đó đã khóc."
+
+Đôi khi câu đơn giản có sức nặng hơn cả một đoạn văn dài.
+
+## 2. Không kéo dài lời thoại để đủ số từ
+
+Yêu cầu tối thiểu 3.000 từ của bản thiết kế trước là yêu cầu về lượng nội dung thực sự, không phải yêu cầu phải kéo dài từng câu.
+
+Tuyệt đối không thêm từ thừa, câu lặp, độc thoại triết lý hoặc mô tả dư thừa chỉ để đạt số lượng.
+
+Ưu tiên các câu ngắn, rõ ý.
+
+Một cuộc hội thoại có thể chỉ gồm vài câu nếu phù hợp.
+
+Một cảnh cảm xúc quan trọng có thể dài hơn khi thật sự cần.
+
+## 3. Giữ chiều sâu bằng tình huống
+
+Không dùng lời thoại để giải thích toàn bộ bi kịch.
+
+Hãy để người chơi hiểu nhân vật qua:
+
+- Cách họ cư xử.
+- Những việc họ làm.
+- Những điều họ không nói.
+- Đồ vật trong nhà.
+- Cách họ phản ứng với người khác.
+- Những thay đổi theo thời gian.
+
+Đôi khi một người im lặng và đặt thêm một bát cơm lên bàn có thể truyền tải cảm xúc tốt hơn một đoạn độc thoại dài.
+
+## 4. Hội thoại chỉ được khai thác một lần
+
+Đối với các cuộc hội thoại khai thác thông tin quan trọng:
+
+- Người chơi có thể chọn hỏi một câu cụ thể.
+- Câu hỏi đó chỉ được thực hiện một lần.
+- Sau khi hỏi, hệ thống lưu trạng thái đã hỏi.
+- Không thể hỏi lại cùng một câu để nhận lại thông tin như cũ.
+- Một số lựa chọn có thể làm thay đổi cách nhân vật nhìn nhận Ren.
+- Những nhân vật khác nhau có thể cung cấp thông tin mâu thuẫn.
+
+Không sử dụng hệ thống đối thoại lặp vô hạn.
+
+Tuy nhiên, người chơi phải có Dialogue History để đọc lại lời thoại đã nghe.
+
+Các câu giao tiếp đời thường như chào hỏi, cảm ơn, giao vật phẩm hoặc mua bán vẫn được phép lặp khi phù hợp.
+
+Không để người chơi bị khóa tiến trình vĩnh viễn chỉ vì chọn một câu hỏi khác.
+
+## 5. Manh mối ẩn trong lời thoại
+
+Giữ yêu cầu mỗi cuộc hội thoại quan trọng có ít nhất hai manh mối liên quan.
+
+Nhưng các manh mối phải tự nhiên.
+
+Không biến một câu nói thành một đoạn giải thích dài.
+
+Một chi tiết rất nhỏ có thể liên hệ đến vật phẩm hoặc sự kiện nhiều giờ sau.
+
+Không đánh dấu hai manh mối này trực tiếp cho người chơi.
+
+## 6. Người chơi phải trải nghiệm, không chỉ nghe kể
+
+Các sự kiện quan trọng phải được triển khai thành phân cảnh có thể tương tác.
+
+Thay vì một NPC kể rằng họ từng nhìn thấy Hanako, người chơi có thể đi cùng NPC đến địa điểm, chứng kiến phản ứng của họ và tự quan sát sự bất thường.
+
+Hạn chế việc truyền tải tất cả sự kiện qua những cuộc hội thoại hoặc văn bản dài.
+
+---
+
+# IX. NÂNG CẤP PROLOGUE VÀ CHƯƠNG HANAKO-SAN
+
+## 1. Prologue
+
+Thiết kế lại phần mở đầu theo hướng đời thường.
+
+Người chơi phải trải nghiệm việc Ren trở về quê một cách tự nhiên.
+
+Các hoạt động ban đầu gồm:
+
+- Xuống ga tàu.
+- Tìm đường về nhà.
+- Gặp người quen.
+- Sắp xếp đồ đạc.
+- Kiểm tra căn nhà cũ.
+- Mua một số vật dụng sinh hoạt.
+- Giúp người thân một việc nhỏ.
+- Đi ngang qua trường học cũ.
+- Phát hiện những dấu hiệu bất thường.
+
+Mỗi hoạt động phải có mục đích gameplay, cảm xúc hoặc xây dựng bối cảnh.
+
+Không buộc mọi sự kiện lập tức trở thành kinh dị.
+
+Cho người chơi làm quen với điều khiển thông qua các hành động tự nhiên thay vì hướng dẫn dài dòng.
+
+## 2. Hanako-san
+
+Chương Hanako phải được tái thiết kế với trọng tâm là khám phá trường học bỏ hoang.
+
+Trường học cần có cấu trúc không gian hợp lý:
+
+- Cổng trường.
+- Sân trường.
+- Hành lang.
+- Các lớp học.
+- Phòng giáo viên.
+- Phòng y tế.
+- Thư viện nhỏ.
+- Phòng trực.
+- Cầu thang.
+- Kho dụng cụ.
+- Nhà vệ sinh mỗi tầng.
+- Các khu vực kỹ thuật.
+
+Không phải tất cả khu vực đều cần mở ngay.
+
+Việc đi tới những khu vực mới phải dựa trên tương tác thực tế.
+
+## 3. Chuỗi câu đố mẫu cho Hanako
+
+Tạo các chuỗi tương tác liên kết như sau:
+
+**Chuỗi 1: Vào trường**
+
+Người chơi cần tìm cách vào khuôn viên trường qua một lối đi có nguyên nhân và tính hợp lý.
+
+Không dùng lựa chọn trắc nghiệm.
+
+**Chuỗi 2: Khôi phục nguồn sáng**
+
+Người chơi phát hiện trường học quá tối.
+
+Cần tìm thiết bị chiếu sáng cá nhân hoặc khôi phục một phần điện.
+
+**Chuỗi 3: Tiếp cận tầng ba**
+
+Cầu thang có thể bị chặn hoặc khu vực tầng ba bị khóa.
+
+Người chơi phải tác động lên môi trường để mở đường.
+
+**Chuỗi 4: Khám phá câu chuyện Hanako**
+
+Người chơi tự tìm hiểu các lời đồn thông qua đồ vật, ký ức và các nhân vật.
+
+Không có nhân vật đứng ra trình bày toàn bộ truyền thuyết.
+
+**Chuỗi 5: Đối diện buồng vệ sinh thứ ba**
+
+Người chơi phải sử dụng những gì đã tự quan sát và ghi nhớ.
+
+Không đưa ra câu hỏi "Bạn muốn gọi Hanako như thế nào?".
+
+Các hành động phải diễn ra thông qua tương tác với cửa, tiếng gõ, đồ vật và môi trường.
+
+**Chuỗi 6: Hậu quả**
+
+Sự kiện với Hanako phải gây ra thay đổi có ý nghĩa trong cốt truyện.
+
+Người chơi có thể quay lại một số địa điểm cũ để nhận ra những thay đổi.
+
+Những câu đố trên chỉ là khung thiết kế. Hãy xây dựng các bước cụ thể, có logic, nhiều cách tương tác và manh mối hợp lý.
+
+---
+
+# X. MENU VÀ GUI
+
+Thiết kế lại menu nếu đồ họa hiện tại chưa đạt chất lượng.
+
+Phong cách: Japanese Urban Legend Pixel Horror.
+
+Menu phải có:
+
+- Background pixel art nhiều lớp.
+- Ánh sáng và bóng tối.
+- Hạt mưa.
+- Animation tinh tế.
+- Typography dễ đọc.
+- Hiệu ứng hover và chọn mục.
+- Chuyển cảnh mượt.
+- Âm thanh tương tác.
+- Bố cục cân đối.
+- Hỗ trợ các độ phân giải màn hình thông dụng.
+
+Không sử dụng những hình chữ nhật đơn giản với chữ mặc định để làm menu chính.
+
+Không sử dụng GUI mang cảm giác bản demo lập trình.
+
+Tạo pixel UI artwork thực sự.
+
+Các màn hình Inventory, Dialogue, Journal, Save/Load và Settings phải dùng cùng ngôn ngữ thiết kế.
+
+Không làm giao diện quá cầu kỳ gây khó sử dụng.
+
+---
+
+# XI. YÊU CẦU LẬP TRÌNH VÀ KIỂM THỬ
+
+Trước khi sửa mã nguồn, hãy:
+
+1. Kiểm tra cấu trúc dự án v0.2.
+2. Đọc toàn bộ hệ thống scene, collision, dialogue, puzzles và assets.
+3. Xác định những thành phần có thể tái sử dụng.
+4. Xác định lỗi kiến trúc gây hạn chế tương tác.
+5. Lập phương án nâng cấp không làm mất dữ liệu quan trọng.
+
+Sau đó triển khai:
+
+- Interaction Manager.
+- Inventory and Item Use System.
+- Environment Puzzle System.
+- Object State Manager.
+- Dialogue One-Time Choice System.
+- NPC Event System.
+- Pixel Art Asset Pipeline.
+- Dynamic Lighting System.
+- Flashlight System.
+- Horror Event Director.
+- Map Decoration and Collision System.
+- Story Event Manager.
+
+Không dùng các hàm xử lý đặc biệt chỉ hoạt động cho một câu đố nếu có thể tạo hệ thống tái sử dụng.
+
+Không tự động giải câu đố ngay khi người chơi bước vào phòng hoặc có đủ vật phẩm.
+
+Người chơi phải thực hiện thao tác kết thúc tương ứng.
+
+## Kiểm thử bắt buộc
+
+Kiểm tra:
+
+- Nhặt vật phẩm.
+- Sử dụng vật phẩm đúng vị trí.
+- Sử dụng sai vật phẩm.
+- Kết hợp vật phẩm.
+- Tương tác với cửa và đồ vật.
+- Đẩy và chặn vật thể.
+- NPC giao nhận vật phẩm.
+- Trạng thái NPC sau đối thoại.
+- Không lặp lại câu hỏi đã hỏi.
+- Ánh sáng khi bật/tắt đèn.
+- Đèn pin và vật cản.
+- Collision mọi bản đồ.
+- Save/load giữa câu đố đang giải.
+- Khôi phục trạng thái ánh sáng.
+- Trigger của sự kiện kinh dị.
+- Các tình huống người chơi đi sai thứ tự.
+- Khả năng hoàn thành Prologue và Hanako từ đầu đến cuối.
+
+Các vật thể phải hoạt động đúng sau khi tải lại bản lưu.
+
+Không tạo ra vật phẩm trùng lặp sau khi load game.
+
+Không để NPC biến mất vô lý hoặc xuất hiện ở sai vị trí.
+
+Không để vật phẩm nhiệm vụ bị mất khi không còn cách lấy lại.
+
+## Hiệu năng
+
+Ưu tiên tối ưu cho laptop phổ thông có iGPU và khoảng 8 GB RAM.
+
+Mục tiêu 60 FPS ở cấu hình phù hợp, có tùy chọn giảm hiệu ứng.
+
+Không tạo hoặc tải lại sprite, ánh sáng và tài nguyên âm thanh liên tục mỗi frame.
+
+Dùng sprite atlas, object pooling khi cần, lightmap caching, culling và tải tài nguyên theo khu vực.
+
+Không hy sinh toàn bộ chất lượng đồ họa chỉ để tăng FPS.
+
+---
+
+# XII. TIÊU CHÍ NGHIỆM THU v0.3
+
+Bản nâng cấp chỉ được xem là đạt yêu cầu khi:
+
+1. Người chơi có thể hoàn thành Prologue và Hanako mà không cần giải câu đố trắc nghiệm do hệ thống đưa ra.
+2. Những câu đố chính yêu cầu tương tác vật lý, sử dụng đồ vật hoặc quan sát môi trường.
+3. Các gợi ý được tích hợp tự nhiên vào bối cảnh.
+4. Bản đồ có đồ trang trí phù hợp, không trống trải.
+5. Nhân vật được vẽ lại rõ ràng và chi tiết hơn.
+6. Hanako có ngoại hình dễ liên hệ đến truyền thuyết.
+7. Các đồ vật lớn có va chạm đúng.
+8. Các đồ vật có thể sử dụng có phản hồi rõ ràng.
+9. Môi trường tối thực sự tối khi không có nguồn sáng.
+10. Đèn pin có tác dụng chiếu sáng và khám phá.
+11. Các phân cảnh kinh dị có nhịp độ, âm thanh và sự chuẩn bị.
+12. Lời thoại tự nhiên, dễ hiểu, không dài dòng.
+13. Câu hỏi đối thoại quan trọng chỉ được hỏi một lần.
+14. Những manh mối vẫn được cài đặt tinh tế.
+15. Game không có softlock trong các tuyến chơi hợp lệ.
+16. Save/load hoạt động ổn định.
+17. Menu và GUI có hình ảnh pixel art hoàn chỉnh.
+18. Hai chương chơi được từ đầu đến cuối.
+19. Không còn những asset tạm làm từ hình học đơn giản ở các vị trí quan trọng.
+20. Dự án có thể chạy và đóng gói theo kiến trúc đã chọn.
+
+Nếu không thể kiểm chứng một tiêu chí bằng cách chạy game, phải đánh dấu là chưa kiểm thử thay vì tự khẳng định đã đạt.
+
+---
+
+# XIII. KẾT QUẢ CẦN CUNG CẤP
+
+Cung cấp dự án v0.3 với:
+
+- Mã nguồn đã sửa.
+- Các tài nguyên pixel art mới.
+- Các bản đồ được trang trí lại.
+- Sprite nhân vật và Hanako.
+- Hệ thống chiếu sáng và đèn pin.
+- Những câu đố môi trường đã triển khai.
+- Hội thoại được viết lại.
+- Menu và GUI mới.
+- Âm thanh và các sự kiện kinh dị.
+- Dữ liệu câu đố và trạng thái NPC.
+- Save/load tương thích hoặc cơ chế nâng cấp bản lưu.
+- Các bài kiểm thử.
+- Hướng dẫn chạy và build.
+- Danh sách file đã thay đổi.
+- Danh sách vấn đề đã sửa và vấn đề còn tồn tại.
+- File ZIP của dự án hoàn chỉnh.
+- File EXE nếu có khả năng build và kiểm thử trên Windows.
+
+Không viết lại toàn bộ dự án khi không cần thiết.
+
+Không xóa bớt các chức năng đang hoạt động tốt của v0.2.
+
+Không coi một ảnh minh họa là tài nguyên đã tích hợp nếu nó chưa được chuyển thành sprite, tileset hoặc background có thể sử dụng.
+
+Không tuyên bố đã kiểm thử gameplay khi mới chỉ kiểm tra cú pháp mã nguồn.
+
+# YÊU CẦU CUỐI CÙNG
+
+Tôi không muốn một trò chơi mà người chơi đi từ câu hỏi này sang câu hỏi khác.
+
+Tôi muốn một thế giới có thể khám phá.
+
+Một ngăn kéo có thể mở.
+
+Một chiếc tủ có thể dịch chuyển.
+
+Một chiếc chìa khóa có thể dùng vào ổ khóa.
+
+Một người hàng xóm có thể được giúp đỡ.
+
+Một lời nói tưởng như bình thường có thể trở nên đáng sợ nhiều giờ sau.
+
+Một hành lang chỉ sáng ở nơi có ánh đèn.
+
+Và một cánh cửa nhà vệ sinh khiến người chơi do dự rất lâu trước khi tự quyết định có nên gõ hay không.
+
+**Không giải thích nỗi sợ cho người chơi. Hãy khiến họ tự trải nghiệm nó.**
+
+Hãy nâng cấp trực tiếp Wasurerareta Koe v0.2 thành v0.3 theo những tiêu chuẩn trên, ưu tiên tính tương tác, tính tự nhiên, chất lượng nghệ thuật và trải nghiệm kinh dị tâm lý.
+
+**BẮT ĐẦU BẰNG VIỆC KIỂM TRA DỰ ÁN HIỆN CÓ, SAU ĐÓ THỰC HIỆN CHỈNH SỬA TRỰC TIẾP VÀ CUNG CẤP BẢN CÓ THỂ CHẠY ĐƯỢC.**

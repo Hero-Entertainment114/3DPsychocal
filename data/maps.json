@@ -850,12 +850,17 @@
         "y": 317,
         "to": "station_hall",
         "spawn": [
-          64,
-          272
+          48,
+          263
         ],
         "label": "SẢNH VÉ CŨ",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "station:exit:0",
+        "entrance": "station_hall:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "rain",
@@ -1521,24 +1526,34 @@
         "y": 285,
         "to": "station",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "SÂN GA TSUKIMORI",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "station_hall:exit:0",
+        "entrance": "station:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 285,
         "to": "town",
         "spawn": [
-          64,
-          272
+          48,
+          327
         ],
         "label": "PHỐ DƯỚI MƯA",
         "requires": "P001",
-        "locked_text": "Lối này cần: P001"
+        "locked_text": "Lối này cần: P001",
+        "id": "station_hall:exit:1",
+        "entrance": "town:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -2572,60 +2587,85 @@
         "y": 349,
         "to": "station_hall",
         "spawn": [
-          64,
-          272
+          128,
+          263
         ],
         "label": "SẢNH VÉ CŨ",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "town:exit:0",
+        "entrance": "station_hall:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 349,
         "to": "shop",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "TIỆM SAKURAI",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "town:exit:1",
+        "entrance": "shop:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 208,
         "y": 349,
         "to": "hospital_lobby",
         "spawn": [
-          64,
-          272
+          48,
+          279
         ],
         "label": "SẢNH BỆNH VIỆN",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "town:exit:2",
+        "entrance": "hospital_lobby:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 288,
         "y": 349,
         "to": "home_entry",
         "spawn": [
-          64,
-          272
+          48,
+          263
         ],
         "label": "HIÊN NHÀ MIZUHARA",
         "requires": "P002",
-        "locked_text": "Lối này cần: P002"
+        "locked_text": "Lối này cần: P002",
+        "id": "town:exit:3",
+        "entrance": "home_entry:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 368,
         "y": 349,
         "to": "school",
         "spawn": [
-          64,
-          272
+          48,
+          327
         ],
         "label": "SÂN TRƯỜNG TSUKIMORI",
         "requires": "P008",
-        "locked_text": "Lối này cần: P008"
+        "locked_text": "Lối này cần: P008",
+        "id": "town:exit:4",
+        "entrance": "school:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "rain",
@@ -3355,12 +3395,17 @@
         "y": 317,
         "to": "town",
         "spawn": [
-          64,
-          272
+          128,
+          327
         ],
         "label": "PHỐ DƯỚI MƯA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "shop:exit:0",
+        "entrance": "town:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -4100,24 +4145,34 @@
         "y": 301,
         "to": "town",
         "spawn": [
-          64,
-          272
+          208,
+          327
         ],
         "label": "PHỐ DƯỚI MƯA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "hospital_lobby:exit:0",
+        "entrance": "town:exit:2",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 301,
         "to": "hospital",
         "spawn": [
-          64,
-          272
+          48,
+          263
         ],
         "label": "PHÒNG BỆNH CỦA MẸ",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "hospital_lobby:exit:1",
+        "entrance": "hospital:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -4783,12 +4838,17 @@
         "y": 285,
         "to": "hospital_lobby",
         "spawn": [
-          64,
-          272
+          128,
+          279
         ],
         "label": "SẢNH BỆNH VIỆN",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "hospital:exit:0",
+        "entrance": "hospital_lobby:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -5454,24 +5514,34 @@
         "y": 285,
         "to": "town",
         "spawn": [
-          64,
-          272
+          288,
+          327
         ],
         "label": "PHỐ DƯỚI MƯA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "home_entry:exit:0",
+        "entrance": "town:exit:3",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 285,
         "to": "home",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "BẾP VÀ BÀN ĂN",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "home_entry:exit:1",
+        "entrance": "home:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -6245,12 +6315,17 @@
         "y": 317,
         "to": "home_entry",
         "spawn": [
-          64,
-          272
+          128,
+          263
         ],
         "label": "HIÊN NHÀ MIZUHARA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "home:exit:0",
+        "entrance": "home_entry:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -7284,24 +7359,34 @@
         "y": 349,
         "to": "town",
         "spawn": [
-          64,
-          272
+          368,
+          327
         ],
         "label": "PHỐ DƯỚI MƯA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school:exit:0",
+        "entrance": "town:exit:4",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 349,
         "to": "school_vestibule",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "SẢNH TỦ GIÀY",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school:exit:1",
+        "entrance": "school_vestibule:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "rain",
@@ -8075,48 +8160,68 @@
         "y": 317,
         "to": "school",
         "spawn": [
-          64,
-          272
+          128,
+          327
         ],
         "label": "SÂN TRƯỜNG TSUKIMORI",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_vestibule:exit:0",
+        "entrance": "school:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 317,
         "to": "school_class",
         "spawn": [
-          64,
-          272
+          48,
+          327
         ],
         "label": "LỚP 6–2",
         "requires": "P009",
-        "locked_text": "Lối này cần: P009"
+        "locked_text": "Lối này cần: P009",
+        "id": "school_vestibule:exit:1",
+        "entrance": "school_class:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 208,
         "y": 317,
         "to": "school_teachers",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "PHÒNG GIÁO VIÊN",
         "requires": "P010",
-        "locked_text": "Lối này cần: P010"
+        "locked_text": "Lối này cần: P010",
+        "id": "school_vestibule:exit:2",
+        "entrance": "school_teachers:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 288,
         "y": 317,
         "to": "school_broadcast",
         "spawn": [
-          64,
-          272
+          48,
+          263
         ],
         "label": "PHÒNG PHÁT THANH",
         "requires": "P009",
-        "locked_text": "Lối này cần: P009"
+        "locked_text": "Lối này cần: P009",
+        "id": "school_vestibule:exit:3",
+        "entrance": "school_broadcast:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -9054,12 +9159,17 @@
         "y": 349,
         "to": "school_vestibule",
         "spawn": [
-          64,
-          272
+          128,
+          295
         ],
         "label": "SẢNH TỦ GIÀY",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_class:exit:0",
+        "entrance": "school_vestibule:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -9833,12 +9943,17 @@
         "y": 317,
         "to": "school_vestibule",
         "spawn": [
-          64,
-          272
+          208,
+          295
         ],
         "label": "SẢNH TỦ GIÀY",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_teachers:exit:0",
+        "entrance": "school_vestibule:exit:2",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -10504,24 +10619,34 @@
         "y": 285,
         "to": "school_vestibule",
         "spawn": [
-          64,
-          272
+          288,
+          295
         ],
         "label": "SẢNH TỦ GIÀY",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_broadcast:exit:0",
+        "entrance": "school_vestibule:exit:3",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 285,
         "to": "school_corridor",
         "spawn": [
-          64,
-          272
+          48,
+          263
         ],
         "label": "HÀNH LANG TẦNG BA",
         "requires": "P012",
-        "locked_text": "Lối này cần: P012"
+        "locked_text": "Lối này cần: P012",
+        "id": "school_broadcast:exit:1",
+        "entrance": "school_corridor:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -11387,36 +11512,51 @@
         "y": 285,
         "to": "school_broadcast",
         "spawn": [
-          64,
-          272
+          128,
+          263
         ],
         "label": "PHÒNG PHÁT THANH",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_corridor:exit:0",
+        "entrance": "school_broadcast:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 128,
         "y": 285,
         "to": "school_store",
         "spawn": [
-          64,
-          272
+          48,
+          327
         ],
         "label": "KHO SAU PHÒNG Y TẾ",
         "requires": "P013",
-        "locked_text": "Lối này cần: P013"
+        "locked_text": "Lối này cần: P013",
+        "id": "school_corridor:exit:1",
+        "entrance": "school_store:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       },
       {
         "x": 208,
         "y": 285,
         "to": "school_toilets",
         "spawn": [
-          64,
-          272
+          48,
+          295
         ],
         "label": "BA CÁNH CỬA",
         "requires": "P019",
-        "locked_text": "Lối này cần: P019"
+        "locked_text": "Lối này cần: P019",
+        "id": "school_corridor:exit:2",
+        "entrance": "school_toilets:exit:0",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -12258,12 +12398,17 @@
         "y": 349,
         "to": "school_corridor",
         "spawn": [
-          64,
-          272
+          128,
+          263
         ],
         "label": "HÀNH LANG TẦNG BA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_store:exit:0",
+        "entrance": "school_corridor:exit:1",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",
@@ -12996,12 +13141,17 @@
         "y": 317,
         "to": "school_corridor",
         "spawn": [
-          64,
-          272
+          208,
+          263
         ],
         "label": "HÀNH LANG TẦNG BA",
         "requires": null,
-        "locked_text": "Lối này cần: "
+        "locked_text": "Lối này cần: ",
+        "id": "school_toilets:exit:0",
+        "entrance": "school_corridor:exit:2",
+        "facing": 3,
+        "transition": "door",
+        "travel_seconds": 0
       }
     ],
     "ambient": "hum",

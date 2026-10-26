@@ -1,6 +1,7 @@
 import math
 import pygame
 from core.paths import ROOT
+from systems.lighting import Lighting
 
 C={'ink':(17,27,36),'deep':(24,39,51),'blue':(41,63,75),'fog':(91,117,120),'sage':(114,135,119),'paper':(217,208,180),'amber':(214,173,104),'red':(141,68,71),'muted':(145,161,151)}
 class Renderer:
@@ -14,6 +15,7 @@ class Renderer:
         self.vignette=pygame.Surface((480,270),pygame.SRCALPHA)
         for i in range(18):pygame.draw.rect(self.vignette,(6,12,19,max(0,12-i//2)),(i,i,480-2*i,270-2*i),1)
         self.content=content
+        self.lighting=Lighting()
     def text(self,text,x,y,color='paper',size=11):
         key=(str(text),size,color)
         if key not in self.cache:
@@ -78,7 +80,7 @@ class Renderer:
         # Draw only currently available interactions: future clues are not dumped into a room.
         props=self.assets['sprites/props.png']
         for obj in world.objects():
-            if obj['kind'] in ('puzzle','observation'):
+            if obj['kind'] in ('puzzle','observation','pickup'):
                 kind=0 if obj['kind']=='observation' else (1 if obj['id'] in ('P006','P013') else 3 if obj['id'] in ('P009','P016') else 0)
                 self.screen.blit(props,(int(obj['x']-cam.x)-16,int(obj['y']-cam.y)-44),pygame.Rect(kind*32,0,32,48))
         people=[(p['y'],p['id'],p['x'],p['y'],0,0) for p in world.actors()]
@@ -86,26 +88,18 @@ class Renderer:
         people.append((state.y,'ren',state.x,state.y,frame,world.direction))
         for _,cid,x,y,f,dr in sorted(people):self.sprite(cid,x-cam.x,y-cam.y,f,dr)
         if scare>0 and not settings['reduced_scares']:self.sprite('mio',340-cam.x,170-cam.y,alpha=int(min(1,scare)*140))
-        for o in world.objects():
-            x,y=o['x']-cam.x,o['y']-cam.y
-            if o['kind']=='puzzle':
-                if o['id'] in state.solved:color=C['sage'];mark='·'
-                elif progress.available(o['id']):color=C['amber'];mark='!'
-                else:continue
-                self.text(mark,x-2,y-51,color,12)
-            elif o['kind']=='portal':self.text(o['label'],x-15,y+10,'muted',9)
         if world.room['theme'] in ('platform','street','yard') and not settings['reduced_motion']:
             for i in range(36):
                 x=(i*71+int(t*5))%480;y=(i*43+int(t*90))%270
                 pygame.draw.line(self.screen,(88,113,123),(x,y),(x-2,y+7))
+        self.lighting.draw(self.screen,world)
         self.screen.blit(self.vignette,(0,0))
         pygame.draw.rect(self.screen,C['ink'],(0,0,480,27))
-        self.text(world.room['name'],10,5,'paper',10)
         phases={'afternoon':'CHIỀU','evening':'TỐI','night':'ĐÊM','dawn':'RẠNG SÁNG'}
         self.text(phases[state.phase]+'  •  '+str(len(state.solved))+'/22',352,6,'amber',9)
         near=world.nearest()
         if near:
-            label=f"[{settings['keys']['interact'].upper()}] {near['label']}"
+            label=f"[{settings['keys']['interact'].upper()}] "+('Đi qua' if near['kind']=='portal' else near['label'])
             w=min(460,self.fonts[10].size(label)[0]+20)
             pygame.draw.rect(self.screen,C['ink'],(240-w//2,226,w,20));self.text(label,250-w//2,229,'paper',10)
         pygame.draw.rect(self.screen,C['ink'],(0,254,480,16))

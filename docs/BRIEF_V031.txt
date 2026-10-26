@@ -1,0 +1,715 @@
+# WASURERARETA KOE v0.3.1
+## LIVING WORLD, NPC SCHEDULE, CONNECTED MAPS & HIGH-DETAIL PIXEL ART
+
+### I. NHIỆM VỤ
+
+Hãy tiếp tục nâng cấp trực tiếp dự án Wasurerareta Koe v0.3, tập trung vào hệ thống thế giới sống động, NPC, giao thông, kết nối bản đồ, hiệu ứng chuyển cảnh, giới hạn khu vực và nâng cấp chất lượng pixel art.
+
+Không xây dựng lại trò chơi từ đầu nếu không cần thiết.
+
+Giữ nguyên những yêu cầu trước đây về gameplay tương tác, giải đố môi trường, ánh sáng vật lý, đèn pin, kinh dị tâm lý, hội thoại tự nhiên và diễn biến cốt truyện.
+
+Các yêu cầu trong prompt này được ưu tiên khi có mâu thuẫn với những chỉ dẫn cũ.
+
+**Mục tiêu:** Người chơi phải cảm thấy Tsukimori là một thị trấn Nhật Bản thực sự tồn tại vào năm 1998, nơi mọi người có lịch sinh hoạt, đường phố có giao thông, các công trình có cấu trúc hợp lý và những sự kiện kinh dị xuất hiện trong một thế giới vốn vận hành bình thường.
+
+Không tạo cảm giác người chơi đang đi qua các căn phòng riêng lẻ được kết nối bằng menu dịch chuyển.
+
+---
+
+# II. THẾ GIỚI SỐNG ĐỘNG: LIVING WORLD SYSTEM
+
+## 1. NPC nền và hoạt động đời thường
+
+Bổ sung NPC không trực tiếp liên quan đến cốt truyện để tạo cảm giác thị trấn có người sinh sống.
+
+Ví dụ:
+
+- Người đi bộ trên vỉa hè.
+- Học sinh tan trường.
+- Nhân viên đi làm.
+- Người cao tuổi đi chợ.
+- Người đạp xe.
+- Khách đứng đợi xe buýt.
+- Nhân viên giao hàng.
+- Người bán hàng.
+- Người đứng hút thuốc ở khu vực được phép.
+- Người đang trò chuyện trước cửa tiệm.
+- Nhân viên vệ sinh.
+- Người đang dắt chó.
+- Khách lên và xuống tàu.
+- Người đi qua các ngã tư.
+
+Các NPC này không nhất thiết phải tương tác được.
+
+Không hiển thị nút tương tác nếu nhân vật chỉ là một phần của môi trường.
+
+Tuy nhiên, họ phải có chuyển động tự nhiên và không được đứng bất động vô lý trong thời gian dài.
+
+Tạo các hoạt ảnh:
+
+- Walking.
+- Idle variations.
+- Looking around.
+- Waiting.
+- Sitting.
+- Carrying objects.
+- Opening doors.
+- Entering/exiting buildings.
+- Talking gestures.
+
+Một NPC có thể đứng yên nếu đang thực hiện hoạt động có lý do, ví dụ chờ tàu, đọc báo hoặc bán hàng.
+
+NPC nền không cần có toàn bộ hồ sơ xã hội như nhân vật cốt truyện.
+
+## 2. Giao thông
+
+Đường phố phải có phương tiện di chuyển phù hợp với Nhật Bản năm 1998:
+
+- Xe ô tô gia đình.
+- Taxi.
+- Xe tải giao hàng.
+- Xe đạp.
+- Xe máy.
+- Xe buýt địa phương.
+- Tàu hỏa hoặc tàu địa phương tại các khu vực có đường ray.
+
+Phương tiện chỉ được xuất hiện tại vị trí hợp lý.
+
+Không tạo xe chạy bên trong sân trường hoặc hành lang.
+
+Không cho ô tô đi xuyên người hoặc công trình.
+
+Phương tiện nền không cần tương tác hoặc điều khiển được.
+
+Chúng phải:
+
+- Đi theo tuyến đường.
+- Có tốc độ phù hợp.
+- Dừng tại đèn tín hiệu hoặc vật cản khi cần.
+- Có hoạt ảnh bánh xe hoặc chuyển động thích hợp.
+- Có âm thanh môi trường hợp lý.
+- Biến mất và xuất hiện tại các điểm ngoài tầm nhìn một cách tự nhiên.
+- Không đột ngột xuất hiện ngay trước mắt người chơi.
+
+Giao thông phải phù hợp mật độ dân cư và thời gian trong ngày.
+
+Không biến Tsukimori thành một thành phố hiện đại đông đúc nếu bối cảnh vốn là thị trấn đang suy tàn.
+
+## 3. NPC thay đổi theo địa điểm
+
+Không phân bố NPC ngẫu nhiên trên mọi bản đồ.
+
+Ví dụ:
+
+**Khu phố buổi sáng:** Người đi làm, nhân viên giao hàng, người mua sắm.
+
+**Khu phố buổi tối:** Người trở về nhà, khách cửa hàng tiện lợi, ít xe hơn.
+
+**Ga tàu:** Nhân viên nhà ga, hành khách và người chờ tàu.
+
+**Bệnh viện:** Bệnh nhân, người nhà, y tá và bác sĩ.
+
+**Trường học cũ:** Không xuất hiện người qua đường một cách vô lý. Chỉ xuất hiện các nhân vật có lý do như nhân viên bảo trì, người trông coi, người quen của Ren hoặc những thực thể siêu nhiên.
+
+**Đường hầm bỏ hoang:** Rất ít dấu hiệu sinh hoạt, chỉ có những nhân vật hoặc phương tiện phù hợp với tuyến truyện.
+
+NPC không được xuất hiện chỉ để lấp đầy bản đồ.
+
+---
+
+# III. NPC SCHEDULE & CHARACTER PRESENCE SYSTEM
+
+Đây là hệ thống bắt buộc đối với các nhân vật quan trọng.
+
+## 1. Mỗi nhân vật phải có lịch trình
+
+Tạo NPC Schedule Manager.
+
+Mỗi nhân vật có thể có:
+
+- Vị trí nhà.
+- Nơi làm việc.
+- Địa điểm thường lui tới.
+- Lịch trình sáng, trưa, chiều và tối.
+- Thời điểm đi lại giữa các khu vực.
+- Hoạt động tại từng địa điểm.
+- Điều kiện xuất hiện.
+- Điều kiện tạm vắng mặt.
+- Những thay đổi sau sự kiện cốt truyện.
+
+Ví dụ:
+
+Một người chủ cửa hàng có thể đứng sau quầy trong giờ làm việc, đi kiểm tra kệ hàng khi vắng khách và trở về nhà sau khi đóng cửa.
+
+Một giáo viên cũ không được đứng mãi trong trường bỏ hoang. Bà có thể chỉ quay lại trường khi có lý do liên quan đến một sự kiện.
+
+Một người bạn của Ren có thể xuất hiện ở nhà buổi sáng, đến cửa hàng vào buổi chiều và trở về trước khi trời tối.
+
+## 2. NPC phải có lý do xuất hiện
+
+Mỗi lần xuất hiện của nhân vật cốt truyện phải xác định:
+
+- Vì sao họ đến địa điểm đó?
+- Họ đang làm gì?
+- Họ đã đến bằng cách nào?
+- Họ dự định rời đi khi nào?
+- Điều gì khiến họ đổi kế hoạch?
+- Họ biết hoặc không biết gì về những sự kiện đang xảy ra?
+
+Không dịch chuyển NPC giữa các bản đồ mà không có nguyên nhân, trừ các hiện tượng siêu nhiên có chủ đích.
+
+Không để NPC xuất hiện để đưa ra một đoạn hội thoại rồi bất động tại chỗ mãi mãi.
+
+## 3. Di chuyển khi hoàn thành nhiệm vụ
+
+Sau khi một nhiệm vụ hoặc cuộc gặp kết thúc:
+
+- NPC có thể trở về nhà.
+- Đi tới khu vực khác.
+- Tiếp tục công việc.
+- Ngồi nghỉ.
+- Rời khỏi màn hình.
+- Đi cùng người chơi.
+- Trở lại lịch trình thường ngày.
+
+Không nhất thiết NPC nào cũng phải di chuyển ngay, nhưng nếu tiếp tục đứng lại thì cần có lý do hợp lý.
+
+Ví dụ:
+
+Sau khi Ren giúp một nhân vật mang đồ tới nhà, nhân vật phải bước vào nhà, tiếp tục sắp xếp đồ hoặc mời Ren vào trò chuyện.
+
+Không để nhân vật đứng nguyên ngoài đường và lặp đi lặp lại lời cảm ơn.
+
+## 4. AI di chuyển của NPC
+
+Xây dựng:
+
+- Waypoint movement.
+- Pathfinding bằng A* hoặc thuật toán phù hợp.
+- Local collision avoidance.
+- Idle animation.
+- Activity selection.
+- Destination management.
+- Door transitions.
+- Spawn/despawn ngoài tầm nhìn.
+
+NPC không được đi xuyên tường, bàn ghế hoặc người chơi.
+
+Không để nhiều NPC chồng lên cùng một vị trí.
+
+Không để NPC đứng chặn vĩnh viễn các cửa và lối đi quan trọng.
+
+Các NPC ngoài màn hình có thể được mô phỏng bằng lịch trình thay vì cập nhật đầy đủ từng frame để tiết kiệm tài nguyên.
+
+## 5. Thời gian và sự kiện
+
+Lịch trình phải kết hợp với thời gian và trạng thái cốt truyện.
+
+Một nhân vật có thể thay đổi lịch trình sau khi xảy ra chuyện.
+
+Ví dụ:
+
+Trước một sự kiện, nhân vật thường đi qua sân trường lúc chiều tối.
+
+Sau sự kiện, người đó cố tình tránh khu vực ấy.
+
+Không giải thích trực tiếp sự thay đổi này cho người chơi.
+
+Hãy để họ tự nhận ra.
+
+---
+
+# IV. CONNECTED WORLD: BẢN ĐỒ PHẢI LIÊN THÔNG
+
+## 1. Không còn các phòng cô lập
+
+Toàn bộ bản đồ phải được bố trí theo cấu trúc không gian hợp lý.
+
+Các phòng trong một tòa nhà phải nối với nhau qua:
+
+- Hành lang.
+- Cửa.
+- Cầu thang.
+- Sảnh.
+- Lối đi phụ.
+- Các khoảng sân.
+- Lối thoát hiểm khi phù hợp.
+
+Không được đặt nhiều phòng rời rạc rồi dùng một nút tương tác để chuyển tức thời giữa chúng nếu về mặt không gian chúng phải nằm cạnh nhau.
+
+## 2. Trường học
+
+Thiết kế trường tiểu học Tsukimori như một công trình hoàn chỉnh, nhiều phòng và nhiều tầng.
+
+Ví dụ cấu trúc:
+
+**Tầng một**
+
+- Cổng và sân trường.
+- Sảnh vào.
+- Khu để giày.
+- Hành lang chính.
+- Phòng giáo viên.
+- Phòng y tế.
+- Phòng trực.
+- Một số lớp học.
+- Cầu thang lên tầng hai.
+
+**Tầng hai**
+
+- Hành lang.
+- Các phòng học.
+- Thư viện.
+- Phòng âm nhạc.
+- Kho.
+- Nhà vệ sinh.
+- Cầu thang lên tầng ba.
+
+**Tầng ba**
+
+- Hành lang chính.
+- Những lớp học ít được sử dụng.
+- Phòng lưu trữ.
+- Nhà vệ sinh liên quan đến Hanako-san.
+- Các khu vực bị khóa hoặc xuống cấp.
+
+Các tầng phải có kiến trúc nhất quán.
+
+Vị trí cầu thang, cửa sổ, mặt ngoài công trình và các phòng cần hợp lý.
+
+Không thiết kế một phòng duy nhất đại diện cho cả ngôi trường.
+
+## 3. Đường phố
+
+Các bản đồ ngoài trời phải được nối bằng đường thực sự.
+
+Người chơi đi từ nhà Ren đến ga tàu phải thấy một tuyến đường hợp lý, qua các khu phố và ngã rẽ.
+
+Không sử dụng lựa chọn kiểu:
+
+"Bạn muốn đi đâu?"
+
+- Nhà.
+- Trường học.
+- Ga tàu.
+
+Thay vào đó, người chơi phải tự di chuyển theo các tuyến đường trong thế giới.
+
+Cho phép mở khóa fast travel ở giai đoạn sau nếu cần giảm thời gian di chuyển lặp lại, nhưng không sử dụng nó thay cho việc thiết kế bản đồ.
+
+## 4. Chuyển cảnh ở địa điểm xa
+
+Nếu hai địa điểm quá xa để thể hiện bằng những map nối liên tục, tạo hoạt ảnh chuyển cảnh.
+
+Ví dụ:
+
+- Ren lên tàu.
+- Cửa tàu đóng lại.
+- Khung cảnh bên ngoài chuyển động.
+- Âm thanh bánh tàu chạy trên ray.
+- Màn hình chuyển dần sang ga đích.
+
+Hoặc:
+
+- Ren lên xe buýt.
+- Khung cảnh đường phố lướt qua cửa kính.
+- Ánh sáng thay đổi theo thời gian.
+- Chuyển tới điểm đến.
+
+Cảnh chuyển không nhất thiết dài, nhưng phải hợp lý và đẹp.
+
+Không cần người chơi điều khiển phương tiện nếu không liên quan gameplay.
+
+## 5. Hệ thống chuyển map kỹ thuật
+
+Tạo World Graph với:
+
+- Map ID.
+- Các khu vực liền kề.
+- Exit/entrance ID.
+- Tọa độ điểm vào.
+- Hướng nhân vật sau chuyển cảnh.
+- Điều kiện mở khóa.
+- Loại chuyển cảnh.
+- Trạng thái môi trường.
+- Thời gian di chuyển nếu có.
+
+Khi đổi map, nhân vật phải xuất hiện đúng lối ra tương ứng.
+
+Không xuất hiện giữa phòng hoặc ở vị trí vô lý.
+
+Nếu người chơi quay lại ngay, họ phải trở về đúng điểm nối trước đó.
+
+Tạo kiểm thử bảo đảm các điểm kết nối hai chiều hoạt động.
+
+---
+
+# V. SƯƠNG ĐEN GIỚI HẠN BẢN ĐỒ
+
+Thiết kế hệ thống **Dark Fog Boundary** để giới hạn phạm vi khám phá một cách tự nhiên.
+
+Không dùng những bức tường vô hình lộ liễu giữa đường.
+
+## 1. Tùy theo địa điểm
+
+Ở đường phố, ranh giới có thể được che bởi:
+
+- Bóng tối cuối con đường.
+- Sương đen dày.
+- Những tòa nhà.
+- Hàng rào.
+- Đường bị phong tỏa.
+- Những khúc cua vượt ngoài khu vực hiện tại.
+
+Ở khu vực rừng núi:
+
+- Sương mù.
+- Cây dày.
+- Địa hình hiểm trở.
+- Bóng tối.
+- Đường mòn không thể tiếp tục.
+
+Ở trường học:
+
+Không dùng sương đen giữa những hành lang được chiếu sáng bình thường.
+
+Chỉ dùng sương tối tại:
+
+- Khu vực chưa thể tiếp cận.
+- Hành lang không có nguồn sáng.
+- Phòng bị che khuất.
+- Các không gian siêu nhiên.
+- Những ranh giới cần che chuyển map.
+
+Ưu tiên cửa khóa, tường, hành lang bị sập hoặc lối đi thực tế để giới hạn khu vực trong trường.
+
+## 2. Hiệu ứng
+
+Dark Fog Boundary cần có:
+
+- Độ đậm tăng dần theo khoảng cách.
+- Nhiễu chuyển động rất nhẹ.
+- Chuyển tiếp mềm.
+- Khả năng hòa trộn với lighting.
+- Hiệu ứng khác nhau theo bản đồ.
+- Không gây tụt FPS đáng kể.
+
+Sương đen không được che mất đường đi hợp lệ.
+
+Không để người chơi đi sâu vào vùng đen rồi mắc kẹt.
+
+Nếu ranh giới chặn di chuyển, phải có dấu hiệu hình ảnh cho thấy con đường chưa thể tiếp tục.
+
+---
+
+# VI. TIẾNG NHẬT TRONG MÔI TRƯỜNG
+
+## 1. Chữ trên bảng phải có nghĩa
+
+Tất cả biển hiệu, tên trường, bảng nhà ga, biển chỉ dẫn và thông báo bằng tiếng Nhật phải:
+
+- Dùng chữ Nhật chính xác.
+- Có nghĩa phù hợp ngữ cảnh.
+- Không dùng ký tự Nhật ngẫu nhiên làm đồ trang trí.
+- Phù hợp cách dùng trong thời kỳ năm 1998.
+- Nhất quán với tên địa danh và công trình trong trò chơi.
+
+Ví dụ:
+
+- 月守駅: Ga Tsukimori.
+- 月守小学校: Trường tiểu học Tsukimori.
+- 職員室: Phòng giáo viên.
+- 保健室: Phòng y tế.
+- 図書室: Phòng thư viện.
+- 立入禁止: Cấm vào.
+- 非常口: Lối thoát hiểm.
+- お手洗い: Nhà vệ sinh.
+- 受付: Quầy tiếp nhận.
+
+Tạo một bảng thuật ngữ Nhật - Việt nội bộ để kiểm tra tính nhất quán.
+
+Không để AI tự ghép các ký tự tiếng Nhật không có nghĩa.
+
+## 2. Chữ phải vừa khung
+
+Tất cả văn bản trong game phải được kiểm tra kích thước thực tế.
+
+Đặc biệt:
+
+- Chữ Nhật trên biển hiệu.
+- Tên nhân vật.
+- Hội thoại tiếng Việt.
+- Các lựa chọn menu.
+- Nội dung sổ tay.
+- Thông báo trong game.
+- Màn hình cài đặt.
+- Nút tương tác.
+
+Bắt buộc:
+
+- Đo kích thước chữ trước khi vẽ.
+- Căn chỉnh đúng vùng hiển thị.
+- Tự động xuống dòng tại các vị trí hợp lý.
+- Hỗ trợ font tiếng Việt và tiếng Nhật.
+- Không để ký tự đè lên nhau.
+- Không cắt mất dấu tiếng Việt.
+- Không để chữ vượt khỏi khung.
+- Không dùng kích thước chữ quá nhỏ.
+
+Nếu cần, cho phép hộp thoại tự điều chỉnh chiều cao hoặc có phân trang.
+
+Đối với chữ được vẽ vào texture pixel, phải bảo đảm nét chữ vẫn đọc được sau khi scale.
+
+---
+
+# VII. KHÔNG HIỂN THỊ TÊN ĐỊA ĐIỂM CHO NGƯỜI CHƠI
+
+Đây là yêu cầu quan trọng về trải nghiệm khám phá.
+
+Không hiển thị tên địa điểm khi nhân vật bước vào bản đồ.
+
+Không sử dụng thông báo kiểu:
+
+"Bạn đã đến: Trường tiểu học Tsukimori."
+
+"Địa điểm mới: Hành lang tầng 3."
+
+Không hiển thị tên phòng ở góc màn hình.
+
+Không dùng loading screen ghi tên địa điểm sắp đến.
+
+Không gắn nhãn địa điểm nổi trên màn hình khi người chơi di chuyển.
+
+Người chơi phải tự xác định nơi mình đang ở thông qua:
+
+- Biển hiệu trong môi trường.
+- Cấu trúc kiến trúc.
+- Lời thoại.
+- Bảng thông báo.
+- Bản đồ giấy.
+- Cách bố trí vật dụng.
+- Những chi tiết nhận biết riêng.
+
+Ví dụ:
+
+Người chơi đi qua một cánh cửa và nhìn thấy bảng 「保健室」.
+
+Họ tự nhận ra đó là phòng y tế.
+
+Không cần hiển thị thêm "Phòng y tế" bằng UI.
+
+Vẫn có thể cho phép Ren đọc hoặc dịch một biển hiệu khi người chơi chủ động tương tác, vì Ren hiểu tiếng Nhật.
+
+Đây là thông tin tồn tại tự nhiên trong thế giới, không phải nhãn địa điểm do hệ thống hiển thị.
+
+---
+
+# VIII. NÂNG CẤP ĐỘ PHÂN GIẢI VÀ CHI TIẾT PIXEL ART
+
+Đồ họa phải được nâng cấp đáng kể so với v0.3.
+
+Không chỉ tăng kích thước cửa sổ game.
+
+## 1. Độ phân giải
+
+Ưu tiên thử nghiệm độ phân giải nội bộ:
+
+**960×540 pixel (16:9)**
+
+Nếu hiệu năng không đáp ứng, có thể hỗ trợ chế độ 640×360 nhưng vẫn sử dụng hệ thống tài nguyên chi tiết, không đơn giản phóng to sprite thô.
+
+Hỗ trợ:
+
+- 1280×720.
+- 1600×900.
+- 1920×1080.
+- Fullscreen.
+- Windowed.
+- Integer scaling khi phù hợp.
+
+Phải phân biệt giữa độ phân giải render nội bộ và độ phân giải hiển thị.
+
+## 2. Sprite chi tiết hơn
+
+Thiết kế lại sprite với mật độ chi tiết cao hơn:
+
+- Nhân vật chính khoảng 48×80 hoặc 64×96 pixel.
+- NPC quan trọng có tỉ lệ phù hợp.
+- Chân dung khoảng 192×192 hoặc 256×256 pixel.
+- Props và đồ nội thất được vẽ đủ chi tiết.
+- Tileset có chi tiết bề mặt, vết cũ, cạnh và vật liệu.
+- Các phương tiện có sprite riêng.
+- Đồ vật không bị biến thành những khối màu đơn giản.
+
+Kích thước cụ thể có thể thay đổi theo art direction, nhưng phải thống nhất tỉ lệ.
+
+Không sử dụng các sprite độ phân giải khác nhau rồi scale tùy tiện khiến pixel to nhỏ không đồng đều.
+
+## 3. Pixel art thực sự
+
+Không dùng:
+
+- Ảnh chụp bị pixel hóa.
+- Sprite hình học sơ sài.
+- Các khối màu thiếu hình dáng.
+- Nhân vật chỉ thay màu áo.
+- Đồ vật không có chiều sâu hoặc vật liệu.
+- Hiệu ứng làm mờ phá hỏng nét pixel.
+
+Cần tạo pixel art có đường nét, ánh sáng, bóng đổ, texture và cấu trúc rõ ràng.
+
+## 4. Thiết kế map nhiều lớp
+
+Mỗi map cần có các lớp:
+
+- Ground.
+- Ground details.
+- Walls.
+- Furniture.
+- Decorations.
+- Interactive objects.
+- Collision.
+- Characters.
+- Foreground.
+- Lighting.
+- Weather/particles.
+- Fog.
+- Event overlays.
+
+Các lớp phải được sắp xếp hợp lý để không xảy ra lỗi nhân vật nổi trên đồ vật, vật thể che sai hoặc bóng đổ đè lên UI.
+
+## 5. Mật độ chi tiết
+
+Thêm những chi tiết phù hợp:
+
+- Vết nứt trên tường.
+- Gạch lát bị mòn.
+- Vết bẩn dưới chân tủ.
+- Rêu và ẩm mốc.
+- Đường điện.
+- Ống nước.
+- Rèm cửa.
+- Cây cỏ bên đường.
+- Biển quảng cáo cũ.
+- Máy bán hàng tự động.
+- Xe đạp dựng trước cửa.
+- Dây điện và cột điện.
+- Hộp thư.
+- Ghế đá.
+- Vạch qua đường.
+- Nắp cống.
+- Bảng tin khu phố.
+
+Mật độ chi tiết phải phù hợp từng khu vực.
+
+Không lấp đầy mọi bề mặt bằng texture nhiễu.
+
+Đảm bảo người chơi vẫn dễ nhận biết lối đi, nhân vật và các đồ vật quan trọng.
+
+---
+
+# IX. TỐI ƯU HIỆU NĂNG
+
+Các nâng cấp không được khiến game trở nên quá nặng.
+
+Đặc biệt chú ý:
+
+- Chỉ mô phỏng AI di chuyển đầy đủ cho NPC ở gần.
+- Sử dụng lịch trình trạng thái cho NPC ngoài màn hình.
+- Không spawn quá nhiều phương tiện.
+- Dùng sprite atlas.
+- Cache lightmap và các lớp bản đồ tĩnh.
+- Culling những đối tượng ngoài camera.
+- Tái sử dụng tài nguyên.
+- Không tạo texture mới liên tục.
+- Giới hạn số nguồn sáng động.
+- Tối ưu fog bằng shader hoặc surface có sẵn.
+- Không cập nhật pathfinding mỗi frame.
+- Kiểm soát số lượng particle.
+
+Mục tiêu 60 FPS trên cấu hình phổ thông, có các tùy chọn giảm chất lượng nhưng không làm mất khả năng giải câu đố.
+
+---
+
+# X. KIỂM THỬ BẮT BUỘC
+
+Thực hiện kiểm tra:
+
+1. NPC có lịch trình và vị trí xuất hiện hợp lý.
+2. NPC không đứng bất động vô nghĩa.
+3. NPC rời đi hoặc đổi hoạt động sau sự kiện.
+4. Người qua đường và phương tiện di chuyển tự nhiên.
+5. Không có NPC hoặc xe đi xuyên vật cản.
+6. Không có phương tiện xuất hiện sai địa điểm.
+7. Các phòng trong trường được nối bằng hành lang thực.
+8. Cầu thang nối đúng các tầng.
+9. Các bản đồ đường phố có lối đi kết nối.
+10. Chuyển cảnh xa có hoạt ảnh hợp lý.
+11. Người chơi xuất hiện đúng cửa sau khi chuyển map.
+12. Không bị kẹt ở mép bản đồ.
+13. Dark Fog Boundary hoạt động hợp lý.
+14. Sương không che mất lối đi cần thiết.
+15. Biển hiệu tiếng Nhật có nội dung chính xác.
+16. Văn bản không tràn, đè hoặc cắt mất ký tự.
+17. Không hiển thị tên địa điểm tự động.
+18. NPC và map khôi phục đúng sau khi tải save.
+19. Các map nhiều lớp hiển thị đúng.
+20. FPS ổn định khi có nhiều NPC và ánh sáng động.
+
+## Điều kiện nghiệm thu
+
+Không coi hệ thống NPC hoàn thiện nếu chỉ tạo các sprite đi qua lại ngẫu nhiên.
+
+Không coi bản đồ liên thông nếu mỗi phòng thực tế vẫn là một scene cô lập được truy cập bằng menu.
+
+Không coi đồ họa đã nâng cấp nếu chỉ tăng độ phân giải cửa sổ.
+
+Không coi văn bản tiếng Nhật đúng nếu chưa kiểm tra ngữ nghĩa và font.
+
+Không coi sương đen là hệ thống giới hạn bản đồ nếu chỉ phủ một lớp đen cố định lên toàn màn hình.
+
+---
+
+# XI. KẾT QUẢ CUỐI CÙNG
+
+Hãy nâng cấp trực tiếp dự án hiện tại và cung cấp:
+
+- Mã nguồn đã sửa.
+- Hệ thống NPC Schedule.
+- Hệ thống NPC nền.
+- Hệ thống giao thông.
+- Các bản đồ được thiết kế lại.
+- World Graph và các điểm kết nối.
+- Hoạt ảnh chuyển cảnh.
+- Dark Fog Boundary.
+- Tài nguyên pixel art chi tiết hơn.
+- Sprite nhân vật và phương tiện mới.
+- GUI đã kiểm tra bố cục chữ.
+- Biển hiệu tiếng Nhật chính xác.
+- Hệ thống lưu trạng thái NPC và thế giới.
+- Các bài kiểm thử và kết quả thực tế.
+- File ZIP dự án.
+- File EXE nếu môi trường hỗ trợ build Windows và kiểm thử.
+
+Không xóa các cơ chế đang hoạt động tốt.
+
+Không tạo bản demo riêng biệt thay cho dự án chính.
+
+Không khẳng định đã hoàn thành nếu chưa thực sự triển khai.
+
+**MỤC TIÊU CUỐI CÙNG**
+
+Tôi muốn đi trên một con phố Nhật Bản năm 1998 và thấy người dân đang sống cuộc đời của họ.
+
+Tôi muốn bước vào trường học bằng cổng, đi qua sân, qua hành lang, lên cầu thang rồi mới đến phòng học.
+
+Tôi muốn những nhân vật xuất hiện tại nơi họ có lý do để ở đó.
+
+Tôi muốn thế giới vẫn tiếp tục vận hành ngay cả khi tôi không nói chuyện với ai.
+
+Tôi muốn tự đọc biển hiệu, tự xác định mình đang ở đâu và tự khám phá con đường phía trước.
+
+Và khi bước vào một ngôi trường bỏ hoang, sự vắng lặng của nó phải trở nên đáng sợ chính vì trước đó tôi đã được trải nghiệm một thế giới đầy sức sống.
+
+**HÃY TRIỂN KHAI BẢN NÂNG CẤP v0.3.1 TRỰC TIẾP TRÊN DỰ ÁN HIỆN TẠI.**

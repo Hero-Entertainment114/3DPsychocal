@@ -1,5 +1,7 @@
 # 3DPsychocal · 忘れられた声
 
+> Đang nâng cấp theo hai prompt 0.3/0.3.1. [Trạng thái triển khai mới](docs/UPGRADE_031_STATUS.md): kết nối cửa đối ứng, thoại một lần, bỏ nhãn vị trí, đèn pin và occlusion. Chưa đạt nghiệm thu 0.3.1; các số liệu và gói Windows 0.2 bên dưới là mốc nền.
+
 **Wasurerareta Koe / The Forgotten Voices / Những Tiếng Nói Bị Lãng Quên**
 
 Game kinh dị tâm lý **2D pixel art**, Python 3.12 + Pygame CE, chạy offline. Tsukimori, tháng 10 năm 1998. Ren về quê thăm mẹ nhập viện và giải quyết giấy tờ căn nhà. Anh chỉ xin nghỉ ba ngày.

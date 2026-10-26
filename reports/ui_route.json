@@ -1,7 +1,7 @@
 {
   "result": "pass",
   "kind": "scripted full input route, not human playtest",
-  "duration_seconds": 4.254,
+  "duration_seconds": 5.19,
   "completed_puzzles": 22,
   "visited_maps": [
     "home",
@@ -28,13 +28,13 @@
     {
       "puzzle": "P001",
       "room": "station_hall",
-      "approach_steps": 35,
+      "approach_steps": 37,
       "heard_so_far": 2
     },
     {
       "puzzle": "P002",
       "room": "hospital",
-      "approach_steps": 45,
+      "approach_steps": 47,
       "heard_so_far": 7
     },
     {
@@ -46,13 +46,13 @@
     {
       "puzzle": "P004",
       "room": "home",
-      "approach_steps": 15,
+      "approach_steps": 25,
       "heard_so_far": 15
     },
     {
       "puzzle": "P005",
       "room": "home_entry",
-      "approach_steps": 69,
+      "approach_steps": 71,
       "heard_so_far": 18
     },
     {
@@ -64,7 +64,7 @@
     {
       "puzzle": "P007",
       "room": "station",
-      "approach_steps": 81,
+      "approach_steps": 91,
       "heard_so_far": 22
     },
     {
@@ -82,7 +82,7 @@
     {
       "puzzle": "P010",
       "room": "school_class",
-      "approach_steps": 107,
+      "approach_steps": 125,
       "heard_so_far": 31
     },
     {
@@ -100,19 +100,19 @@
     {
       "puzzle": "P013",
       "room": "school_corridor",
-      "approach_steps": 79,
+      "approach_steps": 81,
       "heard_so_far": 37
     },
     {
       "puzzle": "P014",
       "room": "school_store",
-      "approach_steps": 47,
+      "approach_steps": 65,
       "heard_so_far": 39
     },
     {
       "puzzle": "P015",
       "room": "school_teachers",
-      "approach_steps": 67,
+      "approach_steps": 77,
       "heard_so_far": 40
     },
     {
@@ -130,7 +130,7 @@
     {
       "puzzle": "P018",
       "room": "school_teachers",
-      "approach_steps": 16,
+      "approach_steps": 25,
       "heard_so_far": 45
     },
     {
@@ -142,7 +142,7 @@
     {
       "puzzle": "P020",
       "room": "school_toilets",
-      "approach_steps": 47,
+      "approach_steps": 57,
       "heard_so_far": 50
     },
     {
